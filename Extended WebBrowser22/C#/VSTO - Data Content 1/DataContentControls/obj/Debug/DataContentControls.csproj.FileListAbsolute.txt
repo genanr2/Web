@@ -1,0 +1,48 @@
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\northwind.mdb
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.config
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.pdb
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.manifest
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.vsto
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\microsoft.samples.vsto.datacontentcontrols1.docx
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Word.v4.0.Utilities.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csprojResolveAssemblyReference.cache
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ThisDocument.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ActionsPaneControl1.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.Properties.Resources.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csproj.GenerateResource.Cache
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\VSTO\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.pdb
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\northwind.mdb
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.config
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.pdb
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.manifest
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.vsto
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\microsoft.samples.vsto.datacontentcontrols1.docx
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Word.v4.0.Utilities.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csprojResolveAssemblyReference.cache
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ThisDocument.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ActionsPaneControl1.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.Properties.Resources.resources
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csproj.GenerateResource.Cache
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.dll
+G:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.pdb
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\northwind.mdb
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.config
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.pdb
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.dll.manifest
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\DataContentControls.vsto
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\microsoft.samples.vsto.datacontentcontrols1.docx
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\bin\Debug\Microsoft.Office.Tools.Word.v4.0.Utilities.dll
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csprojResolveAssemblyReference.cache
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ThisDocument.resources
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.ActionsPaneControl1.resources
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.Properties.Resources.resources
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.csproj.GenerateResource.Cache
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.dll
+E:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\VSTO - Data Content 1\DataContentControls\obj\Debug\DataContentControls.pdb

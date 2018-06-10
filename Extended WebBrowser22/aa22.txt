@@ -1,0 +1,223 @@
+		ii.src	"../js/c_xml.js"	string
+		iii.src	null	string
+-		hDoc	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		ActiveElement	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		ActiveLinkColor	"{Name=ff0000ff, ARGB=(255, 0, 0, 255)}"	System.Drawing.Color
++		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		BackColor	"{Name=ffffffff, ARGB=(255, 255, 255, 255)}"	System.Drawing.Color
++		Body	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		Cookie	null	string
+		DefaultEncoding	"windows-1251"	string
+		Domain	"dboc.bankrs.ru"	string
++		DomDocument	{mshtml.HTMLDocumentClass}	object {mshtml.HTMLDocumentClass}
+		Encoding	"windows-1251"	string
+		Focused	false	bool
++		ForeColor	"{Name=ff000000, ARGB=(255, 0, 0, 0)}"	System.Drawing.Color
++		Forms	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		Images	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		LinkColor	"{Name=ff0000ff, ARGB=(255, 0, 0, 255)}"	System.Drawing.Color
++		Links	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		RightToLeft	false	bool
+		Title	"ДБО BS-Client"	string
++		Url	{https://dboc.bankrs.ru/v9/s/bsi.dll?T=RT_1Loader.Load}	System.Uri
++		VisitedLinkColor	"{Name=ff800080, ARGB=(255, 128, 0, 128)}"	System.Drawing.Color
+-		Window	{System.Windows.Forms.HtmlWindow}	System.Windows.Forms.HtmlWindow
++		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		DomWindow	{mshtml.HTMLWindow2Class}	object {mshtml.HTMLWindow2Class}
+-		Frames	{System.Windows.Forms.HtmlWindowCollection}	System.Windows.Forms.HtmlWindowCollection
+		Count	4	int
++		Члены, не являющиеся открытыми		
+-		Представление результатов	Раскрытие представления результатов вызовет перечисление IEnumerable	
++		[0]	{System.Windows.Forms.HtmlWindow}	object {System.Windows.Forms.HtmlWindow}
++		[1]	{System.Windows.Forms.HtmlWindow}	object {System.Windows.Forms.HtmlWindow}
+-		[2]	{System.Windows.Forms.HtmlWindow}	object {System.Windows.Forms.HtmlWindow}
+-		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		ActiveElement	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		ActiveLinkColor	"{Name=ff0000ff, ARGB=(255, 0, 0, 255)}"	System.Drawing.Color
++		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		BackColor	"{Name=ffffffff, ARGB=(255, 255, 255, 255)}"	System.Drawing.Color
++		Body	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		Cookie	null	string
+		DefaultEncoding	"windows-1251"	string
+		Domain	"dboc.bankrs.ru"	string
++		DomDocument	{mshtml.HTMLDocumentClass}	object {mshtml.HTMLDocumentClass}
+		Encoding	"windows-1251"	string
+		Focused	false	bool
++		ForeColor	"{Name=ff000000, ARGB=(255, 0, 0, 0)}"	System.Drawing.Color
+-		Forms	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		Count	2	int
++		Члены, не являющиеся открытыми		
+-		Представление результатов	Раскрытие представления результатов вызовет перечисление IEnumerable	
+-		[0]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		CanHaveChildren	true	bool
++		Children	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		ClientRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
++		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		DomElement	{mshtml.HTMLFormElementClass}	object {mshtml.HTMLFormElementClass}
+		Enabled	true	bool
+-		FirstChild	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+-		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		Count	25	int
++		Члены, не являющиеся открытыми		
+-		Представление результатов	Раскрытие представления результатов вызовет перечисление IEnumerable	
+-		[0]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		CanHaveChildren	true	bool
++		Children	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		ClientRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
++		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		DomElement	{mshtml.HTMLSpanElementClass}	object {mshtml.HTMLSpanElementClass}
+		Enabled	true	bool
++		FirstChild	null	System.Windows.Forms.HtmlElement
+		Id	null	string
+		InnerHtml	null	string
+		InnerText	null	string
+		Name	""	string
++		NextSibling	null	System.Windows.Forms.HtmlElement
++		OffsetParent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetRectangle	{X = -1 Y = -1 Width = 0 Height = 0}	System.Drawing.Rectangle
+		OuterHtml	"<SPAN dataFld=TABLENAME></SPAN>"	string
+		OuterText	null	string
++		Parent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		ScrollLeft	0	int
++		ScrollRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
+		ScrollTop	0	int
+		Style	null	string
+		TabIndex	0	short
+		TagName	"SPAN"	string
++		Статические члены		
++		Члены, не являющиеся открытыми		
++		[1]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[2]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[3]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[4]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[5]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[6]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[7]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[8]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[9]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[10]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[11]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[12]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[13]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[14]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[15]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[16]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[17]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[18]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[19]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[20]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[21]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[22]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		[23]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
+-		[24]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		All	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		CanHaveChildren	false	bool
++		Children	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		ClientRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
++		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		DomElement	{mshtml.HTMLInputElementClass}	object {mshtml.HTMLInputElementClass}
+		Enabled	true	bool
++		FirstChild	null	System.Windows.Forms.HtmlElement
+		Id	null	string
+		InnerHtml	null	string
+		InnerText	null	string
+		Name	"SIGNNAME2"	string
++		NextSibling	null	System.Windows.Forms.HtmlElement
++		OffsetParent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
+		OuterHtml	"<INPUT name=SIGNNAME2>"	string
+		OuterText	null	string
++		Parent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		ScrollLeft	0	int
++		ScrollRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
+		ScrollTop	0	int
+		Style	null	string
+		TabIndex	0	short
+		TagName	"INPUT"	string
++		Статические члены		
++		Члены, не являющиеся открытыми		
+		CanHaveChildren	true	bool
++		Children	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		ClientRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
++		Document	{System.Windows.Forms.HtmlDocument}	System.Windows.Forms.HtmlDocument
++		DomElement	{mshtml.HTMLBlockElementClass}	object {mshtml.HTMLBlockElementClass}
+		Enabled	true	bool
++		FirstChild	null	System.Windows.Forms.HtmlElement
+		Id	"ND"	string
+		InnerHtml	"TABLENAME <SPAN dataFld=TABLENAME></SPAN>\r\nTBPANID <SPAN id=TBPANID dataFld=T_B>STM_DEFAULT_SCROLLER</SPAN>\r\nTBMAP <SPAN id=TBMAP dataFld=T_M>0000000100</SPAN>\r\nIDR <INPUT id=IDR dataFld=IDR name=IDR>\r\nCUSTID <INPUT dataFld=CUSTID size=7 name=CUSTID>\r\nBRANCHID <INPUT dataFld=BRANCHID size=7 name=KBOPID>\r\nSID <INPUT id=SID dataFld=SID size=14 value=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9 name=SID>\r\nT\t<INPUT dataFld=T value=RT_2STM.stm name=T>\r\nXACTION <INPUT size=7 name=XACTION>\r\nSTATUS <INPUT dataFld=STATUS size=5 name=STATUS>\r\nSTEP <INPUT size=5 name=STEP>\r\nSIGNS <INPUT size=14 name=SIGNS>\r\nSCHEMENAME\t<INPUT id=SCHEMENAME dataFld=SCHEMENAME value=STM name=SCHEMENAME>\r\nFILTERIDENT\t<INPUT id=FILTERIDENT dataFld=FILTERIDENT value=EMPTY name=FILTERIDENT>\r\nSGCFG <INPUT name=SGCFG>\r\nNOS <INPUT size=5 name=NOS>\r\nFTMP      <INPUT dataFld=FTMP name=FTMP>\r\nSGTXTID \t<SPAN id=SGTXTID style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nSGMASK \t<SPAN id=SGMASK style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nUID1\t<INPUT name=UID1>\r\nUID2\t<INPUT name=UID2>\r\nLIB_T_NAME1 <INPUT name=LIBTYPENAME1>\r\nLIB_T_NAME2 <INPUT name=LIBTYPENAME2>\r\nSIGNNAME1\t<INPUT name=SIGNNAME1>\r\nSIGNNAME2\t<INPUT name=SIGNNAME2>"	string
+		InnerText	"TABLENAME \r\nTBPANID STM_DEFAULT_SCROLLER\r\nTBMAP 0000000100\r\nIDR \r\nCUSTID \r\nBRANCHID \r\nSID \r\nT\t\r\nXACTION \r\nSTATUS \r\nSTEP \r\nSIGNS \r\nSCHEMENAME\t\r\nFILTERIDENT\t\r\nSGCFG \r\nNOS \r\nFTMP      \r\nSGTXTID \t\r\nSGMASK \t\r\nUID1\t\r\nUID2\t\r\nLIB_T_NAME1 \r\nLIB_T_NAME2 \r\nSIGNNAME1\t\r\nSIGNNAME2\t"	string
+		Name	""	string
++		NextSibling	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetParent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetRectangle	{X = -1 Y = -1 Width = 0 Height = 0}	System.Drawing.Rectangle
+		OuterHtml	"<PRE id=ND>TABLENAME <SPAN dataFld=TABLENAME></SPAN>\r\nTBPANID <SPAN id=TBPANID dataFld=T_B>STM_DEFAULT_SCROLLER</SPAN>\r\nTBMAP <SPAN id=TBMAP dataFld=T_M>0000000100</SPAN>\r\nIDR <INPUT id=IDR dataFld=IDR name=IDR>\r\nCUSTID <INPUT dataFld=CUSTID size=7 name=CUSTID>\r\nBRANCHID <INPUT dataFld=BRANCHID size=7 name=KBOPID>\r\nSID <INPUT id=SID dataFld=SID size=14 value=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9 name=SID>\r\nT\t<INPUT dataFld=T value=RT_2STM.stm name=T>\r\nXACTION <INPUT size=7 name=XACTION>\r\nSTATUS <INPUT dataFld=STATUS size=5 name=STATUS>\r\nSTEP <INPUT size=5 name=STEP>\r\nSIGNS <INPUT size=14 name=SIGNS>\r\nSCHEMENAME\t<INPUT id=SCHEMENAME dataFld=SCHEMENAME value=STM name=SCHEMENAME>\r\nFILTERIDENT\t<INPUT id=FILTERIDENT dataFld=FILTERIDENT value=EMPTY name=FILTERIDENT>\r\nSGCFG <INPUT name=SGCFG>\r\nNOS <INPUT size=5 name=NOS>\r\nFTMP      <INPUT dataFld=FTMP name=FTMP>\r\nSGTXTID \t<SPAN id=SGTXTID style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nSGMASK \t<SPAN id=SGMASK style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nUID1\t<INPUT name=UID1>\r\nUID2\t<INPUT name=UID2>\r\nLIB_T_NAME1 <INPUT name=LIBTYPENAME1>\r\nLIB_T_NAME2 <INPUT name=LIBTYPENAME2>\r\nSIGNNAME1\t<INPUT name=SIGNNAME1>\r\nSIGNNAME2\t<INPUT name=SIGNNAME2>\r\n</PRE>"	string
+		OuterText	"TABLENAME \r\nTBPANID STM_DEFAULT_SCROLLER\r\nTBMAP 0000000100\r\nIDR \r\nCUSTID \r\nBRANCHID \r\nSID \r\nT\t\r\nXACTION \r\nSTATUS \r\nSTEP \r\nSIGNS \r\nSCHEMENAME\t\r\nFILTERIDENT\t\r\nSGCFG \r\nNOS \r\nFTMP      \r\nSGTXTID \t\r\nSGMASK \t\r\nUID1\t\r\nUID2\t\r\nLIB_T_NAME1 \r\nLIB_T_NAME2 \r\nSIGNNAME1\t\r\nSIGNNAME2\t"	string
++		Parent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		ScrollLeft	0	int
++		ScrollRectangle	{X = 0 Y = 0 Width = 0 Height = 0}	System.Drawing.Rectangle
+		ScrollTop	0	int
+		Style	null	string
+		TabIndex	0	short
+		TagName	"PRE"	string
++		Статические члены		
++		Члены, не являющиеся открытыми		
+		Id	null	string
+		InnerHtml	"<PRE id=ND>TABLENAME <SPAN dataFld=TABLENAME></SPAN>\r\nTBPANID <SPAN id=TBPANID dataFld=T_B>STM_DEFAULT_SCROLLER</SPAN>\r\nTBMAP <SPAN id=TBMAP dataFld=T_M>0000000100</SPAN>\r\nIDR <INPUT id=IDR dataFld=IDR name=IDR>\r\nCUSTID <INPUT dataFld=CUSTID size=7 name=CUSTID>\r\nBRANCHID <INPUT dataFld=BRANCHID size=7 name=KBOPID>\r\nSID <INPUT id=SID dataFld=SID size=14 value=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9 name=SID>\r\nT\t<INPUT dataFld=T value=RT_2STM.stm name=T>\r\nXACTION <INPUT size=7 name=XACTION>\r\nSTATUS <INPUT dataFld=STATUS size=5 name=STATUS>\r\nSTEP <INPUT size=5 name=STEP>\r\nSIGNS <INPUT size=14 name=SIGNS>\r\nSCHEMENAME\t<INPUT id=SCHEMENAME dataFld=SCHEMENAME value=STM name=SCHEMENAME>\r\nFILTERIDENT\t<INPUT id=FILTERIDENT dataFld=FILTERIDENT value=EMPTY name=FILTERIDENT>\r\nSGCFG <INPUT name=SGCFG>\r\nNOS <INPUT size=5 name=NOS>\r\nFTMP      <INPUT dataFld=FTMP name=FTMP>\r\nSGTXTID \t<SPAN id=SGTXTID style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nSGMASK \t<SPAN id=SGMASK style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nUID1\t<INPUT name=UID1>\r\nUID2\t<INPUT name=UID2>\r\nLIB_T_NAME1 <INPUT name=LIBTYPENAME1>\r\nLIB_T_NAME2 <INPUT name=LIBTYPENAME2>\r\nSIGNNAME1\t<INPUT name=SIGNNAME1>\r\nSIGNNAME2\t<INPUT name=SIGNNAME2>\r\n</PRE>\r\n<DIV id=SubTitle class=FORMHEADER style=\"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: none; PADDING-RIGHT: 0px\">Укажите название шаблона</DIV>\r\n<DIV id=TplNameForm style=\"BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid; BORDER-BOTTOM: 1px solid; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: 1px solid; DISPLAY: none; PADDING-RIGHT: 3px\"><SPAN id=TplNameLbl style=\"DISPLAY: none\">Название шаблона&nbsp;</SPAN><INPUT style=\"WIDTH: 400px\" dataFld=NFB maxLength=254 name=TplName><BUTTON onclick=Top.proceedSaveTemplate(w); id=SaveTplBtn style=\"WIDTH: 50px; MARGIN-LEFT: 3px\">ОК</BUTTON><BUTTON onclick=Top.cancelSaveTemplate(w); id=CnclTplBtn style=\"WIDTH: 80px; MARGIN-LEFT: 3px\">Отмена</BUTTON> </DIV>\r\n<DIV id=CUSTOM_PART_OF_FORM_HERE><CUSTOMFORM xmlns:xsl=\"http://www.w3.org/TR/WD-xsl\">\r\n<DIV id=NP><INPUT type=hidden name=Acc> <INPUT type=hidden name=CRESORT> <INPUT type=hidden name=DRESORT> <INPUT type=hidden name=INQ> <TEXTAREA id=BUFF style=\"DISPLAY: none\"></TEXTAREA> <SPAN id=s575 class=FORMHEADER>Выписки&nbsp;</SPAN> \r\n<TABLE id=EDITFORM style=\"MARGIN-TOP: 3px\" cellSpacing=0 cellPadding=0 border=0>\r\n<TBODY>\r\n<TR id=FilterHeader class=DivDHead>\r\n<TD><SPAN style=\"WIDTH: 722px\">Параметры выписки</SPAN><IMG onclick=ShowForm() id=SHFltrIco src=\"https://dboc.bankrs.ru/v9/img/ico/fltrmin.gif\"> </TD></TR>\r\n<TR CL1ASS=\"DivL\">\r\n<TD id=FilterBody>\r\n<DIV id=FormBody style=\"DISPLAY: block\">\r\n<TABLE style=\"TABLE-LAYOUT: fixed\" cellSpacing=0 cellPadding=5 border=0>\r\n<COLGROUP>\r\n<COL style=\"WIDTH: 250px\"></COL>\r\n<COL style=\"WIDTH: 160px\"></COL>\r\n<COL style=\"WIDTH: 195px\"></COL>\r\n<COL style=\"WIDTH: 140px\"></COL>\r\n<TBODY>\r\n<TR>\r\n<TD colSpan=4><SPAN style=\"WIDTH: 150px\">Выберите организацию:&nbsp;</SPAN><SELECT onchange=chgCustSelect() id=selectMain class=Inp style=\"WIDTH: 555px\"><OPTION selected value=1002171>ООО \"АМЕГА\"</OPTION></SELECT><IMG onclick=\"Top.Dict(w,'CUSTOMER','PAR_ORGS='+sCustIdList+'&amp;');chgCustSelect();\" id=DictCust class=ICOBTN alt=\"Переход в справочник организаций\" src=\"https://dboc.bankrs.ru/v9/img/ico/table_sql_view.gif\"> </TD></TR>\r\n<TR>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Выберите счета:</SPAN><BR>\r\n<DIV class=\"dBlock DivLHead\" style=\"OVERFLOW: hidden; HEIGHT: auto; WIDTH: 238px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px\"><SPAN style=\"WIDTH: 100px\">&nbsp;валюта</SPAN> <SELECT onchange=createAccList(); id=selCCI class=Inp style=\"FONT-SIZE: 11px; WIDTH: 133px\"><OPTION selected value=\"\">Все</OPTION><OPTION value=RUR>RUR</OPTION></SELECT> \r\n<DIV id=dACC class=dBlock style=\"BORDER-TOP: 0px; HEIGHT: 62px; BORDER-RIGHT: 0px; WIDTH: 234px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND-COLOR: white\"><INPUT onclick=setAllAcc(this) id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V=\"1002171=40702810500000203769\"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT onclick=setAllAcc(this) id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V=\"1002171=91317810400000103769\"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV><SPAN style=\"WIDTH: 1px\">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title=\"Пометить / Снять пометку со всех счетов\" class=rb style=\"HEIGHT: 17px; WIDTH: 14px; BACKGROUND-COLOR: transparent\" CHECKED type=checkbox value=0><LABEL for=AllAcc><SPAN style=\"WIDTH: 170px\">&nbsp;все счета списка</SPAN></LABEL> </DIV></TD>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style=\"MARGIN-BOTTOM: 5px; WIDTH: 150px\" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><LABEL for=i02><SPAN id=t-i02 class=elm-t style=\"WIDTH: 25px\">с</SPAN></LABEL><INPUT onchange=Top.doChange(this); ondragstart=Top.doStartDrag(this); onkeypress=Top.alfanumKeyActs(this); onkeyup=Top.doCheckAccount(this); onfocus=\"Top.doFocus(this); Top.fnActInp(this,true,this.document.parentWindow);\" onblur=\"Top.doBlur(this); Top.fnActInp(this,false,this.document.parentWindow);\" id=i02 class=elm-inp onpaste=Top.doIns(this); onkeydown=Top.spKeyActs(this); style=\"FONT-SIZE: 11px; HEIGHT: 17px; WIDTH: 70px\" ondrop=Top.doIns(this); value=06.04.2015 name=FDATE0 errorCode=\"0\" DTYPE=\"Date\" ZEROISNULL=\"0\" MSGID=\"Msg\" SEPYEAR=\"20\" NORM=\"0\" SHOWKEYCODE=\"0\" SHCH=\"0\" DAD=\"2\" initVal=\"06.04.2015\" innerVal isSpKey=\"false\" defVal=\"__.__.____\" shortPattern=\"([0-9]{2}[.][0-9]{2}[.][0-9]{4})\" longPattern=\"^([0-9_]{2}[.][0-9_]{2}[.][0-9_]{4})$\"><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style=\"DISPLAY: inline\" alt=\"Выбрать дату в календаре...\" src=\"https://dboc.bankrs.ru/v9/img/ico/calendar.gif\"><BR><SPAN id=s20></SPAN><LABEL for=i03><SPAN id=t-i03 class=elm-t style=\"WIDTH: 25px\">по</SPAN></LABEL><INPUT onchange=Top.doChange(this); ondragstart=Top.doStartDrag(this); onkeypress=Top.alfanumKeyActs(this); onkeyup=Top.doCheckAccount(this); onfocus=\"Top.doFocus(this); Top.fnActInp(this,true,this.document.parentWindow);\" onblur=\"Top.doBlur(this); Top.fnActInp(this,false,this.document.parentWindow);\" id=i03 class=elm-inp onpaste=Top.doIns(this); onkeydown=Top.spKeyActs(this); style=\"FONT-SIZE: 11px; HEIGHT: 17px; WIDTH: 70px\" ondrop=Top.doIns(this); value=08.04.2015 name=FDATE1 errorCode=\"0\" DTYPE=\"Date\" ZEROISNULL=\"0\" MSGID=\"Msg\" SEPYEAR=\"20\" NORM=\"0\" SHOWKEYCODE=\"0\" SHCH=\"0\" DAD=\"2\" initVal=\"08.04.2015\" innerVal isSpKey=\"false\" defVal=\"__.__.____\" shortPattern=\"([0-9]{2}[.][0-9]{2}[.][0-9]{4})\" longPattern=\"^([0-9_]{2}[.][0-9_]{2}[.][0-9_]{4})$\"><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style=\"DISPLAY: inline\" alt=\"Выбрать дату в календаре...\" src=\"https://dboc.bankrs.ru/v9/img/ico/calendar.gif\"> </TD>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Дополнительно показывать:</SPAN><BR>\r\n<DIV id=OPT class=dBlock style=\"OVERFLOW: hidden; HEIGHT: auto; WIDTH: 180px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px\">\r\n<DIV style=\"PADDING-LEFT: 2px\"><INPUT onclick=\"doCheck(this,'//SF'); fnSF();\" id=SF class=rb style=\"HEIGHT: 17px\" dataFld=SF CHECKED type=checkbox value=1 name=SF><LABEL for=SF><SPAN style=\"FONT-SIZE: 11px; width1: 180px\">&nbsp;Проводки за день</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//SDT2');\" id=SDT2 class=rb style=\"HEIGHT: 17px\" dataFld=SDT2 CHECKED type=checkbox value=1 name=SDT2><LABEL for=SDT2><SPAN style=\"FONT-SIZE: 11px; width1: 180px\">&nbsp;Обороты за день</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//NL');\" id=NL class=rb style=\"HEIGHT: 17px\" dataFld=NL type=checkbox value=0 name=NL><LABEL for=NL><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Нулевые обороты</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//ISH');\" id=ISH class=rb style=\"HEIGHT: 17px\" dataFld=ISH CHECKED type=checkbox value=1 name=ISH><LABEL for=ISH><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Только итоговые</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//REAP');\" id=REAP class=rb style=\"HEIGHT: 17px\" dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Проводки по переоценке</SPAN></LABEL> </DIV>\r\n<DIV class=DivLHead style=\"PADDING-LEFT: 2px\"><SPAN style=\"WIDTH: 160px\">Поля выписки:</SPAN>&nbsp;<IMG onclick=sh(this,da.AddFlds); id=AddFldsSw class=DivL style=\"CURSOR: hand; BACKGROUND-COLOR: transparent\" src=\"https://dboc.bankrs.ru/v9/img/ico/down.gif\"></DIV>\r\n<DIV id=AddFlds style=\"PADDING-LEFT: 2px; DISPLAY: none\"><INPUT id=FLD1 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD1\"><LABEL for=FLD1><SPAN>&nbsp;БИК</SPAN></LABEL><BR><INPUT id=FLD2 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD2\"><LABEL for=FLD2><SPAN>&nbsp;Банк контрагента</SPAN></LABEL><BR><INPUT id=FLD3 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD3\"><LABEL for=FLD3><SPAN>&nbsp;ИНН контрагента</SPAN></LABEL><BR><INPUT id=FLD4 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD4\"><LABEL for=FLD4><SPAN>&nbsp;Назначение платежа</SPAN></LABEL><BR><INPUT id=FLD5 class=rb style=\"HEIGHT: 18px\" CHECKED type=checkbox name=FLD DATAFLD1=\"FLD5\"><LABEL for=FLD5><SPAN>&nbsp;Нац. эквивалент</SPAN></LABEL> </DIV></DIV></TD>\r\n<TD style=\"VERTICAL-ALIGN: top\" align=left>Показать: <SPAN id=tdBTN><BUTTON onclick=goBalance() id=bBAL title=\"Показать реестр остатков по счетам\" class=Btn style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Реестр остатков</BUTTON></SPAN><BUTTON onclick=\"df.INQ.value='0';fnSTM(1)\" id=bSTM title=\"Показать выписку\" style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Выписка</BUTTON><BUTTON onclick=\"df.INQ.value='1';fnSTM(1)\" id=bSTMi title=\"Показать справку\" style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Справка</BUTTON><BUTTON onclick=goStatementRu() id=bSTMRu title=\"Показать реестр выписок по счетам\" class=Btn style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Реестр выписок</BUTTON> </TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></CUSTOMFORM></DIV>"	string
+		InnerText	"TABLENAME \r\nTBPANID STM_DEFAULT_SCROLLER\r\nTBMAP 0000000100\r\nIDR \r\nCUSTID \r\nBRANCHID \r\nSID \r\nT\t\r\nXACTION \r\nSTATUS \r\nSTEP \r\nSIGNS \r\nSCHEMENAME\t\r\nFILTERIDENT\t\r\nSGCFG \r\nNOS \r\nFTMP      \r\nSGTXTID \t\r\nSGMASK \t\r\nUID1\t\r\nUID2\t\r\nLIB_T_NAME1 \r\nLIB_T_NAME2 \r\nSIGNNAME1\t\r\nSIGNNAME2\t\r\n\r\nУкажите название шаблона\r\nНазвание шаблона ОКОтмена \r\n     Выписки  Параметры выписки \r\nВыберите организацию: ООО \"АМЕГА\" \r\nВыберите счета:\r\n валюта ВсеRUR  40702.810.5.00000203769\r\n 91317.810.4.00000103769\r\n  все счета списка Укажите период:\r\n За текущий день За предыдущий день За последние 3 дня За период\r\nс\r\nпо Дополнительно показывать:\r\n Проводки за день\r\n Обороты за день\r\n Нулевые обороты\r\n Только итоговые\r\n Проводки по переоценке \r\nПоля выписки: \r\n БИК\r\n Банк контрагента\r\n ИНН контрагента\r\n Назначение платежа\r\n Нац. эквивалент Показать: Реестр остатковВыпискаСправкаРеестр выписок "	string
+		Name	"MForm"	string
++		NextSibling	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetParent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		OffsetRectangle	{X = 0 Y = 0 Width = 747 Height = 206}	System.Drawing.Rectangle
+		OuterHtml	"\r\n<FORM method=post name=MForm action=bsi.dll?><PRE id=ND>TABLENAME <SPAN dataFld=TABLENAME></SPAN>\r\nTBPANID <SPAN id=TBPANID dataFld=T_B>STM_DEFAULT_SCROLLER</SPAN>\r\nTBMAP <SPAN id=TBMAP dataFld=T_M>0000000100</SPAN>\r\nIDR <INPUT id=IDR dataFld=IDR name=IDR>\r\nCUSTID <INPUT dataFld=CUSTID size=7 name=CUSTID>\r\nBRANCHID <INPUT dataFld=BRANCHID size=7 name=KBOPID>\r\nSID <INPUT id=SID dataFld=SID size=14 value=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9 name=SID>\r\nT\t<INPUT dataFld=T value=RT_2STM.stm name=T>\r\nXACTION <INPUT size=7 name=XACTION>\r\nSTATUS <INPUT dataFld=STATUS size=5 name=STATUS>\r\nSTEP <INPUT size=5 name=STEP>\r\nSIGNS <INPUT size=14 name=SIGNS>\r\nSCHEMENAME\t<INPUT id=SCHEMENAME dataFld=SCHEMENAME value=STM name=SCHEMENAME>\r\nFILTERIDENT\t<INPUT id=FILTERIDENT dataFld=FILTERIDENT value=EMPTY name=FILTERIDENT>\r\nSGCFG <INPUT name=SGCFG>\r\nNOS <INPUT size=5 name=NOS>\r\nFTMP      <INPUT dataFld=FTMP name=FTMP>\r\nSGTXTID \t<SPAN id=SGTXTID style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nSGMASK \t<SPAN id=SGMASK style=\"OVERFLOW: auto; HEIGHT: 35px; WIDTH: 400px; VERTICAL-ALIGN: top\"></SPAN>\r\nUID1\t<INPUT name=UID1>\r\nUID2\t<INPUT name=UID2>\r\nLIB_T_NAME1 <INPUT name=LIBTYPENAME1>\r\nLIB_T_NAME2 <INPUT name=LIBTYPENAME2>\r\nSIGNNAME1\t<INPUT name=SIGNNAME1>\r\nSIGNNAME2\t<INPUT name=SIGNNAME2>\r\n</PRE>\r\n<DIV id=SubTitle class=FORMHEADER style=\"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: none; PADDING-RIGHT: 0px\">Укажите название шаблона</DIV>\r\n<DIV id=TplNameForm style=\"BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid; BORDER-BOTTOM: 1px solid; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: 1px solid; DISPLAY: none; PADDING-RIGHT: 3px\"><SPAN id=TplNameLbl style=\"DISPLAY: none\">Название шаблона&nbsp;</SPAN><INPUT style=\"WIDTH: 400px\" dataFld=NFB maxLength=254 name=TplName><BUTTON onclick=Top.proceedSaveTemplate(w); id=SaveTplBtn style=\"WIDTH: 50px; MARGIN-LEFT: 3px\">ОК</BUTTON><BUTTON onclick=Top.cancelSaveTemplate(w); id=CnclTplBtn style=\"WIDTH: 80px; MARGIN-LEFT: 3px\">Отмена</BUTTON> </DIV>\r\n<DIV id=CUSTOM_PART_OF_FORM_HERE><CUSTOMFORM xmlns:xsl=\"http://www.w3.org/TR/WD-xsl\">\r\n<DIV id=NP><INPUT type=hidden name=Acc> <INPUT type=hidden name=CRESORT> <INPUT type=hidden name=DRESORT> <INPUT type=hidden name=INQ> <TEXTAREA id=BUFF style=\"DISPLAY: none\"></TEXTAREA> <SPAN id=s575 class=FORMHEADER>Выписки&nbsp;</SPAN> \r\n<TABLE id=EDITFORM style=\"MARGIN-TOP: 3px\" cellSpacing=0 cellPadding=0 border=0>\r\n<TBODY>\r\n<TR id=FilterHeader class=DivDHead>\r\n<TD><SPAN style=\"WIDTH: 722px\">Параметры выписки</SPAN><IMG onclick=ShowForm() id=SHFltrIco src=\"https://dboc.bankrs.ru/v9/img/ico/fltrmin.gif\"> </TD></TR>\r\n<TR CL1ASS=\"DivL\">\r\n<TD id=FilterBody>\r\n<DIV id=FormBody style=\"DISPLAY: block\">\r\n<TABLE style=\"TABLE-LAYOUT: fixed\" cellSpacing=0 cellPadding=5 border=0>\r\n<COLGROUP>\r\n<COL style=\"WIDTH: 250px\"></COL>\r\n<COL style=\"WIDTH: 160px\"></COL>\r\n<COL style=\"WIDTH: 195px\"></COL>\r\n<COL style=\"WIDTH: 140px\"></COL>\r\n<TBODY>\r\n<TR>\r\n<TD colSpan=4><SPAN style=\"WIDTH: 150px\">Выберите организацию:&nbsp;</SPAN><SELECT onchange=chgCustSelect() id=selectMain class=Inp style=\"WIDTH: 555px\"><OPTION selected value=1002171>ООО \"АМЕГА\"</OPTION></SELECT><IMG onclick=\"Top.Dict(w,'CUSTOMER','PAR_ORGS='+sCustIdList+'&amp;');chgCustSelect();\" id=DictCust class=ICOBTN alt=\"Переход в справочник организаций\" src=\"https://dboc.bankrs.ru/v9/img/ico/table_sql_view.gif\"> </TD></TR>\r\n<TR>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Выберите счета:</SPAN><BR>\r\n<DIV class=\"dBlock DivLHead\" style=\"OVERFLOW: hidden; HEIGHT: auto; WIDTH: 238px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px\"><SPAN style=\"WIDTH: 100px\">&nbsp;валюта</SPAN> <SELECT onchange=createAccList(); id=selCCI class=Inp style=\"FONT-SIZE: 11px; WIDTH: 133px\"><OPTION selected value=\"\">Все</OPTION><OPTION value=RUR>RUR</OPTION></SELECT> \r\n<DIV id=dACC class=dBlock style=\"BORDER-TOP: 0px; HEIGHT: 62px; BORDER-RIGHT: 0px; WIDTH: 234px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND-COLOR: white\"><INPUT onclick=setAllAcc(this) id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V=\"1002171=40702810500000203769\"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT onclick=setAllAcc(this) id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V=\"1002171=91317810400000103769\"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV><SPAN style=\"WIDTH: 1px\">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title=\"Пометить / Снять пометку со всех счетов\" class=rb style=\"HEIGHT: 17px; WIDTH: 14px; BACKGROUND-COLOR: transparent\" CHECKED type=checkbox value=0><LABEL for=AllAcc><SPAN style=\"WIDTH: 170px\">&nbsp;все счета списка</SPAN></LABEL> </DIV></TD>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style=\"MARGIN-BOTTOM: 5px; WIDTH: 150px\" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><LABEL for=i02><SPAN id=t-i02 class=elm-t style=\"WIDTH: 25px\">с</SPAN></LABEL><INPUT onchange=Top.doChange(this); ondragstart=Top.doStartDrag(this); onkeypress=Top.alfanumKeyActs(this); onkeyup=Top.doCheckAccount(this); onfocus=\"Top.doFocus(this); Top.fnActInp(this,true,this.document.parentWindow);\" onblur=\"Top.doBlur(this); Top.fnActInp(this,false,this.document.parentWindow);\" id=i02 class=elm-inp onpaste=Top.doIns(this); onkeydown=Top.spKeyActs(this); style=\"FONT-SIZE: 11px; HEIGHT: 17px; WIDTH: 70px\" ondrop=Top.doIns(this); value=06.04.2015 name=FDATE0 errorCode=\"0\" DTYPE=\"Date\" ZEROISNULL=\"0\" MSGID=\"Msg\" SEPYEAR=\"20\" NORM=\"0\" SHOWKEYCODE=\"0\" SHCH=\"0\" DAD=\"2\" initVal=\"06.04.2015\" innerVal isSpKey=\"false\" defVal=\"__.__.____\" shortPattern=\"([0-9]{2}[.][0-9]{2}[.][0-9]{4})\" longPattern=\"^([0-9_]{2}[.][0-9_]{2}[.][0-9_]{4})$\"><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style=\"DISPLAY: inline\" alt=\"Выбрать дату в календаре...\" src=\"https://dboc.bankrs.ru/v9/img/ico/calendar.gif\"><BR><SPAN id=s20></SPAN><LABEL for=i03><SPAN id=t-i03 class=elm-t style=\"WIDTH: 25px\">по</SPAN></LABEL><INPUT onchange=Top.doChange(this); ondragstart=Top.doStartDrag(this); onkeypress=Top.alfanumKeyActs(this); onkeyup=Top.doCheckAccount(this); onfocus=\"Top.doFocus(this); Top.fnActInp(this,true,this.document.parentWindow);\" onblur=\"Top.doBlur(this); Top.fnActInp(this,false,this.document.parentWindow);\" id=i03 class=elm-inp onpaste=Top.doIns(this); onkeydown=Top.spKeyActs(this); style=\"FONT-SIZE: 11px; HEIGHT: 17px; WIDTH: 70px\" ondrop=Top.doIns(this); value=08.04.2015 name=FDATE1 errorCode=\"0\" DTYPE=\"Date\" ZEROISNULL=\"0\" MSGID=\"Msg\" SEPYEAR=\"20\" NORM=\"0\" SHOWKEYCODE=\"0\" SHCH=\"0\" DAD=\"2\" initVal=\"08.04.2015\" innerVal isSpKey=\"false\" defVal=\"__.__.____\" shortPattern=\"([0-9]{2}[.][0-9]{2}[.][0-9]{4})\" longPattern=\"^([0-9_]{2}[.][0-9_]{2}[.][0-9_]{4})$\"><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style=\"DISPLAY: inline\" alt=\"Выбрать дату в календаре...\" src=\"https://dboc.bankrs.ru/v9/img/ico/calendar.gif\"> </TD>\r\n<TD style=\"VERTICAL-ALIGN: top\"><SPAN>Дополнительно показывать:</SPAN><BR>\r\n<DIV id=OPT class=dBlock style=\"OVERFLOW: hidden; HEIGHT: auto; WIDTH: 180px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px\">\r\n<DIV style=\"PADDING-LEFT: 2px\"><INPUT onclick=\"doCheck(this,'//SF'); fnSF();\" id=SF class=rb style=\"HEIGHT: 17px\" dataFld=SF CHECKED type=checkbox value=1 name=SF><LABEL for=SF><SPAN style=\"FONT-SIZE: 11px; width1: 180px\">&nbsp;Проводки за день</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//SDT2');\" id=SDT2 class=rb style=\"HEIGHT: 17px\" dataFld=SDT2 CHECKED type=checkbox value=1 name=SDT2><LABEL for=SDT2><SPAN style=\"FONT-SIZE: 11px; width1: 180px\">&nbsp;Обороты за день</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//NL');\" id=NL class=rb style=\"HEIGHT: 17px\" dataFld=NL type=checkbox value=0 name=NL><LABEL for=NL><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Нулевые обороты</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//ISH');\" id=ISH class=rb style=\"HEIGHT: 17px\" dataFld=ISH CHECKED type=checkbox value=1 name=ISH><LABEL for=ISH><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Только итоговые</SPAN></LABEL><BR><INPUT onclick=\"doCheck(this,'//REAP');\" id=REAP class=rb style=\"HEIGHT: 17px\" dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style=\"FONT-SIZE: 11px\">&nbsp;Проводки по переоценке</SPAN></LABEL> </DIV>\r\n<DIV class=DivLHead style=\"PADDING-LEFT: 2px\"><SPAN style=\"WIDTH: 160px\">Поля выписки:</SPAN>&nbsp;<IMG onclick=sh(this,da.AddFlds); id=AddFldsSw class=DivL style=\"CURSOR: hand; BACKGROUND-COLOR: transparent\" src=\"https://dboc.bankrs.ru/v9/img/ico/down.gif\"></DIV>\r\n<DIV id=AddFlds style=\"PADDING-LEFT: 2px; DISPLAY: none\"><INPUT id=FLD1 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD1\"><LABEL for=FLD1><SPAN>&nbsp;БИК</SPAN></LABEL><BR><INPUT id=FLD2 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD2\"><LABEL for=FLD2><SPAN>&nbsp;Банк контрагента</SPAN></LABEL><BR><INPUT id=FLD3 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD3\"><LABEL for=FLD3><SPAN>&nbsp;ИНН контрагента</SPAN></LABEL><BR><INPUT id=FLD4 class=rb style=\"HEIGHT: 18px\" type=checkbox name=FLD DATAFLD1=\"FLD4\"><LABEL for=FLD4><SPAN>&nbsp;Назначение платежа</SPAN></LABEL><BR><INPUT id=FLD5 class=rb style=\"HEIGHT: 18px\" CHECKED type=checkbox name=FLD DATAFLD1=\"FLD5\"><LABEL for=FLD5><SPAN>&nbsp;Нац. эквивалент</SPAN></LABEL> </DIV></DIV></TD>\r\n<TD style=\"VERTICAL-ALIGN: top\" align=left>Показать: <SPAN id=tdBTN><BUTTON onclick=goBalance() id=bBAL title=\"Показать реестр остатков по счетам\" class=Btn style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Реестр остатков</BUTTON></SPAN><BUTTON onclick=\"df.INQ.value='0';fnSTM(1)\" id=bSTM title=\"Показать выписку\" style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Выписка</BUTTON><BUTTON onclick=\"df.INQ.value='1';fnSTM(1)\" id=bSTMi title=\"Показать справку\" style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Справка</BUTTON><BUTTON onclick=goStatementRu() id=bSTMRu title=\"Показать реестр выписок по счетам\" class=Btn style=\"MARGIN-BOTTOM: 5px; WIDTH: 130px\">Реестр выписок</BUTTON> </TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></CUSTOMFORM></DIV></FORM>"	string
+		OuterText	"TABLENAME \r\nTBPANID STM_DEFAULT_SCROLLER\r\nTBMAP 0000000100\r\nIDR \r\nCUSTID \r\nBRANCHID \r\nSID \r\nT\t\r\nXACTION \r\nSTATUS \r\nSTEP \r\nSIGNS \r\nSCHEMENAME\t\r\nFILTERIDENT\t\r\nSGCFG \r\nNOS \r\nFTMP      \r\nSGTXTID \t\r\nSGMASK \t\r\nUID1\t\r\nUID2\t\r\nLIB_T_NAME1 \r\nLIB_T_NAME2 \r\nSIGNNAME1\t\r\nSIGNNAME2\t\r\n\r\nУкажите название шаблона\r\nНазвание шаблона ОКОтмена \r\n     Выписки  Параметры выписки \r\nВыберите организацию: ООО \"АМЕГА\" \r\nВыберите счета:\r\n валюта ВсеRUR  40702.810.5.00000203769\r\n 91317.810.4.00000103769\r\n  все счета списка Укажите период:\r\n За текущий день За предыдущий день За последние 3 дня За период\r\nс\r\nпо Дополнительно показывать:\r\n Проводки за день\r\n Обороты за день\r\n Нулевые обороты\r\n Только итоговые\r\n Проводки по переоценке \r\nПоля выписки: \r\n БИК\r\n Банк контрагента\r\n ИНН контрагента\r\n Назначение платежа\r\n Нац. эквивалент Показать: Реестр остатковВыпискаСправкаРеестр выписок "	string
++		Parent	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
+		ScrollLeft	0	int
++		ScrollRectangle	{X = 0 Y = 0 Width = 747 Height = 206}	System.Drawing.Rectangle
+		ScrollTop	0	int
+		Style	null	string
+		TabIndex	0	short
+		TagName	"FORM"	string
++		Статические члены		
++		Члены, не являющиеся открытыми		
++		[1]	{System.Windows.Forms.HtmlElement}	object {System.Windows.Forms.HtmlElement}
++		Images	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
++		LinkColor	"{Name=ff0000ff, ARGB=(255, 0, 0, 255)}"	System.Drawing.Color
++		Links	{System.Windows.Forms.HtmlElementCollection}	System.Windows.Forms.HtmlElementCollection
+		RightToLeft	false	bool
+		Title	""	string
++		Url	{https://dboc.bankrs.ru/v9/s/bsi.dll?T=RT_2STM.STMFORM&nvgt=1&SID=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9&SCHEMENAME=STM&TMS=B19igv7m7f}	System.Uri
++		VisitedLinkColor	"{Name=ff800080, ARGB=(255, 128, 0, 128)}"	System.Drawing.Color
++		Window	{System.Windows.Forms.HtmlWindow}	System.Windows.Forms.HtmlWindow
++		Статические члены		
++		Члены, не являющиеся открытыми		
++		DomWindow	{mshtml.HTMLWindow2Class}	object {mshtml.HTMLWindow2Class}
++		Frames	{System.Windows.Forms.HtmlWindowCollection}	System.Windows.Forms.HtmlWindowCollection
++		History	{System.Windows.Forms.HtmlHistory}	System.Windows.Forms.HtmlHistory
+		IsClosed	false	bool
+		Name	"RT_IC_MAINW"	string
++		Opener	null	System.Windows.Forms.HtmlWindow
++		Parent	{System.Windows.Forms.HtmlWindow}	System.Windows.Forms.HtmlWindow
++		Position	{X = 435 Y = 476}	System.Drawing.Point
++		Size	{Width = 685 Height = 437}	System.Drawing.Size
+		StatusBarText	""	string
++		Url	{https://dboc.bankrs.ru/v9/s/bsi.dll?T=RT_2STM.STMFORM&nvgt=1&SID=FMBWGU7JON69R4Q0FINRDFP7Q1K9O9&SCHEMENAME=STM&TMS=B19igv7m7f}	System.Uri
++		WindowFrameElement	{System.Windows.Forms.HtmlElement}	System.Windows.Forms.HtmlElement
++		Статические члены		
++		Члены, не являющиеся открытыми		
++		[3]	{System.Windows.Forms.HtmlWindow}	object {System.Windows.Forms.HtmlWindow}
++		History	{System.Windows.Forms.HtmlHistory}	System.Windows.Forms.HtmlHistory
+		IsClosed	false	bool
+		Name	null	string
++		Opener	null	System.Windows.Forms.HtmlWindow
++		Parent	{System.Windows.Forms.HtmlWindow}	System.Windows.Forms.HtmlWindow
++		Position	{X = 197 Y = 436}	System.Drawing.Point
++		Size	{Width = 923 Height = 477}	System.Drawing.Size
+		StatusBarText	""	string
++		Url	{https://dboc.bankrs.ru/v9/s/bsi.dll?T=RT_1Loader.Load}	System.Uri
++		WindowFrameElement	null	System.Windows.Forms.HtmlElement
++		Статические члены		
++		Члены, не являющиеся открытыми		
++		Статические члены		
++		Члены, не являющиеся открытыми		

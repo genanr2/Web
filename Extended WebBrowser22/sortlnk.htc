@@ -1,0 +1,37 @@
+<PUBLIC:COMPONENT lightweight="true" >
+	<PUBLIC:PROPERTY NAME="VERSION" VALUE="1.0.2.0"/>
+	<PUBLIC:PROPERTY NAME="TEXT"/>
+	<PUBLIC:PROPERTY NAME="FLD"/>
+	<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="Top.Hilite(w);"/>
+	<PUBLIC:ATTACH EVENT="onmouseout" ONEVENT="Top.Restore(w);"/>
+	<PUBLIC:ATTACH EVENT="onclick" ONEVENT="fnReSort()"/>
+	<PUBLIC:ATTACH EVENT="onload" FOR="window" ONEVENT="try{initSL()}catch(e){}"/>
+	<PUBLIC:ATTACH EVENT="oncontentready" ONEVENT="try{initSL()}catch(e){}"/>
+	<PUBLIC:METHOD NAME="initSL"/>
+</PUBLIC:COMPONENT>
+
+<SCRIPT LANGUAGE="JavaScript">
+var Top=window.Top, DESC, SORTBY, normalColor;
+
+function initSL(){
+	if(element.ACTIVEE)return
+	element.ACTIVEE=true
+	var xd = window.document.all.ScData.XMLDocument;
+	runtimeStyle.cursor = "hand";
+	runtimeStyle.textDecoration = "underline";
+	element.title=Top.LRSscr6;
+	var i, inSort=false, fieldArr, sortArr=xd.selectSingleNode("DOCS/@srtb").nodeValue.split(';');
+	for(i=0; i<sortArr.length; i++){
+		fieldArr=sortArr[i].split(' ');
+		if(fieldArr[0]==FLD){
+			element.innerHTML=''+TEXT+'<SPAN STYLE="margin-left: 3px;"><IMG SRC="../img/ico/'+fieldArr[1].toLowerCase()+'.gif"><SPAN style="font-size: 8px; text-decoration: none;">'+(i+1)+'</SPAN></SPAN>';
+			element.IDX=(i+1)
+			inSort=true;
+			break;
+		}
+	}
+	if(!inSort) element.innerHTML=TEXT;
+}
+
+function fnReSort(){var F=element.FLD; if(F!=null)Top.ReSort(window,F);}
+</SCRIPT>

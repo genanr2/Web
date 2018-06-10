@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0180)https://stackauth.com/auth/global/read?request=HxvbOIejtQtJ%2BitqMDLfbyRoYmnGkYaSvFRjimKVvesMy7dJQru67AmKo5T3au%2FfgA4o%2FB75jcJxAJq1Hv1qmg%3D%3D&nonce=5SYlVQAAAAAPN123Syp6NA%3D%3D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <script>
+                  var data = {"ReadSession":"https://stackauth.com/auth/global/read-session","Request":"HxvbOIejtQtJ+itqMDLfbyRoYmnGkYaSvFRjimKVvesMy7dJQru67AmKo5T3au/fgA4o/B75jcJxAJq1Hv1qmg==","Nonce":"5SYlVQAAAAAPN123Syp6NA==","Referrer":"http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector","StorageName":"GlobalLogin"};
+
+                  var toMsg = window.parent;
+
+                  var obj = localStorage ? localStorage.getItem(data.StorageName) : null;
+                  if(obj != null) {
+                  var req = new XMLHttpRequest();
+                  req.open('POST', data.ReadSession+'?request='+encodeURIComponent(data.Request)+'&nonce='+encodeURIComponent(data.Nonce)+'&seriesAndToken='+encodeURIComponent(obj), false);
+                  req.send(null);
+                  
+                    if(req.status == 200){
+                      toMsg.postMessage(req.responseText, data.Referrer);
+                    }else{
+                      toMsg.postMessage('No Session', data.Referrer);
+                    }
+                  }else{
+                    toMsg.postMessage('No Local Storage', data.Referrer);
+                  }
+                  </script>
+                  </head><body></body></html>

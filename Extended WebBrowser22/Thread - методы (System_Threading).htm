@@ -1,0 +1,1599 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0087)https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.110).aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="ru" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+<LINK href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread_methods(v=vs.110).aspx" 
+rel="canonical">         
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><TITLE>Thread 
+- методы (System.Threading)</TITLE> 
+<META name="DCS.dcsuri" content="/ru-ru/library/cdbcd206(d=default,l=ru-ru,v=vs.110).aspx"> 
+<META name="NormalizedUrl" content="https://msdn.microsoft.com/ru-ru/library/cdbcd206(d=default,l=ru-ru,v=vs.110).aspx"> 
+<META name="ms.normalizedurl" content="https://msdn.microsoft.com/ru-ru/library/cdbcd206(d=default,l=ru-ru,v=vs.110).aspx"> 
+<META name="VotingContextUrl" content="https://msdn.microsoft.com/ru-ru/library/cdbcd206(d=default,l=ru-ru,v=vs.110).aspx"> 
+<META name="MN" content="BF1CA939-6:02:12 AM"> 
+<META name="Search.ShortId" content="cdbcd206"> 
+<META name="ms.shortidmsdn" content="cdbcd206"> 
+<META name="Ms.Locale" content="ru-ru"> 
+<META name="ms.prodver" content="VS.110"> 
+<META name="ms.contentlang" content="RU"> 
+<META name="ms.lang" content="RU"> 
+<META name="ms.loc" content="RU"> 
+<META name="ms.sitever" content="2015.03.20.2"> 
+<META name="ms.assetid" content="Methods.T:System.Threading.Thread"> 
+<META name="ms.auth" content="0">             <LINK href="Thread%20-%20методы%20(System_Threading)_files/Combined.css" 
+rel="stylesheet" type="text/css">
+<META name="GENERATOR" content="MSHTML 11.00.9926.12"></HEAD>     
+<BODY class="library IE IE11">
+<DIV id="page"><LINK rel="stylesheet" type="text/css">         <INPUT id="isHeaderBleeding" type="hidden" value="true"> 
+    
+<DIV class="ltr msdn" id="ux-header" dir="ltr"><HEADER><SPAN 
+id="moveDrawer"></SPAN>             <SPAN id="singleCol"></SPAN>             
+<SPAN id="doubleCol"></SPAN>             
+<DIV class="row">
+<DIV class="top">
+<DIV class="left"><A class="msdnLogoImg" 
+href="https://msdn.microsoft.com/ru-ru"><IMG src="Thread%20-%20методы%20(System_Threading)_files/microsoftLogoForHeader.png"> 
+                            </A></DIV>
+<DIV class="right">
+<DIV id="signIn"><A title="Войти" class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1427461332&amp;rver=6.0.5276.0&amp;wp=MCMBI&amp;wlcxt=MSDN%24MSDN%24MSDN&amp;wreply=https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fSystem.Threading.Thread_methods%2528v%3dvs.110%2529.aspx&amp;lc=1049&amp;id=254354&amp;mkt=ru-RU">Войти</A></DIV>
+<DIV class="auxNav">
+<DIV id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="Subscriptions"><A id="Subscriptions_2153_1" href="https://msdn.microsoft.com/subscriptions/manage/hh442900" 
+xmlns="http://www.w3.org/1999/xhtml"><SPAN style="line-height: 18px;" 
+xmlns="">Подписки MSDN</SPAN>   </A> </DIV>
+<DIV id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="GetTools"><A id="GetTools_2153_3" href="http://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x419&amp;slcid=0x419&amp;campaign=o~msft~msdn~gettools-header~dn308572" 
+xmlns="http://www.w3.org/1999/xhtml"><SPAN style="line-height: 18px;" 
+xmlns="">Получить инструменты</SPAN>   </A> </DIV>
+<DIV id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SocialLinks">
+<DIV class="linkList">
+<UL class="links horizontal">
+  <LI><A class="facebook" id="SocialLinks_2152_4" href="https://www.facebook.com/msdnru" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">https://www.facebook.com/msdnru</A>       
+  </LI>
+  <LI><A class="twitter" id="SocialLinks_2152_5" href="https://twitter.com/msdevru" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdevru</A>       
+  </LI>
+  <LI><A class="vkOne" id="SocialLinks_2152_6" href="http://vk.com/msdnru" 
+  target="_blank" xmlns="http://www.w3.org/1999/xhtml">http://vk.com/msdnru</A>  
+       </LI></UL></DIV></DIV></DIV></DIV></DIV>
+<DIV class="bottom">
+<DIV class="left">
+<DIV id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SiteLogo">
+<DIV class="LinkWithImage topImage"><A id="SiteLogo_2152_1" href="https://msdn.microsoft.com/ru-ru"><IMG 
+id="msdnLogo-black" src="Thread%20-%20методы%20(System_Threading)_files/dn610975.msdnLogo-black.jpg" 
+xmlns="">       <SPAN></SPAN>     </A>   </DIV></DIV>
+<DIV id="drawer">
+<DIV class="toc"><NAV>
+<UL class="navL1">
+  <LI class="inactive toggle"><A title="Технологии" 
+  href="javascript:void(0)">Технологии</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Облако" href="https://msdn.microsoft.com/cloud-app-development-msdn">Облако</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Мобильные" href="https://msdn.microsoft.com/mobile-app-development-msdn">Мобильные</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Интернет" href="https://msdn.microsoft.com/web-app-development-msdn">Интернет</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Бизнес" href="https://msdn.microsoft.com/business-and-productivity-app-development-msdn">Бизнес</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Данные" href="https://msdn.microsoft.com/big-data-development-msdn">Данные</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Игры" href="https://msdn.microsoft.com/games-development-msdn">Игры</A> 
+                                                                                 
+                  </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Загрузки" 
+  href="javascript:void(0)">Загрузки</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Visual Studio" href="http://go.microsoft.com/fwlink/?linkid=307137&amp;clcid=0x419">Visual 
+    Studio</A>                                                                   
+                             </LI>
+    <LI class="inactive"><A title="Подписки MSDN" href="https://msdn.microsoft.com/subscriptions/">Подписки 
+    MSDN</A>                                                                     
+                           </LI>
+    <LI class="inactive"><A title="Пакеты SDK" href="https://msdn.microsoft.com/microsoft-sdks-msdn">Пакеты 
+    SDK</A>                                                                      
+                          </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Программы" 
+  href="javascript:void(0)">Программы</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="BizSpark" href="https://www.microsoft.com/bizspark">BizSpark</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Студентам" href="https://msdn.microsoft.com/student-developer-program">Студентам</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive toggle"><A title="Архитекторам" href="javascript:void(0)">Архитекторам</A> 
+                                                    
+    <UL class="navL3">
+      <LI class="inactive"><A title="Общие сведения" href="https://msdn.microsoft.com/architects-overview-msdn">Общие 
+      сведения</A>                                                         </LI>
+      <LI class="inactive"><A title="Конкретные примеры" href="https://msdn.microsoft.com/architects-case-studies-msdn">Конкретные 
+      примеры</A>                                                         </LI>
+      <LI class="inactive"><A title="Проекты" href="https://msdn.microsoft.com/architects-blueprints-msdn">Проекты</A> 
+                                                              </LI></UL></LI>
+    <LI class="inactive"><A title="События" href="http://events.msdn.microsoft.com/ru-ru">События</A> 
+                                                                                 
+                  </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Сообщество" 
+  href="javascript:void(0)">Сообщество</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Форумы" href="https://social.msdn.microsoft.com/forums/">Форумы</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Блоги" href="http://blogs.msdn.com/b/developer-tools/">Блоги</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Технические консультанты" href="http://tech-advisors.msdn.microsoft.com/ru-ru/">Технические 
+    консультанты</A>                                                             
+                                   </LI>
+    <LI class="inactive"><A title="Канал Channel 9" href="http://channel9.msdn.com/">Канал 
+    Channel 9</A>                                                                
+                                </LI></UL></LI>
+  <LI class="inactive current"><A title="Документация" href="https://msdn.microsoft.com/library">Документация</A> 
+                          </LI>
+  <LI class="inactive"><A title="Примеры" href="https://code.msdn.microsoft.com/">Примеры</A> 
+                          </LI></UL></NAV></DIV></DIV></DIV>
+<DIV class="right">
+<DIV id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SearchBox">
+<DIV class="SearchBox">
+<FORM name="HeaderSearchForm" id="HeaderSearchForm" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this);" 
+method="get"><INPUT name="query" id="HeaderSearchTextBox" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" type="text" maxlength="200"> 
+      <BUTTON class="header-search-button" id="HeaderSearchButton" type="submit" 
+value=""></BUTTON>     </FORM></DIV></DIV><A id="grip" 
+href="javascript:void(0)"></A>                     </DIV></DIV></DIV></HEADER>   
+  </DIV>
+<DIV class="printExportMenus ltr"><A id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnUrl=%2fru-ru%2flibrary%2fSystem.Threading.Thread_methods(v%3dvs.110).aspx">Экспорт 
+(<SPAN class="count">0</SPAN>)         </A>         <A id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(d=printer,v=vs.110).aspx" 
+rel="nofollow">Печать          </A>     </DIV>
+<DIV class="printExportMenus ltr"><A title="Expand/Collapse all sections by pressing Ctrl + Shift + e" 
+id="expandCollapseAll" accesskey="e" 
+href="javascript:void(0)">Развернуть&nbsp;все</A>     </DIV>
+<DIV id="body">
+<DIV id="leftNav">
+<DIV id="tocnav">
+<DIV class="toclevel0" data-toclevel="0"><A title="MSDN Library" id="ms310241_MSDN.10_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/ms123401.aspx" mtpsshortid="ms123401_MSDN.10_ru-ru" 
+mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_ru-ru" mtpsaliasid="" 
+data-tochassubtree="true">MSDN Library</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Разработка на .NET" id="aa139615_MSDN.10_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/aa139615.aspx" mtpsshortid="aa139615_MSDN.10_ru-ru" 
+mtpsassetid="MSDN|netdev|$\netdev.hxt@0,0_MSDN.10_ru-ru" mtpsaliasid="" 
+data-tochassubtree="true">Разработка на .NET</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title=".NET Framework 4.5" id="hh201723_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/w0x726c2(v=vs.110).aspx" 
+mtpsshortid="w0x726c2_VS.110_ru-ru" mtpsassetid="f61f02f2-2f20-483d-8f56-a9c8f3a54986_VS.110_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">.NET Framework 4.5</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Библиотека классов платформы .NET Framework" 
+id="bb473327_VS.110_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/gg145045(v=vs.110).aspx" 
+mtpsshortid="gg145045_VS.110_ru-ru" mtpsassetid="e18143ab-e34f-496a-9092-14147075f668_VS.110_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">Библиотека классов платформы .NET 
+Framework</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="System.Threading - пространства имен" 
+id="bb563866_VS.110_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/gg145014(v=vs.110).aspx" 
+mtpsshortid="gg145014_VS.110_ru-ru" mtpsassetid="3aa3ed55-38be-6bb6-dd22-8ad3b7ea8623_VS.110_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">System.Threading - пространства 
+имен</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="System.Threading" id="cc692177_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/System.Threading(v=vs.110).aspx" 
+mtpsshortid="798axes2_VS.110_ru-ru" mtpsassetid="N:System.Threading_VS.110_ru-ru" 
+mtpsaliasid="System.Threading" 
+data-tochassubtree="true">System.Threading</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Thread - класс" id="cc692788_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread(v=vs.110).aspx" 
+mtpsshortid="bkb1k2x8_VS.110_ru-ru" mtpsassetid="T:System.Threading.Thread_VS.110_ru-ru" 
+mtpsaliasid="System.Threading.Thread" data-tochassubtree="true">Thread - 
+класс</A></DIV>
+<DIV class="toclevel1 current" data-toclevel="1"><A title="Thread - методы" id="cc692789_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.110).aspx" 
+mtpsshortid="cdbcd206_VS.110_ru-ru" mtpsassetid="Methods.T:System.Threading.Thread_VS.110_ru-ru" 
+mtpsaliasid="System.Threading.Thread_methods" data-tochassubtree="true">Thread - 
+методы</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Abort - метод" id="jj190524_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.abort(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" data-tochassubtree="true">Abort - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="AllocateDataSlot - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.allocatedataslot(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">AllocateDataSlot - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="AllocateNamedDataSlot - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.allocatenameddataslot(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">AllocateNamedDataSlot - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="BeginCriticalRegion - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.begincriticalregion(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">BeginCriticalRegion - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="BeginThreadAffinity - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.beginthreadaffinity(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">BeginThreadAffinity - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="DisableComObjectEagerCleanup - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.disablecomobjecteagercleanup(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">DisableComObjectEagerCleanup - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="EndCriticalRegion - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.endcriticalregion(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">EndCriticalRegion - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="EndThreadAffinity - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.endthreadaffinity(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">EndThreadAffinity - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="FreeNamedDataSlot - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.freenameddataslot(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">FreeNamedDataSlot - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetApartmentState - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getapartmentstate(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetApartmentState - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetCompressedStack - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getcompressedstack(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetCompressedStack - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetData - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdata(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetData - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetDomain - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdomain(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetDomain - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetDomainID - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdomainid(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetDomainID - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetHashCode - метод" href="https://msdn.microsoft.com/ru-ru/library/ttys7f5z(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetHashCode - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="_Thread.GetIDsOfNames - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/bb355916(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">_Thread.GetIDsOfNames - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="GetNamedDataSlot - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getnameddataslot(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">GetNamedDataSlot - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="_Thread.GetTypeInfo - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/bb292864(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">_Thread.GetTypeInfo - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="_Thread.GetTypeInfoCount - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/bb156408(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">_Thread.GetTypeInfoCount - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Interrupt - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.interrupt(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Interrupt - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="_Thread.Invoke - метод" href="https://msdn.microsoft.com/ru-ru/library/bb338590(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">_Thread.Invoke - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Join - метод" id="ff997135_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.join(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" data-tochassubtree="true">Join - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="MemoryBarrier - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.memorybarrier(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">MemoryBarrier - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="ResetAbort - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.resetabort(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">ResetAbort - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Resume - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.resume(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Resume - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="SetApartmentState - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setapartmentstate(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">SetApartmentState - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="SetCompressedStack - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setcompressedstack(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">SetCompressedStack - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="SetData - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setdata(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">SetData - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="SetProcessorAffinity - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setprocessoraffinity(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">SetProcessorAffinity - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Sleep - метод" id="ff997136_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.sleep(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" data-tochassubtree="true">Sleep - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="SpinWait - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.spinwait(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">SpinWait - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Start - метод" id="ff997139_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.start(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" data-tochassubtree="true">Start - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Suspend - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.suspend(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Suspend - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="TrySetApartmentState - метод" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.trysetapartmentstate(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">TrySetApartmentState - 
+метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="VolatileRead - метод" id="ff997141_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.volatileread(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" 
+data-tochassubtree="true">VolatileRead - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="VolatileWrite - метод" id="ff997151_VS.110_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.volatilewrite(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" 
+data-tochassubtree="true">VolatileWrite - метод</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Yield - метод" href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.yield(v=vs.110).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Yield - метод</A></DIV></DIV>
+<DIV class="toc-resizable-ew" id="toc-resizable-ew"></DIV><A id="NavigationResize" 
+href="javascript:void(0)"><IMG title="Развернуть" class="cl_nav_resize_open" 
+alt="Развернуть" src="Thread%20-%20методы%20(System_Threading)_files/ImageSprite.png"> 
+    <IMG title="Свернуть" class="cl_nav_resize_close" alt="Свернуть" src="Thread%20-%20методы%20(System_Threading)_files/ImageSprite.png"> 
+</A>     </DIV>
+<DIV class="content" id="content">
+<DIV class="MTPSTranslator" id="MTPSTranslator">
+<TABLE class="MTPSTranslatorTable" style="width: 100%;">
+  <TBODY>
+  <TR>
+    <TD class="TranslationAlertBox">
+      <DIV>Данная статья переведена автоматически. Наведите указатель мыши на 
+      предложения статьи, чтобы просмотреть исходный текст. <A href="https://msdn.microsoft.com/translate/hh856053">Дополнительные 
+      сведения.</A></DIV></TD>
+    <TD class="TranslationViewSwitcher">
+      <DIV><INPUT name="TrnaslatorView" title="Показать перевод" class="translatechoice" 
+      type="radio" value="0"><SPAN>Перевод</SPAN>                     </DIV>
+      <DIV><INPUT name="TrnaslatorView" title="Показать текст на английском языке" 
+      class="translatechoice" type="radio" value="1"><SPAN>Текст 
+      оригинала</SPAN>                     </DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV class="topic" xmlns="http://www.w3.org/1999/xhtml">
+<H1 class="title">Thread - методы</H1>
+<DIV class="lw_vs">
+<DIV id="curversion"><STRONG>.NET Framework 4.5         </STRONG>     </DIV>
+<DIV id="versionclick">
+<DIV class="cl_lw_vs_seperator" id="vsseperator"></DIV>
+<DIV>
+<DIV><A id="vsLink" href="javascript:;">Другие версии                     </A>   
+      </DIV>
+<DIV class="cl_vs_arrow clip10x10"><IMG class="cl_lw_vs_arrow" id="vsArrow" alt="" 
+src="Thread%20-%20методы%20(System_Threading)_files/ImageSprite.png">         
+</DIV></DIV>
+<UL id="vsPanel">
+  <LI><A href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.100).aspx">.NET 
+  Framework 4</A>         </LI>
+  <LI><A href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.90).aspx">.NET 
+  Framework 3.5</A>         </LI>
+  <LI><A href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.95).aspx">Silverlight 
+  </A>         </LI></UL></DIV></DIV>
+<DIV style="clear: both;"></DIV>
+<DIV></DIV>
+<DIV id="mainSection">
+<DIV id="mainBody">
+<P></P>
+<P>Тип <A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread(v=vs.110).aspx">Thread</A> 
+предоставляет следующие члены.</P>
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">Методы</SPAN></A>             
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A id="methodTableToggle"></A>           
+<TABLE class="members" id="memberList">
+  <TBODY>
+  <TR>
+    <TH class="iconColumn">&nbsp;            </TH>
+    <TH class="nameColumn">Имя</TH>
+    <TH class="descriptionColumn">Описание</TH></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/ty8d3wta(v=vs.110).aspx">Abort<SPAN 
+      xmlns="">()</SPAN></A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt1" xml:space="preserve" 
+      data-source='Raises a <span><span class="mtpsTagOuterHtml" ><span>ThreadAbortException</span></span></span> in the thread on which it is invoked, to begin the process of terminating the thread.' 
+      data-guid="8b8db5f475f5827b06f68dd04fdf71b7"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызывает 
+      исключение <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.threadabortexception(v=vs.110).aspx">ThreadAbortException</A></SPAN> 
+      в вызвавшем его потоке для того, чтобы начать процесс завершения 
+      потока.</sentencetext></SPAN>  <SPAN class="sentence" id="mt2" xml:space="preserve" 
+      data-source="Calling this method usually terminates the thread." 
+      data-guid="5a416c2195dbdad2f46127c24722cdc3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызов 
+      данного метода обычно завершает поток.</sentencetext></SPAN>  </SPAN>   
+  </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/5b50fdsz(v=vs.110).aspx">Abort(Object)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt3" xml:space="preserve" 
+      data-source='Raises a <span><span class="mtpsTagOuterHtml" ><span>ThreadAbortException</span></span></span> in the thread on which it is invoked, to begin the process of terminating the thread while also providing exception information about the thread termination.' 
+      data-guid="d6da7eddb9ebdaa241f732fe7d4fd9fe"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызывает 
+      исключение <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.threadabortexception(v=vs.110).aspx">ThreadAbortException</A></SPAN> 
+      в вызвавшем его потоке для того, чтобы начать процесс завершения потока, в 
+      то же время предоставляя информацию о завершении потока, касательно 
+      исключения.</sentencetext></SPAN>  <SPAN class="sentence" id="mt4" 
+      xml:space="preserve" data-source="Calling this method usually terminates the thread." 
+      data-guid="5a416c2195dbdad2f46127c24722cdc3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызов 
+      данного метода обычно завершает поток.</sentencetext></SPAN>  </SPAN>   
+  </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.allocatedataslot(v=vs.110).aspx">AllocateDataSlot</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt5" xml:space="preserve" 
+      data-source="Allocates an unnamed data slot on all the threads." 
+      data-guid="4868f9119d16ab2f2eeafd18678aa37f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Выделяет 
+      неименованную область данных всем потокам.</sentencetext></SPAN>  <SPAN 
+      class="sentence" id="mt6" xml:space="preserve" data-source='For better performance, use fields that are marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="7edaea9e87594cb1f58378a9889ced2b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.allocatenameddataslot(v=vs.110).aspx">AllocateNamedDataSlot</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt7" xml:space="preserve" 
+      data-source="Allocates a named data slot on all threads." data-guid="d2be250058f7bc343b9f1bfa6d16e9d6"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Выделяет именованную область данных 
+      всем потокам.</sentencetext></SPAN>  <SPAN class="sentence" id="mt8" 
+      xml:space="preserve" data-source='For better performance, use fields that are marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="7edaea9e87594cb1f58378a9889ced2b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.begincriticalregion(v=vs.110).aspx">BeginCriticalRegion</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt9" xml:space="preserve" 
+      data-source="Notifies a host that execution is about to enter a region of code in which the effects of a thread abort or unhandled exception might jeopardize other tasks in the application domain." 
+      data-guid="3c48bfa2e0eee5bec076dc189e9b9a54"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Уведомляет 
+      хост, что выполнение близится ко входу к область кода, в которой эффекты 
+      прерывания выполнения или неуправляемого выполнения могут повлиять на 
+      другие задачи в домене приложения.</sentencetext></SPAN>     </SPAN>   
+  </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.beginthreadaffinity(v=vs.110).aspx">BeginThreadAffinity</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt10" xml:space="preserve" 
+      data-source="Notifies a host that managed code is about to execute instructions that depend on the identity of the current physical operating system thread." 
+      data-guid="d43ff7d0d2fef1822867a9942bfcbfad"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Уведомляет 
+      хост, что управляемый код близок к выполнению инструкций, зависящих от 
+      идентификации текущего потока операционной системы.</sentencetext></SPAN>  
+         </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.disablecomobjecteagercleanup(v=vs.110).aspx">DisableComObjectEagerCleanup</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt11" xml:space="preserve" 
+      data-source="Turns off automatic cleanup of runtime callable wrappers (RCW) for the current thread. " 
+      data-guid="234040415817d8bd338f06d0a8f9e45e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Отключает 
+      автоматическую очистку вызываемых оболочек времени выполнения (RCW) для 
+      текущего потока. </sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.endcriticalregion(v=vs.110).aspx">EndCriticalRegion</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt12" xml:space="preserve" 
+      data-source="Notifies a host that execution is about to enter a region of code in which the effects of a thread abort or unhandled exception are limited to the current task." 
+      data-guid="11424f63b2ed2793e352975d4f67ba27"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Уведомляет 
+      хост, что выполнение близится ко входу к область кода, в которой эффекты 
+      прерывания выполнения или неуправляемой ошибки ограничены текущей 
+      задачей.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.endthreadaffinity(v=vs.110).aspx">EndThreadAffinity</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt13" xml:space="preserve" 
+      data-source="Notifies a host that managed code has finished executing instructions that depend on the identity of the current physical operating system thread." 
+      data-guid="7b4ac69f13948e41d896c47c75f925df"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Уведомляет 
+      хост об окончании выполнения кодом инструкций, которые зависят от 
+      идентификатора текущего потока в операционной 
+      системе.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;inherited;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bsc2ak47(v=vs.110).aspx">Equals(Object)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt14" xml:space="preserve" 
+      data-source="Determines whether the specified object is equal to the current object." 
+      data-guid="b238d552a92742e9109fc6dea0b89329"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет, 
+      равен ли заданный объект текущему объекту.</sentencetext></SPAN>     
+      </SPAN> (Унаследовано от <A href="https://msdn.microsoft.com/ru-ru/library/system.object(v=vs.110).aspx">Object</A>.)</TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.freenameddataslot(v=vs.110).aspx">FreeNamedDataSlot</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt15" xml:space="preserve" 
+      data-source="Eliminates the association between a name and a slot, for all threads in the process." 
+      data-guid="df8346bc32ed352f54c566d0ee6a5f0f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Удаляет 
+      связь между названием и областью для всех потоков в 
+      процессе.</sentencetext></SPAN>  <SPAN class="sentence" id="mt16" 
+      xml:space="preserve" data-source='For better performance, use fields that are marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="7edaea9e87594cb1f58378a9889ced2b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getapartmentstate(v=vs.110).aspx">GetApartmentState</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt17" xml:space="preserve" 
+      data-source='Returns an <span><span class="mtpsTagOuterHtml" ><span>ApartmentState</span></span></span> value indicating the apartment state.' 
+      data-guid="0713bd28938724954d047cfec050f791"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      значение типа <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.apartmentstate(v=vs.110).aspx">ApartmentState</A></SPAN>, 
+      показывающее состояние апартамента.</sentencetext></SPAN>     </SPAN>   
+  </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getcompressedstack(v=vs.110).aspx">GetCompressedStack</A> 
+        </TD>
+    <TD><STRONG>Устарело. </STRONG><SPAN><SPAN class="sentence" id="mt18" 
+      xml:space="preserve" data-source='Returns a <span><span class="mtpsTagOuterHtml" ><span>CompressedStack</span></span></span> object that can be used to capture the stack for the current thread. ' 
+      data-guid="bd5c884e6a30dfad7a1f5ce5bd105e14"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      объект <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.compressedstack(v=vs.110).aspx">CompressedStack</A></SPAN>, 
+      который может быть использован для отслеживания стека текущего потока. 
+      </sentencetext></SPAN></SPAN></TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdata(v=vs.110).aspx">GetData</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt19" xml:space="preserve" 
+      data-source="Retrieves the value from the specified slot on the current thread, within the current thread's current domain." 
+      data-guid="47f5db11d82383c77f5e74744492076f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Извлекает 
+      значение из заданной области текущего потока, внутри текущей области 
+      текущего потока.</sentencetext></SPAN>  <SPAN class="sentence" id="mt20" 
+      xml:space="preserve" data-source='For better performance, use fields that are marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="7edaea9e87594cb1f58378a9889ced2b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdomain(v=vs.110).aspx">GetDomain</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt21" xml:space="preserve" 
+      data-source="Returns the current domain in which the current thread is running." 
+      data-guid="d88375543489c03b94610e21196a74fd"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      текущую область, в которой выполняется текущий 
+      поток.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getdomainid(v=vs.110).aspx">GetDomainID</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt22" xml:space="preserve" 
+      data-source="Returns a unique application domain identifier." data-guid="57c55e016f4c31938aa3f1ab5acac647"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Возвращает уникальный идентификатор 
+      домена приложения.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/ttys7f5z(v=vs.110).aspx">GetHashCode</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt23" xml:space="preserve" 
+      data-source="Returns a hash code for the current thread." data-guid="4a371b6757a38ee4c79159453f6f80e2"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Возвращает хэш-код текущего 
+      потока.</sentencetext></SPAN>     </SPAN> (Переопределяет <A href="https://msdn.microsoft.com/ru-ru/library/system.object.gethashcode(v=vs.110).aspx">Object<SPAN 
+      xmlns="">.</SPAN>GetHashCode<SPAN xmlns="">()</SPAN></A>.)<SPAN><BR><BR>В 
+      XNA Framework&nbsp;3.0этот член наследуется от <A href="https://msdn.microsoft.com/ru-ru/library/system.object(v=vs.110).aspx">Object</A><SPAN 
+      xmlns="">.</SPAN><A href="https://msdn.microsoft.com/ru-ru/library/system.object.gethashcode(v=vs.110).aspx">GetHashCode<SPAN 
+      xmlns="">()</SPAN></A>.</SPAN><SPAN><BR><BR>В Переносимая библиотека 
+      классов&nbsp;Переносимая библиотека классовэтот член наследуется от <A 
+      href="https://msdn.microsoft.com/ru-ru/library/system.object(v=vs.110).aspx">Object</A><SPAN 
+      xmlns="">.</SPAN><A href="https://msdn.microsoft.com/ru-ru/library/system.object.gethashcode(v=vs.110).aspx">GetHashCode<SPAN 
+      xmlns="">()</SPAN></A>.</SPAN></TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.getnameddataslot(v=vs.110).aspx">GetNamedDataSlot</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt24" xml:space="preserve" 
+      data-source="Looks up a named data slot." data-guid="60cc4dfbf2437bf4b3c9935eda57e323"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Ищет именованную область 
+      данных.</sentencetext></SPAN>  <SPAN class="sentence" id="mt25" xml:space="preserve" 
+      data-source='For better performance, use fields that are marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="7edaea9e87594cb1f58378a9889ced2b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;inherited;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.object.gettype(v=vs.110).aspx">GetType</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt26" xml:space="preserve" 
+      data-source='Gets the <span><span class="mtpsTagOuterHtml" ><span>Type</span></span></span> of the current instance.' 
+      data-guid="b1daf9b8691eb2e7c0f8b0ae88475e81"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      объект <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.type(v=vs.110).aspx">Type</A></SPAN> 
+      для текущего экземпляра.</sentencetext></SPAN>     </SPAN> (Унаследовано 
+      от <A href="https://msdn.microsoft.com/ru-ru/library/system.object(v=vs.110).aspx">Object</A>.)</TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.interrupt(v=vs.110).aspx">Interrupt</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt27" xml:space="preserve" 
+      data-source='Interrupts a thread that is in the <span><span class="input">WaitSleepJoin</span></span> thread state.' 
+      data-guid="d367e56c477db8d72328bff434fa39ec"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Прерывает 
+      работу потока, находящегося в состоянии <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+      class="input">WaitSleepJoin</SPAN></SPAN>.</sentencetext></SPAN>     
+      </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/95hbf2ta(v=vs.110).aspx">Join<SPAN 
+      xmlns="">()</SPAN></A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt28" xml:space="preserve" 
+      data-source="Blocks the calling thread until a thread terminates, while continuing to perform standard COM and SendMessage pumping." 
+      data-guid="cd69e1e9d40372703ddc110054560a08"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Блокирует вызывающий поток до 
+      завершения потока, продолжая обрабатывать стандартные сообщения COM и 
+      SendMessage.</sentencetext> </sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/6b1kkss0(v=vs.110).aspx">Join(Int32)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt29" xml:space="preserve" 
+      data-source="Blocks the calling thread until a thread terminates or the specified time elapses, while continuing to perform standard COM and SendMessage pumping." 
+      data-guid="134885649a1d795e9559bd0fdb116d18"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Блокирует вызывающий поток до 
+      завершения потока или истечения указанного времени, продолжая обрабатывать 
+      стандартные сообщения COM и SendMessage.</sentencetext> 
+      </sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/23f7b1ct(v=vs.110).aspx">Join(TimeSpan)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt30" xml:space="preserve" 
+      data-source="Blocks the calling thread until a thread terminates or the specified time elapses, while continuing to perform standard COM and SendMessage pumping." 
+      data-guid="134885649a1d795e9559bd0fdb116d18"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Блокирует вызывающий поток до 
+      завершения потока или истечения указанного времени, продолжая обрабатывать 
+      стандартные сообщения COM и SendMessage.</sentencetext> 
+      </sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.memorybarrier(v=vs.110).aspx">MemoryBarrier</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt31" xml:space="preserve" 
+      data-source='Synchronizes memory access as follows: The processor executing the current thread cannot reorder instructions in such a way that memory accesses prior to the call to <span><span class="mtpsTagOuterHtml" ><span>MemoryBarrier</span></span></span> execute after memory accesses that follow the call to <span><span class="mtpsTagOuterHtml" ><span>MemoryBarrier</span></span></span>.' 
+      data-guid="314d05318218cc3535967474a99376a7"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Синхронизирует доступ к памяти 
+      следующим образом: процессор, выполняющий текущий поток, не имеет права 
+      переупорядочивать инструкции таким образом, что обращение к памяти перед 
+      вызовом <SPAN><SPAN>MemoryBarrier</SPAN></SPAN> будет выполняться после 
+      обращения к памяти за вызовом 
+      <SPAN><SPAN>MemoryBarrier</SPAN></SPAN>.</sentencetext> 
+      </sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.resetabort(v=vs.110).aspx">ResetAbort</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt32" xml:space="preserve" 
+      data-source='Cancels an <span><span class="mtpsTagOuterHtml" ><span>Abort</span></span></span> requested for the current thread.' 
+      data-guid="7d445830659c7388119a62bf53c46f79"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Отменяет 
+      метод <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.abort(v=vs.110).aspx">Abort</A></SPAN>, 
+      запрошенный для текущего потока.</sentencetext></SPAN>     </SPAN>   
+</TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.resume(v=vs.110).aspx">Resume</A> 
+        </TD>
+    <TD><STRONG>Устарело. </STRONG><SPAN><SPAN class="sentence" id="mt33" 
+      xml:space="preserve" data-source="Resumes a thread that has been suspended." 
+      data-guid="f83c479d0ba8be51c15ae69a5ee416bb"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возобновляет 
+      приостановленную работу потока.</sentencetext></SPAN></SPAN></TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setapartmentstate(v=vs.110).aspx">SetApartmentState</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt34" xml:space="preserve" 
+      data-source="Sets the apartment state of a thread before it is started." 
+      data-guid="04499652af387860712d194c8ccb86de"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задает 
+      состояние апартамента потока до его запуска.</sentencetext></SPAN>     
+      </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setcompressedstack(v=vs.110).aspx">SetCompressedStack</A> 
+        </TD>
+    <TD><STRONG>Устарело. </STRONG><SPAN><SPAN class="sentence" id="mt35" 
+      xml:space="preserve" data-source='Applies a captured <span><span class="mtpsTagOuterHtml" ><span>CompressedStack</span></span></span> to the current thread. ' 
+      data-guid="945a162f8d49da0ab48d67fab090d351"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Применяет 
+      записанное значение <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.compressedstack(v=vs.110).aspx">CompressedStack</A></SPAN> 
+      к текущему потоку. </sentencetext></SPAN></SPAN></TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setdata(v=vs.110).aspx">SetData</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt36" xml:space="preserve" 
+      data-source="Sets the data in the specified slot on the currently running thread, for that thread's current domain." 
+      data-guid="e6c2854df92d39efc2b5b826e6773c68"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задает 
+      данные в указанной области для текущей области потока, выполняющегося в 
+      данный момент.</sentencetext></SPAN>  <SPAN class="sentence" id="mt37" 
+      xml:space="preserve" data-source='For better performance, use fields marked with the <span><span class="mtpsTagOuterHtml" ><span>ThreadStaticAttribute</span></span></span> attribute instead.' 
+      data-guid="62475ffb3afd3a5ba727f01e427e91bf"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+      улучшения производительности используйте поля, отмеченные атрибутом <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threadstaticattribute(v=vs.110).aspx">ThreadStaticAttribute</A></SPAN>.</sentencetext></SPAN> 
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;notNetfw;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.setprocessoraffinity(v=vs.110).aspx">SetProcessorAffinity</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt38" xml:space="preserve" 
+      data-source="In the .NET Compact Framework for Xbox 360, sets the processor affinity for a managed thread." 
+      data-guid="be75756021d26b1325fe512f1d39fa71"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+      .NET Compact Framework для Xbox 360 задает сходство процессоров для 
+      управляемого потока.</sentencetext></SPAN>  <SPAN class="sentence" id="mt39" 
+      xml:space="preserve" data-source="Processor affinity determines the processors on which a thread runs." 
+      data-guid="1b0e2d392de393ed7236effb2ae84ad6"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Сходство 
+      процессоров определяет процессоры, на которых будет выполнен 
+      поток.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/d00bd51t(v=vs.110).aspx">Sleep(Int32)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt40" xml:space="preserve" 
+      data-source="Suspends the current thread for a specified time." data-guid="2ee90abe8dbccad1b2025f6d98163f35"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Приостанавливает работу текущего 
+      потока на заданное время.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/274eh01d(v=vs.110).aspx">Sleep(TimeSpan)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt41" xml:space="preserve" 
+      data-source="Blocks the current thread for a specified time." data-guid="bc846222afeb886eeb947487f00e7cc8"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Блокирует текущий поток на заданное 
+      время.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.spinwait(v=vs.110).aspx">SpinWait</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt42" xml:space="preserve" 
+      data-source='Causes a thread to wait the number of times defined by the <span class="parameter">iterations</span> parameter.' 
+      data-guid="f869a5001065caa9b103934a9dba1d87"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вынуждает 
+      поток выполнять ожидание столько раз, сколько определено параметром <SPAN 
+      class="parameter" 
+      xmlns="http://www.w3.org/1999/xhtml">iterations</SPAN>.</sentencetext></SPAN> 
+          </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/a9fyxz7d(v=vs.110).aspx">Start<SPAN 
+      xmlns="">()</SPAN></A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt43" xml:space="preserve" 
+      data-source='Causes the operating system to change the state of the current instance to <span><span class="mtpsTagOuterHtml" ><span>ThreadState<span class="mtpsTagOuterHtml"  xmlns=""><span>.</span></span>Running</span></span></span>.' 
+      data-guid="b388b1c9dca00410731fba48547934a1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вынуждает 
+      операционную систему изменить состояние текущего экземпляра на <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.threadstate(v=vs.110).aspx">ThreadState<SPAN 
+      xmlns="">.</SPAN>Running</A></SPAN>.</sentencetext></SPAN>     </SPAN>   
+    </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/6x4c42hc(v=vs.110).aspx">Start(Object)</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt44" xml:space="preserve" 
+      data-source='Causes the operating system to change the state of the current instance to <span><span class="mtpsTagOuterHtml" ><span>ThreadState<span class="mtpsTagOuterHtml"  xmlns=""><span>.</span></span>Running</span></span></span>, and optionally supplies an object containing data to be used by the method the thread executes.' 
+      data-guid="4d8c4fd07777811297496bd6ad27a1db"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Заставляет 
+      операционную систему изменить состояние текущего экземпляра на <SPAN 
+      xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.threadstate(v=vs.110).aspx">ThreadState<SPAN 
+      xmlns="">.</SPAN>Running</A></SPAN>, а также (необязательно) передает 
+      объект с данными, используемыми методом в потоке.</sentencetext></SPAN>    
+       </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.suspend(v=vs.110).aspx">Suspend</A> 
+        </TD>
+    <TD><STRONG>Устарело. </STRONG><SPAN><SPAN class="sentence" id="mt45" 
+      xml:space="preserve" data-source="Either suspends the thread, or if the thread is already suspended, has no effect." 
+      data-guid="9f980dd10cef2930d6d7b11db6f005df"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Приостанавливает 
+      работу потока; если работа потока уже приостановлена, не оказывает 
+      влияния.</sentencetext></SPAN></SPAN></TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;inherited;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.object.tostring(v=vs.110).aspx">ToString</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt46" xml:space="preserve" 
+      data-source="Returns a string that represents the current object." 
+      data-guid="119f98c82549606a4a183fb7bc402104"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      строку, представляющую текущий объект.</sentencetext></SPAN>     </SPAN> 
+      (Унаследовано от <A href="https://msdn.microsoft.com/ru-ru/library/system.object(v=vs.110).aspx">Object</A>.)</TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.trysetapartmentstate(v=vs.110).aspx">TrySetApartmentState</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt47" xml:space="preserve" 
+      data-source="Sets the apartment state of a thread before it is started." 
+      data-guid="04499652af387860712d194c8ccb86de"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задает 
+      состояние апартамента потока до его запуска.</sentencetext></SPAN>     
+      </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/zdxzk5cw(v=vs.110).aspx">VolatileRead(Byte<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt48" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt49" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/8se42ct9(v=vs.110).aspx">VolatileRead(Double<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt50" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt51" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/22d9yt18(v=vs.110).aspx">VolatileRead(Int16<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt52" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt53" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bah54t54(v=vs.110).aspx">VolatileRead(Int32<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt54" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt55" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/yd8d2f6z(v=vs.110).aspx">VolatileRead(Int64<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt56" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt57" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/1e1saawa(v=vs.110).aspx">VolatileRead(IntPtr<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt58" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt59" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/ex9kh13f(v=vs.110).aspx">VolatileRead(Object<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt60" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt61" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/8f56734a(v=vs.110).aspx">VolatileRead(SByte<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt62" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt63" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/accsh5f8(v=vs.110).aspx">VolatileRead(Single<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt64" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt65" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/135y7c4w(v=vs.110).aspx">VolatileRead(UInt16<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt66" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt67" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/ktd6x1x6(v=vs.110).aspx">VolatileRead(UInt32<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt68" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt69" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/cdcxzhb7(v=vs.110).aspx">VolatileRead(UInt64<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt70" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt71" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/hek4dy7b(v=vs.110).aspx">VolatileRead(UIntPtr<SPAN 
+      xmlns=""></SPAN>)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt72" xml:space="preserve" 
+      data-source="Reads the value of a field." data-guid="2824b9989d286618c4c9b1aab9226bb5"><sentencetext 
+      xmlns="http://www.w3.org/1999/xhtml">Считывает значение 
+      поля.</sentencetext></SPAN>  <SPAN class="sentence" id="mt73" xml:space="preserve" 
+      data-source="The value is the latest written by any processor in a computer, regardless of the number of processors or the state of processor cache." 
+      data-guid="4f750c216a549b0f370b39165dca6c6e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+      значение является последним, записанным каким-либо из процессоров 
+      компьютера, независимо от количества процессоров и от состояния кэш-буфера 
+      процессоров.</sentencetext></SPAN>  </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/9ww2b1f4(v=vs.110).aspx">VolatileWrite(Byte<SPAN 
+      xmlns=""></SPAN>, Byte)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt74" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/0ek0fka5(v=vs.110).aspx">VolatileWrite(Double<SPAN 
+      xmlns=""></SPAN>, Double)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt75" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/0hyb6w3t(v=vs.110).aspx">VolatileWrite(Int16<SPAN 
+      xmlns=""></SPAN>, Int16)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt76" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/f72aa8st(v=vs.110).aspx">VolatileWrite(Int32<SPAN 
+      xmlns=""></SPAN>, Int32)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt77" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/ce910s8t(v=vs.110).aspx">VolatileWrite(Int64<SPAN 
+      xmlns=""></SPAN>, Int64)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt78" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/a1e3ws4y(v=vs.110).aspx">VolatileWrite(IntPtr<SPAN 
+      xmlns=""></SPAN>, IntPtr)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt79" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/3d36a4hx(v=vs.110).aspx">VolatileWrite(Object<SPAN 
+      xmlns=""></SPAN>, Object)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt80" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/z8591cww(v=vs.110).aspx">VolatileWrite(SByte<SPAN 
+      xmlns=""></SPAN>, SByte)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt81" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/8tdwws49(v=vs.110).aspx">VolatileWrite(Single<SPAN 
+      xmlns=""></SPAN>, Single)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt82" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/kd6kt0h9(v=vs.110).aspx">VolatileWrite(UInt16<SPAN 
+      xmlns=""></SPAN>, UInt16)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt83" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/th4b7fw3(v=vs.110).aspx">VolatileWrite(UInt32<SPAN 
+      xmlns=""></SPAN>, UInt32)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt84" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/7kxc5267(v=vs.110).aspx">VolatileWrite(UInt64<SPAN 
+      xmlns=""></SPAN>, UInt64)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt85" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/wzeaz499(v=vs.110).aspx">VolatileWrite(UIntPtr<SPAN 
+      xmlns=""></SPAN>, UIntPtr)</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt86" xml:space="preserve" 
+      data-source="Writes a value to a field immediately, so that the value is visible to all processors in the computer." 
+      data-guid="becc64c573e85d6aebb413e85a01501f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Записывает 
+      значение непосредственно в поле, так что оно становится видимым для всех 
+      процессоров компьютера.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="public;static;declared;">
+    <TD><IMG title="Открытый метод" class="cl_IC91302" id="pubmethod" alt="Открытый метод" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+            <IMG title="Статический член" class="cl_IC130242" id="static" alt="Статический член" 
+      src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" xmlns="">   
+    </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread.yield(v=vs.110).aspx">Yield</A> 
+        </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt87" xml:space="preserve" 
+      data-source="Causes the calling thread to yield execution to another thread that is ready to run on the current processor." 
+      data-guid="2979b2d01681a36a0d8bdb191bef6bba"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Заставляет 
+      вызвавший поток передать выполнение другому потоку, готовому к 
+      использованию на текущем процессоре.</sentencetext></SPAN>  <SPAN class="sentence" 
+      id="mt88" xml:space="preserve" data-source="The operating system selects the thread to yield to." 
+      data-guid="739f8630c84f5e9f9ab9e08edd412240"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Операционная 
+      система выбирает, какому потоку передается 
+      выполнение.</sentencetext></SPAN>  </SPAN>   </TD></TR></TBODY></TABLE><A href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.110).aspx#mainBody">В 
+начало страницы</A>         </DIV></DIV>
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">Явные реализации интерфейса</SPAN></A>          
+   
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A 
+id="ExplicitInterfaceImplementationTableToggle"></A>           
+<TABLE class="members" id="memberList1">
+  <TBODY>
+  <TR>
+    <TH class="iconColumn">&nbsp;            </TH>
+    <TH class="nameColumn">Имя</TH>
+    <TH class="descriptionColumn">Описание</TH></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="explicit;declared;">
+    <TD><IMG title="Явная реализация интерфейса" class="cl_IC141795" id="pubinterface" 
+      alt="Явная реализация интерфейса" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">         <IMG title="Закрытый метод" class="cl_IC6709" id="privmethod" 
+      alt="Закрытый метод" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">   </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bb355916(v=vs.110).aspx">_Thread<SPAN 
+      xmlns="">.</SPAN>GetIDsOfNames</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt89" xml:space="preserve" 
+      data-source="Maps a set of names to a corresponding set of dispatch identifiers." 
+      data-guid="da4cfd7186d873df7217ee0b090a51af"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Сопоставляет 
+      набор имен соответствующему набору идентификаторов 
+      диспетчеризации.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="explicit;declared;">
+    <TD><IMG title="Явная реализация интерфейса" class="cl_IC141795" id="pubinterface" 
+      alt="Явная реализация интерфейса" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">         <IMG title="Закрытый метод" class="cl_IC6709" id="privmethod" 
+      alt="Закрытый метод" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">   </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bb292864(v=vs.110).aspx">_Thread<SPAN 
+      xmlns="">.</SPAN>GetTypeInfo</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt90" xml:space="preserve" 
+      data-source="Retrieves the type information for an object, which can then be used to get the type information for an interface." 
+      data-guid="f4b3b9e7e9e434b8c8b042598c787b95"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      сведения о типе объекта, которые затем могут использоваться для получения 
+      сведений о типе интерфейса.</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="explicit;declared;">
+    <TD><IMG title="Явная реализация интерфейса" class="cl_IC141795" id="pubinterface" 
+      alt="Явная реализация интерфейса" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">         <IMG title="Закрытый метод" class="cl_IC6709" id="privmethod" 
+      alt="Закрытый метод" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">   </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bb156408(v=vs.110).aspx">_Thread<SPAN 
+      xmlns="">.</SPAN>GetTypeInfoCount</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt91" xml:space="preserve" 
+      data-source="Retrieves the number of type information interfaces that an object provides (either 0 or 1)." 
+      data-guid="b4d7a1c141d5f7770eb84c0c0de598b5"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращает 
+      количество предоставляемых объектом интерфейсов для доступа к сведениям о 
+      типе (0 или 1).</sentencetext></SPAN>     </SPAN>   </TD></TR>
+  <TR xmlns="http://www.w3.org/1999/xhtml" data="explicit;declared;">
+    <TD><IMG title="Явная реализация интерфейса" class="cl_IC141795" id="pubinterface" 
+      alt="Явная реализация интерфейса" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">         <IMG title="Закрытый метод" class="cl_IC6709" id="privmethod" 
+      alt="Закрытый метод" src="Thread%20-%20методы%20(System_Threading)_files/clear.gif" 
+      xmlns="">   </TD>
+    <TD><A href="https://msdn.microsoft.com/ru-ru/library/bb338590(v=vs.110).aspx">_Thread<SPAN 
+      xmlns="">.</SPAN>Invoke</A>   </TD>
+    <TD><SPAN><SPAN class="sentence" id="mt92" xml:space="preserve" 
+      data-source="Provides access to properties and methods exposed by an object." 
+      data-guid="1a751785f2a85874f5b6c731d6d0977c"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет 
+      доступ к открытым свойствам и методам объекта.</sentencetext></SPAN>     
+      </SPAN>   </TD></TR></TBODY></TABLE><A href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.110).aspx#mainBody">В 
+начало страницы</A>         </DIV></DIV>
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">См. также</SPAN></A>             
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A id="seeAlsoToggle"></A>           
+<H4 class="subHeading">Ссылки</H4>
+<DIV class="seeAlsoStyle"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading.thread(v=vs.110).aspx">Thread 
+Класс</A>           </DIV>
+<DIV class="seeAlsoStyle"><A href="https://msdn.microsoft.com/ru-ru/library/system.threading(v=vs.110).aspx">System.Threading 
+- пространство имен</A>           </DIV></DIV></DIV></DIV></DIV></DIV>
+<SCRIPT id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</SCRIPT>
+ 
+<DIV class="communityContentContainer">
+<DIV class="communityContentHeader" id="CommunityContentHeader">
+<DIV class="communityContentHeaderTitleContainer">
+<H2>Добавления сообщества</H2><A class="communityContentAddLink" href="https://msdn.microsoft.com/ru-ru/library/community/add/System.Threading.Thread_methods(v=vs.110).aspx"><SPAN 
+title="Add («Добавить»)" class="communityContentAddButton">                      
+  ДОБАВИТЬ                     </SPAN>                 </A></DIV>
+<DIV style="clear: both;"></DIV></DIV>
+<DIV id="CommunityComments" data-url="/ru-ru/library/community/comments/System.Threading.Thread_methods(v=vs.110).aspx"></DIV></DIV>
+<DIV class="libraryMemberFilter">
+<DIV class="filterContainer"><SPAN>Показ:</SPAN>         <LABEL><INPUT class="libraryFilterInherited" 
+type="checkbox" checked="checked" value="Inherit">Унаследовано         </LABEL>  
+       <LABEL><INPUT class="libraryFilterProtected" type="checkbox" checked="checked" 
+value="Protected">Защищен         </LABEL>     </DIV></DIV><INPUT id="libraryMemberFilterEmptyWarning" type="hidden" value="Для текущих настроек фильтра нет доступных членов."> 
+ </DIV></DIV>
+<DIV 
+class="clear"></DIV><INPUT name="__RequestVerificationToken" type="hidden" value="o3UHXvVJIRhkNFcF7_H_j95omwS27EMdyloknQu0QKXaCeJuU1YAqEpGELWmDDeVF0E0zs99SGZ10XPjS5g7AJtvnWg1"> 
+<INPUT id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/add/System.Threading.Thread_methods(v=vs.110).aspx"> 
+<INPUT id="isTopicRated" type="hidden" value="false">             <LINK rel="stylesheet" 
+type="text/css">         
+<DIV id="ux-footer" dir="ltr">
+<DIV class="librarySock" id="footerSock">
+<DIV id="footerSockInner"><A name="feedback"></A> 
+<DIV class="rating">
+<DIV id="ratingSection1">
+<DIV class="title">Была ли эта страница полезной?         </DIV>
+<DIV class="description">Ваш отзыв об этом контенте важен для нас.<BR>Расскажите 
+нам о том, что вы думаете.         </DIV>
+<DIV class="buttons"><BUTTON class="button" id="ratingYes">Да</BUTTON>           
+  <BUTTON class="button" id="ratingNo">Нет</BUTTON>         </DIV><INPUT id="ratingValue" type="hidden"> 
+    </DIV>
+<DIV id="ratingSection2">
+<DIV class="title">Дополнительный отзыв?         
+</DIV><TEXTAREA id="ratingText" maxlength="1500" rows="6" cols="20"></TEXTAREA>  
+       
+<DIV class="counter right"><SPAN id="feedbackTextCounter">1500</SPAN> символов 
+осталось         </DIV>
+<DIV class="buttons left"><BUTTON class="button" 
+id="ratingSubmit">Отправить</BUTTON>             <BUTTON class="button" id="ratingSkipThis">Пропустить</BUTTON> 
+        </DIV></DIV>
+<DIV id="ratingSection3">
+<DIV class="title">Спасибо!         </DIV>
+<DIV class="description">Благодарим за отзыв. Ваше мнение очень важно для нас.   
+      </DIV></DIV>
+<DIV id="contentFeedbackQAContainer" style="display: none;"></DIV></DIV>
+<DIV class="clear"></DIV></DIV></DIV><FOOTER class="top">
+<DIV id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="LeftLinks">
+<DIV class="linkList">
+<DIV class="linkListTitle">Центры разработки</DIV>
+<UL class="links">
+  <LI><A class="windowsBlue" id="LeftLinks_2148_1" href="https://dev.windows.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Windows</A>       </LI>
+  <LI><A class="office" id="LeftLinks_2148_3" href="http://dev.office.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Office</A>       </LI>
+  <LI><A class="visualStudio" id="LeftLinks_2148_4" href="https://msdn.microsoft.com/vstudio" 
+  xmlns="http://www.w3.org/1999/xhtml">Visual Studio</A>       </LI>
+  <LI><A title="Nokia" class="nokia" id="LeftLinks_2148_15" href="http://developer.nokia.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Nokia</A>       </LI>
+  <LI><A id="LeftLinks_2148_12" href="http://azure.microsoft.com/ru-ru/documentation/" 
+  target="_blank" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</A>       
+  </LI>
+  <LI><A id="LeftLinks_2148_5" href="https://msdn.microsoft.com/aa937802" xmlns="http://www.w3.org/1999/xhtml">Дополнительно...</A> 
+        </LI></UL></DIV></DIV>
+<DIV id="rightLinks">
+<DIV id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks1">
+<DIV class="linkList">
+<DIV class="linkListTitle">Обучение</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks1_2151_4" href="http://www.microsoftvirtualacademy.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</A>       </LI>
+  <LI><A id="CenterLinks1_2151_5" href="http://channel9.msdn.com/Browse/Series?lang=ru" 
+  xmlns="http://www.w3.org/1999/xhtml">Канал Channel 9</A>       </LI>
+  <LI><A id="CenterLinks1_2151_6" href="http://www.techdays.ru/" xmlns="http://www.w3.org/1999/xhtml">TechDays</A> 
+        </LI>
+  <LI><A id="CenterLinks1_2151_7" href="https://msdn.microsoft.com/ru-ru/magazine/default.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Журнал MSDN</A>       
+</LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks2">
+<DIV class="linkList">
+<DIV class="linkListTitle">Сообщество</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks2_2151_17" href="http://blogs.msdn.com/b/rudevnews/" 
+  xmlns="http://www.w3.org/1999/xhtml">Новости</A>       </LI>
+  <LI><A id="CenterLinks2_2151_8" href="https://social.msdn.microsoft.com/forums/ru-ru/home" 
+  xmlns="http://www.w3.org/1999/xhtml">Форумы</A>       </LI>
+  <LI><A id="CenterLinks2_2151_9" href="https://msdn.microsoft.com/ru-ru/jj129558" 
+  xmlns="http://www.w3.org/1999/xhtml">Блоги</A>       </LI>
+  <LI><A id="CenterLinks2_2151_10" href="http://www.codeplex.com/" xmlns="http://www.w3.org/1999/xhtml">Codeplex</A> 
+        </LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks3">
+<DIV class="linkList">
+<DIV class="linkListTitle">Свяжитесь с нами</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks3_2151_11" href="https://msdn.microsoft.com/hh361695" 
+  xmlns="http://www.w3.org/1999/xhtml">Самостоятельно</A>       
+</LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks4">
+<DIV class="linkList">
+<DIV class="linkListTitle">Программы</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks4_2151_13" href="https://www.microsoft.com/ru/ru/ms-start/default.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">BizSpark (для стартапов)</A>       </LI>
+  <LI><A id="CenterLinks4_2151_14" href="https://www.dreamspark.com/" xmlns="http://www.w3.org/1999/xhtml">DreamSpark 
+  (для студентов и вузов)</A>       </LI>
+  <LI><A id="CenterLinks4_2151_17" href="http://www.imaginecup.com/" xmlns="http://www.w3.org/1999/xhtml">Imagine 
+  Cup</A>       </LI></UL></DIV></DIV></DIV></FOOTER><FOOTER class="bottom"><SPAN 
+class="localeContainer">
+<FORM class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/ru-ru/selectlocale-dmc"><INPUT name="fromPage" type="hidden" value="https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fSystem.Threading.Thread_methods(v%3dvs.110).aspx"> 
+        <A title="Измените язык" onclick="$('#selectLocaleForm').submit();return false;" 
+href="https://msdn.microsoft.com/ru-ru/library/System.Threading.Thread_methods(v=vs.110).aspx#">Россия 
+(Pусский)</A>     </FORM></SPAN>                     
+<DIV id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="BottomLinks">
+<DIV class="linkList">
+<UL class="links horizontal">
+  <LI><A id="BottomLinks_2148_7" href="https://msdn.microsoft.com/newsletter.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Информационный бюллетень</A>       </LI>
+  <LI><A id="BottomLinks_2148_8" href="https://msdn.microsoft.com/dn529288" 
+  xmlns="http://www.w3.org/1999/xhtml">Конфиденциальность и файлы cookie</A>     
+    </LI>
+  <LI><A id="BottomLinks_2148_9" href="https://msdn.microsoft.com/cc300389" 
+  xmlns="http://www.w3.org/1999/xhtml">Условия использования</A>       </LI>
+  <LI><A id="BottomLinks_2148_10" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Товарные знаки</A>       
+</LI></UL></DIV></DIV><SPAN class="logoLegal"><SPAN class="logo"></SPAN>         
+        <SPAN class="copyright">© 2015 Microsoft</SPAN>             </SPAN>      
+   </FOOTER></DIV>
+<DIV class="footerPrintView">
+<DIV class="footerCopyrightPrintView">© 2015 Microsoft</DIV></DIV><INPUT id="tocPaddingPerLevel" type="hidden" value="17"> 
+            <INPUT id="MtpsDevice" type="hidden" value="Default"> <!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]--> 
+                                                            
+<NOSCRIPT>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" 
+src="https://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" 
+/&gt;&lt;/div&gt;</NOSCRIPT> <NOSCRIPT>  &lt;a href="http://www.omniture.com" 
+title="Web Analytics"&gt;    &lt;img 
+src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" 
+width="1" border="0" alt="" /&gt;  &lt;/a&gt; </NOSCRIPT>             
+<DIV 
+id="globalRequestVerification"><INPUT name="__RequestVerificationToken" type="hidden" value="CI8cceqaxh-82nVHwTvs89Ba4QNReGEeG4tPWQjyymbA74JOveIgBG-a7ZKZxybnUy5sO9cXBpNw5f56eCefTDk-H4M1"> 
+</DIV></DIV>
+<SCRIPT class="mtps-injected" type="text/javascript">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"xap\": \"https://msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/ru-ru/library/cdbcd206(l=ru-ru,v=vs.110).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027ru-ru\u0027;\n  var wtsp = \u0027msdnlib_dotnet\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"00fef190-216b-446e-a283-ebc68e98d235\";\n/**/" },
+	{ txt: "//\n\n            window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n            //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,1:Rating,2:Footer,0:Topic,3:webtrendsscript,4:omni_rsid_MSDN,5:WEDCS,0:AppInsightsPerf,6:Toc,1:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Global/Content/Webtrends/resources:3,/Areas/Global/Content/Omniture/resources/MSDN:4,/Areas/Library/Themes/Base/Content:5,/Areas/Library/Content:6\u0026amp;hashKey=22D434C583B5357E494BA7A31948E94D\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=ru-ru\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Поиск в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:PrintExportButton,1:NavigationResize;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1\u0026amp;hashKey=72684789A0F98A77C33C1AC3470E9ECF\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "//\n    MTPS = window.MTPS || {};\n    MTPS.Translation = window.MTPS.Translation || {};\n\n    MTPS.Translation.TranslationType =  0;\n    \n    \n        \n        MTPS.Translation.EditorLink = {\n            includeEditor : 0,\n            editLink: \"https://msdn.microsoft.com/ru-ru/library/translation/edit/System.Threading.Thread_methods(v=vs.110).aspx\",\n            editLinkText: \"Предложите более удачный вариант перевода\"\n        };\n        \n    //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery.popup,0:Translator;/Areas/Library/Content:0\u0026amp;hashKey=3B656D983EF24EC5D2C54AB67215CFD7\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Развернуть\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свернуть\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Развернуть все\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свернуть все\u0027;" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=EB298C838117D9E7008C7CC11E7732E3\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</SCRIPT>
+ </BODY></HTML>

@@ -1,0 +1,3725 @@
+30.04.2015 9:29:52
+30.04.2015 9:29:52
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id COLORCSS;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id SCHMCSS;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id SCHMJS0;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id SCHMJS;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id WaitMes;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id DivGlobalID;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id FORSCREEN;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id PopupMessID;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id FORMHEADER;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ND;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id xslViewcFrom;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id EDITFORM;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s145;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id selectMain;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+Пометить / Снять пометку со всех счетов
+		 id AllAcc;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id dACC;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id Acc0;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id Acc1;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id PType;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s20;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s20;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s85;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id btn1;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s20;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s20;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s85;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id btn2;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id REAP;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id noStm;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id s145;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id xDefForm;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id xForm;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ERRORTD;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id xslFormTarget;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id xData;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id cData;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id fData;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id DEBUG;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id NEWSCRIPTS;
+
+
+
+		DomDocument elem of RT_IC_MAINW title
+
+		 id ;
+
+
+Frame form title MForm id ;
+		Form element name	 		Id ND
+		Form element OuterHtml
+<PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+
+		Form element OuterText
+SID		
+T			
+Account	;
+
+
+		Form element InnerHtml	SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+
+		Form element InnerText
+SID		
+T			
+Account	Form element syle;
+
+
+
+		Form element name	SID 		Id 
+		Form element OuterHtml
+<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	T 		Id 
+		Form element OuterHtml
+<INPUT value=RT_2IMPORT.expstm name=T>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	Acc 		Id 
+		Form element OuterHtml
+<INPUT name=Acc>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id xslViewcFrom
+		Form element OuterHtml
+
+<DIV id=xslViewcFrom><TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV>
+
+		Form element OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+		Form element InnerHtml	<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM>
+
+		Form element InnerText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт Form element syle;
+
+
+
+		Form element name	 		Id EDITFORM
+		Form element OuterHtml
+
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0><COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE>
+
+		Form element OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+		Form element InnerHtml	<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY>
+
+		Form element InnerText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт Form element syleMARGIN-TOP: 10px; TABLE-LAYOUT: fixed;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<COLGROUP><COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<COL style="WIDTH: 250px">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syleWIDTH: 250px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+</COL>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<COL style="WIDTH: 190px">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syleWIDTH: 190px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+</COL>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TBODY><TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR>
+
+		Form element OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+		Form element InnerHtml	<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR>
+
+		Form element InnerText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TR><TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+
+		Form element OuterText
+Выберите организацию: ООО "АМЕГА";
+
+
+		Form element InnerHtml	<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD>
+
+		Form element InnerText
+Выберите организацию: ООО "АМЕГА"Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD>
+
+		Form element OuterText
+Выберите организацию: ООО "АМЕГА";
+
+
+		Form element InnerHtml	<SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT>
+
+		Form element InnerText
+Выберите организацию: ООО "АМЕГА"Form element syle;
+
+
+
+		Form element name	 		Id s145
+		Form element OuterHtml
+<SPAN id=s145>Выберите организацию:&nbsp;</SPAN>
+
+		Form element OuterText
+Выберите организацию: ;
+
+
+		Form element InnerHtml	Выберите организацию:&nbsp;
+
+		Form element InnerText
+Выберите организацию: Form element syle;
+
+
+
+		Form element name	 		Id selectMain
+		Form element OuterHtml
+<SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT>
+
+		Form element OuterText
+ООО "АМЕГА";
+
+
+		Form element InnerHtml	<OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION>
+
+		Form element InnerText
+ООО "АМЕГА"Form element syleWIDTH: 285px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION>
+
+		Form element OuterText
+ООО "АМЕГА";
+
+
+		Form element InnerHtml	ООО "АМЕГА"
+
+		Form element InnerText
+ООО "АМЕГА"Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TR><TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+
+		Form element OuterText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+		Form element InnerHtml	<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD>
+
+		Form element InnerText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+
+		Form element OuterText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769;
+
+
+		Form element InnerHtml	<SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV>
+
+		Form element InnerText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN>Выберите счета:</SPAN>
+
+		Form element OuterText
+Выберите счета:;
+
+
+		Form element InnerHtml	Выберите счета:
+
+		Form element InnerText
+Выберите счета:Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN style="WIDTH: 2px">&nbsp;</SPAN>
+
+		Form element OuterText
+ ;
+
+
+		Form element InnerHtml	&nbsp;
+
+		Form element InnerText
+ Form element syleWIDTH: 2px;
+
+
+
+		Form element name	 		Id AllAcc
+		Form element OuterHtml
+<INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL>
+
+		Form element OuterText
+ Все счета;
+
+
+		Form element InnerHtml	<SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN>
+
+		Form element InnerText
+ Все счетаForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN>
+
+		Form element OuterText
+ Все счета;
+
+
+		Form element InnerHtml	&nbsp;Все счета
+
+		Form element InnerText
+ Все счетаForm element syleWIDTH: 160px;
+
+
+
+		Form element name	 		Id dACC
+		Form element OuterHtml
+
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV>
+
+		Form element OuterText
+ 40702.810.5.00000203769
+ 91317.810.4.00000103769;
+
+
+		Form element InnerHtml	<INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR>
+
+		Form element InnerText
+ 40702.810.5.00000203769
+ 91317.810.4.00000103769Form element syle;
+
+
+
+		Form element name	cbAcc 		Id Acc0
+		Form element OuterHtml
+<INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL>
+
+		Form element OuterText
+ 40702.810.5.00000203769;
+
+
+		Form element InnerHtml	<SPAN> 40702.810.5.00000203769</SPAN>
+
+		Form element InnerText
+ 40702.810.5.00000203769Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN> 40702.810.5.00000203769</SPAN>
+
+		Form element OuterText
+ 40702.810.5.00000203769;
+
+
+		Form element InnerHtml	 40702.810.5.00000203769
+
+		Form element InnerText
+ 40702.810.5.00000203769Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	cbAcc 		Id Acc1
+		Form element OuterHtml
+<INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL>
+
+		Form element OuterText
+ 91317.810.4.00000103769;
+
+
+		Form element InnerHtml	<SPAN> 91317.810.4.00000103769</SPAN>
+
+		Form element InnerText
+ 91317.810.4.00000103769Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN> 91317.810.4.00000103769</SPAN>
+
+		Form element OuterText
+ 91317.810.4.00000103769;
+
+
+		Form element InnerHtml	 91317.810.4.00000103769
+
+		Form element InnerText
+ 91317.810.4.00000103769Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD>
+
+		Form element OuterText
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+		Form element InnerHtml	<SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV>
+
+		Form element InnerText
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN>Укажите период:</SPAN>
+
+		Form element OuterText
+Укажите период:;
+
+
+		Form element InnerHtml	Укажите период:
+
+		Form element InnerText
+Укажите период:Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	PType 		Id PType
+		Form element OuterHtml
+<SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT>
+
+		Form element OuterText
+ За текущий день За предыдущий день За последние 3 дня За период;
+
+
+		Form element InnerHtml	 <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION>
+
+		Form element InnerText
+ За текущий день За предыдущий день За последние 3 дня За периодForm element syleMARGIN-BOTTOM: 5px; WIDTH: 180px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=1>За текущий день</OPTION>
+
+		Form element OuterText
+За текущий день;
+
+
+		Form element InnerHtml	За текущий день
+
+		Form element InnerText
+За текущий деньForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=2>За предыдущий день</OPTION>
+
+		Form element OuterText
+За предыдущий день;
+
+
+		Form element InnerHtml	За предыдущий день
+
+		Form element InnerText
+За предыдущий деньForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=3>За последние 3 дня</OPTION>
+
+		Form element OuterText
+За последние 3 дня;
+
+
+		Form element InnerHtml	За последние 3 дня
+
+		Form element InnerText
+За последние 3 дняForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION selected value=4>За период</OPTION>
+
+		Form element OuterText
+За период;
+
+
+		Form element InnerHtml	За период
+
+		Form element InnerText
+За периодForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id s20
+		Form element OuterHtml
+<SPAN id=s20></SPAN>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id s20
+		Form element OuterHtml
+<SPAN id=s20>с</SPAN>
+
+		Form element OuterText
+с;
+
+
+		Form element InnerHtml	с
+
+		Form element InnerText
+сForm element syle;
+
+
+
+		Form element name	FDATE0 		Id s85
+		Form element OuterHtml
+<INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id btn1
+		Form element OuterHtml
+<IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syleDISPLAY: inline;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id s20
+		Form element OuterHtml
+<SPAN id=s20></SPAN>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id s20
+		Form element OuterHtml
+<SPAN id=s20>по</SPAN>
+
+		Form element OuterText
+по;
+
+
+		Form element InnerHtml	по
+
+		Form element InnerText
+поForm element syle;
+
+
+
+		Form element name	FDATE1 		Id s85
+		Form element OuterHtml
+<INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id btn2
+		Form element OuterHtml
+<IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif">
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syleDISPLAY: inline;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN>Дополнительно выгружать:</SPAN>
+
+		Form element OuterText
+Дополнительно выгружать:;
+
+
+		Form element InnerHtml	Дополнительно выгружать:
+
+		Form element InnerText
+Дополнительно выгружать:Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV>
+
+		Form element OuterText
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+		Form element InnerHtml	<INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> 
+
+		Form element InnerText
+ Проводки по переоценке 
+ Дни, не содержащие выписок Form element syleOVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px;
+
+
+
+		Form element name	REAP 		Id REAP
+		Form element OuterHtml
+<INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL>
+
+		Form element OuterText
+ Проводки по переоценке;
+
+
+		Form element InnerHtml	<SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN>
+
+		Form element InnerText
+ Проводки по переоценкеForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN>
+
+		Form element OuterText
+ Проводки по переоценке;
+
+
+		Form element InnerHtml	&nbsp;Проводки по переоценке
+
+		Form element InnerText
+ Проводки по переоценкеForm element syleFONT-SIZE: 11px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BR>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	noStm 		Id noStm
+		Form element OuterHtml
+<INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL>
+
+		Form element OuterText
+ Дни, не содержащие выписок;
+
+
+		Form element InnerHtml	<SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN>
+
+		Form element InnerText
+ Дни, не содержащие выписокForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN>
+
+		Form element OuterText
+ Дни, не содержащие выписок;
+
+
+		Form element InnerHtml	&nbsp;Дни, не содержащие выписок
+
+		Form element InnerText
+ Дни, не содержащие выписокForm element syleFONT-SIZE: 11px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TR><TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+
+		Form element OuterText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) ;
+
+
+		Form element InnerHtml	<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD>
+
+		Form element InnerText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD>
+
+		Form element OuterText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) ;
+
+
+		Form element InnerHtml	<SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> 
+
+		Form element InnerText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) Form element syle;
+
+
+
+		Form element name	 		Id s145
+		Form element OuterHtml
+<SPAN id=s145>Формат файла экспорта</SPAN>
+
+		Form element OuterText
+Формат файла экспорта;
+
+
+		Form element InnerHtml	Формат файла экспорта
+
+		Form element InnerText
+Формат файла экспортаForm element syle;
+
+
+
+		Form element name	SType 		Id 
+		Form element OuterHtml
+<SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT>
+
+		Form element OuterText
+ 1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный);
+
+
+		Form element InnerHtml	 <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION>
+
+		Form element InnerText
+ 1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный)Form element syleWIDTH: 285px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION selected value=3>1C</OPTION>
+
+		Form element OuterText
+1C;
+
+
+		Form element InnerHtml	1C
+
+		Form element InnerText
+1CForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=2>текст. выписка без остатков с документами</OPTION>
+
+		Form element OuterText
+текст. выписка без остатков с документами;
+
+
+		Form element InnerHtml	текст. выписка без остатков с документами
+
+		Form element InnerText
+текст. выписка без остатков с документамиForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=1>текст. выписка с остатками без документов</OPTION>
+
+		Form element OuterText
+текст. выписка с остатками без документов;
+
+
+		Form element InnerHtml	текст. выписка с остатками без документов
+
+		Form element InnerText
+текст. выписка с остатками без документовForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=0>текст. выписка с остатками и документами</OPTION>
+
+		Form element OuterText
+текст. выписка с остатками и документами;
+
+
+		Form element InnerHtml	текст. выписка с остатками и документами
+
+		Form element InnerText
+текст. выписка с остатками и документамиForm element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=10>RTF-файл (заархивированный)</OPTION>
+
+		Form element OuterText
+RTF-файл (заархивированный);
+
+
+		Form element InnerHtml	RTF-файл (заархивированный)
+
+		Form element InnerText
+RTF-файл (заархивированный)Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<OPTION value=11>Excel (заархивированный)</OPTION>
+
+		Form element OuterText
+Excel (заархивированный);
+
+
+		Form element InnerHtml	Excel (заархивированный)
+
+		Form element InnerText
+Excel (заархивированный)Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TR><TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR>
+
+		Form element OuterText
+Экспорт ;
+
+
+		Form element InnerHtml	<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD>
+
+		Form element InnerText
+Экспорт Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD>
+
+		Form element OuterText
+Экспорт ;
+
+
+		Form element InnerHtml	<BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> 
+
+		Form element InnerText
+Экспорт Form element syle;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+<BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON>
+
+		Form element OuterText
+Экспорт;
+
+
+		Form element InnerHtml	Экспорт
+
+		Form element InnerText
+ЭкспортForm element syleWIDTH: 100px;
+
+
+
+		Form element name	 		Id 
+		Form element OuterHtml
+</CUSTOMFORM>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id xDefForm
+		Form element OuterHtml
+<XML id=xDefForm></XML>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form element name	 		Id xForm
+		Form element OuterHtml
+<XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML>
+
+		Form element OuterText
+;
+
+
+		Form element InnerHtml	
+
+		Form element InnerText
+Form element syle;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<HTML><HEAD><TITLE>Экспорт выписок</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-type>
+<META content=ru-RU http-equiv=Content-language>
+<META content=IE=5 http-equiv=X-UA-Compatible><LINK rel=stylesheet type=text/css href="../css/main.css"><LINK id=COLORCSS rel=stylesheet type=text/css href="../css/csGrass.css"><LINK id=SCHMCSS rel=stylesheet href="../scheme/expstm/expstm.css">
+<SCRIPT id=SCHMJS0 language=JavaScript src="../scheme/expstm/expstm_russian.js"></SCRIPT>
+
+<SCRIPT id=SCHMJS language=JavaScript src="../scheme/expstm/expstm.js"></SCRIPT>
+</HEAD>
+<BODY onhelp="Top.Help('ug.useric.as.export.html'); return false;" leftMargin=0 topMargin=0>
+<DIV id=WaitMes></DIV>
+<DIV id=DivGlobalID style="DISPLAY: block">
+<TABLE id=FORSCREEN cellSpacing=0 cellPadding=0 align=center border=0>
+<TBODY>
+<TR>
+<TD id=PopupMessID>&nbsp;</TD></TR>
+<TR>
+<TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR></TBODY></TABLE></DIV><!-- EOF DivGlobalID --><XML id=xData></XML><XML id=cData><?xml version="1.0" ?><BXD>
+
+<OPS><O CID="1002171" A="40702810500000203769"/><O CID="1002171" A="91317810400000103769"/></OPS>
+<ORGS><ORG CID="1002171" Main="1" Show="1" Pay="1">ООО "АМЕГА"</ORG></ORGS>
+<CID>1002171</CID>
+<ACC></ACC>
+<D0>30.04.2015</D0>
+<D1>29.04.2015</D1>
+<D2>28.04.2015</D2>
+<PT>4</PT>
+<SD>17.04.2015</SD>
+<ED>24.04.2015</ED>
+<REAP>1</REAP>
+<NOSTM>0</NOSTM>
+</BXD>
+</XML><XML id=fData></XML>
+<DIV id=DEBUG></DIV>
+<SCRIPT id=NEWSCRIPTS language=JavaScript>
+var tbPanID="EXPSTM_DEFAULT_FORM", tbMAP="1";
+//var ViewFormURL = "../scheme/expstm/expstm_reply.xsl";
+</SCRIPT>
+
+<SCRIPT language=JavaScript for=window event=onload>InitForm();</SCRIPT>
+</BODY></HTML>
+
+		Form Document OuterText
+Экспорт выписок
+ 
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<HEAD><TITLE>Экспорт выписок</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-type>
+<META content=ru-RU http-equiv=Content-language>
+<META content=IE=5 http-equiv=X-UA-Compatible><LINK rel=stylesheet type=text/css href="../css/main.css"><LINK id=COLORCSS rel=stylesheet type=text/css href="../css/csGrass.css"><LINK id=SCHMCSS rel=stylesheet href="../scheme/expstm/expstm.css">
+<SCRIPT id=SCHMJS0 language=JavaScript src="../scheme/expstm/expstm_russian.js"></SCRIPT>
+
+<SCRIPT id=SCHMJS language=JavaScript src="../scheme/expstm/expstm.js"></SCRIPT>
+</HEAD>
+
+		Form Document OuterText
+Экспорт выписок;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<TITLE>Экспорт выписок</TITLE>
+
+		Form Document OuterText
+Экспорт выписок;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<META content="text/html; charset=windows-1251" http-equiv=Content-type>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<META content=ru-RU http-equiv=Content-language>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<META content=IE=5 http-equiv=X-UA-Compatible>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LINK rel=stylesheet type=text/css href="../css/main.css">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id COLORCSS
+		Form Document OuterHtml
+<LINK id=COLORCSS rel=stylesheet type=text/css href="../css/csGrass.css">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id SCHMCSS
+		Form Document OuterHtml
+<LINK id=SCHMCSS rel=stylesheet href="../scheme/expstm/expstm.css">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id SCHMJS0
+		Form Document OuterHtml
+
+<SCRIPT id=SCHMJS0 language=JavaScript src="../scheme/expstm/expstm_russian.js"></SCRIPT>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id SCHMJS
+		Form Document OuterHtml
+
+<SCRIPT id=SCHMJS language=JavaScript src="../scheme/expstm/expstm.js"></SCRIPT>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<BODY onhelp="Top.Help('ug.useric.as.export.html'); return false;" leftMargin=0 topMargin=0><DIV id=WaitMes></DIV>
+<DIV id=DivGlobalID style="DISPLAY: block">
+<TABLE id=FORSCREEN cellSpacing=0 cellPadding=0 align=center border=0>
+<TBODY>
+<TR>
+<TD id=PopupMessID>&nbsp;</TD></TR>
+<TR>
+<TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR></TBODY></TABLE></DIV><!-- EOF DivGlobalID --><XML id=xData></XML><XML id=cData><?xml version="1.0" ?><BXD>
+
+<OPS><O CID="1002171" A="40702810500000203769"/><O CID="1002171" A="91317810400000103769"/></OPS>
+<ORGS><ORG CID="1002171" Main="1" Show="1" Pay="1">ООО "АМЕГА"</ORG></ORGS>
+<CID>1002171</CID>
+<ACC></ACC>
+<D0>30.04.2015</D0>
+<D1>29.04.2015</D1>
+<D2>28.04.2015</D2>
+<PT>4</PT>
+<SD>17.04.2015</SD>
+<ED>24.04.2015</ED>
+<REAP>1</REAP>
+<NOSTM>0</NOSTM>
+</BXD>
+</XML><XML id=fData></XML>
+<DIV id=DEBUG></DIV>
+<SCRIPT id=NEWSCRIPTS language=JavaScript>
+var tbPanID="EXPSTM_DEFAULT_FORM", tbMAP="1";
+//var ViewFormURL = "../scheme/expstm/expstm_reply.xsl";
+</SCRIPT>
+
+<SCRIPT language=JavaScript for=window event=onload>InitForm();</SCRIPT>
+</BODY>
+
+		Form Document OuterText
+
+ 
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id WaitMes
+		Form Document OuterHtml
+
+<DIV id=WaitMes></DIV>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id DivGlobalID
+		Form Document OuterHtml
+
+<DIV id=DivGlobalID style="DISPLAY: block"><TABLE id=FORSCREEN cellSpacing=0 cellPadding=0 align=center border=0>
+<TBODY>
+<TR>
+<TD id=PopupMessID>&nbsp;</TD></TR>
+<TR>
+<TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR></TBODY></TABLE></DIV>
+
+		Form Document OuterText
+ 
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id FORSCREEN
+		Form Document OuterHtml
+
+<TABLE id=FORSCREEN cellSpacing=0 cellPadding=0 align=center border=0><TBODY>
+<TR>
+<TD id=PopupMessID>&nbsp;</TD></TR>
+<TR>
+<TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR></TBODY></TABLE>
+
+		Form Document OuterText
+ 
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TBODY><TR>
+<TD id=PopupMessID>&nbsp;</TD></TR>
+<TR>
+<TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR>
+
+		Form Document OuterText
+ 
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD id=PopupMessID>&nbsp;</TD></TR>
+
+		Form Document OuterText
+ ;
+
+
+
+		Form Document name		Form Document Id PopupMessID
+		Form Document OuterHtml
+
+<TD id=PopupMessID>&nbsp;</TD>
+
+		Form Document OuterText
+ ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD>
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD></TR>
+
+		Form Document OuterText
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD><DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM><BR><BR>
+<DIV id=ERRORTD></DIV>
+<DIV id=xslFormTarget></DIV></TD>
+
+		Form Document OuterText
+Экспорт выписок
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id FORMHEADER
+		Form Document OuterHtml
+
+<DIV id=FORMHEADER class=FORMHEADER>Экспорт выписок</DIV>
+
+		Form Document OuterText
+Экспорт выписок;
+
+
+
+		Form Document nameMForm		Form Document Id 
+		Form Document OuterHtml
+
+<FORM method=get name=MForm action=bsi.dll?><PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+<DIV id=xslViewcFrom>
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV><XML id=xDefForm></XML><XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML></FORM>
+
+		Form Document OuterText
+SID		
+T			
+Account	
+
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id ND
+		Form Document OuterHtml
+<PRE id=ND>SID		<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+T			<INPUT value=RT_2IMPORT.expstm name=T>
+Account	<INPUT name=Acc>
+</PRE>
+
+		Form Document OuterText
+SID		
+T			
+Account	;
+
+
+
+		Form Document nameSID		Form Document Id 
+		Form Document OuterHtml
+<INPUT value=8OJ1QJ5OHY1EW1EXUQ0R6H61C1K9O9 name=SID>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document nameT		Form Document Id 
+		Form Document OuterHtml
+<INPUT value=RT_2IMPORT.expstm name=T>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document nameAcc		Form Document Id 
+		Form Document OuterHtml
+<INPUT name=Acc>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id xslViewcFrom
+		Form Document OuterHtml
+
+<DIV id=xslViewcFrom><TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0>
+<COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE></CUSTOMFORM></DIV>
+
+		Form Document OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id EDITFORM
+		Form Document OuterHtml
+
+<TABLE id=EDITFORM class=FotmTBL style="MARGIN-TOP: 10px; TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=5 border=0><COLGROUP>
+<COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+<TBODY>
+<TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR></TBODY></TABLE>
+
+		Form Document OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<COLGROUP><COL style="WIDTH: 250px"></COL>
+<COL style="WIDTH: 190px"></COL>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<COL style="WIDTH: 250px">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+</COL>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<COL style="WIDTH: 190px">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+</COL>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TBODY><TR>
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+<TR>
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+<TR>
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR>
+
+		Form Document OuterText
+Выберите организацию: ООО "АМЕГА"
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок 
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) 
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD></TR>
+
+		Form Document OuterText
+Выберите организацию: ООО "АМЕГА";
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD colSpan=2><SPAN id=s145>Выберите организацию:&nbsp;</SPAN><SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT></TD>
+
+		Form Document OuterText
+Выберите организацию: ООО "АМЕГА";
+
+
+
+		Form Document name		Form Document Id s145
+		Form Document OuterHtml
+<SPAN id=s145>Выберите организацию:&nbsp;</SPAN>
+
+		Form Document OuterText
+Выберите организацию: ;
+
+
+
+		Form Document name		Form Document Id selectMain
+		Form Document OuterHtml
+<SELECT onchange=optionChangedOnMain(this) id=selectMain class=Inp style="WIDTH: 285px"><OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION></SELECT>
+
+		Form Document OuterText
+ООО "АМЕГА";
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION selected CID="1002171" Main="1">ООО "АМЕГА"</OPTION>
+
+		Form Document OuterText
+ООО "АМЕГА";
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD></TR>
+
+		Form Document OuterText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD><SPAN>Выберите счета:</SPAN><BR><SPAN style="WIDTH: 2px">&nbsp;</SPAN><INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0><LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL> 
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV></TD>
+
+		Form Document OuterText
+Выберите счета:
+  Все счета  40702.810.5.00000203769
+ 91317.810.4.00000103769;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN>Выберите счета:</SPAN>
+
+		Form Document OuterText
+Выберите счета:;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN style="WIDTH: 2px">&nbsp;</SPAN>
+
+		Form Document OuterText
+ ;
+
+
+
+		Form Document name		Form Document Id AllAcc
+		Form Document OuterHtml
+<INPUT onclick=checkAllAccs(); id=AllAcc title="Пометить / Снять пометку со всех счетов" class=rb type=checkbox value=0>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LABEL for=AllAcc><SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN></LABEL>
+
+		Form Document OuterText
+ Все счета;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN style="WIDTH: 160px">&nbsp;Все счета</SPAN>
+
+		Form Document OuterText
+ Все счета;
+
+
+
+		Form Document name		Form Document Id dACC
+		Form Document OuterHtml
+
+<DIV id=dACC class=dBlock><INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769"><LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL><BR><INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769"><LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL><BR></DIV>
+
+		Form Document OuterText
+ 40702.810.5.00000203769
+ 91317.810.4.00000103769;
+
+
+
+		Form Document namecbAcc		Form Document Id Acc0
+		Form Document OuterHtml
+<INPUT id=Acc0 class=rb CHECKED type=checkbox name=cbAcc V="1002171=40702810500000203769">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LABEL for=Acc0><SPAN> 40702.810.5.00000203769</SPAN></LABEL>
+
+		Form Document OuterText
+ 40702.810.5.00000203769;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN> 40702.810.5.00000203769</SPAN>
+
+		Form Document OuterText
+ 40702.810.5.00000203769;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document namecbAcc		Form Document Id Acc1
+		Form Document OuterHtml
+<INPUT id=Acc1 class=rb CHECKED type=checkbox name=cbAcc V="1002171=91317810400000103769">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LABEL for=Acc1><SPAN> 91317.810.4.00000103769</SPAN></LABEL>
+
+		Form Document OuterText
+ 91317.810.4.00000103769;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN> 91317.810.4.00000103769</SPAN>
+
+		Form Document OuterText
+ 91317.810.4.00000103769;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD vAlign=top><SPAN>Укажите период:</SPAN><BR><SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT><BR><SPAN id=s20></SPAN><SPAN id=s20>с</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0><IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"><BR><SPAN id=s20></SPAN><SPAN id=s20>по</SPAN><INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1><IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif"> <BR><BR><SPAN>Дополнительно выгружать:</SPAN><BR>
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV></TD>
+
+		Form Document OuterText
+Укажите период:
+ За текущий день За предыдущий день За последние 3 дня За период
+с
+по 
+
+Дополнительно выгружать:
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN>Укажите период:</SPAN>
+
+		Form Document OuterText
+Укажите период:;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document namePType		Form Document Id PType
+		Form Document OuterHtml
+<SELECT onchange=setPeriod() id=PType class=Inp style="MARGIN-BOTTOM: 5px; WIDTH: 180px" name=PType> <OPTION value=1>За текущий день</OPTION> <OPTION value=2>За предыдущий день</OPTION> <OPTION value=3>За последние 3 дня</OPTION> <OPTION selected value=4>За период</OPTION></SELECT>
+
+		Form Document OuterText
+ За текущий день За предыдущий день За последние 3 дня За период;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=1>За текущий день</OPTION>
+
+		Form Document OuterText
+За текущий день;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=2>За предыдущий день</OPTION>
+
+		Form Document OuterText
+За предыдущий день;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=3>За последние 3 дня</OPTION>
+
+		Form Document OuterText
+За последние 3 дня;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION selected value=4>За период</OPTION>
+
+		Form Document OuterText
+За период;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id s20
+		Form Document OuterHtml
+<SPAN id=s20></SPAN>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id s20
+		Form Document OuterHtml
+<SPAN id=s20>с</SPAN>
+
+		Form Document OuterText
+с;
+
+
+
+		Form Document nameFDATE0		Form Document Id s85
+		Form Document OuterHtml
+<INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=17.04.2015 name=FDATE0>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id btn1
+		Form Document OuterHtml
+<IMG onclick=Top.Calendar(this,FDATE0); id=btn1 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id s20
+		Form Document OuterHtml
+<SPAN id=s20></SPAN>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id s20
+		Form Document OuterHtml
+<SPAN id=s20>по</SPAN>
+
+		Form Document OuterText
+по;
+
+
+
+		Form Document nameFDATE1		Form Document Id s85
+		Form Document OuterHtml
+<INPUT tabIndex=-1 id=s85 class=InpDsbD0 readOnly value=24.04.2015 name=FDATE1>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id btn2
+		Form Document OuterHtml
+<IMG onclick=Top.Calendar(this,FDATE1); id=btn2 class=ICOBTN style="DISPLAY: inline" alt="Выбрать дату в календаре..." src="https://dboc.bankrs.ru/v9/img/ico/calendar.gif">
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN>Дополнительно выгружать:</SPAN>
+
+		Form Document OuterText
+Дополнительно выгружать:;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<DIV class=dBlock style="OVERFLOW: hidden; HEIGHT: 45px; WIDTH: 180px; PADDING-TOP: 2px; PADDING-LEFT: 2px"><INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP><LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL> <BR><INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm><LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL> </DIV>
+
+		Form Document OuterText
+ Проводки по переоценке 
+ Дни, не содержащие выписок ;
+
+
+
+		Form Document nameREAP		Form Document Id REAP
+		Form Document OuterHtml
+<INPUT onclick="doCheck(this,'//REAP');" id=REAP class=rb dataFld=REAP CHECKED type=checkbox value=1 name=REAP>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LABEL for=REAP><SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN></LABEL>
+
+		Form Document OuterText
+ Проводки по переоценке;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN style="FONT-SIZE: 11px">&nbsp;Проводки по переоценке</SPAN>
+
+		Form Document OuterText
+ Проводки по переоценке;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document namenoStm		Form Document Id noStm
+		Form Document OuterHtml
+<INPUT onclick="doCheck(this,'//NOSTM');" disabled id=noStm class=rb dataFld=noStm type=checkbox value=0 name=noStm>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<LABEL for=noStm><SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN></LABEL>
+
+		Form Document OuterText
+ Дни, не содержащие выписок;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<SPAN style="FONT-SIZE: 11px">&nbsp;Дни, не содержащие выписок</SPAN>
+
+		Form Document OuterText
+ Дни, не содержащие выписок;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD></TR>
+
+		Form Document OuterText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD colSpan=2><SPAN id=s145>Формат файла экспорта</SPAN> <SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT> </TD>
+
+		Form Document OuterText
+Формат файла экспорта  1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный) ;
+
+
+
+		Form Document name		Form Document Id s145
+		Form Document OuterHtml
+<SPAN id=s145>Формат файла экспорта</SPAN>
+
+		Form Document OuterText
+Формат файла экспорта;
+
+
+
+		Form Document nameSType		Form Document Id 
+		Form Document OuterHtml
+<SELECT onchange=setModeBySType() class=Inp style="WIDTH: 285px" name=SType> <OPTION selected value=3>1C</OPTION> <OPTION value=2>текст. выписка без остатков с документами</OPTION> <OPTION value=1>текст. выписка с остатками без документов</OPTION> <OPTION value=0>текст. выписка с остатками и документами</OPTION> <OPTION value=10>RTF-файл (заархивированный)</OPTION> <OPTION value=11>Excel (заархивированный)</OPTION></SELECT>
+
+		Form Document OuterText
+ 1C текст. выписка без остатков с документами текст. выписка с остатками без документов текст. выписка с остатками и документами RTF-файл (заархивированный) Excel (заархивированный);
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION selected value=3>1C</OPTION>
+
+		Form Document OuterText
+1C;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=2>текст. выписка без остатков с документами</OPTION>
+
+		Form Document OuterText
+текст. выписка без остатков с документами;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=1>текст. выписка с остатками без документов</OPTION>
+
+		Form Document OuterText
+текст. выписка с остатками без документов;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=0>текст. выписка с остатками и документами</OPTION>
+
+		Form Document OuterText
+текст. выписка с остатками и документами;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=10>RTF-файл (заархивированный)</OPTION>
+
+		Form Document OuterText
+RTF-файл (заархивированный);
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<OPTION value=11>Excel (заархивированный)</OPTION>
+
+		Form Document OuterText
+Excel (заархивированный);
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TR><TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD></TR>
+
+		Form Document OuterText
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<TD colSpan=2 align=center><BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON> </TD>
+
+		Form Document OuterText
+Экспорт ;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BUTTON onclick=fnEXPSTM(); class=Btn style="WIDTH: 100px">Экспорт</BUTTON>
+
+		Form Document OuterText
+Экспорт;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+</CUSTOMFORM>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id xDefForm
+		Form Document OuterHtml
+<XML id=xDefForm></XML>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id xForm
+		Form Document OuterHtml
+<XML id=xForm src="../scheme/expstm/expstm_form.xsl"></XML>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<BR>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id ERRORTD
+		Form Document OuterHtml
+
+<DIV id=ERRORTD></DIV>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id xslFormTarget
+		Form Document OuterHtml
+
+<DIV id=xslFormTarget></DIV>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+<!-- EOF DivGlobalID -->
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id xData
+		Form Document OuterHtml
+<XML id=xData></XML>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id cData
+		Form Document OuterHtml
+<XML id=cData><?xml version="1.0" ?><BXD>
+
+<OPS><O CID="1002171" A="40702810500000203769"/><O CID="1002171" A="91317810400000103769"/></OPS>
+<ORGS><ORG CID="1002171" Main="1" Show="1" Pay="1">ООО "АМЕГА"</ORG></ORGS>
+<CID>1002171</CID>
+<ACC></ACC>
+<D0>30.04.2015</D0>
+<D1>29.04.2015</D1>
+<D2>28.04.2015</D2>
+<PT>4</PT>
+<SD>17.04.2015</SD>
+<ED>24.04.2015</ED>
+<REAP>1</REAP>
+<NOSTM>0</NOSTM>
+</BXD>
+</XML>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id fData
+		Form Document OuterHtml
+<XML id=fData></XML>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id DEBUG
+		Form Document OuterHtml
+
+<DIV id=DEBUG></DIV>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id NEWSCRIPTS
+		Form Document OuterHtml
+
+<SCRIPT id=NEWSCRIPTS language=JavaScript>
+var tbPanID="EXPSTM_DEFAULT_FORM", tbMAP="1";
+//var ViewFormURL = "../scheme/expstm/expstm_reply.xsl";
+</SCRIPT>
+
+		Form Document OuterText
+;
+
+
+
+		Form Document name		Form Document Id 
+		Form Document OuterHtml
+
+<SCRIPT language=JavaScript for=window event=onload>InitForm();</SCRIPT>
+
+		Form Document OuterText
+;
+
+
+

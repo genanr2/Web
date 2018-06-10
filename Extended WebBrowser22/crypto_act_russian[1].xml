@@ -1,0 +1,53 @@
+<?xml version="1.0"  encoding="windows-1251"?>
+<CUSTOMFORM xmlns:xsl="http://www.w3.org/TR/WD-xsl">
+<DIV ID="DRAct">
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" STYLE="font-family: 'Times New Roman'; width:180mm">
+<TR><TD>
+<DIV ALIGN="center">
+<SPAN STYLE="font-weight: bold;">АКТ<BR/>признания открытого ключа (сертификата)<BR/>для обмена сообщениями</SPAN><BR/><BR/>
+"<SPAN CLASS="CelB" STYLE="width: 8mm;"></SPAN>"<SPAN CLASS="CelB" STYLE="width: 25mm;"></SPAN>200<SPAN CLASS="CelB" STYLE="width: 2mm;"></SPAN>г.<SPAN STYLE="width: 78mm;"></SPAN>г.<SPAN CLASS="CelB" STYLE="width: 40mm;"></SPAN><BR/><BR/>
+</DIV>
+Настоящим Актом признается открытый ключ шифрования, принадлежащий<SPAN ID="Off"> ________________________________________,</SPAN> уполномоченному представителю ОРГАНИЗАЦИИ:<SPAN ID="Org"> __________________________________________________________</SPAN> <SPAN ID1="CN"></SPAN> <SPAN ID="PNS"></SPAN>.
+<BR/>
+<SPAN><U><B>Сведения об организации</B></U></SPAN><BR/>
+<DIV STYLE="margin-left: 5mm;">
+<SPAN STYLE="width: 50mm;">1.&#160;&#160;&#160;&#160;Наименование организации:</SPAN><SPAN CLASS="CelB" STYLE="width: 110mm;"></SPAN><SPAN ID="CN" CLASS="CelB" STYLE="width: 110mm;display: none;"></SPAN><BR/>
+<SPAN STYLE="width: 40mm;">2.&#160;&#160;&#160;&#160;Юридический адрес:</SPAN><SPAN CLASS="CelB" STYLE="width: 120mm;"></SPAN><BR/>
+<SPAN STYLE="width: 35mm;">3.&#160;&#160;&#160;&#160;Почтовый адрес:</SPAN><SPAN CLASS="CelB" STYLE="width: 125mm;"></SPAN><BR/>
+<SPAN STYLE="width: 15mm;">4.&#160;&#160;&#160;&#160;Тел.</SPAN><SPAN CLASS="CelB" STYLE="width: 60mm;"></SPAN><SPAN STYLE="width: 15mm;">&#160;5. Факс:</SPAN><SPAN CLASS="CelB" STYLE="width: 70mm;"></SPAN><BR/>
+</DIV><BR/>
+<SPAN><U><B>Сведения о владельце ключа</B></U></SPAN><BR/>
+<DIV STYLE="margin-left: 5mm;">
+<SPAN STYLE="width: 45mm;">1.&#160;&#160;&#160;&#160;Фамилия, имя, отчество:</SPAN><SPAN CLASS="CelB" STYLE="width: 115mm;" id="PNS2"></SPAN><BR/>
+<SPAN STYLE="width: 25mm;">2.&#160;&#160;&#160;&#160;Должность:</SPAN><SPAN CLASS="CelB" STYLE="width: 135mm;"></SPAN><BR/>
+<SPAN STYLE="width: 70mm;">3.&#160;&#160;&#160;&#160;Удостоверение личности: паспорт серии </SPAN><SPAN CLASS="CelB" STYLE="width: 35mm;"></SPAN><SPAN STYLE="width: 5mm;">&#160;&#160;№</SPAN><SPAN CLASS="CelB" STYLE="width: 50mm;"></SPAN><BR/>
+<SPAN>&#160;выдан «</SPAN><SPAN CLASS="CelB" STYLE="width: 10mm;"></SPAN>»<SPAN CLASS="CelB" STYLE="width: 30mm;"></SPAN>&#160;<SPAN CLASS="CelB" STYLE="width: 20mm;"></SPAN>г.<SPAN CLASS="CelB" STYLE="width: 83mm;"></SPAN><BR/>
+<SPAN CLASS="CelB" STYLE="width: 160mm;"></SPAN>
+</DIV>
+
+<BR/>
+<DIV ID="DRProps">
+<SPAN><U><B>Параметры ключа:</B></U></SPAN><BR/>
+<DIV ID="KeyPr"></DIV>
+<BR/>
+<SPAN><U><B>Текст открытого ключа:</B></U></SPAN><BR/><BR/>
+<DIV ID="KeyDet"></DIV>
+<BR/>
+<SPAN style="display: none;"><U><B>Дополнительные поля открытого ключа (сертификата):</B></U><BR/><BR/>
+<DIV ID="CertPr"></DIV></SPAN>
+</DIV>
+<SPAN><b>Статус ЭЦП</b> Документы, подписанные данной ЭЦП, имеют равную юридическую силу с платежными или иными документами Клиента, оформленными на бумажных носителях, подписанными собственноручными подписями уполномоченных лиц (первая и, при наличии, вторая подпись) и заверенными оттиском надлежащей печати. Под уполномоченными лицами и надлежащей печатью имеются в виду лица и печать, подписи которых и образец оттиска которой включены в банковскую карточку образцов подписей Клиента.</SPAN>
+<BR/>
+<BR/>
+<B>Ключ зарегистрирован и может использоваться для обмена сообщениями.</B><BR/><BR/>
+<DIV ALIGN="center">
+<B>БАНК<SPAN STYLE="width: 90mm;"></SPAN>КЛИЕНТ</B><BR/>
+<SPAN CLASS="CelB" STYLE="width: 45mm;"></SPAN><SPAN STYLE="width: 57mm;"></SPAN><SPAN CLASS="CelB" STYLE="width: 45mm;"></SPAN><BR/>
+<SPAN CLASS="CelB" STYLE="width: 45mm;"></SPAN><SPAN STYLE="width: 57mm;"></SPAN><SPAN CLASS="CelB" STYLE="width: 45mm;"></SPAN><BR/>
+<BR/>
+М.П.<SPAN STYLE="width: 95mm;"></SPAN>М.П.
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV>
+</CUSTOMFORM>

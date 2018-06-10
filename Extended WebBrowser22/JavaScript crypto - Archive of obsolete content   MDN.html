@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto -->
+<html lang="en-US" dir="ltr" class="redesign "><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./JavaScript crypto - Archive of obsolete content   MDN_files/42869b6ed3"></script><script src="./JavaScript crypto - Archive of obsolete content   MDN_files/nr-632.min.js"></script><script async="" src="./JavaScript crypto - Archive of obsolete content   MDN_files/analytics.js"></script><script type="text/javascript" async="" src="./JavaScript crypto - Archive of obsolete content   MDN_files/geo2.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgAEV1RTGwABU1NSAAQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":1,"licenseKey":"42869b6ed3","agent":"js-agent.newrelic.com/nr-632.min.js","transactionName":"b1QHMUtVDRdSW0YKXVYeIxBXVxcNXFYdCEdVUEsSUF8KSkVRVxRBAlUKBkxZBgpH","applicationID":"3172075","errorBeacon":"bam.nr-data.net","applicationTime":272}</script>
+  <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+          <script src="./JavaScript crypto - Archive of obsolete content   MDN_files/237572123.js"></script>
+  
+    <title>JavaScript crypto - Archive of obsolete content | MDN</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <link rel="home" href="https://developer.mozilla.org/en-US/">
+  <link rel="copyright" href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#copyright">
+
+  <link href="./JavaScript crypto - Archive of obsolete content   MDN_files/tabzilla-min.css" type="text/css" rel="stylesheet">
+              <link rel="stylesheet" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-min.css?build=b8b5531">
+
+      
+    <link rel="stylesheet" media="all" href="https://developer.cdn.mozilla.net/media/css/wiki-min.css?build=b8b5531">
+
+    
+                  <link rel="stylesheet" type="text/css" href="./JavaScript crypto - Archive of obsolete content   MDN_files/Archive$styles">
+          
+  <!-- common social tags -->
+    <meta property="og:type" content="website">
+  <meta property="og:image" content="https://developer.mozilla.org/media/img/opengraph-logo.png">
+  <meta property="og:site_name" content="Mozilla Developer Network">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://developer.mozilla.org/media/img/opengraph-logo.png">
+  <meta name="twitter:site" content="@NewOnMDN">
+  <meta name="twitter:creator" content="@NewOnMDN">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.cdn.mozilla.net/media/img/favicon144.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.cdn.mozilla.net/media/img/favicon114.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.cdn.mozilla.net/media/img/favicon72.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/media/img/favicon57.png">
+  <!-- basic favicon -->
+          <link rel="shortcut icon" href="https://developer.cdn.mozilla.net/media/img/favicon32.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script src="https://developer.cdn.mozilla.net/media/js/libs/html5.js"></script>
+  <![endif]-->
+
+    <link rel="alternate" type="application/json" href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto$json">
+  <link rel="canonical" href="./JavaScript crypto - Archive of obsolete content   MDN_files/JavaScript crypto - Archive of obsolete content   MDN.html">
+
+  
+  <!-- document-specific social tags -->
+  <meta property="og:title" content="JavaScript crypto">
+  <meta property="og:url" content="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto">
+  <meta name="twitter:url" content="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto">
+  <meta name="twitter:title" content="JavaScript crypto">
+    <meta property="og:description" content="Mozilla defines a special JavaScript object to allow web pages access to certain cryptographic-related services. These services are a balance between the functionality web pages need and the requirement to protect users from malicious web sites. Most of these services are available via the DOM window object as window.crypto.">
+  <meta name="description" content="Mozilla defines a special JavaScript object to allow web pages access to certain cryptographic-related services. These services are a balance between the functionality web pages need and the requirement to protect users from malicious web sites. Most of these services are available via the DOM window object as window.crypto.">
+  <meta name="twitter:description" content="Mozilla defines a special JavaScript object to allow web pages access to certain cryptographic-related services. These services are a balance between the functionality web pages need and the requirement to protect users from malicious web sites. Most of these services are available via the DOM window object as window.crypto.">
+  
+      <script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-36116321-5', 'mozilla.org');
+    ga('set', 'anonymizeIp', true);
+
+    
+    
+    
+    (function() {
+        // http://cfsimplicity.com/61/removing-analytics-clutter-from-campaign-urls
+        var win = window;
+        var removeUtms = function(){
+            var location = win.location;
+            if (location.href.indexOf('utm') != -1 && win.history.replaceState) {
+                win.history.replaceState({}, '', location.pathname);
+            }
+        };
+
+        ga('send', 'pageview', {'hitCallback': removeUtms});
+    })();
+</script>
+  </head>
+<body data-slug="Archive/Mozilla/JavaScript_crypto" contextmenu="edit-history-menu" class="document zone "><div id="tabzilla-panel" class="tabzilla-closed" tabindex="-1">  <div id="tabzilla-contents">    <div id="tabzilla-promo">      <div class="snippet" id="tabzilla-promo-gear">        <a href="https://gear.mozilla.org/?ref=OMG_launch&utm_campaign=OMG_launch&utm_source=gear.mozilla.org&utm_medium=referral&utm_content=tabzilla">          <h4>Official Mozilla gear is here</h4>        </a>      </div>    </div>    <div id="tabzilla-nav">      <ul>        <li><h2>Mozilla</h2>          <div>            <ul>              <li><a href="https://www.mozilla.org/mission/?icn=tabz">Mission</a></li>              <li><a href="https://www.mozilla.org/about/?icn=tabz">About</a></li>              <li><a href="https://support.mozilla.org/?icn=tabz">Support</a></li>              <li><a href="https://developer.mozilla.org/?icn=tabz">Developer Network</a></li>            </ul>          </div>        </li>        <li><h2>Products</h2>          <div>            <ul>              <li><a href="https://www.mozilla.org/firefox/products?icn=tabz">Firefox</a></li>              <li><a href="https://www.mozilla.org/thunderbird/?icn=tabz">Thunderbird</a></li>              <li><a href="https://www.mozilla.org/firefox/os/?icn=tabz">Firefox OS</a></li>            </ul>          </div>        </li>        <li><h2>Innovations</h2>          <div>            <ul>              <li><a href="https://webmaker.org/?icn=tabz">Webmaker</a></li>              <li><a href="https://www.mozilla.org/research/?icn=tabz">Research</a></li>            </ul>          </div>        </li>        <li><h2>Get Involved</h2>          <div>            <ul>              <li><a href="https://www.mozilla.org/contribute/?icn=tabz">Volunteer</a></li>              <li><a href="https://careers.mozilla.org/?icn=tabz">Careers</a></li>              <li><a href="https://www.mozilla.org/en-US/about/mozilla-spaces/?icn=tabz">Find us</a></li>              <li><a href="https://sendto.mozilla.org/page/contribute/givenow-seq?preset=2&source=mozillaorg_tabzillaTXT&ref=EOYFR2014&utm_campaign=EOYFR2014&utm_source=mozilla.org&utm_medium=referral&utm_content=mozillaorg_tabzillaTXT&icn=tabz" class="donate">Donate</a></li>              <li><a href="https://www.mozilla.org/about/partnerships/?icn=tabz">Partner</a></li>            </ul>          </div>        </li>        <li id="tabzilla-search">          <a href="https://wiki.mozilla.org/Websites/Directory?icn=tabz">Website Directory</a>          <form title="Search Mozilla sites" role="search" action="https://www.google.com/cse">            <input type="hidden" value="002443141534113389537:ysdmevkkknw" name="cx">            <input type="hidden" value="FORID:0" name="cof">            <label for="q">Search</label>            <input type="search" placeholder="Search" id="q" name="q">          </form>        </li>      </ul>    </div>  </div></div>
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+                    (function(){
+  var FLAGS = {
+    'demos_10th': true,'demos_10th_preload': true,'derby_closed': true,'dirtiness_tracking': true,'fellowship_applications_open': false,'ga_outbound_links': true,'github_beta_notice': false,'github_login': true,'hide_homepage_heading': false,'kumaediting': false,'page_move': false,'promote_script': false,'redirect_messages': false,'registration_disabled': false,'search_explanation': false,'search_suggestions': false,'share_links': false,'top_contributors': false,'wiki_spellcheck': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'render_stale_documents_async': true,'enable_optimizely': true,'welcome_email': true,'application_ACAO': false,'store_revision_ips': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+                
+        // This represents the site configuration
+        win.mdn = {
+            build: 'b8b5531',
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to media (images, CSS, JS) in MDN
+            mediaPath: 'https://developer.cdn.mozilla.net/media/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+                        notifications: [],
+                        // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            searchFilters: [{"name": "Document type", "slug": "type", "order": 1, "filters": [{"name": "Tools", "slug": "tools", "shortcut": null}, {"name": "Code Samples", "slug": "code", "shortcut": null}, {"name": "How-To & Tutorial", "slug": "howto", "shortcut": null}]}, {"name": "Skill level", "slug": "skill", "order": 1, "filters": [{"name": "I'm an Expert", "slug": "advanced", "shortcut": null}, {"name": "Intermediate", "slug": "intermediate", "shortcut": null}, {"name": "I'm Learning", "slug": "beginner", "shortcut": null}]}, {"name": "Topics", "slug": "topic", "order": 1, "filters": [{"name": "Open Web Apps", "slug": "apps", "shortcut": null}, {"name": "HTML", "slug": "html", "shortcut": null}, {"name": "CSS", "slug": "css", "shortcut": null}, {"name": "JavaScript", "slug": "js", "shortcut": null}, {"name": "APIs and DOM", "slug": "api", "shortcut": null}, {"name": "Canvas", "slug": "canvas", "shortcut": null}, {"name": "SVG", "slug": "svg", "shortcut": null}, {"name": "MathML", "slug": "mathml", "shortcut": null}, {"name": "WebGL", "slug": "webgl", "shortcut": null}, {"name": "XUL", "slug": "xul", "shortcut": null}, {"name": "Marketplace", "slug": "marketplace", "shortcut": null}, {"name": "Firefox", "slug": "firefox", "shortcut": null}, {"name": "Firefox for Android", "slug": "firefox-mobile", "shortcut": "fennec"}, {"name": "Firefox for Desktop", "slug": "firefox-desktop", "shortcut": "fx"}, {"name": "Firefox OS", "slug": "firefox-os", "shortcut": "fxos"}, {"name": "Mobile", "slug": "mobile", "shortcut": null}, {"name": "Web Development", "slug": "webdev", "shortcut": null}, {"name": "Add-ons & Extensions", "slug": "addons", "shortcut": null}, {"name": "Games", "slug": "games", "shortcut": null}, {"name": "Writing Documentation", "slug": "docs", "shortcut": null}, {"name": "XPCOM", "slug": "xpcom", "shortcut": ""}]}]
+        };
+
+        // Ensures gettext always returns something, is always set
+        win.gettext = function(x) {
+            return x;
+        }
+    })(window);
+</script>
+  
+
+  
+
+  
+  <ul id="nav-access">
+    <li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#document-main" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#language">Select language</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#q" id="skip-search">Skip to search</a></li>
+      </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <a href="https://www.mozilla.org/" id="tabzilla" class="no-track" data-infobar="update" aria-label="Mozilla links">mozilla</a>
+
+    <div class="clear header-clear"></div>
+
+    <a href="https://developer.mozilla.org/en-US/" class="logo">Mozilla Developer Network</a>
+
+    <div class="header-login">
+                    
+                
+    <form>
+      <div class="oauth-login-container">
+          <div class="oauth-login-options" tabindex="0">
+              <span class="oauth-login-options-text">
+                <span class="oauth-login-options-text-icons">Sign in with</span>
+                <span class="oauth-login-options-text-no-icons">Sign in</span>
+              </span>
+              <span class="oauth-icon oauth-persona launch-persona-login" data-service="Persona" data-next="/en-US/docs/Archive/Mozilla/JavaScript_crypto" title="Persona"><i class="icon-user" aria-hidden="true"></i></span>
+                          <span class="oauth-icon oauth-github" data-service="GitHub" data-href="/users/github/login/?next=%2Fen-US%2Fdocs%2FArchive%2FMozilla%2FJavaScript_crypto" title="GitHub"><i class="icon-github" aria-hidden="true"></i></span>
+                      </div>
+          <div class="submenu oauth-login-picker" aria-hidden="true">
+              <ul>
+                  <li><a href="https://developer.mozilla.org/en-US/users/signin" class="login-link launch-persona-login" data-next="/en-US/docs/Archive/Mozilla/JavaScript_crypto" data-service="Persona"><i class="icon-user" aria-hidden="true"></i>Persona</a></li>
+                                  <li><a href="https://developer.mozilla.org/users/github/login/?next=%2Fen-US%2Fdocs%2FArchive%2FMozilla%2FJavaScript_crypto" class="login-link" data-service="GitHub"><i class="icon-github" aria-hidden="true"></i>GitHub</a></li>
+                              </ul>
+          </div>
+      </div>
+    </form>
+            </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Zones<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-single" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Apps">App Center</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Firefox">Firefox</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/Marketplace">Firefox Marketplace</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Firefox_OS">Firefox OS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Persona">Persona</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Platform<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/Apps">Apps</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References &amp; Guides</div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/Learn">Learn the Web</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/demos/">Demos</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Tools</a></li><li><a href="https://developer.mozilla.org/en-US/demos/">Demos</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Connect">Connect</a></li><li class="nav-search-link"><a href="https://developer.mozilla.org/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="https://developer.mozilla.org/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="" value="">
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+  
+                <div class="zone-article-header" id="document-main" role="main"><div class="center">
+          <!-- zone title -->
+          <div class="zone-title"><a href="https://developer.mozilla.org/en-US/docs/Archive">Archive of obsolete content</a></div>
+          <!-- zone image -->
+          <div class="zone-image"></div>
+        </div></div>
+      
+     <!-- end is_zone -->
+
+
+    <div class="wiki-main-content"><div class="center">
+            <div class="article-meta">
+        <!-- action buttons -->
+        
+        
+        
+
+  <ul class="page-buttons" data-sticky="false"><li><button id="languages-menu" class="transparent" aria-haspopup="true" aria-owns="languages-menu-submenu" aria-expanded="false"><span>Languages</span><i aria-hidden="true" class="icon-globe"></i></button>
+
+        <div class="submenu" id="languages-menu-submenu">
+          <div class="submenu-column">
+            <ul id="translations">
+                              <li class="smaller">No translations exist for this article.</li>
+              
+                              <li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto$locales" rel="nofollow, noindex">Add a translation</a></li>
+                          </ul>
+          </div>
+        </div></li><li class="page-buttons-edit"><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto$edit" class="button" data-optimizely-hook="button-edit-doc" id="edit-button" style="color: rgb(255, 255, 255); background-color: rgb(0, 149, 221);">Edit<i aria-hidden="true" class="icon-pencil"></i></a></li><li><button id="advanced-menu" class="only-icon" aria-haspopup="true" aria-owns="advanced-menu-submenu" aria-expanded="false"><span>Advanced</span><i aria-hidden="true" class="icon-cog"></i></button>
+
+        <div class="submenu" id="advanced-menu-submenu">
+          <!-- this page -->
+          <div class="submenu-column">
+            <div class="title">Advanced</div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto$history" rel="nofollow, noindex">History</a></li>
+                                                                
+                
+                                
+                                                                <li class="page-print"><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#" onclick="return window.print();">Print this page</a></li>
+            </ul>
+          </div>
+        </div>
+  </li></ul>
+
+        <!-- crumbs -->
+          <nav class="crumbs" role="navigation"><ol xmlns:v="http://rdf.data-vocabulary.org/#" aria-label="breadcrumbs">
+    <li typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US" rel="v:url" property="v:title">MDN</a></li>
+          <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Archive" rel="v:url" property="v:title">Archive of obsolete content</a></li>
+          <li class="crumb" typeof="v:Breadcrumb"><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla" rel="v:url" property="v:title">Archived Mozilla and build documentation</a></li>
+        <li class="crumb" typeof="v:Breadcrumb" property="v:title">JavaScript crypto</li>
+  </ol></nav>
+      </div>
+
+      <!-- heading -->
+      <div id="wiki-document-head" class="document-head">
+          <span class="from-search-previous-box">
+            <a class="button from-search-previous only-icon disabled" title="Previous Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-left"></i></a>
+          </span>
+          <span class="from-search-navigate-wrap">
+            <a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#" class="from-search-navigate"><span class="from-search-navigate-up"><i aria-hidden="true" class="icon-double-angle-up"></i></span><span class="from-search-navigate-down"><i aria-hidden="true" class="icon-double-angle-down"></i></span></a>
+          </span>
+          <div class="from-search-toc">
+            <span class="title">Your Search Results</span>
+            <ol></ol>
+          </div>
+          <span class="from-search-next-box">
+            <a class="button from-search-next only-icon disabled" title="Next Search Result" data-empty-title="No Previous Search Result"><i aria-hidden="true" class="icon-chevron-right"></i></a>
+          </span>
+
+        <h1>JavaScript crypto</h1>
+
+        
+        
+      </div>
+      
+      <!-- start the main content container -->
+        <div id="wiki-column-container" class="wiki-right-present wiki-left-present">
+
+                    <!-- additional controls row; hidden unless needed -->
+          <div id="wiki-controls" class="column-container column-container-reverse">
+            <div class="column-strip">
+              <!-- Show TOC "show" link -->
+            </div>
+            <div class="column-half">
+            </div>
+            <div class="column-strip quick-links hidden">
+              <a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#show-quick-links" class="title smaller" id="show-quick-links"><i aria-hidden="true" class="icon-caret-down"></i>Show Sidebar</a>
+            </div>
+          </div>
+          
+          <!-- content row with three strips -->
+          <div class="column-container column-container-reverse">
+
+                          <!-- TOC, approvals, etc -->
+              <div class="column-strip wiki-column" id="wiki-right">
+                            <!-- table of contents -->
+              <div id="toc" class="toc toggleable fixed" style="width: 274px; top: 0px; max-height: 880px;">
+                <a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#toc" class="title toggler" data-open-icon="icon-plus" data-closed-icon="icon-minus" aria-haspopup="true">In This Article<i class="icon-minus"></i></a>
+                <ol class="toggle-container">
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Using_the_Mozilla_crypto_object_from_JavaScript" rel="internal">Using the Mozilla <code>crypto</code> object from JavaScript</a><ol><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Handling_smart_card_events" rel="internal">Handling smart card events</a><ol><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Generating_Keys_and_issuing_User_Certificates" rel="internal">Generating keys and issuing user certificates</a></li></ol></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Overview_of_New_Cert_Issuing_Process" rel="internal">Overview of the new cert issuing process</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Typical_use" rel="internal">Typical use</a><ol><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Signing_text" rel="internal">Signing text</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Loading_PKCS_.2311_modules" rel="internal">Loading PKCS #11 modules</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Mechanism_flag_definitions" rel="internal">Mechanism flag definitions</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Cipher_flags" rel="internal">Cipher flags</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#Miscellaneous" rel="internal">Miscellaneous</a></li></ol></li></ol></li>
+                </ol>
+                              </div>
+                            </div>
+            
+                                                  
+            <!-- center: main article content -->
+            <div id="wiki-content" class="column-half wiki-column text-content">
+
+              
+              
+                                                                                          
+              <!-- just the article content -->
+              <article id="wikiArticle">
+                                                      <p></p><div class="overheadIndicator nonStandard nonStandardHeader"> 
+      <p><strong>Non-standard</strong><br> 
+      This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.</p> 
+      </div><div class="overheadIndicator deprecated deprecatedHeader"> 
+            <p><strong>Deprecated</strong><br>This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Do not use it in old or new projects. Pages or Web apps using it may break at any time.</p> 
+        </div><div class="warning warningHeader"> 
+    <p><strong>Warning:</strong> The features mentioned in this article are deleted proprietary Mozilla extensions, and are not supported in any other browser. They won't work in Firefox 34 or later. Use &lt;keygen&gt; or the future Web Crypto API instead.</p> 
+</div><p></p>
+<h2 id="Using_the_Mozilla_crypto_object_from_JavaScript">Using the Mozilla <code>crypto</code> object from JavaScript</h2>
+<p>Mozilla defines a special JavaScript object to allow web pages access to certain cryptographic-related services. These services are a balance between the functionality web pages need and the requirement to protect users from malicious web sites. Most of these services are available via the DOM <a href="https://developer.mozilla.org/en-US/docs/Web/API/window" title="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window."><code>window</code></a> object as <a href="https://developer.mozilla.org/en-US/docs/Web/API/window.crypto" title="The crypto API allows web pages access to certain cryptographic related services. These services are a balance between the functionality web pages need, and the requirement to protect users from malicious web sites."><code>window.crypto</code></a>.</p>
+<p>Services are provided to enable: smart card events, generating certificate requests, importing user certs, generating random numbers, logging out of your tokens, and signing text.</p>
+<h3 id="Handling_smart_card_events">Handling smart card events</h3>
+<p>Web sites can make themselves more SmartCard friendly by listening for SmartCard insertion and removal events. To enable your document to receive these events, you must first tell the crypto system you are interested by setting <a class="new" href="https://developer.mozilla.org/en-US/docs/Web/API/window.crypto.enableSmartCardEvents" title="The documentation about this has not yet been written; please consider contributing!"><code>window.crypto.enableSmartCardEvents</code></a> to <code>true</code>. You can then register event handlers for these events with the <a class="new" href="https://developer.mozilla.org/en-US/docs/Web/API/document.addEventListener" title="The documentation about this has not yet been written; please consider contributing!"><code>document.addEventListener()</code></a> method.</p>
+<p>Two smart card related events are generated: <code>smartcard-insert</code> when SmartCards are inserted, and <code>smartcard-remove</code> when SmartCards are removed.</p>
+<p>Web sites which use SSL clientAuth login could use the following code to refresh the page on token insertions and removals:</p>
+<pre class="brush:html;  language-html" data-number=""><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>...
+<span class="token script"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token keyword">function</span> <span class="token function">onSmartCardChange<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">reload<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">register<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span>crypto<span class="token punctuation">.</span>enableSmartCardEvents <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span><span class="token function">addEventListener<span class="token punctuation">(</span></span><span class="token string">"smartcard-insert"</span><span class="token punctuation">,</span> onSmartCardChange<span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span><span class="token function">addEventListener<span class="token punctuation">(</span></span><span class="token string">"smartcard-remove"</span><span class="token punctuation">,</span> onSmartCardChange<span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">deregister<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span><span class="token function">removeEventListener<span class="token punctuation">(</span></span><span class="token string">"smartcard-insert"</span><span class="token punctuation">,</span> onSmartCardChange<span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span><span class="token function">removeEventListener<span class="token punctuation">(</span></span><span class="token string">"smartcard-remove"</span><span class="token punctuation">,</span> onSmartCardChange<span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>onload <span class="token operator">=</span> register<span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>onunload <span class="token operator">=</span> deregister<span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span><div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div><div class="line-number" data-start="6" style="top: 95px;"></div><div class="line-number" data-start="7" style="top: 114px;"></div><div class="line-number" data-start="8" style="top: 133px;"></div><div class="line-number" data-start="9" style="top: 152px;"></div><div class="line-number" data-start="10" style="top: 171px;"></div><div class="line-number" data-start="11" style="top: 190px;"></div><div class="line-number" data-start="12" style="top: 209px;"></div><div class="line-number" data-start="13" style="top: 228px;"></div><div class="line-number" data-start="14" style="top: 247px;"></div><div class="line-number" data-start="15" style="top: 266px;"></div><div class="line-number" data-start="16" style="top: 285px;"></div><div class="line-number" data-start="17" style="top: 304px;"></div><div class="line-number" data-start="18" style="top: 323px;"></div><div class="line-number" data-start="19" style="top: 342px;"></div></code></pre>
+<p>With the above example, your web site will automatically reload anytime a SmartCard is inserted or removed. This allows the page to automatically login and logout based on the presence of the SmartCard.</p>
+<h4 id="Generating_Keys_and_issuing_User_Certificates" name="Generating_Keys_and_issuing_User_Certificates">Generating keys and issuing user certificates</h4>
+<p>There are several crypto object methods used in generating keys for certificates: <a href="https://developer.mozilla.org/en/JavaScript_crypto/generateCRMFRequest" title="en/JavaScript_crypto/generateCRMFRequest">generateCRMFRequest</a>(), <a href="https://developer.mozilla.org/en/JavaScript_crypto/importUserCertificates" title="en/JavaScript_crypto/importUserCertificates">importUserCertificates</a>().</p>
+<p>The <a href="https://developer.mozilla.org/en/JavaScript_crypto/generateCRMFRequest" title="en/JavaScript_crypto/generateCRMFRequest">generateCRMFRequest</a>() function generates a key and creates a <a href="https://developer.mozilla.org/en/CRMF_Request_object" title="en/CRMF_Request_object">CRMF Request object</a>. This object can be passed to a CA using a webform.</p>
+<p>The <a href="https://developer.mozilla.org/en/JavaScript_crypto/importUserCertificates" title="en/JavaScript_crypto/importUserCertificates">importUserCertificates</a>() function loads certificates into the NSS database or SmartCard if the corresponding key is found there.</p>
+<p>The <a href="https://developer.mozilla.org/en/JavaScript_crypto/popChallengeResponse" title="en/JavaScript_crypto/popChallengeResponse">popChallengeResponse</a>() function is not implemented.</p>
+<h3 id="Overview_of_New_Cert_Issuing_Process" name="Overview_of_New_Cert_Issuing_Process">Overview of the new cert issuing process</h3>
+<ol>
+ <li>User fills out enrollment form</li>
+ <li>User action initiates script</li>
+ <li>Script calls key generation method (<a href="https://developer.mozilla.org/en/JavaScript_crypto/generateCRMFRequest" title="en/JavaScript_crypto/generateCRMFRequest">generateCRMFRequest</a>)</li>
+ <li>Signing and Encryption keys are generated</li>
+ <li>Encryption Private Key is wrapped with public key of Key Recovery Authority (KRA) (passed in in the form of a certificate as part of the script, and checked against a pre-installed certificate copy in the local certificate database)</li>
+ <li>The public keys, wrapped encryption private key, and text string from the script (possibly containing naming or enrollment info) are signed by the user</li>
+ <li>Signed blob is returned to the script</li>
+ <li>Script submits signed blob and any other necessary info to the CA/RA</li>
+ <li>CA/RA verifies signature on signed blob</li>
+ <li>CA/RA validates identity of user</li>
+ <li>CA/RA sends wrapped encryption private key to KRA</li>
+ <li>KRA sends escrow verification back to CA</li>
+ <li>CA creates and signs certificates</li>
+ <li>CA sends certificates back to the user (<a href="https://developer.mozilla.org/en/JavaScript_crypto/importUserCertificates" title="en/JavaScript_crypto/importUserCertificates">importUserCertificates</a>)</li>
+</ol>
+<h3 id="Typical_use" name="Typical_use">Typical use</h3>
+<p>The CA's enrollment page could look something like this:</p>
+<pre class="brush:html;  language-html" data-number=""><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Request a cert<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ReqForm<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://your.ra.site.org<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span>hidden</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span>cert_request</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Name: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span>text</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span>name</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Password: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span>password</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span>submit</span> <span class="token attr-name">Name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Send<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+<span class="token script"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">/* the following values could be filled in by the server CGI */</span>
+<span class="token keyword">var</span> authenticator <span class="token operator">=</span> <span class="token string">"server_magic"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> keyTransportCert <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> crmfObject <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> form <span class="token operator">=</span> document<span class="token punctuation">.</span>forms<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">validate<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+ <span class="token comment" spellcheck="true"> // generate keys for nsm.
+</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>crypto<span class="token punctuation">.</span>version<span class="token punctuation">)</span> <span class="token operator">!</span><span class="token operator">=</span> <span class="token string">"undefined"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    crmfObject <span class="token operator">=</span> crypto<span class="token punctuation">.</span><span class="token function">generateCRMFRequest<span class="token punctuation">(</span></span>
+      <span class="token string">"CN="</span> <span class="token operator">+</span> form<span class="token punctuation">.</span>name<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+      form<span class="token punctuation">.</span>password<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+      authenticator<span class="token punctuation">,</span>
+      keyTransportCert<span class="token punctuation">,</span>
+      <span class="token string">"setCRMFRequest();"</span><span class="token punctuation">,</span>
+      <span class="token number">1024</span><span class="token punctuation">,</span>
+      <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token string">"rsa-dual-use"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">setCRMFRequest<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  form<span class="token punctuation">.</span>cert_request<span class="token punctuation">.</span>value <span class="token operator">=</span> crmfObject<span class="token punctuation">.</span>request<span class="token punctuation">;</span>
+  form<span class="token punctuation">.</span><span class="token function">submit<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+form<span class="token punctuation">.</span>onsubmit <span class="token operator">=</span> validate<span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span><div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div><div class="line-number" data-start="6" style="top: 95px;"></div><div class="line-number" data-start="7" style="top: 114px;"></div><div class="line-number" data-start="8" style="top: 133px;"></div><div class="line-number" data-start="9" style="top: 152px;"></div><div class="line-number" data-start="10" style="top: 171px;"></div><div class="line-number" data-start="11" style="top: 190px;"></div><div class="line-number" data-start="12" style="top: 209px;"></div><div class="line-number" data-start="13" style="top: 228px;"></div><div class="line-number" data-start="14" style="top: 247px;"></div><div class="line-number" data-start="15" style="top: 266px;"></div><div class="line-number" data-start="16" style="top: 285px;"></div><div class="line-number" data-start="17" style="top: 304px;"></div><div class="line-number" data-start="18" style="top: 323px;"></div><div class="line-number" data-start="19" style="top: 342px;"></div><div class="line-number" data-start="20" style="top: 361px;"></div><div class="line-number" data-start="21" style="top: 380px;"></div><div class="line-number" data-start="22" style="top: 399px;"></div><div class="line-number" data-start="23" style="top: 418px;"></div><div class="line-number" data-start="24" style="top: 437px;"></div><div class="line-number" data-start="25" style="top: 456px;"></div><div class="line-number" data-start="26" style="top: 475px;"></div><div class="line-number" data-start="27" style="top: 494px;"></div><div class="line-number" data-start="28" style="top: 513px;"></div><div class="line-number" data-start="29" style="top: 532px;"></div><div class="line-number" data-start="30" style="top: 551px;"></div><div class="line-number" data-start="31" style="top: 570px;"></div><div class="line-number" data-start="32" style="top: 589px;"></div><div class="line-number" data-start="33" style="top: 608px;"></div><div class="line-number" data-start="34" style="top: 627px;"></div><div class="line-number" data-start="35" style="top: 646px;"></div><div class="line-number" data-start="36" style="top: 665px;"></div><div class="line-number" data-start="37" style="top: 684px;"></div><div class="line-number" data-start="38" style="top: 703px;"></div><div class="line-number" data-start="39" style="top: 722px;"></div><div class="line-number" data-start="40" style="top: 741px;"></div></code></pre>
+<p>On completion of the request, the CA may submit a page that looks something like this:</p>
+<pre class="brush:html;  language-html" data-number=""><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Certificate Request Successful<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Hit 'load' to load your certificate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ReqForm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span>submit</span> <span class="token attr-name">Name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Load<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+<span class="token script"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">/* the following values could be filled in by the server CGI */</span>
+<span class="token keyword">var</span> nickname<span class="token operator">=</span> <span class="token string">"MyCertNickname"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> cert <span class="token operator">=</span> <span class="token string">"Mkjflakdjfiwjflaksufklasf ..."</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> forceBackup <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">LoadCertificate<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span>crypto<span class="token punctuation">.</span><span class="token function">importUserCertificates<span class="token punctuation">(</span></span>nickname<span class="token punctuation">,</span> cert<span class="token punctuation">,</span> forceBackup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+document<span class="token punctuation">.</span>forms<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>onsubmit <span class="token operator">=</span> LoadCertificate<span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span><div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div><div class="line-number" data-start="6" style="top: 95px;"></div><div class="line-number" data-start="7" style="top: 114px;"></div><div class="line-number" data-start="8" style="top: 133px;"></div><div class="line-number" data-start="9" style="top: 152px;"></div><div class="line-number" data-start="10" style="top: 171px;"></div><div class="line-number" data-start="11" style="top: 190px;"></div><div class="line-number" data-start="12" style="top: 209px;"></div><div class="line-number" data-start="13" style="top: 228px;"></div><div class="line-number" data-start="14" style="top: 247px;"></div><div class="line-number" data-start="15" style="top: 266px;"></div><div class="line-number" data-start="16" style="top: 285px;"></div><div class="line-number" data-start="17" style="top: 304px;"></div><div class="line-number" data-start="18" style="top: 323px;"></div><div class="line-number" data-start="19" style="top: 342px;"></div><div class="line-number" data-start="20" style="top: 361px;"></div></code></pre>
+<h4 id="Signing_text" name="Signing_text">Signing text</h4>
+<pre class="eval  language-html" data-number=""><code class=" language-html">DOMString signText(DOMString stringToSign,
+                   DOMString caOption /* ... */);<div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div></code></pre>
+<h4 id="Loading_PKCS_.2311_modules" name="Loading_PKCS_.2311_modules">Loading PKCS #11 modules</h4>
+<pre class="eval  language-html" data-number=""><code class=" language-html">long deletemodule(DOMString moduleName);
+long addmodule(DOMString moduleName,
+               DOMString libraryFullPath,
+               long cryptoMechanismFlags,
+               long cipherFlags);<div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div></code></pre>
+<p>Loads or removes a new PKCS #11 module. In the add case, the module will be placed in the NSS secmod.db database and will be loaded automatically on application restart. In the delete case, the module is removed from the NSS secmod.db. This function will issue a user prompt to confirm the operation before the add or delete actually occurs.</p>
+<h6 id="Parameters">Parameters</h6>
+<dl>
+ <dt>
+  <code>moduleName</code></dt>
+ <dd>
+  Name of the module.</dd>
+ <dt>
+  <code>libraryFullPath</code></dt>
+ <dd>
+  The filename of the library prepended with its full path.</dd>
+ <dt>
+  <code>cryptoMechanismFlags</code></dt>
+ <dd>
+  A bit vector indicating all cryptographic mechanisms should be turned on by default (see below).</dd>
+ <dt>
+  <code>cipherFlags</code></dt>
+ <dd>
+  A bit vector indicating all SSL or S/MIME cipher functions supported by the module (see below).</dd>
+</dl>
+<h4 id="Mechanism_flag_definitions">Mechanism flag definitions</h4>
+<p>In general, most tokens should not set any of the cipher flags. Setting these flags means you want your token to supply the default implementation for these functions. Normally Mozilla uses its own internal module to supply these functions. These flags override that preference. If you choose to implement these flags, your module must supply the following additional functions for each flag:</p>
+<ul>
+ <li>PKCS11_MECH_FLAG: must support CKM_RSA_PKCS and CKM_RSA_X_509 and the following functions: C_WRAPKEY, C_ENCRYPT, C_SIGN, C_DECRYPT, C_UNWRAPKEY, C_VERIFYRECOVER, C_VERIFY, C_GENERATEKEYPAIR (2048, 1024, 512) size</li>
+ <li>PKCS11_MECH_DSA_FLAG: must support CKM_DSA and the following functions: C_SIGN, C_VERIFY, C_GENERATEKEYPAIR</li>
+ <li>PKCS11_MECH_RC2_FLAG: must support CKM_RC2_CBC and CKM_RC2_ECB and the following functions: C_GENERATEKEY, C_ENCRYPT, C_DECRYPT, C_WRAPKEY, C_UNWRAPKEY</li>
+ <li>PKCS11_MECH_RC4_FLAG: must support CKM_RC4_CBC and CKM_RC4_ECB and the following functions: C_GENERATEKEY, C_ENCRYPT, C_DECRYPT, C_WRAPKEY, C_UNWRAPKEY</li>
+ <li>PKCS11_MECH_DES_FLAG: must support CKM_CPMF_CBC, CKM_DES_CBC, CKM_DES3_CBC, CKM_CPMF_ECB, CKM_DES_ECB, CKM_DES3_ECB and the following functions: C_GENERATEKEY, C_ENCRYPT, C_DECRYPT, C_WRAPKEY, C_UNWRAPKEY</li>
+ <li>PKCS11_MECH_DH_FLAG: must support CKM_DH_PKCS_DERIVE and CKM_DH_KEY_PAIR_GEN and the following functions: C_DERIVEKEY, C_GENERATEKEYPAIR</li>
+ <li>PKCS11_MECH_MD5_FLAG: Hashing must be able to function without authentication.</li>
+ <li>PKCS11_MECH_SHA1_FLAG: Hashing must be able to function without authentication.</li>
+ <li>PKCS11_MECH_MD2_FLAG: Hashing must be able to function without authentication.*</li>
+ <li>PKCS11_RANDOM_FLAG: Use token's Random Number Generator.
+  <ul>
+   <li>Warning: Must be able to use without authentication. Many hardware random number generators are not as secure as the Netscape internal one. Do not select this value unless you can show that your random number generator is secure. Even so, it's highly discouraged.</li>
+  </ul>
+ </li>
+ <li>PKCS11_PUB_READABLE_CERT_FLAG: This is the only flag most smart tokens should turn on. You can turn this flag on if:
+  <ul>
+   <li>the certs on your token can be read without authentication and,</li>
+   <li>the public key on your token can be found by ID, MODULUS, or VALUE and all your private keys have the associated public key.
+    <ul>
+     <li>Turning this flag on will illuminate a large number of password prompts for your token when looking up certs in Communicator.</li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+<pre class="eval  language-html" data-number=""><code class=" language-html">PKCS11_MECH_RSA_FLAG           =  0x1&lt;&lt;0;
+PKCS11_MECH_DSA_FLAG           =  0x1&lt;&lt;1;
+PKCS11_MECH_RC2_FLAG           =  0x1&lt;&lt;2;
+PKCS11_MECH_RC4_FLAG           =  0x1&lt;&lt;3;
+PKCS11_MECH_DES_FLAG           =  0x1&lt;&lt;4;
+PKCS11_MECH_DH_FLAG            =  0x1&lt;&lt;5; //Diffie-Hellman
+PKCS11_MECH_SKIPJACK_FLAG      =  0x1&lt;&lt;6; //SKIPJACK algorithm as in Fortezza cards
+PKCS11_MECH_RC5_FLAG           =  0x1&lt;&lt;7;
+PKCS11_MECH_SHA1_FLAG          =  0x1&lt;&lt;8;
+PKCS11_MECH_MD5_FLAG           =  0x1&lt;&lt;9;
+PKCS11_MECH_MD2_FLAG           =  0x1&lt;&lt;10;
+PKCS11_MECH_RANDOM_FLAG        =  0x1&lt;&lt;27; //Random number generator
+PKCS11_PUB_READABLE_CERT_FLAG  =  0x1&lt;&lt;28; //Stored certs can be read off the token w/o logging in
+PKCS11_DISABLE_FLAG            =  0x1&lt;&lt;30; //tell Mozilla to disable this slot by default<div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div><div class="line-number" data-start="6" style="top: 95px;"></div><div class="line-number" data-start="7" style="top: 114px;"></div><div class="line-number" data-start="8" style="top: 133px;"></div><div class="line-number" data-start="9" style="top: 152px;"></div><div class="line-number" data-start="10" style="top: 171px;"></div><div class="line-number" data-start="11" style="top: 190px;"></div><div class="line-number" data-start="12" style="top: 209px;"></div><div class="line-number" data-start="13" style="top: 228px;"></div><div class="line-number" data-start="14" style="top: 247px;"></div></code></pre>
+<h4 id="Cipher_flags">Cipher flags</h4>
+<pre class="eval  language-html" data-number=""><code class=" language-html">Reserved<div class="line-number" data-start="1" style="top: 0px;"></div></code></pre>
+<p>Important for CryptoMechanismFlags</p>
+<p>0x1&lt;&lt;11, 0x1&lt;&lt;12, ... , 0x1&lt;&lt;26, 0x1&lt;&lt;29, and 0x1&lt;&lt;31 are reserved for internal use in Mozilla. Therefore, these bits should always be set to 0; otherwise, Mozilla might exhibit unpredictable behavior.</p>
+<p>Important for CipherFlags</p>
+<p>All values are reserved for internal use in Mozilla. Therefore, this flag should always be set to 0; otherwise, Mozilla might exhibit unpredictable behavior.</p>
+<p>Example of CryptoMechanismFlags and CipherFlags</p>
+<pre class="eval  language-html" data-number=""><code class=" language-html">pkcs11MechanismFlags = PKCS11_MECH_DSA_FLAG | PKCS11_MECH_SKIPJACK_FLAG | PKCS11_MECH_RANDOM_FLAG;
+pkcs11CipherFlags = 0;<div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div></code></pre>
+<p>Return Values</p>
+<pre class="eval  language-html" data-number=""><code class=" language-html">JS_OK_ADD_MODULE                  = 3   // Successfully added a module
+JS_ERR_OTHER                      = -1  // Errors other than the following
+JS_ERR_USER_CANCEL_ACTION         = -2  // User aborted an action
+JS_ERR_INCORRECT_NUM_OF_ARGUMENTS = -3  // Calling a method w/ incorrect # of
+                                        // arguments
+JS_ERR_ADD_MODULE                 = -5  // Error adding a module
+JS_ERR_BAD_MODULE_NAME            = -6  // The module name is invalid
+JS_ERR_ADD_MODULE_DUPLICATE       = -10 // The module being installed has the
+                                        // same name as one of the modules that
+                                        // has already been installed<div class="line-number" data-start="1" style="top: 0px;"></div><div class="line-number" data-start="2" style="top: 19px;"></div><div class="line-number" data-start="3" style="top: 38px;"></div><div class="line-number" data-start="4" style="top: 57px;"></div><div class="line-number" data-start="5" style="top: 76px;"></div><div class="line-number" data-start="6" style="top: 95px;"></div><div class="line-number" data-start="7" style="top: 114px;"></div><div class="line-number" data-start="8" style="top: 133px;"></div><div class="line-number" data-start="9" style="top: 152px;"></div><div class="line-number" data-start="10" style="top: 171px;"></div></code></pre>
+<h4 id="Miscellaneous" name="Miscellaneous">Miscellaneous</h4>
+<pre class="eval  language-html" data-number=""><code class=" language-html">DOMString random(in long numBytes);<div class="line-number" data-start="1" style="top: 0px;"></div></code></pre>
+<p><span class="inlineIndicator unimplemented unimplementedInline">Unimplemented</span>You can use <span><a href="https://developer.mozilla.org/en/DOM/window.crypto.getRandomValues" title="window.crypto.getRandomValues">window.crypto.getRandomValues</a> instead.</span></p>
+<pre class="eval  language-html" data-number=""><code class=" language-html">void logout();<div class="line-number" data-start="1" style="top: 0px;"></div></code></pre>
+<p>Logs the user out of all the cryptographic tokens. The next private operation on any token will require the user password again. The SSL session cache is also cleared (from Firefox 1.5 upward).</p>
+<p>This means the master password will be requested the next time a saved password will be accessed after this function is called. This also means the SSL client authentication state will be erased for SSL sites with client authentication, and a client certificate prompt will appear again the next time the user connects to the site.</p>
+<div class="note">
+ <p>Note: This function provides a convenient way to erase the SSL session state at the browser level, but in order to really guarantee that the state is erased, it is more secure to do it on the server side whenever possible.</p>
+</div>
+<pre class="eval  language-html" data-number=""><code class=" language-html">void disableRightClick();<div class="line-number" data-start="1" style="top: 0px;"></div></code></pre>
+<p><span class="inlineIndicator unimplemented unimplementedInline">Unimplemented</span></p>
+                                                </article>
+
+            
+
+              
+                <!-- contributors -->
+                <div class="wiki-block contributors">
+                  <h2 class="offscreen">Document Tags and Contributors</h2>
+                                      <div class="tag-attach-list contributors-sub">
+    <i aria-hidden="true" class="icon-tags"></i>
+    <strong>Tags:</strong>&nbsp;
+    <ul class="tags tags-small">
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/Cryptography">Cryptography</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/NeedsContent">NeedsContent</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/Guide">Guide</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/Security">Security</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/Non%20Standard">Non Standard</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/tag/NSS">NSS</a></li>
+          </ul>
+  </div>
+                  <div class="contributors-sub"> <i aria-hidden="true" class="icon-group"></i><strong>Contributors to this page:</strong> <a href="https://developer.mozilla.org/en-US/profiles/evilpie">evilpie</a>, <a href="https://developer.mozilla.org/en-US/profiles/Sheppy">Sheppy</a>, <a href="https://developer.mozilla.org/en-US/profiles/Shaver">Shaver</a>, <a href="https://developer.mozilla.org/en-US/profiles/Relyea">Relyea</a>, <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>, <a href="https://developer.mozilla.org/en-US/profiles/Nickolay">Nickolay</a>, <a href="https://developer.mozilla.org/en-US/profiles/Callek">Callek</a>, <a href="https://developer.mozilla.org/en-US/profiles/Sephr">Sephr</a>, <a href="https://developer.mozilla.org/en-US/profiles/Jabez">Jabez</a>, <a href="https://developer.mozilla.org/en-US/profiles/kscarfone">kscarfone</a>, <a href="https://developer.mozilla.org/en-US/profiles/Ms2ger">Ms2ger</a>, <a href="https://developer.mozilla.org/en-US/profiles/Jmdesp">Jmdesp</a>, <a href="https://developer.mozilla.org/en-US/profiles/Lahmatiy">Lahmatiy</a>, <a href="https://developer.mozilla.org/en-US/profiles/Mouly">Mouly</a>, <a href="https://developer.mozilla.org/en-US/profiles/ericjung">ericjung</a>, <a href="https://developer.mozilla.org/en-US/profiles/Dria">Dria</a> </div>                                      <div class="contributors-sub">
+                      <i aria-hidden="true" class="icon-clock-o"></i><strong>Last updated by:</strong>
+                      <a href="https://developer.mozilla.org/en-US/profiles/teoli">teoli</a>,
+                      <time datetime="2014-09-09T08:30:00-07:00">Sep 9, 2014 8:30:00 AM</time>
+                    </div>
+                                  </div>
+                          </div>
+
+                          <!-- quick links and zone subnav strip -->
+              <div id="wiki-left" class="column-strip wiki-column">
+
+              
+                <a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/JavaScript_crypto#quick-links" class="title smaller" id="quick-links-toggle"><i aria-hidden="true" class="icon-caret-up"></i>Hide Sidebar</a>
+
+                                  <!-- zone subnav -->
+                    <nav class="zone-subnav-container" role="navigation">
+    <div class="subnav" id="Subnav">
+      
+<p></p><ol class="accordion"><li class="toggleable current" data-closed=""><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-down"></i>Archived Mozilla and build documentation</a><ol class="toggle-container" aria-expanded="true" style="display: block;"><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla">Archived Mozilla and build documentation</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/SpiderMonkey">Archived SpiderMonkey docs</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Automatic_Mozilla_Configurator">Automatic Mozilla Configurator</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/BlackConnect">BlackConnect</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Blackwood">Blackwood</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Chromeless">Chromeless</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Creating_a_Mozilla_extension">Creating a Mozilla Extension</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Dehydra">Dehydra</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Devmo_launch_roadmap">Devmo 1.0 Launch Roadmap</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Drag_and_drop">Drag and Drop</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Embedding_Mozilla_in_a_Java_Application_using_JavaXPCOM">Embedding Mozilla in a Java Application using JavaXPCOM</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Project:Existing_Content">Existing Content</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Extension_Frequently_Asked_Questions">Extension Frequently Asked Questions</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Fighting_Junk_Mail_with_Netscape_7.1">Fighting Junk Mail with Netscape 7.1</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Firefox_Sync">Firefox Sync</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/HTTP_Class_Overview">HTTP Class Overview</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Project:Hacking_wiki">Hacking wiki</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Help_viewer">Help Viewer</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Hidden_prefs">Hidden prefs</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Nanojit_merging">How to Write and Land Nanojit Patches</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Introducing_the_Audio_API_Extension">Introducing the Audio API extension</a></li><li class="current"><a href="./JavaScript crypto - Archive of obsolete content   MDN_files/JavaScript crypto - Archive of obsolete content   MDN.html">JavaScript crypto</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Jetpack">Jetpack</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Litmus_tests">Litmus tests</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Project:New_Skin_Notes">New Skin Notes</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Project:DevEdge">Priority Content</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Prism">Prism</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Remote_XUL">Remote XUL</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/SXSW_2007_presentations">SXSW 2007 presentations</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Space_Manager_Detailed_Design">Space Manager Detailed Design</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Space_Manager_High_Level_Design">Space Manager High Level Design</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Stress_testing">Stress testing</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Tamarin">Tamarin</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Venkman">Venkman</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Mozilla/XPInstall">XPInstall</a></li></ol></li><li class="toggleable" data-closed="true"><a href="https://developer.mozilla.org/en-US/docs/Archive/Web" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-right"></i>Archived open Web documentation</a><ol class="toggle-container" style="display: none;"><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web">Archived open Web documentation</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/E4X">E4X</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/E4X_tutorial">E4X Tutorial</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect">LiveConnect</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/MSX_Emulator_(jsMSX)">MSX Emulator (jsMSX)</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Old_Proxy_API">Old Proxy API</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Scope_Cheatsheet">Scope Cheatsheet</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Server-Side_JavaScript">Server-Side JavaScript</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Sharp_variables_in_JavaScript">Sharp variables in JavaScript</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Standards-Compliant_Authoring_Tools">Standards-Compliant Authoring Tools</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Web/XForms">XForms</a></li></ol></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Index">Index</a></li><li class="toggleable" data-closed="true"><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-right"></i>MDN "meta-documentation" archive</a><ol class="toggle-container" style="display: none;"><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs">MDN "meta-documentation" archive</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Author_List_with_Addresses">Author List with Addresses</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Canvas_doc_improvements">Canvas documentation improvements</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Current_events">Current events</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Custom_classes">Custom CSS classes for MDN</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/MDC_design_document">Design Document</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/DevEdge">DevEdge</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Documentation_process">Developer documentation process</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Disambiguation">Disambiguation</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Documentation_wishlist">Documentation Wishlist</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Planning">Documentation planning and tracking</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Examples">Examples</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Existing_Content_DOM_in_Mozilla">Existing Content/DOM in Mozilla</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/External_redirects">External Redirects</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Getting_started">Getting started as a new MDN contributor</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Needs_redirect">Needs Redirect</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Team_status_board">Team status board</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Meta_docs/Using_the_Mozilla_Developer_Center">Using the Mozilla Developer Center</a></li></ol></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/MMgc">MMgc</a></li><li class="toggleable" data-closed="true"><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries" class="toggler" aria-haspopup="true"><i aria-hidden="true" class="icon-caret-right"></i>Newsgroup summaries</a><ol class="toggle-container" style="display: none;"><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries">Newsgroup summaries</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/Format">Format</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/Mozilla.dev.apps.firefox-2006-09-29">Mozilla.dev.apps.firefox-2006-09-29</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/Mozilla.dev.apps.firefox-2006-10-06">Mozilla.dev.apps.firefox-2006-10-06</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-accessibility">mozilla-dev-accessibility</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-apps-calendar">mozilla-dev-apps-calendar</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-apps-firefox">mozilla-dev-apps-firefox</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-apps-thunderbird">mozilla-dev-apps-thunderbird</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-builds">mozilla-dev-builds</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-embedding">mozilla-dev-embedding</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-extensions">mozilla-dev-extensions</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-i18n">mozilla-dev-i18n</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-l10n">mozilla-dev-l10n</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-planning">mozilla-dev-planning</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-platform">mozilla-dev-platform</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-quality">mozilla-dev-quality</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-security">mozilla-dev-security</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-tech-js-engine">mozilla-dev-tech-js-engine</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-tech-layout">mozilla-dev-tech-layout</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-tech-xpcom">mozilla-dev-tech-xpcom</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla-dev-tech-xul">mozilla-dev-tech-xul</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla.dev.apps.calendar">mozilla.dev.apps.calendar</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Newsgroup_summaries/mozilla.dev.tech.js-engine">mozilla.dev.tech.js-engine</a></li></ol></li><li><a href="https://developer.mozilla.org/en-US/docs/Archive/Solaris_10_build_prerequisites">Solaris 10 Build Prerequisites</a></li></ol><p></p>
+    </div>
+  </nav>&nbsp;
+                
+                
+                <!-- approvals -->
+                
+              
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div> <!-- ends "main-content" -->
+
+  <menu type="context" id="edit-history-menu">
+    <menuitem data-action="/en-US/docs/Archive/Mozilla/JavaScript_crypto$edit" label="Edit page"></menuitem>
+    <menuitem data-action="/en-US/docs/Archive/Mozilla/JavaScript_crypto$history" label="View page history"></menuitem>
+  </menu>
+  </div></main>
+
+  <!-- Footer -->
+  <footer><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+                <p>
+          <bdi>© 2005-2015 Mozilla Developer Network and individual contributors<br> Content is available under <a href="https://developer.mozilla.org/en-US/docs/Project:MDN/About#Copyrights_and_licenses">these licenses</a> · <a href="https://developer.mozilla.org/en-US/docs/Project:MDN/About">About MDN</a> · <a href="https://www.mozilla.org/about/legal/terms/mozilla">Terms</a> · <a href="https://www.mozilla.org/privacy/websites/">Privacy</a> · <a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a> · <a href="https://github.com/mozilla/kuma">Contribute to the code</a></bdi>        </p>
+              </div>
+      <div class="column-strip">
+                                  </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+    <script src="./JavaScript crypto - Archive of obsolete content   MDN_files/build-b8b5531"></script>
+  
+      <!--[if lte IE 8]><script src="/media/js/libs/selectivizr-1.0.2/selectivizr-build.js"></script><![endif]-->
+
+    <script src="./JavaScript crypto - Archive of obsolete content   MDN_files/include.js"></script>
+<form id="_persona_login" method="post" action="https://developer.mozilla.org/users/persona/signin" data-csrf-token-url="/users/persona/csrf" data-request="{&quot;siteName&quot;: &quot;Mozilla Developer Network&quot;, &quot;siteLogo&quot;: &quot;/media/img/opengraph-logo.png&quot;}">
+  <input type="hidden" name="csrfmiddlewaretoken" value="" id="_persona_csrf_token">
+  <input type="hidden" name="next" value="" id="_persona_next_url">
+  <input type="hidden" name="process" value="" id="_persona_process">
+  <input type="hidden" name="assertion" id="_persona_assertion">
+</form>
+
+    <script src="./JavaScript crypto - Archive of obsolete content   MDN_files/main-min.js"></script>
+
+          <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+    
+          <script src="./JavaScript crypto - Archive of obsolete content   MDN_files/wiki-min.js"></script><script data-manual="" async="" src="./JavaScript crypto - Archive of obsolete content   MDN_files/syntax-prism-min.js"></script>
+      
+    <script type="text/javascript">
+      if(window.jQuery) jQuery('.from-search-toc').mozSearchResults('');
+
+                      mdn.optimizely.push(['activate', 2706700712]);
+        </script>
+
+</body></html>

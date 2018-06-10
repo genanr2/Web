@@ -1,0 +1,63 @@
+<!--[if gt IE 7]>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<![endif]-->
+<HTML>
+<HEAD>
+<TITLE>Процесс перегенерации секретного ключа</TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=5" >
+<META Content="text/html; charset=windows-1251" Http-equiv="Content-type">
+<META Content="ru-RU" Http-equiv="Content-language">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../css/main.css" ID="MAINCSS">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../css/csGrass.css" ID="COLORCSS"/>
+<LINK REL="stylesheet" HREF="../scheme/crypto/crypto.css" ID="SCHMCSS">
+<SCRIPT SRC="../scheme/crypto/crypto_RUSSIAN.js" ID="SCHMJS0"></SCRIPT>
+<SCRIPT SRC="../scheme/crypto/crypto.js" ID="SCHMJS"></SCRIPT>
+<SCRIPT SRC="../scheme/crypto/crypto_reply.js" ID="SCHMJS2"></SCRIPT>
+<STYLE TYPE="text/css" MEDIA="print">
+#WaitMes, #FORSCREEN {display: none;}
+#DR {display: block;}
+</STYLE>
+</HEAD>
+<BODY TOPMARGIN="0" LEFTMARGIN="0" onHelp="top.Help('ug.useric.regenerKey.html'); return false;">
+<DIV Id="WaitMes"></DIV>
+
+<CENTER>
+<DIV ID="FORSCREEN">
+
+<DIV ID="ShowMes"></DIV>
+ <BUTTON onClick="window.print();" STYLE="width: 170px; margin-top: 5px; margin-bottom: 10px;">Печать</BUTTON>
+</DIV>
+<SPAN ID="ERRORTD"></SPAN>
+<DIV ID="xslViewcFrom"></DIV>
+</CENTER>
+<XML ID="cForm"></XML>
+
+<DIV Id="DEBUG"></DIV>
+<DIV id="PKT" style="display:none"></DIV>
+<DIV id="PKP" style="display:none"><PRE>CN=Шафран Наталья Александровна&#13;&#10;C=RU&#13;&#10;S=MOSCOW&#13;&#10;L=MOSCOW&#13;&#10;O=ООО  &quot;АНКО&quot;&#13;&#10;OU=&#13;&#10;E=Shafran_Natal_ya_Aleksandrovna_09.06.2015:15:00:06.2850&#13;&#10;T=&#13;&#10;OGRN=&#13;&#10;OGRNIP=&#13;&#10;SNILS=&#13;&#10;INN=&#13;&#10;DC=&#13;&#10;SN=6475CBA9000000005F6C&#13;&#10;ICN=CADBO&#13;&#10;IC=&#13;&#10;IS=&#13;&#10;IL=&#13;&#10;IO=&#13;&#10;IOU=&#13;&#10;IE=&#13;&#10;IT=&#13;&#10;IOGRN=&#13;&#10;IOGRNIP=&#13;&#10;ISNILS=&#13;&#10;IINN=&#13;&#10;IDC=&#13;&#10;SKU=DigitalSignature;NonRepudiation;KeyEncipherment;DataEncipherment(F0)&#13;&#10;PKU=Проверка подлинности клиента(1.3.6.1.5.5.7.3.2);Временный доступ к Центру Регистрации(1.2.643.2.2.34.2)&#13;&#10;SPKId=7ACF FBD6 ECCE 4DFD 6ACD 74D0 1C71 8D66 8A36 1882 &#13;&#10;RGKeyNum=1301 31&#13;&#10;SKName=Shafran_Natal_ya_Aleksandrovna_09.06.2015:15:00:06.2850 1&#13;&#10;AkiKId=1A7D 75AB 5082 7C78 37D0 B2CD 5A4A 0B3E 2758 9173 &#13;&#10;CRLDp=&#13;&#10; URL=http://dboc.bankrs.ru/CertEnroll/CADBO.crl&#13;&#10; URL=file://\\DBOC.bankrs.ru\CertEnroll\CADBO.crl&#13;&#10;&#13;&#10;CertSignAlg=ГОСТ Р 34.11/34.10-2001(1.2.643.2.2.3)&#13;&#10;CertSign=&#13;&#10;B9C0 ECB4 B0C0 618F 6BC1 872D 2C19 1730 &#13;&#10;22EB 9BBB 8A26 4E0C 841A 6545 2926 CBAE &#13;&#10;2800 7DF6 5530 880C B166 C42F 5554 D5E8 &#13;&#10;0D25 CC7F 5132 C2E4 B2AC 620F F348 8A0A &#13;&#10;&#13;&#10;&#13;&#10;CertVer=3&#13;&#10;AltT=1&#13;&#10;PKeyAlg=ГОСТ Р 34.10-2001(1.2.643.2.2.19), Parameters: 3012 0607 2A85 0302 0224 0006 072A 8503 0202 1E01 &#13;&#10;NotAfter=10-06-16 09:50:58&#13;&#10;NotBefore=10-06-15 09:40:58&#13;&#10;PKey=&#13;&#10;0440 FBD0 71C2 6606 F908 FEB8 858B BCC8 B183 &#13;&#10;AFD9 6172 2F4C E170 7EE1 2BCC 4F8C 4037 0A7A &#13;&#10;A40E 117B 89C0 5E1C 1337 433C 2F96 4799 8092 &#13;&#10;A653 A1AE 9122 6B1A 1039 56D3 &#13;&#10;&#13;&#10;Thmb=7C4D4E9E4C61AC50AA4852F6E725E1E1F9167B85</PRE></DIV>
+<SCRIPT LANGUAGE="JavaScript" DEFER>
+window.w=window;
+window.Top=top.Top;
+
+Top.fnCommOnload(window);
+var t=" , 11.00.";
+var newKey='',needCard='1',DT='act',PNS='Шафран Наталья Александровна',CUID='6475CBA9000000005F6C',CNT="",bU='';
+if(CNT!=''){
+	scnt=Top.nv.MyTools.XMLhexDecode(CNT);
+	Top.nv.setInfoCellValues(unescape(scnt))
+}
+if(needCard=='1') showCard();
+//else showAns();
+w.tbMAP='1000000000';
+w.tbPanID='CRYPTO_DEFAULT_FORM';
+Top.SetToolBar(w);
+
+</SCRIPT>
+</BODY>
+</HTML>
+
+
+
+
+
+

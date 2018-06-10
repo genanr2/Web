@@ -1,0 +1,2364 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0054)https://msdn.microsoft.com/ru-ru/library/hh300224.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="ru" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+<LINK href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx" rel="canonical"> 
+        
+<META http-equiv="Content-Type" 
+content="text/html; charset=utf-8"><TITLE>Пошаговое руководство. Получение 
+доступа к Интернету с помощью модификатора Async и оператора Await (C# и Visual 
+Basic)</TITLE> 
+<META name="DCS.dcsuri" content="/ru-ru/library/hh300224(d=default,l=ru-ru,v=vs.120).aspx"> 
+<META name="NormalizedUrl" content="https://msdn.microsoft.com/ru-ru/library/hh300224(d=default,l=ru-ru,v=vs.120).aspx"> 
+<META name="ms.normalizedurl" content="https://msdn.microsoft.com/ru-ru/library/hh300224(d=default,l=ru-ru,v=vs.120).aspx"> 
+<META name="DCSext.ProductFamily" content="LIB_DG"> 
+<META name="DCSext.Product" content="VS_Lang_ML"> 
+<META name="DCSext.Title" content="Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (C# и Visual Basic)"> 
+<META name="VotingContextUrl" content="https://msdn.microsoft.com/ru-ru/library/hh300224(d=default,l=ru-ru,v=vs.120).aspx"> 
+<META name="MN" content="FB361392-4:05:34 AM"> 
+<META name="Search.ShortId" content="hh300224"> 
+<META name="ms.shortidmsdn" content="hh300224"> 
+<META name="Ms.Locale" content="ru-ru"> 
+<META name="ms.prodver" content="VS.120"> 
+<META name="ms.contentlang" content="RU"> 
+<META name="ms.lang" content="RU"> 
+<META name="ms.loc" content="RU"> 
+<META name="ms.sitever" content="2015.03.20.2"> 
+<META name="ms.assetid" content="25879a6d-fdee-4a38-bc98-bb8c24d16042"> 
+<META name="ms.auth" content="0">             <LINK href="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/Combined.css" 
+rel="stylesheet" type="text/css">
+<META name="GENERATOR" content="MSHTML 11.00.9926.12"></HEAD>     
+<BODY class="library IE IE11">
+<DIV id="page"><LINK rel="stylesheet" type="text/css">         <INPUT id="isHeaderBleeding" type="hidden" value="true"> 
+    
+<DIV class="ltr msdn" id="ux-header" dir="ltr"><HEADER><SPAN 
+id="moveDrawer"></SPAN>             <SPAN id="singleCol"></SPAN>             
+<SPAN id="doubleCol"></SPAN>             
+<DIV class="row">
+<DIV class="top">
+<DIV class="left"><A class="msdnLogoImg" 
+href="https://msdn.microsoft.com/ru-ru"><IMG src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/microsoftLogoForHeader.png"> 
+                            </A></DIV>
+<DIV class="right">
+<DIV id="signIn"><A title="Войти" class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1427713534&amp;rver=6.0.5276.0&amp;wp=MCMBI&amp;wlcxt=MSDN%24MSDN%24MSDN&amp;wreply=https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fhh300224.aspx&amp;lc=1049&amp;id=254354&amp;mkt=ru-RU">Войти</A></DIV>
+<DIV class="auxNav">
+<DIV id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="Subscriptions"><A id="Subscriptions_2153_1" href="https://msdn.microsoft.com/subscriptions/manage/hh442900" 
+xmlns="http://www.w3.org/1999/xhtml"><SPAN style="line-height: 18px;" 
+xmlns="">Подписки MSDN</SPAN>   </A> </DIV>
+<DIV id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="GetTools"><A id="GetTools_2153_3" href="http://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x419&amp;slcid=0x419&amp;campaign=o~msft~msdn~gettools-header~dn308572" 
+xmlns="http://www.w3.org/1999/xhtml"><SPAN style="line-height: 18px;" 
+xmlns="">Получить инструменты</SPAN>   </A> </DIV>
+<DIV id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SocialLinks">
+<DIV class="linkList">
+<UL class="links horizontal">
+  <LI><A class="facebook" id="SocialLinks_2152_4" href="https://www.facebook.com/msdnru" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">https://www.facebook.com/msdnru</A>       
+  </LI>
+  <LI><A class="twitter" id="SocialLinks_2152_5" href="https://twitter.com/msdevru" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdevru</A>       
+  </LI>
+  <LI><A class="vkOne" id="SocialLinks_2152_6" href="http://vk.com/msdnru" 
+  target="_blank" xmlns="http://www.w3.org/1999/xhtml">http://vk.com/msdnru</A>  
+       </LI></UL></DIV></DIV></DIV></DIV></DIV>
+<DIV class="bottom">
+<DIV class="left">
+<DIV id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SiteLogo">
+<DIV class="LinkWithImage topImage"><A id="SiteLogo_2152_1" href="https://msdn.microsoft.com/ru-ru"><IMG 
+id="msdnLogo-black" src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/dn610975.msdnLogo-black.jpg" 
+xmlns="">       <SPAN></SPAN>     </A>   </DIV></DIV>
+<DIV id="drawer">
+<DIV class="toc"><NAV>
+<UL class="navL1">
+  <LI class="inactive toggle"><A title="Технологии" 
+  href="javascript:void(0)">Технологии</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Облако" href="https://msdn.microsoft.com/cloud-app-development-msdn">Облако</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Мобильные" href="https://msdn.microsoft.com/mobile-app-development-msdn">Мобильные</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Интернет" href="https://msdn.microsoft.com/web-app-development-msdn">Интернет</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Бизнес" href="https://msdn.microsoft.com/business-and-productivity-app-development-msdn">Бизнес</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Данные" href="https://msdn.microsoft.com/big-data-development-msdn">Данные</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Игры" href="https://msdn.microsoft.com/games-development-msdn">Игры</A> 
+                                                                                 
+                  </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Загрузки" 
+  href="javascript:void(0)">Загрузки</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Visual Studio" href="http://go.microsoft.com/fwlink/?linkid=307137&amp;clcid=0x419">Visual 
+    Studio</A>                                                                   
+                             </LI>
+    <LI class="inactive"><A title="Подписки MSDN" href="https://msdn.microsoft.com/subscriptions/">Подписки 
+    MSDN</A>                                                                     
+                           </LI>
+    <LI class="inactive"><A title="Пакеты SDK" href="https://msdn.microsoft.com/microsoft-sdks-msdn">Пакеты 
+    SDK</A>                                                                      
+                          </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Программы" 
+  href="javascript:void(0)">Программы</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="BizSpark" href="https://www.microsoft.com/bizspark">BizSpark</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Студентам" href="https://msdn.microsoft.com/student-developer-program">Студентам</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive toggle"><A title="Архитекторам" href="javascript:void(0)">Архитекторам</A> 
+                                                    
+    <UL class="navL3">
+      <LI class="inactive"><A title="Общие сведения" href="https://msdn.microsoft.com/architects-overview-msdn">Общие 
+      сведения</A>                                                         </LI>
+      <LI class="inactive"><A title="Конкретные примеры" href="https://msdn.microsoft.com/architects-case-studies-msdn">Конкретные 
+      примеры</A>                                                         </LI>
+      <LI class="inactive"><A title="Проекты" href="https://msdn.microsoft.com/architects-blueprints-msdn">Проекты</A> 
+                                                              </LI></UL></LI>
+    <LI class="inactive"><A title="События" href="http://events.msdn.microsoft.com/ru-ru">События</A> 
+                                                                                 
+                  </LI></UL></LI>
+  <LI class="inactive toggle"><A title="Сообщество" 
+  href="javascript:void(0)">Сообщество</A>                                 
+  <UL class="navL2">
+    <LI class="inactive"><A title="Форумы" href="https://social.msdn.microsoft.com/forums/">Форумы</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Блоги" href="http://blogs.msdn.com/b/developer-tools/">Блоги</A> 
+                                                                                 
+                  </LI>
+    <LI class="inactive"><A title="Технические консультанты" href="http://tech-advisors.msdn.microsoft.com/ru-ru/">Технические 
+    консультанты</A>                                                             
+                                   </LI>
+    <LI class="inactive"><A title="Канал Channel 9" href="http://channel9.msdn.com/">Канал 
+    Channel 9</A>                                                                
+                                </LI></UL></LI>
+  <LI class="inactive current"><A title="Документация" href="https://msdn.microsoft.com/library">Документация</A> 
+                          </LI>
+  <LI class="inactive"><A title="Примеры" href="https://code.msdn.microsoft.com/">Примеры</A> 
+                          </LI></UL></NAV></DIV></DIV></DIV>
+<DIV class="right">
+<DIV id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SearchBox">
+<DIV class="SearchBox">
+<FORM name="HeaderSearchForm" id="HeaderSearchForm" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this);" 
+method="get"><INPUT name="query" id="HeaderSearchTextBox" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" type="text" maxlength="200"> 
+      <BUTTON class="header-search-button" id="HeaderSearchButton" type="submit" 
+value=""></BUTTON>     </FORM></DIV></DIV><A id="grip" 
+href="javascript:void(0)"></A>                     </DIV></DIV></DIV></HEADER>   
+  </DIV>
+<DIV class="printExportMenus ltr"><A id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnUrl=%2fru-ru%2flibrary%2fhh300224.aspx">Экспорт 
+(<SPAN class="count">0</SPAN>)         </A>         <A id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/hh300224(d=printer).aspx" 
+rel="nofollow">Печать          </A>     </DIV>
+<DIV class="printExportMenus ltr"><A title="Expand/Collapse all sections by pressing Ctrl + Shift + e" 
+id="expandCollapseAll" accesskey="e" 
+href="javascript:void(0)">Развернуть&nbsp;все</A>     </DIV>
+<DIV id="body">
+<DIV id="leftNav">
+<DIV id="tocnav">
+<DIV class="toclevel0" data-toclevel="0"><A title="MSDN Library" id="ms310241_MSDN.10_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/ms123401.aspx" mtpsshortid="ms123401_MSDN.10_ru-ru" 
+mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_ru-ru" mtpsaliasid="" 
+data-tochassubtree="true">MSDN Library</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Средства разработки" id="aa187916_MSDN.10_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/aa187916.aspx" mtpsshortid="aa187916_MSDN.10_ru-ru" 
+mtpsassetid="MSDN|devtoolslang|$\devtoolslang.hxt@0,0_MSDN.10_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">Средства разработки</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Вас приветствует программа Visual Studio 2013" 
+id="dn436406_VS.120_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/dd831853.aspx" 
+mtpsshortid="dd831853_VS.120_ru-ru" mtpsassetid="ba237712-f8c4-4d13-854b-ab4a16afa309_VS.120_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">Вас приветствует программа Visual 
+Studio 2013</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Visual Basic и Visual C#" id="dn436407_VS.120_ru-ru" 
+href="https://msdn.microsoft.com/ru-ru/library/hh334523.aspx" mtpsshortid="hh334523_VS.120_ru-ru" 
+mtpsassetid="fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6_VS.120_ru-ru" mtpsaliasid="" 
+data-tochassubtree="true">Visual Basic и Visual C#</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Основные понятия программирования" 
+id="dd525646_VS.120_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/dd460655.aspx" 
+mtpsshortid="dd460655_VS.120_ru-ru" mtpsassetid="65c12cca-af4f-4017-886e-2dbc00a189d6_VS.120_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">Основные понятия 
+программирования</A></DIV>
+<DIV class="toclevel1" data-toclevel="1"><A title="Асинхронное программирование с использованием ключевых слов Async и Await (C# и Visual Basic)" 
+id="dd695773_VS.120_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/hh191443.aspx" 
+mtpsshortid="hh191443_VS.120_ru-ru" mtpsassetid="db854f91-ccef-4035-ae4d-0911fde808c7_VS.120_ru-ru" 
+mtpsaliasid="" data-tochassubtree="true">Асинхронное программирование с 
+использованием ключевых слов Async и Await (C# и Visual Basic)</A></DIV>
+<DIV class="toclevel2 current" data-toclevel="2"><A title="Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Пошаговое руководство. Получение доступа к 
+Интернету с помощью модификатора Async и оператора Await (C# и Visual 
+Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Практическое руководство. Расширение пошагового руководства по асинхронным процедурам с использованием метода Task.WhenAll (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/hh556530.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Практическое руководство. Расширение пошагового 
+руководства по асинхронным процедурам с использованием метода Task.WhenAll (C# и 
+Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/hh696703.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Практическое руководство. Параллельное выполнение 
+нескольких веб-запросов с использованием Async и Await (C# и Visual 
+Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Асинхронные типы возвращаемых значений (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/hh524395.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Асинхронные типы возвращаемых значений (C# и 
+Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Поток управления в асинхронных программах (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/hh873191.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Поток управления в асинхронных программах (C# и 
+Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Настройка асинхронного приложения (C# и Visual Basic)" 
+id="dd701190_VS.120_ru-ru" href="https://msdn.microsoft.com/ru-ru/library/jj155761.aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="" data-tochassubtree="true">Настройка 
+асинхронного приложения (C# и Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Обработка повторного входа в асинхронных приложениях (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/jj651641.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Обработка повторного входа в асинхронных 
+приложениях (C# и Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="WhenAny. Связывание .NET Framework и среды выполнения Windows (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/jj635140.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">WhenAny. Связывание .NET Framework и среды 
+выполнения Windows (C# и Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Асинхронная отмена. Связывание .NET Framework и среды выполнения Windows (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/jj631575.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Асинхронная отмена. Связывание .NET Framework и 
+среды выполнения Windows (C# и Visual Basic)</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Использование метода Async для доступа к файлам (C# и Visual Basic)" 
+href="https://msdn.microsoft.com/ru-ru/library/jj155757.aspx" mtpsshortid="" 
+mtpsassetid="" mtpsaliasid="">Использование метода Async для доступа к файлам 
+(C# и Visual Basic)</A></DIV></DIV>
+<DIV class="toc-resizable-ew" id="toc-resizable-ew"></DIV><A id="NavigationResize" 
+href="javascript:void(0)"><IMG title="Развернуть" class="cl_nav_resize_open" 
+alt="Развернуть" src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/ImageSprite.png"> 
+    <IMG title="Свернуть" class="cl_nav_resize_close" alt="Свернуть" src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/ImageSprite.png"> 
+</A>     </DIV>
+<DIV class="content" id="content">
+<DIV class="MTPSTranslator" id="MTPSTranslator">
+<TABLE class="MTPSTranslatorTable" style="width: 100%;">
+  <TBODY>
+  <TR>
+    <TD class="TranslationAlertBox">
+      <DIV>Эта статья переведена вручную. Наведите указатель мыши на предложения 
+      статьи, чтобы просмотреть исходный текст. <A href="https://msdn.microsoft.com/translate/hh856053">Дополнительные 
+      сведения.</A></DIV></TD>
+    <TD class="TranslationViewSwitcher">
+      <DIV><INPUT name="TrnaslatorView" title="Показать перевод" class="translatechoice" 
+      type="radio" value="0"><SPAN>Перевод</SPAN>                     </DIV>
+      <DIV><INPUT name="TrnaslatorView" title="Показать текст на английском языке" 
+      class="translatechoice" type="radio" value="1"><SPAN>Текст 
+      оригинала</SPAN>                     </DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV class="topic" xmlns="http://www.w3.org/1999/xhtml">
+<H1 class="title">Пошаговое руководство. Получение доступа к Интернету с помощью 
+модификатора Async и оператора Await (C# и Visual Basic)</H1>
+<DIV class="lw_vs">
+<DIV id="curversion"><STRONG>            Visual Studio 2013          </STRONG>   
+  </DIV>
+<DIV id="versionclick">
+<DIV class="cl_lw_vs_seperator" id="vsseperator"></DIV>
+<DIV>
+<DIV><A id="vsLink" href="javascript:;">Другие версии                     </A>   
+      </DIV>
+<DIV class="cl_vs_arrow clip10x10"><IMG class="cl_lw_vs_arrow" id="vsArrow" alt="" 
+src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/ImageSprite.png"> 
+        </DIV></DIV>
+<UL id="vsPanel">
+  <LI><A 
+  href="https://msdn.microsoft.com/ru-ru/library/hh300224(v=vs.110).aspx">Visual 
+  Studio 2012</A>         </LI></UL></DIV></DIV>
+<DIV style="clear: both;"></DIV>
+<DIV id="mainSection">
+<DIV id="mainBody">
+<DIV class="introduction">
+<P><SPAN class="sentence" id="mt1" xml:space="preserve" data-source="You can write asynchronous programs more easily and intuitively by using features that are introduced in Visual Studio 2012." 
+data-guid="164c6def0a3ef07e80a4fc2b2977b7de"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно 
+писать асинхронные программы более просто и интуитивно с помощью функций, 
+которые предоставлены в Visual Studio 2012.</sentencetext></SPAN>  <SPAN class="sentence" 
+id="mt2" xml:space="preserve" data-source="You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails." 
+data-guid="dd59b15dd7686b5abfad5cf99bfafc16"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+xmlns="http://www.w3.org/1999/xhtml"></sentencetext></sentencetext></SPAN>
+<P>Можно создать асинхронный код, который выглядит как синхронный, и позволить 
+компилятору обрабатывать сложные функции обратного вызова и  продолжения, 
+которые асинхронный код обычно влечёт за собой.</P>
+<P></P>
+<P><SPAN class="sentence" id="mt3" xml:space="preserve" data-source='For more information about the Async feature, see <span><span class="mtpsTagOuterHtml" ><span>Asynchronous Programming with Async and Await (C# and Visual Basic)</span></span></span>.' 
+data-guid="b264228f9eb9fc2c06f7ac5604c75502"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные 
+сведения о возможности Async см. в разделе <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+href="https://msdn.microsoft.com/ru-ru/library/hh191443.aspx">Асинхронное 
+программирование с использованием ключевых слов Async и Await (C# и Visual 
+Basic)</A></SPAN>.</sentencetext></SPAN>               </P>
+<P><SPAN class="sentence" id="mt4" xml:space="preserve" data-source="This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites." 
+data-guid="de26b6ed94226c81534837ecf75bc433"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Это 
+пошаговое руководство начинается с синхронного приложения Windows Presentation 
+Foundation (WPF), которое суммирует количество байтов в списке 
+веб-сайтов.</sentencetext></SPAN>  <SPAN class="sentence" id="mt5" xml:space="preserve" 
+data-source="The walkthrough then converts the application to an asynchronous solution by using the new features." 
+data-guid="8d8ea6a457f13078aa4867060ea18778"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Затем 
+пошаговое руководство преобразует приложение в асинхронное решение с помощью 
+новых функций.</sentencetext></SPAN>  </P>
+<P><SPAN class="sentence" id="mt6" xml:space="preserve" data-source="If you don't want to build the applications yourself, you can download &quot;Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)&quot; from <span class=&quot;mtpsTagOuterHtml&quot; ><span>Developer Code Samples</span></span>." 
+data-guid="69024e4538cab7964039a47bec3537f0"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Если 
+вручную не требуется построение приложения можно загрузить пример: "Async Доступ 
+к пошаговом руководстве Интернета (C-# и Visual Basic) из <A href="http://go.microsoft.com/fwlink/?LinkId=255191">Примеры 
+кода разработчика</A>".</sentencetext></SPAN>               </P>
+<P><SPAN class="sentence" id="mt7" xml:space="preserve" data-source="In this walkthrough, you complete the following tasks:" 
+data-guid="b6cd0dd0d77872799a40a3db5725c057"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+этом пошаговом руководстве выполняются следующие задачи:</sentencetext></SPAN>   
+    </P>
+<UL>
+  <LI>
+  <P><SPAN class="sentence" id="mt8" xml:space="preserve" data-source='<span><a href="#BKMK_CreateWPFApp">Create a WPF application</a></span>.' 
+  data-guid="0bfd66a82372e15a8c284a08a0da30c5"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_CreateWPFApp">Создание 
+  приложения WPF</A>     </SPAN>   </sentencetext> </sentencetext></SPAN>        
+                 </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt9" xml:space="preserve" data-source='<span><a href="#BKMK_DesignWPFMainWin">Design a simple WPF MainWindow window</a></span>.' 
+  data-guid="aac8ceefcd376acc509f74585b5a1b60"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_DesignWPFMainWin">Разработка 
+  простого окна WPF MainWindow</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt10" xml:space="preserve" data-source='<span><a href="#BKMK_AddReference">Add a reference</a></span>.' 
+  data-guid="20446edbb2ebf146805364b8c2a58337"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_AddReference">Добавление 
+  ссылки</A>     </SPAN>   </sentencetext> </sentencetext></SPAN>                
+         </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt11" xml:space="preserve" data-source='<span><a href="#BKMK_AddStatesandDirs">Add Imports statements or using directives</a></span>.' 
+  data-guid="ec6bf5ea3b5d8859a054a1b86f3fe41f"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_AddStatesandDirs">Добавление 
+  операторов Imports или директив directives</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt12" xml:space="preserve" data-source='<span><a href="#BKMK_CreatSynchApp">Create a synchronous solution</a></span>.' 
+  data-guid="92b85f761168f0b446e64912f4cc0a17"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_CreatSynchApp">Создание 
+  синхронного приложения</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt13" xml:space="preserve" data-source='<span><a href="#BKMK_TestSynchSol">Test the synchronous solution</a></span>.' 
+  data-guid="a1b169579c2bb915587a045c8346c827"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_TestSynchSol">Тестирование 
+  синхронного приложения</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt14" xml:space="preserve" data-source='<span><a href="#BKMK_ConvertGtBtArr">Convert GetURLContents to an asynchronous method</a></span>.' 
+  data-guid="c05d7322cd8498ffa2678f5dff82f54b"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_ConvertGtBtArr">Преобразование 
+  метода GetURLContents в асинхронный</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt15" xml:space="preserve" data-source='<span><a href="#BKMK_ConvertSumPagSzs">Convert SumPageSizes to an asynchronous method</a></span>.' 
+  data-guid="fd9d5d0113e3679e92a375e2b98d4522"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_ConvertSumPagSzs">Преобразование 
+  метода SumPageSizes в асинхронный</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt16" xml:space="preserve" data-source='<span><a href="#BKMK_Cnvrtbttn1">Convert startButton_Click to an asynchronous method</a></span>.' 
+  data-guid="3a923de457732a2f30fd3f17bb9eb9e5"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_Cnvrtbttn1">Преобразование 
+  обработчика события startButton_Click в асинхронный</A>     </SPAN>   
+  </sentencetext> </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt17" xml:space="preserve" data-source='<span><a href="#BKMK_testAsynchSolution">Test the asynchronous solution</a></span>.' 
+  data-guid="f476a03ea1311027a9a128af99807ec4"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_testAsynchSolution">Тестирование 
+  асинхронного приложения</A>     </SPAN>   </sentencetext> 
+  </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt18" xml:space="preserve" data-source='<span><a href="#BKMK_ReplaceGetByteArrayAsync">Replace GetURLContentsAsync with a .NET Framework method</a></span>.' 
+  data-guid="cac5ca4e72a7531f74c62fb855ef83a9"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_ReplaceGetByteArrayAsync">Замена 
+  метода GetURLContentsAsync методом .NET Framework</A>     </SPAN>   
+  </sentencetext> </sentencetext></SPAN>                       </P></LI>
+  <LI>
+  <P><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_CompleteCodeExamples">Complete 
+  Code Examples from the Walkthrough</A></SPAN>           </P></LI></UL></DIV>
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">Обязательные компоненты</SPAN></A>             
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A id="prerequisitesToggle"></A>           
+<P><SPAN class="sentence" id="mt19" xml:space="preserve" data-source="Visual Studio 2012 must be installed on your computer." 
+data-guid="b3644fc9ae62e830093c324a1b8fd077"><sentencetext xmlns="http://www.w3.org/1999/xhtml">На 
+компьютере должна быть установлена среда Visual Studio 
+2012.</sentencetext></SPAN>  <SPAN class="sentence" id="mt20" xml:space="preserve" 
+data-source='For more information, see the <span class="mtpsTagOuterHtml" ><span>Microsoft website</span></span>.' 
+data-guid="7bb1c0a6d25fddf19bf59c5a1428e628"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные 
+сведения см. на <A 
+href="http://go.microsoft.com/fwlink/?LinkId=235233">веб-сайте 
+Microsoft</A>.</sentencetext></SPAN>  </P></DIV></DIV><A 
+id="BKMK_CreateWPFApp"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection0">
+<H3 class="procedureSubHeading">Создание приложения WPF</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt21" xml:space="preserve" data-source="Start Visual Studio." 
+  data-guid="990d988280c40e95a577acfce44168ba"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Запустите 
+  Visual Studio.</sentencetext></SPAN>                 </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt22" xml:space="preserve" data-source='On the menu bar, choose <span class="label">File</span>, <span class="label">New</span>, <span class="label">Project</span>.' 
+  data-guid="dae7eddb773c69cb5ae176577b399fc9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  строке меню выберите <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Файл</SPAN>, <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Создать</SPAN>, 
+  <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Проект</SPAN>.</sentencetext></SPAN>      
+                               </P>
+  <P><SPAN class="sentence" id="mt23" xml:space="preserve" data-source='The <span class="label">New Project</span> dialog box opens.' 
+  data-guid="80292c1b271e5ee2f15ae6b87e99f5c3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Откроется 
+  диалоговое окно <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Новый 
+  проект</SPAN>.</sentencetext></SPAN>                                   
+  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt24" xml:space="preserve" data-source='In the <span class="label">Installed Templates</span> pane, choose <span class="label">Visual Basic</span> or <span class="label">Visual C#</span>, and then choose <span class="label">WPF Application</span> from the list of project types.' 
+  data-guid="f58ff60cad0b6e7f9bb368ce34454fa2"><sentencetext xmlns="http://www.w3.org/1999/xhtml">На 
+  панели <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Установленные 
+  шаблоны</SPAN> выберите <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Visual 
+  Basic</SPAN> или <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Visual C#</SPAN>, а затем выберите <SPAN 
+  class="label" xmlns="http://www.w3.org/1999/xhtml">Приложение WPF</SPAN> из 
+  списка типов проектов.</sentencetext></SPAN>                                   
+  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt25" xml:space="preserve" data-source='In the <span class="label">Name</span> text box, enter <span class="input">AsyncExampleWPF</span>, and then choose the <span class="label">OK</span> button.' 
+  data-guid="20bb74e023635fd8e28b046ce123a7aa"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  текстовом поле <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Имя</SPAN> введите <SPAN class="input" 
+  xmlns="http://www.w3.org/1999/xhtml">AsyncExampleWPF</SPAN>, а затем нажмите 
+  кнопку <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">ОК</SPAN>.</sentencetext></SPAN>          
+                           </P>
+  <P><SPAN class="sentence" id="mt26" xml:space="preserve" data-source='The new project appears in <span class="label">Solution Explorer</span>.' 
+  data-guid="21f503d80b6def89d5c45f34fa029778"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">обозревателе 
+  решений</SPAN> появится новый проект.</sentencetext></SPAN>                    
+                 </P></LI></OL></DIV></DIV><A id="BKMK_DesignWPFMainWin"></A>      
+ 
+<DIV class="seeAlsoNoToggleSection" id="sectionSection1">
+<H3 class="procedureSubHeading">Разработка простого окна WPF MainWindow</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt27" xml:space="preserve" data-source='In the Visual Studio Code Editor, choose the <span class="label">MainWindow.xaml</span> tab.' 
+  data-guid="38f40fe3bdc85d1f51a5bc7867d8e135"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Выберите 
+  в редакторе кода Visual Studio вкладку <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">MainWindow.xaml</SPAN>.</sentencetext></SPAN> 
+                                    </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt28" xml:space="preserve" data-source='If the <span class="label">Toolbox</span> window isn’t visible, open the <span class="label">View</span> menu, and then choose <span class="label">Toolbox</span>.' 
+  data-guid="d24a6c5c7c212d2a4e028e01685bf4a1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Если 
+  окно <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Панель 
+  элементов</SPAN> не отображается, откройте меню <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Вид</SPAN>, 
+  а затем выберите <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Панель 
+  элементов</SPAN>.</sentencetext></SPAN>                                   
+  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt29" xml:space="preserve" data-source='Add a <span class="label">Button</span> control and a <span class="label">TextBox</span> control to the <span class="label">MainWindow</span> window.' 
+  data-guid="ae14291fa4e8d309dc000c520b36d6b5"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Добавьте 
+  элемент управления <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Button</SPAN> и <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">TextBox</SPAN> в окно <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">MainWindow</SPAN>.</sentencetext></SPAN>  
+                                   </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt30" xml:space="preserve" data-source='Highlight the <span class="label">TextBox</span> control and, in the <span class="label">Properties</span> window, set the following values:' 
+  data-guid="4c940c2c6da21e144b9160484744b1fb"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Выделите 
+  элемент управления <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">TextBox</SPAN> и в окне <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Свойства</SPAN> установите следующие 
+  значения:</sentencetext></SPAN>                                   </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt31" xml:space="preserve" data-source='Set the <span class="label">Name</span> property to <span class="input">resultsTextBox</span>.' 
+    data-guid="2b96ee8794259bd8476c78c07df00188"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Установите 
+    свойству <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Name</SPAN> значение <SPAN class="input" 
+    xmlns="http://www.w3.org/1999/xhtml">resultsTextBox</SPAN>.</sentencetext></SPAN> 
+                                              </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt32" xml:space="preserve" data-source='Set the <span class="label">Height</span> property to 250.' 
+    data-guid="81fb6509924b46c4ccc216212c3baf69"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задайте 
+    свойству <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Height</SPAN> значение 
+    250.</sentencetext></SPAN>                                           
+    </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt33" xml:space="preserve" data-source='Set the <span class="label">Width</span> property to 500.' 
+    data-guid="5ca9e7f99f9a3fd1337a1be5a58df919"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задайте 
+    свойству <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Width</SPAN> значение 
+    500.</sentencetext></SPAN>                                           
+    </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt34" xml:space="preserve" data-source='On the <span class="label">Text</span> tab, specify a monospaced font, such as Lucida Console or Global Monospace.' 
+    data-guid="a24f41a5546fd1b52cd6298bcaf97825"><sentencetext xmlns="http://www.w3.org/1999/xhtml">На 
+    вкладке <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Текст</SPAN> укажите моноширинный 
+    шрифт, например, Lucida Console или Global Monospace.</sentencetext></SPAN>  
+                                             </P></LI></UL></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt35" xml:space="preserve" data-source='Highlight the <span class="label">Button</span> control and, in the <span class="label">Properties</span> window, set the following values:' 
+  data-guid="9f8d4f60657bf02f014e05a7a6e70c60"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Выделите 
+  элемент управления <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Button</SPAN> и в окне <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Свойства</SPAN> установите следующие 
+  значения:</sentencetext></SPAN>                                   </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt36" xml:space="preserve" data-source='Set the <span class="label">Name</span> property to <span class="input">startButton</span>.' 
+    data-guid="89a98a93faa622fd19ec1aefc62a5eb8"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задайте 
+    свойству <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Name</SPAN> значение <SPAN class="input" 
+    xmlns="http://www.w3.org/1999/xhtml">startButton</SPAN>.</sentencetext></SPAN> 
+                                              </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt37" xml:space="preserve" data-source='Change the value of the <span class="label">Content</span> property from <span class="label">Button</span> to <span class="label">Start</span>.' 
+    data-guid="6142b0c4d14922ac0c1b87f7d1249a2c"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Измените 
+    значение свойства <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Content</SPAN> с <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Button</SPAN> на <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Start</SPAN>.</sentencetext></SPAN>     
+                                          </P></LI></UL></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt38" xml:space="preserve" data-source='Position the text box and the button so that both appear in the <span class="label">MainWindow</span> window.' 
+  data-guid="6058734ffd7e8e0bad40964f0dceb8a6"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Разместите 
+  текстовое поле и кнопку так, чтобы оба отображались в окне <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">MainWindow</SPAN>.</sentencetext></SPAN>  
+                                   </P>
+  <P><SPAN class="sentence" id="mt39" xml:space="preserve" data-source='For more information about the WPF XAML Designer, see <span><span class="mtpsTagOuterHtml" ><span>Creating a UI by using XAML Designer</span></span></span>.' 
+  data-guid="a093ea990ab36284e94f8ae8627fd7cf"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные 
+  сведения о конструкторе WPF XAML см. в разделе <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/hh921077.aspx">Создание 
+  пользовательского интерфейса с помощью конструктора 
+  XAML</A></SPAN>.</sentencetext></SPAN>                                   
+  </P></LI></OL></DIV></DIV><A id="BKMK_AddReference"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection2">
+<H3 class="procedureSubHeading">Добавление ссылки</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt40" xml:space="preserve" data-source="In <span class=&quot;label&quot;>Solution Explorer</span>, highlight your project's name." 
+  data-guid="6bf7b58261d2f10d0e348c228093e3dd"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Обозревателя 
+  решений</SPAN> выделите имя вашего проекта.</sentencetext></SPAN>              
+                       </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt41" xml:space="preserve" data-source='On the menu bar, choose <span class="label">Project</span>, <span class="label">Add Reference</span>.' 
+  data-guid="effcc6ddd1a5d357d46362881cd2c536"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  строке меню выберите <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Проект</SPAN>, <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Добавить 
+  ссылку</SPAN>.</sentencetext></SPAN>                                   </P>
+  <P><SPAN class="sentence" id="mt42" xml:space="preserve" data-source='The <span class="label">Reference Manager</span> dialog box appears.' 
+  data-guid="242514910a87063bd2c8cec083cf9f7e"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml">Появится диалоговое окно Менеджер<SPAN> 
+  ссылок</SPAN>.</sentencetext> </sentencetext></SPAN>                           
+          </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt43" xml:space="preserve" data-source="At the top of the dialog box, verify that your project is targeting the .NET Framework 4.5." 
+  data-guid="d12f7f5397e372e60360bc6c2881e130"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вверху 
+  диалогового окна убедитесь, что ваш проект предназначен для .NET Framework 
+  4.5.</sentencetext></SPAN>                 </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt44" xml:space="preserve" data-source='In the <span class="label">Assemblies</span> area, choose <span class="label">Framework</span> if it isn’t already chosen.' 
+  data-guid="1a70730675cf473361cbfba11bf36bec"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  области <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Сборки</SPAN> 
+  выберите <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Framework</SPAN>, если она еще не 
+  выбрана.</sentencetext></SPAN>                                   </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt45" xml:space="preserve" data-source='In the list of names, select the <span class="label">System.Net.Http</span> check box.' 
+  data-guid="d6c86d8d43d307acb3729a2cd2294f52"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  списке имен установите флажок <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">System.Net.Http</SPAN>.</sentencetext></SPAN> 
+                                    </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt46" xml:space="preserve" data-source='Choose the <span class="label">OK</span> button to close the dialog box.' 
+  data-guid="d4547d3ed399e7bdddc517977615d1d7"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Выберите 
+  кнопку <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">ОК</SPAN> 
+  чтобы закрыть диалоговое окно.</sentencetext></SPAN>                           
+          </P></LI></OL></DIV></DIV><A id="BKMK_AddStatesandDirs"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection3">
+<H3 class="procedureSubHeading">Добавление необходимых операторов Imports или 
+директив using</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt47" xml:space="preserve" data-source='In <span class="label">Solution Explorer</span>, open the shortcut menu for MainWindow.xaml.vb or MainWindow.xaml.cs, and then choose <span class="label">View Code</span>.' 
+  data-guid="64bc61406a0a8b5c60561950944c6341"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Обозревателе 
+  решений</SPAN> откройте контекстное меню для MainWindow.xaml.vb или 
+  MainWindow.xaml.cs, а затем выберите <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Код</SPAN>.</sentencetext></SPAN> 
+                                    </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt48" xml:space="preserve" data-source='Add the following <span><span class="input">Imports</span></span> statements (Visual Basic) or <span><span class="input">using</span></span> directives (C#) at the top of the code file if they’re not already present.' 
+  data-guid="f0f960786bd3a5fc719276da8d5d3230"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  верхнюю часть файла с кодом добавьте следующие операторы <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Imports</SPAN></SPAN> (в Visual Basic) или директивы <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">using</SPAN></SPAN> 
+  (в C#), если это еще не сделано.</sentencetext></SPAN>                         
+            </P>
+  <DIV id="snippetGroup">
+  <DIV class="codeSnippetContainer" id="code-snippet-1" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_cdc3a3bf-1cf6-4fbc-9a61-a73e4fceb914');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_cdc3a3bf-1cf6-4fbc-9a61-a73e4fceb914" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">using</SPAN> System.Net.Http;
+<SPAN style="color: blue;">using</SPAN> System.Net;
+<SPAN style="color: blue;">using</SPAN> System.IO;
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI></OL></DIV></DIV><A 
+id="BKMK_CreatSynchApp"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection4">
+<H3 class="procedureSubHeading">Создание синхронного приложения</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt49" xml:space="preserve" data-source='In the design window, MainWindow.xaml, double-click the <span class="label">Start</span> button to create the <span class="code">startButton_Click</span> event handler in MainWindow.xaml.vb or MainWindow.xaml.cs.' 
+  data-guid="633a5b2bb591cf6b9574f9ee1ec1e42e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  окне конструктора MainWindow.xaml дважды кликните кнопку <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Start</SPAN> для создания обработчика 
+  событий <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">startButton_Click</SPAN> в 
+  MainWindow.xaml.vb или MainWindow.xaml.cs.</sentencetext></SPAN>  <SPAN class="sentence" 
+  id="mt50" xml:space="preserve" data-source='As an alternative, highlight the <span class="label">Start</span> button, choose the <span class="label">Event handlers for the selected elements</span> icon in the <span class="label">Properties</span> window, and then enter <span class="input">startButton_Click</span> in the <span class="label">Click</span> text box.' 
+  data-guid="58bf898eb8d41e96e7118ecfc8a8815e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  качестве альтернативы, выделите кнопку <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Start</SPAN>, 
+  выберите значок <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Обработчики событий для выбранных 
+  элементов</SPAN> в окне <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Свойства</SPAN>, 
+  а затем введите <SPAN class="input" 
+  xmlns="http://www.w3.org/1999/xhtml">startButton_Click</SPAN> в поле <SPAN 
+  class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Click</SPAN>.</sentencetext></SPAN>  
+  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt51" xml:space="preserve" data-source='In MainWindow.xaml.vb or MainWindow.xaml.cs, copy the following code into the body of <span class="code">startButton_Click</span>.' 
+  data-guid="c82520663969877a79d43370fa061e96"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  файле MainWindow.xaml.vb или MainWindow.xaml.cs скопируйте следующий код в 
+  тело <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">startButton_Click</SPAN>.</sentencetext></SPAN> 
+                                    </P>
+  <DIV id="snippetGroup1">
+  <DIV class="codeSnippetContainer" id="code-snippet-2" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-2">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_72d60b4b-3c0a-4b34-a66d-f7f4af4cecc2');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_72d60b4b-3c0a-4b34-a66d-f7f4af4cecc2" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+resultsTextBox.Clear();
+SumPageSizes();
+resultsTextBox.Text += <SPAN style="color: rgb(163, 21, 21);">"\r\nControl returned to startButton_Click."</SPAN>;
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt52" xml:space="preserve" data-source='The code calls the method that drives the application, <span class="code">SumPageSizes</span>, and displays a message when control returns to <span class="code">startButton_Click</span>.' 
+  data-guid="f736bc367e6bc1735df3a121c494f3fa"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Код 
+  вызывает метод, который управляет приложением, <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN>, 
+  и отображает сообщение, когда управление возвращается к <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">startButton_Click</SPAN>.</sentencetext></SPAN> 
+                                    </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt53" xml:space="preserve" data-source="The code for the synchronous solution contains the following four methods: " 
+  data-guid="e717f67e812ae2a19e56ae436ca7a68a"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Код 
+  для синхронного решения содержит следующие четыре метода: 
+  </sentencetext></SPAN>                 </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt54" xml:space="preserve" data-source='<span class="code">SumPageSizes</span>, which gets a list of webpage URLs from <span class="code">SetUpURLList</span> and then calls <span class="code">GetURLContents</span> and <span class="code">DisplayResults</span> to process each URL.' 
+    data-guid="95bb6697a7b8f46e9eee4f30c153a5f4"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN>, 
+    который получает список URL-адресов веб-страниц из <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SetUpURLList</SPAN> 
+    , а затем вызывает <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN> и <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">DisplayResults</SPAN> для обработки 
+    каждого URL-адреса.</sentencetext></SPAN>                                    
+           </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt55" xml:space="preserve" data-source='<span class="code">SetUpURLList</span>, which makes and returns a list of web addresses.' 
+    data-guid="1b025cbc965a5f521be5f2df6ee930d1"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="code" xmlns="http://www.w3.org/1999/xhtml">SetUpURLList</SPAN>, 
+    который создает и возвращает список веб-адресов.</sentencetext></SPAN>       
+                                        </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt56" xml:space="preserve" data-source='<span class="code">GetURLContents</span>, which downloads the contents of each website and returns the contents as a byte array.' 
+    data-guid="e50fee2d4ab8c9f8f233d5b3e9a1697f"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, 
+    который загружает содержимое каждого веб-сайта и возвращает содержимое в 
+    виде массива байтов.</sentencetext></SPAN>                                   
+            </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt57" xml:space="preserve" data-source='<span class="code">DisplayResults</span>, which displays  the number of bytes in the byte array for each URL.' 
+    data-guid="3f52083a7009eca782e772a9eca9bc81"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="code" xmlns="http://www.w3.org/1999/xhtml">DisplayResults</SPAN>, 
+    который показывает число байтов в массиве байтов для каждого 
+    URL-адреса.</sentencetext></SPAN>                                           
+    </P></LI></UL>
+  <P><SPAN class="sentence" id="mt58" xml:space="preserve" data-source='Copy the following four methods, and then paste them under the <span class="code">startButton_Click</span> event handler in MainWindow.xaml.vb or MainWindow.xaml.cs.' 
+  data-guid="7a2b7e8c92a40d3e72692665c0f99bb6"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml">Скопируйте следующие четыре метода, а 
+  затем вставьте их после кода обработчика событий 
+  <SPAN>startButton_Click</SPAN> в MainWindow.xaml.vb или 
+  MainWindow.xaml.cs.</sentencetext> </sentencetext></SPAN>                      
+               </P>
+  <DIV id="snippetGroup2">
+  <DIV class="codeSnippetContainer" id="code-snippet-3" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-3">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_73b2499c-0e6b-4b0f-8a27-c3cd2cce9f83');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_73b2499c-0e6b-4b0f-8a27-c3cd2cce9f83" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">void</SPAN> SumPageSizes()
+{
+    <SPAN style="color: green;">// Make a list of web addresses.</SPAN>
+    List&lt;<SPAN style="color: blue;">string</SPAN>&gt; urlList = SetUpURLList(); 
+
+    <SPAN style="color: blue;">var</SPAN> total = 0;
+    <SPAN style="color: blue;">foreach</SPAN> (<SPAN style="color: blue;">var</SPAN> url <SPAN style="color: blue;">in</SPAN> urlList)
+    {
+        <SPAN style="color: green;">// GetURLContents returns the contents of url as a byte array.</SPAN>
+        <SPAN style="color: blue;">byte</SPAN>[] urlContents = GetURLContents(url);
+
+        DisplayResults(url, urlContents);
+
+        <SPAN style="color: green;">// Update the total.</SPAN>
+        total += urlContents.Length;
+    }
+
+    <SPAN style="color: green;">// Display the total count for all of the web addresses.</SPAN>
+    resultsTextBox.Text += 
+        <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\r\n\r\nTotal bytes returned:  {0}\r\n"</SPAN>, total);
+}
+
+
+<SPAN style="color: blue;">private</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; SetUpURLList()
+{
+    <SPAN style="color: blue;">var</SPAN> urls = <SPAN style="color: blue;">new</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; 
+    { 
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/library/windows/apps/br211380.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290136.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ee256749.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290138.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290140.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/dd470362.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/aa578028.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ms404677.aspx"</SPAN>,
+        <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ff730837.aspx"</SPAN>
+    };
+    <SPAN style="color: blue;">return</SPAN> urls;
+}
+
+
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">byte</SPAN>[] GetURLContents(<SPAN style="color: blue;">string</SPAN> url)
+{
+    <SPAN style="color: green;">// The downloaded resource ends up in the variable named content.</SPAN>
+    <SPAN style="color: blue;">var</SPAN> content = <SPAN style="color: blue;">new</SPAN> MemoryStream();
+
+    <SPAN style="color: green;">// Initialize an HttpWebRequest for the current URL.</SPAN>
+    <SPAN style="color: blue;">var</SPAN> webReq = (HttpWebRequest)WebRequest.Create(url);
+
+    <SPAN style="color: green;">// Send the request to the Internet resource and wait for</SPAN>
+    <SPAN style="color: green;">// the response.</SPAN>
+    <SPAN style="color: green;">// Note: you can't use HttpWebRequest.GetResponse in a Windows Store app.</SPAN>
+    <SPAN style="color: blue;">using</SPAN> (WebResponse response = webReq.GetResponse())
+    {
+        <SPAN style="color: green;">// Get the data stream that is associated with the specified URL.</SPAN>
+        <SPAN style="color: blue;">using</SPAN> (Stream responseStream = response.GetResponseStream())
+        {
+            <SPAN style="color: green;">// Read the bytes in responseStream and copy them to content.  </SPAN>
+            responseStream.CopyTo(content);
+        }
+    }
+
+    <SPAN style="color: green;">// Return the result as a byte array.</SPAN>
+    <SPAN style="color: blue;">return</SPAN> content.ToArray();
+}
+
+
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">void</SPAN> DisplayResults(<SPAN style="color: blue;">string</SPAN> url, <SPAN style="color: blue;">byte</SPAN>[] content)
+{
+    <SPAN style="color: green;">// Display the length of each website. The string format </SPAN>
+    <SPAN style="color: green;">// is designed to be used with a monospaced font, such as</SPAN>
+    <SPAN style="color: green;">// Lucida Console or Global Monospace.</SPAN>
+    <SPAN style="color: blue;">var</SPAN> bytes = content.Length;
+    <SPAN style="color: green;">// Strip off the "http://".</SPAN>
+    <SPAN style="color: blue;">var</SPAN> displayURL = url.Replace(<SPAN style="color: rgb(163, 21, 21);">"http://"</SPAN>, <SPAN style="color: rgb(163, 21, 21);">""</SPAN>);
+    resultsTextBox.Text += <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\n{0,-58} {1,8}"</SPAN>, displayURL, bytes);
+}
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI></OL></DIV></DIV><A 
+id="BKMK_TestSynchSol"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection5">
+<H3 class="procedureSubHeading">Проверка синхронного решения</H3>
+<DIV class="subSection">
+<UL>
+  <LI>
+  <P><SPAN class="sentence" id="mt59" xml:space="preserve" data-source='Choose the F5 key to run the program, and then choose the <span class="label">Start</span> button.' 
+  data-guid="eb4ce59d82ca3428600da97dfaaf9c0f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Нажмите 
+  клавишу F5, чтобы запустить программу, а затем нажмите кнопку <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Start</SPAN>.</sentencetext></SPAN>       
+                              </P>
+  <P><SPAN class="sentence" id="mt60" xml:space="preserve" data-source="Output that resembles the following list should appear." 
+  data-guid="36aa747352d393e4551bc895867281c5"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Появятся 
+  выходные данные, подобные приведенным ниже.</sentencetext></SPAN>              
+     </P>
+  <DIV class="codeSnippetContainer" id="code-snippet-4" xmlns="">
+  <DIV class="codeSnippetContainerTabs"></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_6b8bfe59-5d31-4516-a65b-28ef11f5f192');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_6b8bfe59-5d31-4516-a65b-28ef11f5f192" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+msdn.microsoft.com/library/windows/apps/br211380.aspx        383832
+msdn.microsoft.com                                            33964
+msdn.microsoft.com/en-us/library/hh290136.aspx               225793
+msdn.microsoft.com/en-us/library/ee256749.aspx               143577
+msdn.microsoft.com/en-us/library/hh290138.aspx               237372
+msdn.microsoft.com/en-us/library/hh290140.aspx               128279
+msdn.microsoft.com/en-us/library/dd470362.aspx               157649
+msdn.microsoft.com/en-us/library/aa578028.aspx               204457
+msdn.microsoft.com/en-us/library/ms404677.aspx               176405
+msdn.microsoft.com/en-us/library/ff730837.aspx               143474
+
+Total bytes returned:  1834802
+
+Control returned to startButton_Click.
+
+</PRE></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt61" xml:space="preserve" data-source="Notice that it takes a few seconds to display the counts." 
+  data-guid="2b46c826246fa2b9ab0f30bc75f7c3f8"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Обратите 
+  внимание, что пройдет несколько секунд, прежде чем данные 
+  отобразятся.</sentencetext></SPAN>  <SPAN class="sentence" id="mt62" 
+  xml:space="preserve" data-source="During that time, the UI thread is blocked while it waits for requested resources to download." 
+  data-guid="c92ecd411ce6917b4b53f954ba4d41e9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Во 
+  время этого поток пользовательского интерфейса блокирован в ожидании 
+  запрошенных загружаемых ресурсов.</sentencetext></SPAN>  <SPAN class="sentence" 
+  id="mt63" xml:space="preserve" data-source="As a result, you can't move, maximize, minimize, or even close the display window after you choose the  <span class=&quot;label&quot;>Start</span> button." 
+  data-guid="249511e272501f48741d7e82a20b4ea1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  результате нельзя переместить развернуть, свернуть или даже закрыть окно после 
+  выбора кнопки <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Начать</SPAN>.</sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt64" xml:space="preserve" data-source="These efforts fail until the byte counts start to appear." 
+  data-guid="ba2205ce66b7835a721846ca2fb5f3ff"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Эти 
+  усилия бесполезны до тех пор, пока не появится счетчик 
+  байтов.</sentencetext></SPAN>  <SPAN class="sentence" id="mt65" xml:space="preserve" 
+  data-source="If a website isn’t responding, you have no indication of which site failed." 
+  data-guid="4ac68a044831cde1ef6be39f1d518c3d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Если 
+  веб-сайт не отвечает, то не будет никаких признаков того, какой сайт не 
+  удалось загрузить.</sentencetext></SPAN>  <SPAN class="sentence" id="mt66" 
+  xml:space="preserve" data-source="It is difficult even to stop waiting and close the program." 
+  data-guid="22a50704cd3baca406b372f886507304"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Трудно 
+  даже прекратить ожидание и закрыть программу.</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt67" xml:space="preserve" data-source='Compare this behavior to the <span><a href="#BKMK_CompleteCodeExamples">behavior after you convert the app</a></span> to an asynchronous solution.' 
+  data-guid="55a77f5f90bde9c88c13ee5f63ea8edc"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Сравните 
+  это поведение с <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#BKMK_CompleteCodeExamples">Пример</A></SPAN> 
+  для асинхронных решений.</sentencetext></SPAN>                                 
+    </P></LI></UL></DIV></DIV><A id="BKMK_ConvertGtBtArr"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection6">
+<H3 class="procedureSubHeading">Чтобы преобразовать метод GetURLContents в 
+асинхронный</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt68" xml:space="preserve" data-source='To convert the synchronous solution to an asynchronous solution, the best place to start is in <span class="code">GetURLContents</span> because the calls to the <span><span class="mtpsTagOuterHtml" ><span>HttpWebRequest</span></span></span>  method <span><span class="mtpsTagOuterHtml" ><span>GetResponse</span></span></span> and to the <span><span class="mtpsTagOuterHtml" ><span>Stream</span></span></span> method <span><span class="mtpsTagOuterHtml" ><span>CopyTo</span></span></span> are where the application accesses the web.' 
+  data-guid="9efa5884d18d9b0a1524898ffe7a3148"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+  преобразования синхронного решения в асинхронное, лучше всего начать с <SPAN 
+  class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, так 
+  как вызовы метода <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.net.httpwebrequest.aspx">HttpWebRequest</A></SPAN><SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.net.httpwebrequest.getresponse.aspx">GetResponse</A></SPAN> 
+  и метода <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.io.stream.aspx">Stream</A></SPAN><SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.io.stream.copyto.aspx">CopyTo</A></SPAN> 
+  используются тогда, когда приложение обращается к сети.</sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt69" xml:space="preserve" data-source="The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods." 
+  data-guid="6df3c798305931295d16b862458f4138"><sentencetext xmlns="http://www.w3.org/1999/xhtml">.NET 
+  Framework упрощает преобразование путем предоставления асинхронных версий 
+  обоих методов.</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt70" xml:space="preserve" data-source='For more information about the methods that are used in <span class="code">GetURLContents</span>, see <span><span class="mtpsTagOuterHtml" ><span>WebRequest</span></span></span>.' 
+  data-guid="a1814b2e54aa2f0c2e540f14f28fd3ca"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные 
+  сведения о методах, используемых в <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, 
+  см. в разделе <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.net.webrequest.aspx">WebRequest</A></SPAN>.</sentencetext></SPAN> 
+                                    </P>
+  <DIV class="alert">
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TH><IMG title="Примечание" class="cl_IC101471" id="alert_note" alt="Примечание" 
+        src="Пошаговое%20руководство_%20Получение%20доступа%20к%20Интернету%20с%20помощью%20модификатора%20Async%20и%20оператора%20Await%20(C%23%20и%20Visual%20Basic)_files/clear.gif" 
+        xmlns="">                       <STRONG>Примечание</STRONG>              
+               </TH></TR>
+    <TR>
+      <TD>
+        <P><SPAN class="sentence" id="mt71" xml:space="preserve" data-source="As you follow the steps in this walkthrough, several compiler errors appear." 
+        data-guid="fb2e493629c2c68302df37d247fde0b2"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Во 
+        время выполнения действий, описанных в данном пошаговом руководстве, 
+        отобразятся несколько ошибок компилятора.</sentencetext></SPAN>  <SPAN 
+        class="sentence" id="mt72" xml:space="preserve" data-source="You can ignore them and continue with the walkthrough." 
+        data-guid="9dbfb8e08d30b39f832c4102a4c050f3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно 
+        игнорировать их и продолжить пошаговое 
+        руководство.</sentencetext></SPAN>  </P></TD></TR></TBODY></TABLE></DIV>
+  <P><SPAN class="sentence" id="mt73" xml:space="preserve" data-source="Change the method that's called in the third line of <span class=&quot;code&quot;>GetURLContents</span> from <span><span class=&quot;input&quot;>GetResponse</span></span> to the asynchronous, task-based <span><span class=&quot;mtpsTagOuterHtml&quot; ><span>GetResponseAsync</span></span></span> method." 
+  data-guid="870d45cf1ea9eca4e7e4bc33d58c4ce6"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Измените 
+  метод, который вызывается в третьей строке <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN> 
+  с <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">GetResponse</SPAN></SPAN> на асинхронный ориентированный на 
+  задачи метод <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.net.webrequest.getresponseasync.aspx">GetResponseAsync</A></SPAN>.</sentencetext></SPAN> 
+                                    </P>
+  <DIV class="codeSnippetContainer" id="code-snippet-5" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-5">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_7b035793-8652-4e8b-863c-03d4fd4931a3');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_7b035793-8652-4e8b-863c-03d4fd4931a3" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE><SPAN style="color: blue;">using</SPAN> (WebResponse response = webReq.GetResponseAsync())
+</PRE></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt74" xml:space="preserve" data-source='<span><span class="input">GetResponseAsync</span></span> returns a <span><span class="mtpsTagOuterHtml" ><span>Task<span class="mtpsTagOuterHtml"  xmlns=""><span>&amp;lt;</span></span>TResult<span class="mtpsTagOuterHtml"  xmlns=""><span>&amp;gt;</span></span></span></span></span>.' 
+  data-guid="2d913a357e5ef5b76d8e1abbc66aea97"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">GetResponseAsync</SPAN>   </SPAN> возвращает <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/dd321424.aspx">Task<SPAN xmlns="">&lt;</SPAN>TResult<SPAN 
+  xmlns="">&gt;</SPAN></A></SPAN>.</sentencetext></SPAN>  <SPAN class="sentence" 
+  id="mt75" xml:space="preserve" data-source='In this case, the <span class="parameter">task return variable</span>, <span><span class="input">TResult</span></span>, has type <span><span class="mtpsTagOuterHtml" ><span>WebResponse</span></span></span>.' 
+  data-guid="36254cd680404bdff9b82da40f698f44"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  этом случае <SPAN class="parameter" 
+  xmlns="http://www.w3.org/1999/xhtml">возвращаемая переменная задачи</SPAN>, 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">TResult</SPAN></SPAN>, имеет тип <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/system.net.webresponse.aspx">WebResponse</A></SPAN>.</sentencetext></SPAN> 
+   <SPAN class="sentence" id="mt76" xml:space="preserve" data-source='The task is a promise to produce an actual <span><span class="input">WebResponse</span></span> object after the requested data has been downloaded and the task has run to completion.' 
+  data-guid="6cac0f1cbd57a3b8089b2dfbf5e9ca93"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задача 
+  — обещание создать объект <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">WebResponse</SPAN></SPAN> после того, как необходимые данные 
+  были загружены, а задача выполнена до завершения.</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt77" xml:space="preserve" data-source='To retrieve the <span><span class="input">WebResponse</span></span> value from the task, apply an <span class="mtpsTagOuterHtml" ><span>Await</span></span> (Visual Basic) or <span class="mtpsTagOuterHtml" ><span>await</span></span> (C#) operator to the call to <span><span class="input">GetResponseAsync</span></span>, as the following code shows.' 
+  data-guid="3012df538758a997490a4f3e6c53f8df"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+  получения значения <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">WebResponse</SPAN></SPAN> 
+  из задачи, примените оператор <A href="https://msdn.microsoft.com/ru-ru/library/hh156570.aspx">Await</A> 
+  (Visual Basic) или <A href="https://msdn.microsoft.com/ru-ru/library/hh156528.aspx">await</A> 
+  (C#) к вызову <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">GetResponseAsync</SPAN></SPAN>, как показано в следующем 
+  коде.</sentencetext></SPAN>                                   </P>
+  <DIV id="snippetGroup3">
+  <DIV class="codeSnippetContainer" id="code-snippet-6" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-6">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_a4ab0b92-7b16-47aa-bd0b-c3a7f826dc60');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_a4ab0b92-7b16-47aa-bd0b-c3a7f826dc60" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">using</SPAN> (WebResponse response = <SPAN style="color: blue;">await</SPAN> webReq.GetResponseAsync())
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt78" xml:space="preserve" data-source='The await operator suspends the execution of the current method, <span class="code">GetURLContents</span>, until the awaited task is complete.' 
+  data-guid="f6d0f25bbb8dd74d973e1469acb1c219"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Оператор 
+  await не будет приостанавливать выполнение текущего метода, <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, до завершения 
+  ожидаемой задачи.</sentencetext></SPAN>  <SPAN class="sentence" id="mt79" 
+  xml:space="preserve" data-source="In the meantime, control returns to the caller of the current method." 
+  data-guid="b8aafec4f8879ec4263278ecd9acc165"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Тем 
+  временем, управление возвращается к вызывающему объекту текущего 
+  метода.</sentencetext></SPAN>  <SPAN class="sentence" id="mt80" xml:space="preserve" 
+  data-source='In this example, the current method is <span class="code">GetURLContents</span>, and the caller is <span class="code">SumPageSizes</span>.' 
+  data-guid="7df786b884885dc64823093dd4e6ccb4"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  следующем примере текущий метод — <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, 
+  а вызывающий — <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN>.</sentencetext></SPAN> 
+   <SPAN class="sentence" id="mt81" xml:space="preserve" data-source='When the task is finished, the promised <span><span class="input">WebResponse</span></span> object is produced as the value of the awaited task and assigned to the variable <span class="code">response</span>.' 
+  data-guid="db37b73b15f87d30887eba29e47d2e8d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Когда 
+  задача завершена, обещанный объект <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">WebResponse</SPAN></SPAN> создается в качестве значения 
+  ожидаемой задачи и присваивается переменной <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">response</SPAN>.</sentencetext></SPAN> 
+   </P>
+  <P><SPAN class="sentence" id="mt82" xml:space="preserve" data-source="The previous statement can be separated into the following two statements to clarify what happens." 
+  data-guid="3390c06908893da3f6c2038897341eca"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предыдущее 
+  выражение можно разделить на следующие два выражения, чтобы прояснить, что 
+  происходит.</sentencetext></SPAN>                 </P>
+  <DIV id="snippetGroup4">
+  <DIV class="codeSnippetContainer" id="code-snippet-7" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-7">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_b4a98c4e-0113-469d-ae56-99c7b1e7582a');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_b4a98c4e-0113-469d-ae56-99c7b1e7582a" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">//Task&lt;WebResponse&gt; responseTask = webReq.GetResponseAsync();</SPAN>
+<SPAN style="color: green;">//using (WebResponse response = await responseTask)</SPAN>
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt83" xml:space="preserve" data-source='The call to <span class="code">webReq.GetResponseAsync</span> returns a <span><span class="input">Task(Of WebResponse)</span></span> or <span><span class="input">Task&amp;lt;WebResponse&amp;gt;</span></span>.' 
+  data-guid="76b4810d9bcce773db8c3200f3adb078"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызов 
+  <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">webReq.GetResponseAsync</SPAN> возвращает 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Task(Of 
+  WebResponse)</SPAN></SPAN> или <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task&lt;WebResponse&gt;</SPAN></SPAN>.</sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt84" xml:space="preserve" data-source='Then an await operator is applied to the task to retrieve the <span><span class="input">WebResponse</span></span> value.' 
+  data-guid="dd25e08108783fa9fd4ef3a383778466"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml">Затем оператор await применяется к задаче 
+  для извлечения значения 
+  <SPAN><SPAN><STRONG>WebResponse</STRONG></SPAN></SPAN>.</sentencetext> 
+  </sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt85" xml:space="preserve" data-source="If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the await operator is applied." 
+  data-guid="747dbd00672ee0951fe595f7e7ffbec3"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml">Если в асинхронном методе есть команды, 
+  выполнение которых не зависит от завершения задачи, то метод может выполнять 
+  их между этими двумя выражениями — после вызова асинхронного метода и до 
+  момента применения оператора await.</sentencetext> </sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt86" xml:space="preserve" data-source='For examples, see <span><span class="mtpsTagOuterHtml" ><span>How to: Make Multiple Web Requests in Parallel by Using Async and Await (C# and Visual Basic)</span></span></span> and <span><span class="mtpsTagOuterHtml" ><span>How to: Extend the Async Walkthrough by Using Task.WhenAll (C# and Visual Basic)</span></span></span>.' 
+  data-guid="d6df08fb7854e06eda5e46797ec58131"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Примеры 
+  см. в разделах <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/hh696703.aspx">Практическое 
+  руководство. Параллельное выполнение нескольких веб-запросов с использованием 
+  Async и Await (C# и Visual Basic)</A></SPAN> и <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/hh556530.aspx">Практическое 
+  руководство. Расширение пошагового руководства по асинхронным процедурам с 
+  использованием метода Task.WhenAll (C# и Visual 
+  Basic)</A></SPAN>.</sentencetext></SPAN>  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt87" xml:space="preserve" data-source='Because you added the <span><span class="input">Await</span></span> or <span><span class="input">await</span></span> operator in the previous step, a compiler error occurs.' 
+  data-guid="6dabafc8c93a4f7b85b755a042799969"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Так 
+  как на предыдущем шаге был добавлен оператор <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Await</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">await</SPAN></SPAN>, то возникает ошибка 
+  компилятора.</sentencetext></SPAN>  <SPAN class="sentence" id="mt88" 
+  xml:space="preserve" data-source='The operator can be used only in methods that are marked with the <span class="mtpsTagOuterHtml" ><span>Async</span></span> (Visual Basic) or <span class="mtpsTagOuterHtml" ><span>async</span></span> (C#) modifier.' 
+  data-guid="6ddf8823ab7e4ddb389a379ba2f577c1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Оператор 
+  может использоваться только в методах, которые помечены модификатором <A href="https://msdn.microsoft.com/ru-ru/library/hh191564.aspx">Async</A> 
+  (Visual Basic) или <A href="https://msdn.microsoft.com/ru-ru/library/hh156513.aspx">async</A> 
+  (C#).</sentencetext></SPAN>  <SPAN class="sentence" id="mt89" xml:space="preserve" 
+  data-source='Ignore the error while you repeat the conversion steps to replace the call to <span><span class="input">CopyTo</span></span> with a call to <span><span class="input">CopyToAsync</span></span>.' 
+  data-guid="ee5ff4b9cf575dd7301dcb5a984ac405"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Игнорируйте 
+  ошибки пока выполняете шаги преобразования по замене вызова <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">CopyTo</SPAN></SPAN> на вызов <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">CopyToAsync</SPAN></SPAN>.</sentencetext></SPAN>  </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt90" xml:space="preserve" data-source='Change the name of the method that’s called to <span><span class="mtpsTagOuterHtml" ><span>CopyToAsync</span></span></span>.' 
+    data-guid="f70a932c667b648ca9ecd440fd6dbebb"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Измените 
+    имя вызываемого метода на <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+    href="https://msdn.microsoft.com/ru-ru/library/system.io.stream.copytoasync.aspx">CopyToAsync</A></SPAN>.</sentencetext></SPAN> 
+                                              </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt91" xml:space="preserve" data-source='The <span><span class="input">CopyTo</span></span> or <span><span class="input">CopyToAsync</span></span> method copies bytes to its argument, <span class="code">content</span>, and doesn’t return a meaningful value.' 
+    data-guid="3f2aeae0ac6647b364fe0d2ab2fb9ec2"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Метод 
+    <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">CopyTo</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">CopyToAsync</SPAN></SPAN> копирует байты в свой аргумент <SPAN 
+    class="code" xmlns="http://www.w3.org/1999/xhtml">content</SPAN> и не 
+    возвращает понятного значения.</sentencetext></SPAN>  <SPAN class="sentence" 
+    id="mt92" xml:space="preserve" data-source="In the synchronous version, the call to <span><span class=&quot;input&quot;>CopyTo</span></span> is a simple statement that doesn't return a value." 
+    data-guid="ff7e23b4676c9a956e6edab0f70ddef5"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+    синхронной версии вызов <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">CopyTo</SPAN></SPAN> — это простое выражение, не возвращающее 
+    значения.</sentencetext></SPAN>  <SPAN class="sentence" id="mt93" xml:space="preserve" 
+    data-source='The asynchronous version, <span><span class="input">CopyToAsync</span></span>, returns a <span><span class="mtpsTagOuterHtml" ><span>Task</span></span></span>.' 
+    data-guid="fa37c3f94de470db1f07e3d0544ae6f9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Асинхронная 
+    версия, <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">CopyToAsync</SPAN></SPAN>, возвращает <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+    href="https://msdn.microsoft.com/ru-ru/library/system.threading.tasks.task.aspx">Task</A></SPAN>.</sentencetext></SPAN> 
+     <SPAN class="sentence" id="mt94" xml:space="preserve" data-source='The task functions like "Task(void)" and enables the method to be awaited.' 
+    data-guid="cc58385b26137b46e97fa8853ca47062"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+    xmlns="http://www.w3.org/1999/xhtml">Задача работает как "Task(void)", и это 
+    позволяет методу стать "ожидаемым".</sentencetext> </sentencetext></SPAN>  
+    <SPAN class="sentence" id="mt95" xml:space="preserve" data-source='Apply <span><span class="input">Await</span></span> or <span><span class="input">await</span></span> to the call to <span><span class="input">CopyToAsync</span></span>, as the following code shows.' 
+    data-guid="034de8d659bdeba95b520419794455ad"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Примените 
+    <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">Await</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">await</SPAN></SPAN> для вызова <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">CopyToAsync</SPAN></SPAN>, как показано 
+    ниже.</sentencetext></SPAN>  </P>
+    <DIV id="snippetGroup5">
+    <DIV class="codeSnippetContainer" id="code-snippet-8" xmlns="">
+    <DIV class="codeSnippetContainerTabs">
+    <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+    <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-8">VB</A></DIV></DIV>
+    <DIV class="codeSnippetContainerCodeContainer">
+    <DIV class="codeSnippetToolBar">
+    <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+    style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_06c99038-3df6-4860-baa9-ef192747a0ac');">Копировать</A> 
+                </DIV></DIV>
+    <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_06c99038-3df6-4860-baa9-ef192747a0ac" 
+    dir="ltr">
+    <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">await</SPAN> responseStream.CopyToAsync(content);
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+    <P><SPAN class="sentence" id="mt96" xml:space="preserve" data-source="The previous statement abbreviates the following two lines of code." 
+    data-guid="c86f9586014bdaa762377f7b346ee039"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предыдущее 
+    выражение сокращает следующие две строки кода.</sentencetext></SPAN>         
+                </P>
+    <DIV id="snippetGroup6">
+    <DIV class="codeSnippetContainer" id="code-snippet-9" xmlns="">
+    <DIV class="codeSnippetContainerTabs">
+    <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+    <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-9">VB</A></DIV></DIV>
+    <DIV class="codeSnippetContainerCodeContainer">
+    <DIV class="codeSnippetToolBar">
+    <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+    style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c90c89aa-745c-4fbe-bfb1-16efa01e8530');">Копировать</A> 
+                </DIV></DIV>
+    <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_c90c89aa-745c-4fbe-bfb1-16efa01e8530" 
+    dir="ltr">
+    <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// CopyToAsync returns a Task, not a Task&lt;T&gt;.</SPAN>
+<SPAN style="color: green;">//Task copyTask = responseStream.CopyToAsync(content);</SPAN>
+
+<SPAN style="color: green;">// When copyTask is completed, content contains a copy of</SPAN>
+<SPAN style="color: green;">// responseStream.</SPAN>
+<SPAN style="color: green;">//await copyTask;</SPAN>
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI></UL></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt97" xml:space="preserve" data-source='All that remains to be done in <span class="code">GetURLContents</span> is to adjust the method signature.' 
+  data-guid="a6025fb3677958a9acf6e639076f78d7"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Все, 
+  что остается сделать в <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN>, — это изменить 
+  сигнатуру метода.</sentencetext></SPAN>  <SPAN class="sentence" id="mt98" 
+  xml:space="preserve" data-source='You can use the <span><span class="input">Await</span></span> or <span><span class="input">await</span></span> operator only in methods that are marked with the <span class="mtpsTagOuterHtml" ><span>Async</span></span> (Visual Basic) or <span class="mtpsTagOuterHtml" ><span>async</span></span> (C#) modifier.' 
+  data-guid="a8ac283bb9ed581a9ba6c84ce88b6e43"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Оператор 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Await</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">await</SPAN></SPAN> можно использовать только в методах, 
+  помеченных модификатором <A href="https://msdn.microsoft.com/ru-ru/library/hh191564.aspx">Async</A> 
+  (Visual Basic) или <A href="https://msdn.microsoft.com/ru-ru/library/hh156513.aspx">async</A> 
+  (C#).</sentencetext></SPAN>  <SPAN class="sentence" id="mt99" xml:space="preserve" 
+  data-source='Add the modifier to mark the method as an <span class="parameter">async method</span>, as the following code shows.' 
+  data-guid="92d89deca54b07599fcdcb87f316ba45"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Добавьте 
+  модификатор для того, чтобы пометить метод как <SPAN class="parameter" xmlns="http://www.w3.org/1999/xhtml">асинхронный</SPAN>, 
+  как показано ниже.</sentencetext></SPAN>  </P>
+  <DIV class="codeSnippetContainer" id="code-snippet-10" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-10">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_b125f838-f283-476f-9949-47a6a14cbac8');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_b125f838-f283-476f-9949-47a6a14cbac8" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE><SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> <SPAN style="color: blue;">byte</SPAN>[] GetURLContents(<SPAN style="color: blue;">string</SPAN> url)
+
+</PRE></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt100" xml:space="preserve" data-source='The return type of an async method can only be <span><span class="mtpsTagOuterHtml" ><span>Task</span></span></span>, <span><span class="mtpsTagOuterHtml" ><span>Task<span class="mtpsTagOuterHtml"  xmlns=""><span>&amp;lt;</span></span>TResult<span class="mtpsTagOuterHtml"  xmlns=""><span>&amp;gt;</span></span></span></span></span>, or <span><span class="input">void</span></span> in C#.' 
+  data-guid="2ec301156d5dedc39dd1eac28256b982"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Тип 
+  возвращаемого значения асинхронного метода может быть только <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/system.threading.tasks.task.aspx">Task</A></SPAN>, 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/dd321424.aspx">Task<SPAN 
+  xmlns="">&lt;</SPAN>TResult<SPAN xmlns="">&gt;</SPAN></A></SPAN> или <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">void</SPAN></SPAN> в 
+  C#.</sentencetext></SPAN>  <SPAN class="sentence" id="mt101" xml:space="preserve" 
+  data-source='In Visual Basic, the method must be a <span><span class="input">Function</span></span> that returns a <span><span class="input">Task</span></span> or a <span><span class="input">Task(Of T)</span></span>, or the method must be a <span><span class="input">Sub</span></span>.' 
+  data-guid="dfaf42d03663e71fdba7974751bc1ad9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  Visual Basic, метод должен быть <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Function</SPAN></SPAN>, которая возвращает <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task(Of T)</SPAN></SPAN>, или метод должен быть <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Sub</SPAN></SPAN>.</sentencetext></SPAN>  <SPAN class="sentence" 
+  id="mt102" xml:space="preserve" data-source='Typically, a <span><span class="input">Sub</span></span> method (Visual Basic) or a return type of <span><span class="input">void</span></span> (C#) is used only in an async event handler, where <span><span class="input">Sub</span></span> or <span><span class="input">void</span></span> is required.' 
+  data-guid="4b5ae40db240490c68d4516c43f56cb5"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Как 
+  правило, метод <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Sub</SPAN></SPAN> (Visual Basic) или возвращаемый тип <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">void</SPAN></SPAN> 
+  (C#) используются только в обработчике асинхронных событий, где требуются 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Sub</SPAN></SPAN> или <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">void</SPAN></SPAN>.</sentencetext></SPAN>  <SPAN class="sentence" 
+  id="mt103" xml:space="preserve" data-source='In other cases, you use <span><span class="input">Task(T)</span></span> if the completed method has a <span class="mtpsTagOuterHtml" ><span>Return</span></span> or <span class="mtpsTagOuterHtml" ><span>return</span></span> statement that returns a value of type T, and you use <span><span class="input">Task</span></span> if the completed method doesn’t return a meaningful value.' 
+  data-guid="a9c1c94b5fbaedd04ca8c2de5d4f7341"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  других случаях, используется <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task(T)</SPAN></SPAN>, если завершенный метод имеет выражение <A 
+  href="https://msdn.microsoft.com/ru-ru/library/2e34641s.aspx">Return</A> или 
+  <A href="https://msdn.microsoft.com/ru-ru/library/1h3swy84.aspx">return</A>, 
+  которое возвращает значение типа T, и используется <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task</SPAN></SPAN>, если завершенный метод не возвращает 
+  значимое значение.</sentencetext></SPAN>  <SPAN class="sentence" id="mt104" 
+  xml:space="preserve" data-source='You can think of the <span><span class="input">Task</span></span> return type as meaning "Task(void)."' 
+  data-guid="4c365e3dbb10d6d99b348a3f3e3b6152"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращаемый 
+  тип <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task</SPAN></SPAN> можно рассматривать как 
+  "Task(void)".</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt105" xml:space="preserve" data-source='For more information, see <span><span class="mtpsTagOuterHtml" ><span>Async Return Types (C# and Visual Basic)</span></span></span>.' 
+  data-guid="1beb8232f2a191019a077ccd5933d9ab"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Для 
+  получения дополнительной информации см. <SPAN xmlns="http://www.w3.org/1999/xhtml"><A 
+  href="https://msdn.microsoft.com/ru-ru/library/hh524395.aspx">Асинхронные типы 
+  возвращаемых значений (C# и Visual Basic)</A></SPAN>.</sentencetext></SPAN>    
+                                 </P>
+  <P><SPAN class="sentence" id="mt106" xml:space="preserve" data-source='Method <span class="code">GetURLContents</span> has a return statement, and the statement returns a byte array.' 
+  data-guid="59251e15991c0ebd1c7ba78d6d66da08"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Метод 
+  <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN> 
+  имеет выражение return, и оно возвращает массив байтов.</sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt107" xml:space="preserve" data-source="Therefore, the return type of the async version is Task(T), where T is a byte array." 
+  data-guid="853a892cf86de7b80e52782f2944ddd3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Таким 
+  образом, тип возвращаемого значения асинхронной версии — Task(T), где T — 
+  массив байтов.</sentencetext></SPAN>  <SPAN class="sentence" id="mt108" 
+  xml:space="preserve" data-source="Make the following changes in the method signature:" 
+  data-guid="a2addfc7b6df504901df874368422fa1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Внесите 
+  в сигнатуру метода следующие изменения:</sentencetext></SPAN>  </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt109" xml:space="preserve" data-source='Change the return type to <span class="code">Task(Of Byte())</span> (Visual Basic) or <span class="code">Task&amp;lt;byte[]&amp;gt;</span> (C#).' 
+    data-guid="525a8c953c5da9ffb88c4a5b63fa7b0a"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Измените 
+    возвращаемый тип на <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">Task(Of Byte())</SPAN> (Visual Basic) 
+    или <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">Task&lt;byte[]&gt;</SPAN> 
+    (C#).</sentencetext></SPAN>                                           
+    </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt110" xml:space="preserve" data-source='By convention, asynchronous methods have names that end in "Async," so rename the method <span class="code">GetURLContentsAsync</span>.' 
+    data-guid="36dda2e3d8602d4e0395f9d8f54d8a3c"><sentencetext xmlns="http://www.w3.org/1999/xhtml">По 
+    соглашению, имена асинхронных методов оканчиваются на "Async", поэтому 
+    переименуйте метод <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN>.</sentencetext></SPAN> 
+                                              </P></LI></UL>
+  <P><SPAN class="sentence" id="mt111" xml:space="preserve" data-source="The following code shows these changes." 
+  data-guid="2aae0b1f2a3a15c8a7c31bae6ddfc63d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Приведенный 
+  ниже код показывает эти изменения.</sentencetext></SPAN>                 </P>
+  <DIV id="snippetGroup7">
+  <DIV class="codeSnippetContainer" id="code-snippet-11" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-11">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_88f948ff-ea98-4e7b-b1e5-1c299e273161');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_88f948ff-ea98-4e7b-b1e5-1c299e273161" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> Task&lt;<SPAN style="color: blue;">byte</SPAN>[]&gt; GetURLContentsAsync(<SPAN style="color: blue;">string</SPAN> url)
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt112" xml:space="preserve" data-source='With those few changes, the conversion of <span class="code">GetURLContents</span> to an asynchronous method is complete.' 
+  data-guid="7be72fd2823d5772f31f91cadc171b1e"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Эти 
+  незначительные изменения завершают преобразование метода <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN> в 
+  асинхронный.</sentencetext></SPAN>                                   
+</P></LI></OL></DIV></DIV><A id="BKMK_ConvertSumPagSzs"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection7">
+<H3 class="procedureSubHeading">Чтобы преобразовать метод SumPageSizes в 
+асинхронный</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt113" xml:space="preserve" data-source='Repeat the steps from the previous procedure for <span class="code">SumPageSizes</span>.' 
+  data-guid="b37796c0ea7e7ffff56d773f45d43fa1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Повторите 
+  шаги из предыдущей процедуры для <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN>.</sentencetext></SPAN> 
+   <SPAN class="sentence" id="mt114" xml:space="preserve" data-source='First, change the call to <span class="code">GetURLContents</span> to an asynchronous call.' 
+  data-guid="52fe696d3a9bc79301008c3ed1cffd7b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Во-первых, 
+  измените вызов <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">GetURLContents</SPAN> на 
+  асинхронный.</sentencetext></SPAN>  </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt115" xml:space="preserve" data-source="Change the name of the method that’s called from <span class=&quot;code&quot;>GetURLContents</span> to <span class=&quot;code&quot;>GetURLContentsAsync</span>, if you haven't already done so." 
+    data-guid="3d15c2b895cf586fe496c7a0fc13c4c4"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+    xmlns="http://www.w3.org/1999/xhtml">Смените имя вызываемого в коде метода с 
+    <SPAN>GetURLContents</SPAN> на <SPAN>GetURLContentsAsync</SPAN>, если вы еще 
+    не сделали это.</sentencetext> </sentencetext></SPAN>                        
+                       </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt116" xml:space="preserve" data-source='Apply <span><span class="input">Await</span></span> or <span><span class="input">await</span></span> to the task that <span class="code">GetURLContentsAsync</span> returns to obtain the byte array value. ' 
+    data-guid="06ccc00579fa295dd11c82271d5e4c29"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Примените 
+    <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">Await</SPAN></SPAN> или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">await</SPAN></SPAN> к задаче, которую возвращает <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN> для 
+    получения значения массива байтов. </sentencetext></SPAN>                    
+                           </P></LI></UL>
+  <P><SPAN class="sentence" id="mt117" xml:space="preserve" data-source="The following code shows these changes." 
+  data-guid="2aae0b1f2a3a15c8a7c31bae6ddfc63d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Приведенный 
+  ниже код показывает эти изменения.</sentencetext></SPAN>                 </P>
+  <DIV id="snippetGroup8">
+  <DIV class="codeSnippetContainer" id="code-snippet-12" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-12">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_3ad9b47b-a30b-40ba-b3b6-c7f7ec242947');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_3ad9b47b-a30b-40ba-b3b6-c7f7ec242947" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">byte</SPAN>[] urlContents = <SPAN style="color: blue;">await</SPAN> GetURLContentsAsync(url);
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt118" xml:space="preserve" data-source="The previous assignment abbreviates the following two lines of code." 
+  data-guid="91cb68b514720b3f22a4ddc721469b4d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предыдущее 
+  присваивание сокращает следующие две строки кода.</sentencetext></SPAN>        
+           </P>
+  <DIV id="snippetGroup9">
+  <DIV class="codeSnippetContainer" id="code-snippet-13" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-13">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_f7d7db4f-ad0a-4e0c-8bde-afcebd63e5e4');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_f7d7db4f-ad0a-4e0c-8bde-afcebd63e5e4" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// GetURLContentsAsync returns a Task&lt;T&gt;. At completion, the task</SPAN>
+<SPAN style="color: green;">// produces a byte array.</SPAN>
+<SPAN style="color: green;">//Task&lt;byte[]&gt; getContentsTask = GetURLContentsAsync(url);</SPAN>
+<SPAN style="color: green;">//byte[] urlContents = await getContentsTask;</SPAN>
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt119" xml:space="preserve" data-source="Make the following changes in the method's signature: " 
+  data-guid="2070305bc0dcc1e0352c951033b11ea1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Внесите 
+  в сигнатуру метода следующие изменения: </sentencetext></SPAN>                 
+  </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt120" xml:space="preserve" data-source='Mark the method with the <span><span class="input">Async</span></span> or <span><span class="input">async</span></span> modifier.' 
+    data-guid="c236d110b31783159f85b76dac109d41"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+    xmlns="http://www.w3.org/1999/xhtml">Пометьте метод модификатором 
+    <SPAN><SPAN>Async</SPAN></SPAN> (VB) или <SPAN><SPAN>async 
+    </SPAN></SPAN>(C#).</sentencetext> </sentencetext></SPAN>                    
+                           </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt121" xml:space="preserve" data-source='Add "Async" to the method name.' 
+    data-guid="669155358e5a6d3a91d49fd9d872ecc6"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Добавьте 
+    "Async" в имя метода.</sentencetext></SPAN>                     </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt122" xml:space="preserve" data-source='There is no task return variable, T, this time because <span class="code">SumPageSizesAsync</span> doesn’t return a value for T.' 
+    data-guid="e6130cf68d314710410f682525880915"><sentencetext xmlns="http://www.w3.org/1999/xhtml">На 
+    этот раз нет возвращаемой переменной задачи, так как <SPAN class="code" 
+    xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN> не возвращает 
+    значения для T.</sentencetext></SPAN>  <SPAN class="sentence" id="mt123" 
+    xml:space="preserve" data-source='(The method has no <span><span class="input">Return</span></span> or <span><span class="input">return</span></span> statement.) However, the method must return a <span><span class="input">Task</span></span> to be awaitable.' 
+    data-guid="54fcd63f332ad082e33cb2a4228fb045"><sentencetext xmlns="http://www.w3.org/1999/xhtml">(У 
+    метода нет выражения <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Return</SPAN></SPAN> 
+    или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">return</SPAN></SPAN>.) Тем не менее, метод должен возвращать 
+    <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+    class="input">Task</SPAN></SPAN> для того, чтобы его можно было 
+    ожидать.</sentencetext></SPAN>  <SPAN class="sentence" id="mt124" xml:space="preserve" 
+    data-source="Therefore, make one of the following changes:" data-guid="b4f5fa0e3ab7733ea94534f1b15a5e4b"><sentencetext 
+    xmlns="http://www.w3.org/1999/xhtml">Поэтому сделайте одно из следующих 
+    изменений:</sentencetext></SPAN>  </P>
+    <UL>
+      <LI>
+      <P><SPAN class="sentence" id="mt125" xml:space="preserve" data-source='In Visual Basic, change the method type from <span><span class="input">Sub</span></span> to <span><span class="input">Function</span></span>.' 
+      data-guid="3a09bfb68f4f47900c1c1c538098e0b2"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+      Visual Basic, измените тип метода с <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+      class="input">Sub</SPAN></SPAN> на <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+      class="input">Function</SPAN></SPAN>.</sentencetext></SPAN>  <SPAN class="sentence" 
+      id="mt126" xml:space="preserve" data-source='The return type of the function is <span><span class="input">Task</span></span>.' 
+      data-guid="fd653f06ed7baad1ce55f12372984b3d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращаемый 
+      тип функции — <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Task</SPAN></SPAN>.</sentencetext></SPAN> 
+       </P></LI>
+      <LI>
+      <P><SPAN class="sentence" id="mt127" xml:space="preserve" data-source='In C#, change the return type of the method from <span><span class="input">void</span></span> to <span><span class="input">Task</span></span>.' 
+      data-guid="a7a5064487c1408ba9da28fea788075d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+      C# следует изменить тип возвращаемого значения метода с <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+      class="input">void</SPAN></SPAN> на <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+      class="input">Task</SPAN></SPAN>.</sentencetext></SPAN>                    
+                                     </P></LI></UL></LI></UL>
+  <P><SPAN class="sentence" id="mt128" xml:space="preserve" data-source="The following code shows these changes." 
+  data-guid="2aae0b1f2a3a15c8a7c31bae6ddfc63d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Приведенный 
+  ниже код показывает эти изменения.</sentencetext></SPAN>                 </P>
+  <DIV id="snippetGroup10">
+  <DIV class="codeSnippetContainer" id="code-snippet-14" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-14">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_9bdb3d81-a10b-4b05-9e7b-b29d20542d3a');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_9bdb3d81-a10b-4b05-9e7b-b29d20542d3a" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> Task SumPageSizesAsync()
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt129" xml:space="preserve" data-source='The conversion of <span class="code">SumPageSizes</span> to <span class="code">SumPageSizesAsync</span> is complete.' 
+  data-guid="7fd5c8be7392a482b6dd8199e337f97f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразование 
+  <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN> в 
+  <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN> 
+  завершено.</sentencetext></SPAN>                                   
+</P></LI></OL></DIV></DIV><A id="BKMK_Cnvrtbttn1"></A>       
+<DIV class="seeAlsoNoToggleSection" id="sectionSection8">
+<H3 class="procedureSubHeading">Чтобы преобразовать метод startButton_Click в 
+асинхронный</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt130" xml:space="preserve" data-source='In the event handler, change the name of the called method from <span class="code">SumPageSizes</span> to <span class="code">SumPageSizesAsync</span>, if you haven’t already done so.' 
+  data-guid="17608740ed9358ca74897c5a3bf706ba"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  обработчике событий измените имя вызванного метода с <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizes</SPAN> 
+  на <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN>, если это еще не 
+  сделано.</sentencetext></SPAN>                                   </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt131" xml:space="preserve" data-source='Because <span class="code">SumPageSizesAsync</span> is an async method, change the code in the event handler to await the result.' 
+  data-guid="cf733a18aaf51dbd5a295dd395e847a0"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Так 
+  как метод <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN> асинхронный, 
+  измените код в обработчике событий для ожидания 
+  результата.</sentencetext></SPAN>                                   </P>
+  <P><SPAN class="sentence" id="mt132" xml:space="preserve" data-source='The call to <span class="code">SumPageSizesAsync</span> mirrors the call to <span><span class="input">CopyToAsync</span></span> in <span class="code">GetURLContentsAsync</span>.' 
+  data-guid="570c15ba0862a9a9aa07a3fdf6b501ab"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызов 
+  <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN> отражает вызов 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">CopyToAsync</SPAN></SPAN> в <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN>.</sentencetext></SPAN> 
+   <SPAN class="sentence" id="mt133" xml:space="preserve" data-source='The call returns a <span><span class="input">Task</span></span>, not a <span><span class="input">Task(T)</span></span>.' 
+  data-guid="ff72b884aac53e7f9a28be0734730664"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Вызов 
+  возвращает <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task</SPAN></SPAN>, а не <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Task(T)</SPAN></SPAN>.</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt134" xml:space="preserve" data-source="As in previous procedures, you can convert the call by using one statement or two statements." 
+  data-guid="9c6deaf2c4d4a683257dbbd1374be4b3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Как 
+  и в предыдущих процедурах, вызов можно преобразовать с помощью одной или двух 
+  инструкций.</sentencetext></SPAN>  <SPAN class="sentence" id="mt135" 
+  xml:space="preserve" data-source="The following code shows these changes." 
+  data-guid="2aae0b1f2a3a15c8a7c31bae6ddfc63d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Приведенный 
+  ниже код показывает эти изменения.</sentencetext></SPAN>  </P>
+  <DIV id="snippetGroup11">
+  <DIV class="codeSnippetContainer" id="code-snippet-15" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-15">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_94f5b977-3179-42c4-8193-cd36e4f4db05');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_94f5b977-3179-42c4-8193-cd36e4f4db05" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// One-step async call.</SPAN>
+<SPAN style="color: blue;">await</SPAN> SumPageSizesAsync();
+
+<SPAN style="color: green;">// Two-step async call.</SPAN>
+<SPAN style="color: green;">//Task sumTask = SumPageSizesAsync();</SPAN>
+<SPAN style="color: green;">//await sumTask;</SPAN>
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt136" xml:space="preserve" data-source='To prevent accidentally reentering the operation, add the following statement at the top of <span class="code">startButton_Click</span> to disable the <span class="label">Start</span> button.' 
+  data-guid="407527ace7e2577ce327d9b14aafcc20"><sentencetext xmlns="http://www.w3.org/1999/xhtml"><sentencetext 
+  xmlns="http://www.w3.org/1999/xhtml">Для предотвращения случайного повторного 
+  выполнения операции (повторное нажатие кнопки Start) добавьте следующее 
+  выражение в верхнюю часть <SPAN>startButton_Click</SPAN>, чтобы отключить 
+  кнопку Start.</sentencetext> </sentencetext></SPAN>                            
+         </P>
+  <DIV id="snippetGroup12">
+  <DIV class="codeSnippetContainer" id="code-snippet-16" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-16">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_812af53a-07f7-4723-9a4d-4efa90d9e0e1');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_812af53a-07f7-4723-9a4d-4efa90d9e0e1" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// Disable the button until the operation is complete.</SPAN>
+startButton.IsEnabled = <SPAN style="color: blue;">false</SPAN>;
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt137" xml:space="preserve" data-source="You can reenable the button at the end of the event handler." 
+  data-guid="559bd58aaefa1489bb18e31d7dac0885"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно 
+  снова включить кнопку в конце обработчика событий.</sentencetext></SPAN>       
+            </P>
+  <DIV id="snippetGroup13">
+  <DIV class="codeSnippetContainer" id="code-snippet-17" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-17">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_647501b7-97fb-4491-8f4f-b4b4f614d420');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_647501b7-97fb-4491-8f4f-b4b4f614d420" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// Reenable the button in case you want to run the operation again.</SPAN>
+startButton.IsEnabled = <SPAN style="color: blue;">true</SPAN>;
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt138" xml:space="preserve" data-source='For more information about reentrancy, see <span><span class="mtpsTagOuterHtml" ><span>Handling Reentrancy in Async Apps (C# and Visual Basic)</span></span></span>.' 
+  data-guid="7c5ba815b33463b4f177b033465ef4ca"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные 
+  сведения о reentrancy см. в разделе <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/jj651641.aspx">Обработка 
+  повторного входа в асинхронных приложениях (C# и Visual 
+  Basic)</A></SPAN>.</sentencetext></SPAN>                                   
+  </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt139" xml:space="preserve" data-source='Finally, add the <span><span class="input">Async</span></span> or <span><span class="input">async</span></span> modifier to the declaration so that the event handler can await <span class="code">SumPagSizesAsync</span>. ' 
+  data-guid="6242820f422ffb5d57abe908b587c642"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Наконец, 
+  добавьте модификатор <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Async</SPAN></SPAN> 
+  или <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">async</SPAN></SPAN> к объявлению, чтобы обработчик событий мог 
+  ожидать <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPagSizesAsync</SPAN>. 
+  </sentencetext></SPAN>                                   </P>
+  <DIV id="snippetGroup14">
+  <DIV class="codeSnippetContainer" id="code-snippet-18" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-18">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_5b22809d-fa7a-4cf2-ae91-5d398e2610ba');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_5b22809d-fa7a-4cf2-ae91-5d398e2610ba" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> <SPAN style="color: blue;">void</SPAN> startButton_Click(<SPAN style="color: blue;">object</SPAN> sender, RoutedEventArgs e)
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+  <P><SPAN class="sentence" id="mt140" xml:space="preserve" data-source="Typically, the names of event handlers aren’t changed." 
+  data-guid="57b59479191989b57ac57a00e08bcf53"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Как 
+  правило, имена обработчиков событий не изменяют.</sentencetext></SPAN>  <SPAN 
+  class="sentence" id="mt141" xml:space="preserve" data-source='The return type isn’t changed to <span><span class="input">Task</span></span> because event handlers must return <span><span class="input">void</span></span> in C# or be <span><span class="input">Sub</span></span> procedures in Visual Basic.' 
+  data-guid="778a3c1dffdaec668639ef7c396e6fb2"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Возвращаемый 
+  тип не изменяется на <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Task</SPAN></SPAN>, 
+  поскольку обработчики событий должны возвращать <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">void</SPAN></SPAN> в C# или должны быть процедурами <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">Sub</SPAN></SPAN> в Visual Basic.</sentencetext></SPAN>  <SPAN 
+  class="sentence" id="mt142" xml:space="preserve" data-source='Therefore, the return type to <span><span class="input">Task</span></span>.' 
+  data-guid="90de5c75e594aee1e3686bcefd032141"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Поэтому 
+  возвращаемый тип <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN class="input">Task</SPAN></SPAN>.</sentencetext></SPAN> 
+   </P>
+  <P><SPAN class="sentence" id="mt143" xml:space="preserve" data-source="The conversion of the project from synchronous to asynchronous processing is complete." 
+  data-guid="5b94ab47791ca065e36b3fc2ad981478"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразование 
+  проекта из синхронной обработки в асинхронную завершено.</sentencetext></SPAN> 
+                  </P></LI></OL></DIV></DIV><A id="BKMK_testAsynchSolution"></A>   
+    
+<DIV class="seeAlsoNoToggleSection" id="sectionSection9">
+<H3 class="procedureSubHeading">Тестирование асинхронного решения</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt144" xml:space="preserve" data-source='Choose the F5 key to run the program, and then choose the <span class="label">Start</span> button. ' 
+  data-guid="16e816ee42cc6236539d98b4093bb414"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Нажмите 
+  клавишу F5, чтобы запустить программу, а затем нажмите кнопку <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Start</SPAN>. </sentencetext></SPAN>      
+                               </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt145" xml:space="preserve" data-source="Output that resembles the output of the synchronous solution should appear." 
+  data-guid="dcafc026560f6c64e09fcb41dd27669b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Должен 
+  появиться вывод, похожий на вывод синхронного решения.</sentencetext></SPAN>  
+  <SPAN class="sentence" id="mt146" xml:space="preserve" data-source="However, notice the following differences." 
+  data-guid="831a061ef3e2e4a55711473f5361e140"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Однако 
+  обратите внимание на следующие различия.</sentencetext></SPAN>  </P>
+  <UL>
+    <LI>
+    <P><SPAN class="sentence" id="mt147" xml:space="preserve" data-source="The results don’t all occur at the same time, after the processing is complete." 
+    data-guid="56e3fe027f7c343ded5bdc44434c4d43"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Результаты 
+    появляются не все сразу и одновременно после завершения 
+    обработки.</sentencetext></SPAN>  <SPAN class="sentence" id="mt148" 
+    xml:space="preserve" data-source='For example, both programs contain a line in <span class="code">startButton_Click</span> that clears the text box.' 
+    data-guid="fec1772c0de60b98582fd5b224a57c86"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Например, 
+    обе программы содержат строку в <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">startButton_Click</SPAN>, 
+    которая очищает текстовое поле.</sentencetext></SPAN>  <SPAN class="sentence" 
+    id="mt149" xml:space="preserve" data-source='The intent is to clear the text box between runs if you choose the <span class="label">Start</span> button for a second time, after one set of results has appeared.' 
+    data-guid="30446c264aad8853469dbeb3c4f26621"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Цель 
+    состоит в том, чтобы очищать текстовое поле между запусками, если вы нажмете 
+    кнопку <SPAN class="label" xmlns="http://www.w3.org/1999/xhtml">Start</SPAN> 
+    во второй раз после отображения одного набора 
+    результатов.</sentencetext></SPAN>  <SPAN class="sentence" id="mt150" 
+    xml:space="preserve" data-source="In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work." 
+    data-guid="de2bfc950f1388c4c71370c896593ec9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+    синхронной версии текстовое поле очищается непосредственно перед появлением 
+    счетчиков во второй раз, когда загрузки завершены, а поток пользовательского 
+    интерфейса свободен и готов выполнять другую работу.</sentencetext></SPAN>  
+    <SPAN class="sentence" id="mt151" xml:space="preserve" data-source='In the asynchronous version, the text box clears immediately after you choose the <span class="label">Start</span> button.' 
+    data-guid="f23a426ab791fa322f80d051cbc0ff8f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+    асинхронной версии текстовое поле очищается сразу после выбора кнопки <SPAN 
+    class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Начать</SPAN>.</sentencetext></SPAN>  
+    </P></LI>
+    <LI>
+    <P><SPAN class="sentence" id="mt152" xml:space="preserve" data-source="Most importantly, the UI thread isn’t blocked during the downloads." 
+    data-guid="34ecf613ade6d84838130a090ae554a4"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Наиболее 
+    важно то, что поток пользовательского интерфейса не блокируется во время 
+    загрузок.</sentencetext></SPAN>  <SPAN class="sentence" id="mt153" 
+    xml:space="preserve" data-source="You can move or resize the window while the web resources are being downloaded, counted, and displayed." 
+    data-guid="5b547558b9435e2cbd0f6f2eaa4f9bc3"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно 
+    перемещать или изменять размер окна во время загрузки веб-ресурсов, их 
+    подсчета и отображения.</sentencetext></SPAN>  <SPAN class="sentence" id="mt154" 
+    xml:space="preserve" data-source='If one of the websites is slow or not responding, you can cancel the operation by choosing the <span class="label">Close</span> button (the x in the red field in the upper-right corner).' 
+    data-guid="c7fcd62925b4c05e13555ee848ae8bdc"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Если 
+    один из веб-сайтов медленный или не отвечает, то можно отменить операцию с 
+    помощью кнопки <SPAN class="label" 
+    xmlns="http://www.w3.org/1999/xhtml">Закрыть</SPAN> (x на красном фоне в 
+    верхнем правом углу).</sentencetext></SPAN>  
+</P></LI></UL></LI></OL></DIV></DIV><A id="BKMK_ReplaceGetByteArrayAsync"></A>   
+    
+<DIV class="seeAlsoNoToggleSection" id="sectionSection10">
+<H3 class="procedureSubHeading">Замена метода GetURLContentsAsync методом .NET 
+Framework</H3>
+<DIV class="subSection">
+<OL>
+  <LI>
+  <P><SPAN class="sentence" id="mt155" xml:space="preserve" data-source="The .NET Framework 4.5 provides many async methods that you can use." 
+  data-guid="e3941dab43b7f3d0ba3acd4aed6182bd"><sentencetext xmlns="http://www.w3.org/1999/xhtml">.NET 
+  Framework 4.5 предоставляет множество асинхронных методов, которые можно 
+  использовать.</sentencetext></SPAN>  <SPAN class="sentence" id="mt156" 
+  xml:space="preserve" data-source='One of them, the <span><span class="mtpsTagOuterHtml" ><span>HttpClient</span></span></span> method <span><span class="mtpsTagOuterHtml" ><span>GetByteArrayAsync(String)</span></span></span>, does just what you need for this walkthrough.' 
+  data-guid="de7069128a056b4950a034b9a579e045"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Один 
+  из них, метод <SPAN xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/system.net.http.httpclient.aspx">HttpClient</A></SPAN><SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><A href="https://msdn.microsoft.com/ru-ru/library/hh551751.aspx">GetByteArrayAsync(String)</A></SPAN>, 
+  выполняет то, что нужно для этого пошагового 
+  руководства.</sentencetext></SPAN>  <SPAN class="sentence" id="mt157" 
+  xml:space="preserve" data-source='You can use it instead of the <span class="code">GetURLContentsAsync</span> method that you created in an earlier procedure.' 
+  data-guid="ce961b265406710d637161326162a02b"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Его 
+  можно использовать вместо метода <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN>, 
+  созданного в предыдущей процедуре.</sentencetext></SPAN>  </P>
+  <P><SPAN class="sentence" id="mt158" xml:space="preserve" data-source='The first step is to create an <span><span class="input">HttpClient</span></span> object in method <span class="code">SumPageSizesAsync</span>.' 
+  data-guid="b48ab7e04bab94b05b11bc03f97066c1"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Первым 
+  шагом является создание объекта <SPAN 
+  xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">HttpClient</SPAN></SPAN> в методе <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync</SPAN>.</sentencetext></SPAN> 
+   <SPAN class="sentence" id="mt159" xml:space="preserve" data-source="Add the following declaration at the start of the method." 
+  data-guid="87ed0d0e0515a3d90803784154cf3d7a"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Добавьте 
+  следующее объявление в начало метода.</sentencetext></SPAN>  </P>
+  <DIV id="snippetGroup15">
+  <DIV class="codeSnippetContainer" id="code-snippet-19" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-19">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_7b5a28da-dc24-4364-a807-3a4937c14125');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_7b5a28da-dc24-4364-a807-3a4937c14125" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: green;">// Declare an HttpClient object and increase the buffer size. The</SPAN>
+<SPAN style="color: green;">// default buffer size is 65,536.</SPAN>
+HttpClient client =
+    <SPAN style="color: blue;">new</SPAN> HttpClient() { MaxResponseContentBufferSize = 1000000 };
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt160" xml:space="preserve" data-source='In <span class="code">SumPageSizesAsync,</span> replace the call to your <span class="code">GetURLContentsAsync</span> method with a call to the <span><span class="input">HttpClient</span></span> method.' 
+  data-guid="2bcbc39c3e4d6461a03d1f2b7ec41830"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В 
+  <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">SumPageSizesAsync,</SPAN> замените вызов 
+  вашего метода <SPAN class="code" 
+  xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN> вызовом метода 
+  <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+  class="input">HttpClient</SPAN></SPAN>.</sentencetext></SPAN>                  
+                   </P>
+  <DIV id="snippetGroup16">
+  <DIV class="codeSnippetContainer" id="code-snippet-20" xmlns="">
+  <DIV class="codeSnippetContainerTabs">
+  <DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+  <DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-20">VB</A></DIV></DIV>
+  <DIV class="codeSnippetContainerCodeContainer">
+  <DIV class="codeSnippetToolBar">
+  <DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+  style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_91be4027-19f2-42fb-9a42-19c32b84be77');">Копировать</A> 
+              </DIV></DIV>
+  <DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_91be4027-19f2-42fb-9a42-19c32b84be77" 
+  dir="ltr">
+  <DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">byte</SPAN>[] urlContents = <SPAN style="color: blue;">await</SPAN> client.GetByteArrayAsync(url);               
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt161" xml:space="preserve" data-source='Remove or comment out the <span class="code">GetURLContentsAsync</span> method that you wrote.' 
+  data-guid="955804e1fdf3172c853f6a421685aab9"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Удалите 
+  или закомментируйте метод <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN>, 
+  который был написан вручную.</sentencetext></SPAN>                             
+        </P></LI>
+  <LI>
+  <P><SPAN class="sentence" id="mt162" xml:space="preserve" data-source='Choose the F5 key to run the program, and then choose the <span class="label">Start</span> button.' 
+  data-guid="eb4ce59d82ca3428600da97dfaaf9c0f"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Нажмите 
+  клавишу F5, чтобы запустить программу, а затем нажмите кнопку <SPAN class="label" 
+  xmlns="http://www.w3.org/1999/xhtml">Start</SPAN>.</sentencetext></SPAN>       
+                              </P>
+  <P><SPAN class="sentence" id="mt163" xml:space="preserve" data-source='The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.' 
+  data-guid="828cedf8236e071e7a03885eced7e76d"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Поведение 
+  этой версии проекта должно совпадать с поведением, описанным в процедуре 
+  "Тестирование асинхронного решения", но с меньшими усилиями с вашей 
+  стороны.</sentencetext></SPAN>                 </P></LI></OL></DIV></DIV><A id="BKMK_CompleteCodeExamples"></A> 
+      
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">Пример</SPAN></A>             
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A id="sectionToggle11"></A>           
+<P><SPAN class="sentence" id="mt164" xml:space="preserve" data-source='The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous <span class="code">GetURLContentsAsync</span> method that you wrote.' 
+data-guid="9378e4527e230e38bcfa6fad466f6cb7"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Следующий 
+код содержит полный пример преобразования синхронного решения в асинхронное с 
+помощью асинхронного метода <SPAN class="code" xmlns="http://www.w3.org/1999/xhtml">GetURLContentsAsync</SPAN>, 
+который был написан вручную.</sentencetext></SPAN>  <SPAN class="sentence" id="mt165" 
+xml:space="preserve" data-source="Notice that it strongly resembles the original, synchronous solution." 
+data-guid="8c353f8ca7d48a1a2ff7644c24039901"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Обратите 
+внимание, что он строго повторяет исходное синхронное 
+решение.</sentencetext></SPAN>  </P>
+<DIV id="snippetGroup17">
+<DIV class="codeSnippetContainer" id="code-snippet-21" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-21">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_4fec9544-f556-4f98-9c9d-1791020dabae');">Копировать</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_4fec9544-f556-4f98-9c9d-1791020dabae" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">using</SPAN> System;
+<SPAN style="color: blue;">using</SPAN> System.Collections.Generic;
+<SPAN style="color: blue;">using</SPAN> System.Linq;
+<SPAN style="color: blue;">using</SPAN> System.Text;
+<SPAN style="color: blue;">using</SPAN> System.Threading.Tasks;
+<SPAN style="color: blue;">using</SPAN> System.Windows;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Controls;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Data;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Documents;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Input;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Media;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Media.Imaging;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Navigation;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Shapes;
+
+<SPAN style="color: green;">// Add the following using directives, and add a reference for System.Net.Http.</SPAN>
+<SPAN style="color: blue;">using</SPAN> System.Net.Http;
+<SPAN style="color: blue;">using</SPAN> System.IO;
+<SPAN style="color: blue;">using</SPAN> System.Net;
+
+<SPAN style="color: blue;">namespace</SPAN> AsyncExampleWPF
+{
+    <SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">partial</SPAN> <SPAN style="color: blue;">class</SPAN> MainWindow : Window
+    {
+        <SPAN style="color: blue;">public</SPAN> MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> <SPAN style="color: blue;">void</SPAN> startButton_Click(<SPAN style="color: blue;">object</SPAN> sender, RoutedEventArgs e)
+        {
+            <SPAN style="color: green;">// Disable the button until the operation is complete.</SPAN>
+            startButton.IsEnabled = <SPAN style="color: blue;">false</SPAN>;
+
+            resultsTextBox.Clear();
+
+            <SPAN style="color: green;">// One-step async call.</SPAN>
+            <SPAN style="color: blue;">await</SPAN> SumPageSizesAsync();
+
+            <SPAN style="color: green;">// Two-step async call.</SPAN>
+            <SPAN style="color: green;">//Task sumTask = SumPageSizesAsync();</SPAN>
+            <SPAN style="color: green;">//await sumTask;</SPAN>
+
+            resultsTextBox.Text += <SPAN style="color: rgb(163, 21, 21);">"\r\nControl returned to startButton_Click.\r\n"</SPAN>;
+
+            <SPAN style="color: green;">// Reenable the button in case you want to run the operation again.</SPAN>
+            startButton.IsEnabled = <SPAN style="color: blue;">true</SPAN>;
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> Task SumPageSizesAsync()
+        {
+            <SPAN style="color: green;">// Make a list of web addresses.</SPAN>
+            List&lt;<SPAN style="color: blue;">string</SPAN>&gt; urlList = SetUpURLList();
+
+            <SPAN style="color: blue;">var</SPAN> total = 0;
+
+            <SPAN style="color: blue;">foreach</SPAN> (<SPAN style="color: blue;">var</SPAN> url <SPAN style="color: blue;">in</SPAN> urlList)
+            {
+                <SPAN style="color: blue;">byte</SPAN>[] urlContents = <SPAN style="color: blue;">await</SPAN> GetURLContentsAsync(url);
+
+                <SPAN style="color: green;">// The previous line abbreviates the following two assignment statements.</SPAN>
+
+                <SPAN style="color: green;">// GetURLContentsAsync returns a Task&lt;T&gt;. At completion, the task</SPAN>
+                <SPAN style="color: green;">// produces a byte array.</SPAN>
+                <SPAN style="color: green;">//Task&lt;byte[]&gt; getContentsTask = GetURLContentsAsync(url);</SPAN>
+                <SPAN style="color: green;">//byte[] urlContents = await getContentsTask;</SPAN>
+
+                DisplayResults(url, urlContents);
+
+                <SPAN style="color: green;">// Update the total.          </SPAN>
+                total += urlContents.Length;
+            }
+            <SPAN style="color: green;">// Display the total count for all of the websites.</SPAN>
+            resultsTextBox.Text +=
+                <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\r\n\r\nTotal bytes returned:  {0}\r\n"</SPAN>, total);
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; SetUpURLList()
+        {
+            List&lt;<SPAN style="color: blue;">string</SPAN>&gt; urls = <SPAN style="color: blue;">new</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; 
+            { 
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/library/windows/apps/br211380.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290136.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ee256749.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290138.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290140.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/dd470362.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/aa578028.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ms404677.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ff730837.aspx"</SPAN>
+            };
+            <SPAN style="color: blue;">return</SPAN> urls;
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> Task&lt;<SPAN style="color: blue;">byte</SPAN>[]&gt; GetURLContentsAsync(<SPAN style="color: blue;">string</SPAN> url)
+        {
+            <SPAN style="color: green;">// The downloaded resource ends up in the variable named content.</SPAN>
+            <SPAN style="color: blue;">var</SPAN> content = <SPAN style="color: blue;">new</SPAN> MemoryStream();
+
+            <SPAN style="color: green;">// Initialize an HttpWebRequest for the current URL.</SPAN>
+            <SPAN style="color: blue;">var</SPAN> webReq = (HttpWebRequest)WebRequest.Create(url);
+
+            <SPAN style="color: green;">// Send the request to the Internet resource and wait for</SPAN>
+            <SPAN style="color: green;">// the response.                </SPAN>
+            <SPAN style="color: blue;">using</SPAN> (WebResponse response = <SPAN style="color: blue;">await</SPAN> webReq.GetResponseAsync())
+
+            <SPAN style="color: green;">// The previous statement abbreviates the following two statements.</SPAN>
+
+            <SPAN style="color: green;">//Task&lt;WebResponse&gt; responseTask = webReq.GetResponseAsync();</SPAN>
+            <SPAN style="color: green;">//using (WebResponse response = await responseTask)</SPAN>
+            {
+                <SPAN style="color: green;">// Get the data stream that is associated with the specified url.</SPAN>
+                <SPAN style="color: blue;">using</SPAN> (Stream responseStream = response.GetResponseStream())
+                {
+                    <SPAN style="color: green;">// Read the bytes in responseStream and copy them to content. </SPAN>
+                    <SPAN style="color: blue;">await</SPAN> responseStream.CopyToAsync(content);
+
+                    <SPAN style="color: green;">// The previous statement abbreviates the following two statements.</SPAN>
+
+                    <SPAN style="color: green;">// CopyToAsync returns a Task, not a Task&lt;T&gt;.</SPAN>
+                    <SPAN style="color: green;">//Task copyTask = responseStream.CopyToAsync(content);</SPAN>
+
+                    <SPAN style="color: green;">// When copyTask is completed, content contains a copy of</SPAN>
+                    <SPAN style="color: green;">// responseStream.</SPAN>
+                    <SPAN style="color: green;">//await copyTask;</SPAN>
+                }
+            }
+            <SPAN style="color: green;">// Return the result as a byte array.</SPAN>
+            <SPAN style="color: blue;">return</SPAN> content.ToArray();
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">void</SPAN> DisplayResults(<SPAN style="color: blue;">string</SPAN> url, <SPAN style="color: blue;">byte</SPAN>[] content)
+        {
+            <SPAN style="color: green;">// Display the length of each website. The string format </SPAN>
+            <SPAN style="color: green;">// is designed to be used with a monospaced font, such as</SPAN>
+            <SPAN style="color: green;">// Lucida Console or Global Monospace.</SPAN>
+            <SPAN style="color: blue;">var</SPAN> bytes = content.Length;
+            <SPAN style="color: green;">// Strip off the "http://".</SPAN>
+            <SPAN style="color: blue;">var</SPAN> displayURL = url.Replace(<SPAN style="color: rgb(163, 21, 21);">"http://"</SPAN>, <SPAN style="color: rgb(163, 21, 21);">""</SPAN>);
+            resultsTextBox.Text += <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\n{0,-58} {1,8}"</SPAN>, displayURL, bytes);
+        }
+    }
+}
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+<P><SPAN class="sentence" id="mt166" xml:space="preserve" data-source='The following code contains the full example of the solution that uses the <span><span class="input">HttpClient</span></span> method, <span><span class="input">GetByteArrayAsync</span></span>. ' 
+data-guid="45508d17606f111328248e18286de51c"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Следующий 
+код содержит полный пример решения, которое использует метод <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+class="input">HttpClient</SPAN></SPAN>, <SPAN xmlns="http://www.w3.org/1999/xhtml"><SPAN 
+class="input">GetByteArrayAsync</SPAN></SPAN>. </sentencetext></SPAN>            
+       </P>
+<DIV id="snippetGroup18">
+<DIV class="codeSnippetContainer" id="code-snippet-22" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-22">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Копировать в буфер обмена." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c52b8b6d-c620-48a1-b713-125a98e8e171');">Копировать</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_c52b8b6d-c620-48a1-b713-125a98e8e171" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">using</SPAN> System;
+<SPAN style="color: blue;">using</SPAN> System.Collections.Generic;
+<SPAN style="color: blue;">using</SPAN> System.Linq;
+<SPAN style="color: blue;">using</SPAN> System.Text;
+<SPAN style="color: blue;">using</SPAN> System.Threading.Tasks;
+<SPAN style="color: blue;">using</SPAN> System.Windows;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Controls;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Data;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Documents;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Input;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Media;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Media.Imaging;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Navigation;
+<SPAN style="color: blue;">using</SPAN> System.Windows.Shapes;
+
+<SPAN style="color: green;">// Add the following using directives, and add a reference for System.Net.Http.</SPAN>
+<SPAN style="color: blue;">using</SPAN> System.Net.Http;
+<SPAN style="color: blue;">using</SPAN> System.IO;
+<SPAN style="color: blue;">using</SPAN> System.Net;
+
+
+<SPAN style="color: blue;">namespace</SPAN> AsyncExampleWPF
+{
+    <SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">partial</SPAN> <SPAN style="color: blue;">class</SPAN> MainWindow : Window
+    {
+        <SPAN style="color: blue;">public</SPAN> MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> <SPAN style="color: blue;">void</SPAN> startButton_Click(<SPAN style="color: blue;">object</SPAN> sender, RoutedEventArgs e)
+        {
+            resultsTextBox.Clear();
+
+            <SPAN style="color: green;">// Disable the button until the operation is complete.</SPAN>
+            startButton.IsEnabled = <SPAN style="color: blue;">false</SPAN>;
+
+            <SPAN style="color: green;">// One-step async call.</SPAN>
+            <SPAN style="color: blue;">await</SPAN> SumPageSizesAsync();
+
+            <SPAN style="color: gray;">///</SPAN><SPAN style="color: green;">/ Two-step async call.</SPAN>
+            <SPAN style="color: green;">//Task sumTask = SumPageSizesAsync();</SPAN>
+            <SPAN style="color: green;">//await sumTask;</SPAN>
+
+            resultsTextBox.Text += <SPAN style="color: rgb(163, 21, 21);">"\r\nControl returned to startButton_Click.\r\n"</SPAN>;
+
+            <SPAN style="color: green;">// Reenable the button in case you want to run the operation again.</SPAN>
+            startButton.IsEnabled = <SPAN style="color: blue;">true</SPAN>;
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">async</SPAN> Task SumPageSizesAsync()
+        {
+            <SPAN style="color: green;">// Declare an HttpClient object and increase the buffer size. The</SPAN>
+            <SPAN style="color: green;">// default buffer size is 65,536.</SPAN>
+            HttpClient client =
+                <SPAN style="color: blue;">new</SPAN> HttpClient() { MaxResponseContentBufferSize = 1000000 };
+
+            <SPAN style="color: green;">// Make a list of web addresses.</SPAN>
+            List&lt;<SPAN style="color: blue;">string</SPAN>&gt; urlList = SetUpURLList();
+
+            <SPAN style="color: blue;">var</SPAN> total = 0;
+
+            <SPAN style="color: blue;">foreach</SPAN> (<SPAN style="color: blue;">var</SPAN> url <SPAN style="color: blue;">in</SPAN> urlList)
+            {
+                <SPAN style="color: green;">// GetByteArrayAsync returns a task. At completion, the task</SPAN>
+                <SPAN style="color: green;">// produces a byte array.</SPAN>
+                <SPAN style="color: blue;">byte</SPAN>[] urlContents = <SPAN style="color: blue;">await</SPAN> client.GetByteArrayAsync(url);               
+
+                <SPAN style="color: green;">// The following two lines can replace the previous assignment statement.</SPAN>
+                <SPAN style="color: green;">//Task&lt;byte[]&gt; getContentsTask = client.GetByteArrayAsync(url);</SPAN>
+                <SPAN style="color: green;">//byte[] urlContents = await getContentsTask;</SPAN>
+
+                DisplayResults(url, urlContents);
+
+                <SPAN style="color: green;">// Update the total.</SPAN>
+                total += urlContents.Length;
+            }
+
+            <SPAN style="color: green;">// Display the total count for all of the websites.</SPAN>
+            resultsTextBox.Text +=
+                <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\r\n\r\nTotal bytes returned:  {0}\r\n"</SPAN>, total);
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; SetUpURLList()
+        {
+            List&lt;<SPAN style="color: blue;">string</SPAN>&gt; urls = <SPAN style="color: blue;">new</SPAN> List&lt;<SPAN style="color: blue;">string</SPAN>&gt; 
+            { 
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/library/windows/apps/br211380.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290136.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ee256749.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290138.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/hh290140.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/dd470362.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/aa578028.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ms404677.aspx"</SPAN>,
+                <SPAN style="color: rgb(163, 21, 21);">"http://msdn.microsoft.com/en-us/library/ff730837.aspx"</SPAN>
+            };
+            <SPAN style="color: blue;">return</SPAN> urls;
+        }
+
+
+        <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">void</SPAN> DisplayResults(<SPAN style="color: blue;">string</SPAN> url, <SPAN style="color: blue;">byte</SPAN>[] content)
+        {
+            <SPAN style="color: green;">// Display the length of each website. The string format </SPAN>
+            <SPAN style="color: green;">// is designed to be used with a monospaced font, such as</SPAN>
+            <SPAN style="color: green;">// Lucida Console or Global Monospace.</SPAN>
+            <SPAN style="color: blue;">var</SPAN> bytes = content.Length;
+            <SPAN style="color: green;">// Strip off the "http://".</SPAN>
+            <SPAN style="color: blue;">var</SPAN> displayURL = url.Replace(<SPAN style="color: rgb(163, 21, 21);">"http://"</SPAN>, <SPAN style="color: rgb(163, 21, 21);">""</SPAN>);
+            resultsTextBox.Text += <SPAN style="color: blue;">string</SPAN>.Format(<SPAN style="color: rgb(163, 21, 21);">"\n{0,-58} {1,8}"</SPAN>, displayURL, bytes);
+        }
+    }
+}
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV>
+<H2 class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Свернуть" class="LW_CollapsibleArea_TitleAhref" role="button" 
+href="javascript:void(0)"><SPAN class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN 
+class="LW_CollapsibleArea_Title">См. также</SPAN></A>             
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+             </DIV></DIV></H2>
+<DIV class="sectionblock"><A id="seeAlsoToggle"></A>           
+<H4 class="subHeading">Задачи</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh556530.aspx">Практическое 
+руководство. Расширение пошагового руководства по асинхронным процедурам с 
+использованием метода Task.WhenAll (C# и Visual Basic)</A>             </SPAN>   
+        </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh696703.aspx">Практическое 
+руководство. Параллельное выполнение нескольких веб-запросов с использованием 
+Async и Await (C# и Visual Basic)</A>             </SPAN>           </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/jj155813.aspx">Пошаговое 
+руководство. Использование отладчика с асинхронными методами</A>             
+</SPAN>           </DIV>
+<H4 class="subHeading">Ссылки</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh156513.aspx">async 
+(справочник по C#)</A>             </SPAN>           </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh156528.aspx">await 
+(Справочник по C#)</A>             </SPAN>           </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh156570.aspx">Оператор 
+Await (Visual Basic)</A>             </SPAN>           </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh191564.aspx">Async 
+(Visual Basic)</A>             </SPAN>           </DIV>
+<H4 class="subHeading">Основные понятия</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh191443.aspx">Асинхронное 
+программирование с использованием ключевых слов Async и Await (C# и Visual 
+Basic)</A>             </SPAN>           </DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/hh524395.aspx">Асинхронные 
+типы возвращаемых значений (C# и Visual Basic)</A>             </SPAN>           
+</DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="https://msdn.microsoft.com/ru-ru/library/jj155757.aspx">Использование 
+метода Async для доступа к файлам (C# и Visual Basic)</A>             </SPAN>    
+       </DIV>
+<H4 class="subHeading">Другие ресурсы</H4>
+<DIV class="seeAlsoStyle"><A href="http://go.microsoft.com/fwlink/?LinkId=255191">Асинхронный 
+пример: Пошаговое руководство Доступ к сети (C# и Visual Basic)</A>           
+</DIV>
+<DIV class="seeAlsoStyle"><A href="http://go.microsoft.com/fwlink/?LinkId=204847">Асинхронное 
+программирование, основанное на задачах (TAP)</A>           </DIV>
+<DIV class="seeAlsoStyle"><A href="http://go.microsoft.com/fwlink/?LinkId=248545">Краткое 
+руководство: использование оператора await для асинхронного программирования</A> 
+          </DIV></DIV></DIV></DIV></DIV></DIV>
+<SCRIPT id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</SCRIPT>
+ 
+<DIV class="communityContentContainer">
+<DIV class="communityContentHeader" id="CommunityContentHeader">
+<DIV class="communityContentHeaderTitleContainer">
+<H2>Добавления сообщества</H2><A class="communityContentAddLink" href="https://msdn.microsoft.com/ru-ru/library/community/add/hh300224.aspx"><SPAN 
+title="Add («Добавить»)" class="communityContentAddButton">                      
+  ДОБАВИТЬ                     </SPAN>                 </A></DIV>
+<DIV style="clear: both;"></DIV></DIV>
+<DIV id="CommunityComments" data-url="/ru-ru/library/community/comments/hh300224.aspx"></DIV></DIV>
+<DIV class="libraryMemberFilter">
+<DIV class="filterContainer"><SPAN>Показ:</SPAN>         <LABEL><INPUT class="libraryFilterInherited" 
+type="checkbox" checked="checked" value="Inherit">Унаследовано         </LABEL>  
+       <LABEL><INPUT class="libraryFilterProtected" type="checkbox" checked="checked" 
+value="Protected">Защищен         </LABEL>     </DIV></DIV><INPUT id="libraryMemberFilterEmptyWarning" type="hidden" value="Для текущих настроек фильтра нет доступных членов."> 
+ </DIV></DIV>
+<DIV 
+class="clear"></DIV><INPUT name="__RequestVerificationToken" type="hidden" value="57QDEudgyTwx11UtTjbB09AxEm25QPEg0rCnii5ca9ux4J1Ey8On10MYhSVlzAVI2T8HHRnKkYlpXFZh2ysy5Ze_8Jw1"> 
+<INPUT id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/add/hh300224.aspx"> 
+<INPUT id="isTopicRated" type="hidden" value="false">             <LINK rel="stylesheet" 
+type="text/css">         
+<DIV id="ux-footer" dir="ltr">
+<DIV class="librarySock" id="footerSock">
+<DIV id="footerSockInner"><A name="feedback"></A> 
+<DIV class="rating">
+<DIV id="ratingSection1">
+<DIV class="title">Была ли эта страница полезной?         </DIV>
+<DIV class="description">Ваш отзыв об этом контенте важен для нас.<BR>Расскажите 
+нам о том, что вы думаете.         </DIV>
+<DIV class="buttons"><BUTTON class="button" id="ratingYes">Да</BUTTON>           
+  <BUTTON class="button" id="ratingNo">Нет</BUTTON>         </DIV><INPUT id="ratingValue" type="hidden"> 
+    </DIV>
+<DIV id="ratingSection2">
+<DIV class="title">Дополнительный отзыв?         
+</DIV><TEXTAREA id="ratingText" maxlength="1500" rows="6" cols="20"></TEXTAREA>  
+       
+<DIV class="counter right"><SPAN id="feedbackTextCounter">1500</SPAN> символов 
+осталось         </DIV>
+<DIV class="buttons left"><BUTTON class="button" 
+id="ratingSubmit">Отправить</BUTTON>             <BUTTON class="button" id="ratingSkipThis">Пропустить</BUTTON> 
+        </DIV></DIV>
+<DIV id="ratingSection3">
+<DIV class="title">Спасибо!         </DIV>
+<DIV class="description">Благодарим за отзыв. Ваше мнение очень важно для нас.   
+      </DIV></DIV>
+<DIV id="contentFeedbackQAContainer" style="display: none;"></DIV></DIV>
+<DIV class="clear"></DIV></DIV></DIV><FOOTER class="top">
+<DIV id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="LeftLinks">
+<DIV class="linkList">
+<DIV class="linkListTitle">Центры разработки</DIV>
+<UL class="links">
+  <LI><A class="windowsBlue" id="LeftLinks_2148_1" href="https://dev.windows.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Windows</A>       </LI>
+  <LI><A class="office" id="LeftLinks_2148_3" href="http://dev.office.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Office</A>       </LI>
+  <LI><A class="visualStudio" id="LeftLinks_2148_4" href="https://msdn.microsoft.com/vstudio" 
+  xmlns="http://www.w3.org/1999/xhtml">Visual Studio</A>       </LI>
+  <LI><A title="Nokia" class="nokia" id="LeftLinks_2148_15" href="http://developer.nokia.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Nokia</A>       </LI>
+  <LI><A id="LeftLinks_2148_12" href="http://azure.microsoft.com/ru-ru/documentation/" 
+  target="_blank" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</A>       
+  </LI>
+  <LI><A id="LeftLinks_2148_5" href="https://msdn.microsoft.com/aa937802" xmlns="http://www.w3.org/1999/xhtml">Дополнительно...</A> 
+        </LI></UL></DIV></DIV>
+<DIV id="rightLinks">
+<DIV id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks1">
+<DIV class="linkList">
+<DIV class="linkListTitle">Обучение</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks1_2151_4" href="http://www.microsoftvirtualacademy.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</A>       </LI>
+  <LI><A id="CenterLinks1_2151_5" href="http://channel9.msdn.com/Browse/Series?lang=ru" 
+  xmlns="http://www.w3.org/1999/xhtml">Канал Channel 9</A>       </LI>
+  <LI><A id="CenterLinks1_2151_6" href="http://www.techdays.ru/" xmlns="http://www.w3.org/1999/xhtml">TechDays</A> 
+        </LI>
+  <LI><A id="CenterLinks1_2151_7" href="https://msdn.microsoft.com/ru-ru/magazine/default.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Журнал MSDN</A>       
+</LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks2">
+<DIV class="linkList">
+<DIV class="linkListTitle">Сообщество</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks2_2151_17" href="http://blogs.msdn.com/b/rudevnews/" 
+  xmlns="http://www.w3.org/1999/xhtml">Новости</A>       </LI>
+  <LI><A id="CenterLinks2_2151_8" href="https://social.msdn.microsoft.com/forums/ru-ru/home" 
+  xmlns="http://www.w3.org/1999/xhtml">Форумы</A>       </LI>
+  <LI><A id="CenterLinks2_2151_9" href="https://msdn.microsoft.com/ru-ru/jj129558" 
+  xmlns="http://www.w3.org/1999/xhtml">Блоги</A>       </LI>
+  <LI><A id="CenterLinks2_2151_10" href="http://www.codeplex.com/" xmlns="http://www.w3.org/1999/xhtml">Codeplex</A> 
+        </LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks3">
+<DIV class="linkList">
+<DIV class="linkListTitle">Свяжитесь с нами</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks3_2151_11" href="https://msdn.microsoft.com/hh361695" 
+  xmlns="http://www.w3.org/1999/xhtml">Самостоятельно</A>       
+</LI></UL></DIV></DIV>
+<DIV id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks4">
+<DIV class="linkList">
+<DIV class="linkListTitle">Программы</DIV>
+<UL class="links">
+  <LI><A id="CenterLinks4_2151_13" href="https://www.microsoft.com/ru/ru/ms-start/default.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">BizSpark (для стартапов)</A>       </LI>
+  <LI><A id="CenterLinks4_2151_14" href="https://www.dreamspark.com/" xmlns="http://www.w3.org/1999/xhtml">DreamSpark 
+  (для студентов и вузов)</A>       </LI>
+  <LI><A id="CenterLinks4_2151_17" href="http://www.imaginecup.com/" xmlns="http://www.w3.org/1999/xhtml">Imagine 
+  Cup</A>       </LI></UL></DIV></DIV></DIV></FOOTER><FOOTER class="bottom"><SPAN 
+class="localeContainer">
+<FORM class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/ru-ru/selectlocale-dmc"><INPUT name="fromPage" type="hidden" value="https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fhh300224.aspx"> 
+        <A title="Измените язык" onclick="$('#selectLocaleForm').submit();return false;" 
+href="https://msdn.microsoft.com/ru-ru/library/hh300224.aspx#">Россия 
+(Pусский)</A>     </FORM></SPAN>                     
+<DIV id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="BottomLinks">
+<DIV class="linkList">
+<UL class="links horizontal">
+  <LI><A id="BottomLinks_2148_7" href="https://msdn.microsoft.com/newsletter.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Информационный бюллетень</A>       </LI>
+  <LI><A id="BottomLinks_2148_8" href="https://msdn.microsoft.com/dn529288" 
+  xmlns="http://www.w3.org/1999/xhtml">Конфиденциальность и файлы cookie</A>     
+    </LI>
+  <LI><A id="BottomLinks_2148_9" href="https://msdn.microsoft.com/cc300389" 
+  xmlns="http://www.w3.org/1999/xhtml">Условия использования</A>       </LI>
+  <LI><A id="BottomLinks_2148_10" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Товарные знаки</A>       
+</LI></UL></DIV></DIV><SPAN class="logoLegal"><SPAN class="logo"></SPAN>         
+        <SPAN class="copyright">© 2015 Microsoft</SPAN>             </SPAN>      
+   </FOOTER></DIV>
+<DIV class="footerPrintView">
+<DIV class="footerCopyrightPrintView">© 2015 Microsoft</DIV></DIV><INPUT id="tocPaddingPerLevel" type="hidden" value="17"> 
+            <INPUT id="MtpsDevice" type="hidden" value="Default"> <!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]--> 
+                                                            
+<NOSCRIPT>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" 
+src="https://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" 
+/&gt;&lt;/div&gt;</NOSCRIPT> <NOSCRIPT>  &lt;a href="http://www.omniture.com" 
+title="Web Analytics"&gt;    &lt;img 
+src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" 
+width="1" border="0" alt="" /&gt;  &lt;/a&gt; </NOSCRIPT>             
+<DIV 
+id="globalRequestVerification"><INPUT name="__RequestVerificationToken" type="hidden" value="Tucft0NUSxs_8CQO1ZogpQNG9Fi7gEZgFx0kYGjOHFWyhbH-m6wG-uI2D4bu7Yd7lDbsMLNZkSd_p9JgJU5MXQPl6e41"> 
+</DIV></DIV>
+<SCRIPT class="mtps-injected" type="text/javascript">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"\": \"https://\", \r\n\t\"xap\": \"https://msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/ru-ru/library/hh300224(l=ru-ru,v=vs.120).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027ru-ru\u0027;\n  var wtsp = \u0027msdnlib_devtools_lang\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"6d76f809-9b16-4355-b0aa-208395410048\";\n/**/" },
+	{ txt: "//\n\n            window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n            //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,1:Rating,2:Footer,0:Topic,3:webtrendsscript,4:omni_rsid_MSDN,5:WEDCS,0:AppInsightsPerf,6:Toc,1:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Global/Content/Webtrends/resources:3,/Areas/Global/Content/Omniture/resources/MSDN:4,/Areas/Library/Themes/Base/Content:5,/Areas/Library/Content:6\u0026amp;hashKey=22D434C583B5357E494BA7A31948E94D\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=ru-ru\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Поиск в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:PrintExportButton,1:NavigationResize;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1\u0026amp;hashKey=72684789A0F98A77C33C1AC3470E9ECF\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "//\n    MTPS = window.MTPS || {};\n    MTPS.Translation = window.MTPS.Translation || {};\n\n    MTPS.Translation.TranslationType =  0;\n    \n    \n        \n        MTPS.Translation.EditorLink = {\n            includeEditor : 0,\n            editLink: \"https://msdn.microsoft.com/ru-ru/library/translation/edit/hh300224.aspx\",\n            editLinkText: \"Предложите более удачный вариант перевода\"\n        };\n        \n    //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery.popup,0:Translator;/Areas/Library/Content:0\u0026amp;hashKey=3B656D983EF24EC5D2C54AB67215CFD7\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Развернуть\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свернуть\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Развернуть все\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свернуть все\u0027;" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=EB298C838117D9E7008C7CC11E7732E3\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</SCRIPT>
+ </BODY></HTML>

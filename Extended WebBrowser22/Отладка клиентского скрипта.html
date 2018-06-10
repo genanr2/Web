@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Отладка клиентского скрипта_files/getid.js"></script><meta name="WT.seg_1" content="ru-ru"><link rel="canonical" href="./Отладка клиентского скрипта_files/Отладка клиентского скрипта.html">
+        <title>Отладка клиентского скрипта</title>
+
+
+
+
+
+<meta name="DCS.dcsuri" content="/ru-ru/library/7seh8d72(d=default,l=ru-ru,v=vs.120).aspx">
+
+<meta name="NormalizedUrl" content="https://msdn.microsoft.com/ru-ru/library/7seh8d72(d=default,l=ru-ru,v=vs.120).aspx">
+
+<meta name="ms.normalizedurl" content="https://msdn.microsoft.com/ru-ru/library/7seh8d72(d=default,l=ru-ru,v=vs.120).aspx">
+
+<meta name="DCSext.ProductFamily" content="LIB_DG">
+
+<meta name="DCSext.Product" content="VS_VSPE_VSPlat">
+
+<meta name="DCSext.Title" content="Отладка клиентского скрипта">
+
+<meta name="VotingContextUrl" content="https://msdn.microsoft.com/ru-ru/library/7seh8d72(d=default,l=ru-ru,v=vs.120).aspx">
+
+<meta name="MN" content="FB361399-6:05:17 AM">
+
+<meta name="Search.ShortId" content="7seh8d72">
+
+<meta name="ms.shortidmsdn" content="7seh8d72">
+
+<meta name="Ms.Locale" content="ru-ru">
+
+<meta name="ms.prodver" content="VS.120">
+
+<meta name="ms.contentlang" content="RU">
+
+<meta name="ms.lang" content="RU">
+
+<meta name="ms.loc" content="RU">
+
+<meta name="ms.sitever" content="2015.03.20.2">
+
+<meta name="ms.assetid" content="bb668527-2288-47bd-a6c8-cecbad76dde2">
+
+<meta name="ms.auth" content="0">
+
+
+
+
+
+
+
+
+        
+    <link rel="stylesheet" type="text/css" href="./Отладка клиентского скрипта_files/Combined.css"><script type="text/javascript" async="" src="./Отладка клиентского скрипта_files/ms.js"></script><script type="text/javascript" src="./Отладка клиентского скрипта_files/ai.js" async=""></script><script class="mtps-injected">try {
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "https://i-msdn.sec.s-msft.com", 
+	"js": "https://i2-msdn.sec.s-msft.com", 
+	"css": "https://i-msdn.sec.s-msft.com", 
+	"xap": "https://msdn.microsoft.com"
+});
+/**/
+} finally { MTPS._injectNextScript_0 && MTPS._injectNextScript_0(); }</script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/jquery-1.8.2.min.js"></script><script class="mtps-injected">try {
+//
+  var literalNormalizedUrl = '/ru-ru/library/7seh8d72(l=ru-ru,v=vs.120).aspx';
+  var wt_nvr_ru = 'WT_NVR_RU';
+  var wt_fpcdom = '.microsoft.com';
+  var wt_domlist = 'msdn.microsoft.com';
+  var wt_pathlist = '';
+  var wt_paramlist = 'DCSext.mtps_devcenter';
+  var wt_siteid = 'MSDN';
+  var gDomain = 'm.webtrends.com';
+  var gDcsId = 'dcsmgru7m99k7mqmgrhudo0k8_8c6m';
+  var gFpc = 'WT_FPC';
+
+
+
+  if (document.cookie.indexOf(gFpc + "=") == -1) {
+    var wtidJs = document.createElement("script");
+    wtidJs.src = "//" + gDomain + "/" + gDcsId + "/wtid.js";
+    document.getElementsByTagName("head")[0].appendChild(wtidJs);
+  }
+
+
+
+  var detectedLocale = 'ru-ru';
+  var wtsp = 'msdnlib_devtools_lang';
+  var gTrackEvents = '0';
+/**/
+} finally { MTPS._injectNextScript_2 && MTPS._injectNextScript_2(); }</script><script src="./Отладка клиентского скрипта_files/wtid.js"></script><script class="mtps-injected">try {
+/**/
+  var omni_guid = "a01053ca-0187-4a74-b020-86a3e1e8520c";
+/**/
+} finally { MTPS._injectNextScript_3 && MTPS._injectNextScript_3(); }</script><script class="mtps-injected">try {
+//
+
+            window.appInsightsId = '60854590-027a-4ae4-98be-2741a40f355f';
+            //
+} finally { MTPS._injectNextScript_4 && MTPS._injectNextScript_4(); }</script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/Combined.js"></script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/SearchBox.jss"></script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/Combined(1).js"></script><script class="mtps-injected">try {
+//
+    MTPS = window.MTPS || {};
+    MTPS.Translation = window.MTPS.Translation || {};
+
+    MTPS.Translation.TranslationType =  0;
+    
+    
+        
+        MTPS.Translation.EditorLink = {
+            includeEditor : 0,
+            editLink: "https://msdn.microsoft.com/ru-ru/library/translation/edit/7seh8d72.aspx",
+            editLinkText: "Предложите более удачный вариант перевода"
+        };
+        
+    //
+} finally { MTPS._injectNextScript_8 && MTPS._injectNextScript_8(); }</script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/Combined(2).js"></script><script class="mtps-injected">try {
+MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = 'Развернуть'; MTPS.LocalizedStrings.CollapseButtonTooltip = 'Свернуть'; MTPS.LocalizedStrings.EnhancedExpandTooltip = 'Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.'; MTPS.LocalizedStrings.EnhancedCollapseTooltip = 'Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.'; MTPS.LocalizedStrings.ExpandAllButtonTooltip = 'Развернуть все'; MTPS.LocalizedStrings.CollapseAllButtonTooltip = 'Свернуть все';
+} finally { MTPS._injectNextScript_10 && MTPS._injectNextScript_10(); }</script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/jquery.tmpl.min.js"></script><script class="mtps-injected" src="./Отладка клиентского скрипта_files/Combined(3).js"></script><script src="./Отладка клиентского скрипта_files/broker.js"></script><script class="mtps-injected">try {
+$(document).ready(function() {
+        try {
+            var token = $("#globalRequestVerification input[name='__RequestVerificationToken']").clone();
+            $("#siteFeedbackForm").append(token);
+        } catch(err) {
+            
+        }
+    });
+} finally { MTPS._injectNextScript_13 && MTPS._injectNextScript_13(); }</script><link href="./Отладка клиентского скрипта_files/PrintView.css" rel="stylesheet" type="text/css" media="print"></head>
+    <body class="library Chrome">
+        <div id="page">
+            
+
+            
+            
+            
+    
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+    <input type="hidden" id="isHeaderBleeding" value="true">
+    <div id="ux-header" dir="ltr" class="ltr msdn">
+        
+
+        <header>
+            <span id="moveDrawer"></span>
+            <span id="singleCol"></span>
+            <span id="doubleCol"></span>
+
+            <div class="row">
+                <div class="top">
+                    <div class="left">
+                        
+                            <a class="msdnLogoImg" href="https://msdn.microsoft.com/ru-ru">
+                                <img src="./Отладка клиентского скрипта_files/microsoftLogoForHeader.png">
+                            </a>
+                    </div>
+
+                    <div class="right">
+                        <div id="signIn">
+
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1428498317&rver=6.0.5276.0&wp=MCMBI&wlcxt=MSDN%24MSDN%24MSDN&wreply=https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2f7seh8d72.aspx&lc=1049&id=254354&mkt=ru-RU" title="Войти">Войти</a></div>
+
+    
+
+                        <div class="auxNav">
+                            <div data-fragmentname="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Подписки MSDN</span>
+  </a>
+</div>
+                            <div data-fragmentname="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="http://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x419&slcid=0x419&campaign=o~msft~msdn~gettools-header~dn308572" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Получить инструменты</span>
+  </a>
+</div>
+                            <div data-fragmentname="SocialLinks" id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="https://www.facebook.com/msdnru" target="_blank" id="SocialLinks_2152_4" class="facebook" xmlns="http://www.w3.org/1999/xhtml">https://www.facebook.com/msdnru</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/msdevru" target="_blank" id="SocialLinks_2152_5" class="twitter" xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdevru</a>
+      </li>
+      <li>
+        <a href="http://vk.com/msdnru" target="_blank" id="SocialLinks_2152_6" class="vkOne" xmlns="http://www.w3.org/1999/xhtml">http://vk.com/msdnru</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="left">
+                        <div data-fragmentname="SiteLogo" id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="LinkWithImage topImage">
+    <a id="SiteLogo_2152_1" href="https://msdn.microsoft.com/ru-ru">
+      <img id="msdnLogo-black" src="./Отладка клиентского скрипта_files/dn610975.msdnLogo-black.jpg" xmlns="">
+      <span></span>
+    </a>
+  </div>
+</div>
+                        <div id="drawer">
+                            <div class="toc">
+                                
+        <nav>
+            <ul class="navL1">
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Технологии">Технологии</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/cloud-app-development-msdn" title="Облако">Облако</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/mobile-app-development-msdn" title="Мобильные">Мобильные</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/web-app-development-msdn" title="Интернет">Интернет</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/business-and-productivity-app-development-msdn" title="Бизнес">Бизнес</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/big-data-development-msdn" title="Данные">Данные</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/games-development-msdn" title="Игры">Игры</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Загрузки">Загрузки</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+                                            <a href="http://go.microsoft.com/fwlink/?linkid=307137&clcid=0x419" title="Visual Studio">Visual Studio</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/subscriptions/" title="Подписки MSDN">Подписки MSDN</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/microsoft-sdks-msdn" title="Пакеты SDK">Пакеты SDK</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Программы">Программы</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+                                            <a href="https://www.microsoft.com/bizspark" title="BizSpark">BizSpark</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/student-developer-program" title="Студентам">Студентам</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive toggle">
+                                            <a href="javascript:void(0)" title="Архитекторам">Архитекторам</a>
+
+                                                <ul class="navL3" style="display: none;">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-overview-msdn" title="Общие сведения">Общие сведения</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-case-studies-msdn" title="Конкретные примеры">Конкретные примеры</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-blueprints-msdn" title="Проекты">Проекты</a>
+                                                        </li>
+                                                </ul>
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://events.msdn.microsoft.com/ru-ru" title="События">События</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Сообщество">Сообщество</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+                                            <a href="https://social.msdn.microsoft.com/forums/" title="Форумы">Форумы</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://blogs.msdn.com/b/developer-tools/" title="Блоги">Блоги</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://tech-advisors.msdn.microsoft.com/ru-ru/" title="Технические консультанты">Технические консультанты</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://channel9.msdn.com/" title="Канал Channel 9">Канал Channel 9</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive current">
+                            <a href="https://msdn.microsoft.com/library" title="Документация">Документация</a>
+                        </li>
+                        <li class="inactive">
+                            <a href="https://code.msdn.microsoft.com/" title="Примеры">Примеры</a>
+                        </li>
+            </ul>
+        </nav>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div data-fragmentname="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="SearchBox">
+    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this);">
+      <input id="HeaderSearchTextBox" name="query" type="text" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" autocomplete="off">
+      <button id="HeaderSearchButton" value="" type="submit" class="header-search-button" title="Поиск в MSDN"></button>
+    <div id="SearchFlyoutContainer" style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; color: rgb(59, 59, 59); font-family: Arial; font-size: 13.3333330154419px; background-color: rgb(255, 255, 255);"><div id="SuggestionContainer"><ul style="list-style: none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;"></ul></div></div></form>
+    
+    
+  </div>
+</div>
+                        <a id="grip" href="javascript:void(0)"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    
+
+        
+    <div class="printExportMenus ltr">
+        <a id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnUrl=%2fru-ru%2flibrary%2f7seh8d72.aspx" style="display: inline;">
+            Экспорт (<span class="count">0</span>)
+        </a>
+        <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72(d=printer).aspx" rel="nofollow">
+            Печать 
+        </a>
+    </div>
+    
+
+        <div class="printExportMenus ltr">
+        <a id="expandCollapseAll" accesskey="e" href="javascript:void(0)" title="Expand/Collapse all sections by pressing Ctrl + Shift + e">Свернуть&nbsp;все</a>
+    </div>
+
+    
+
+
+            <div id="body">
+                
+
+
+
+
+
+
+
+
+    <div id="leftNav" style="width: 280px; max-width: 480px; min-height: 1883px; height: 456px;">
+
+
+
+<div id="tocnav" style="width: 280px; position: fixed; top: 60px;">
+
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/ms123401.aspx" id="ms310241_MSDN.10_ru-ru" mtpsaliasid="" mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_ru-ru" mtpsshortid="ms123401_MSDN.10_ru-ru" title="MSDN Library">MSDN Library</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/aa187916.aspx" id="aa187916_MSDN.10_ru-ru" mtpsaliasid="" mtpsassetid="MSDN|devtoolslang|$\devtoolslang.hxt@0,0_MSDN.10_ru-ru" mtpsshortid="aa187916_MSDN.10_ru-ru" title="Средства разработки">Средства разработки</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/dd831853.aspx" id="dn436406_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="ba237712-f8c4-4d13-854b-ab4a16afa309_VS.120_ru-ru" mtpsshortid="dd831853_VS.120_ru-ru" title="Вас приветствует программа Visual Studio 2013">Вас приветствует программа Visual Studio 2013</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/dn762121.aspx" id="ms305423_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="772b6cf4-cee5-42d0-bc18-b4eb07e22ff0_VS.120_ru-ru" mtpsshortid="dn762121_VS.120_ru-ru" title="Руководство пользователя по среде IDE Visual Studio">Руководство пользователя по среде IDE Visual Studio</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/sc65sadd.aspx" id="ms303602_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="590f152d-31e2-4e13-b808-a1b13e421483_VS.120_ru-ru" mtpsshortid="sc65sadd_VS.120_ru-ru" title="Отладка в Visual Studio">Отладка в Visual Studio</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/zxfz3z3h.aspx" id="jj148808_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="6968625d-9783-4ad6-8bf5-eb85b548844c_VS.120_ru-ru" mtpsshortid="zxfz3z3h_VS.120_ru-ru" title="Отладка веб-приложений и скриптов">Отладка веб-приложений и скриптов</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/w2faa92k.aspx" id="dn548264_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="9d531913-541b-47b8-864d-138021fca0c6_VS.120_ru-ru" mtpsshortid="w2faa92k_VS.120_ru-ru" title="Отладка приложений ASP.NET и AJAX">Отладка приложений ASP.NET и AJAX</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/ms165008.aspx" id="dn548268_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="a096a90d-6d0d-4752-9fb5-417635ccab3e_VS.120_ru-ru" mtpsshortid="ms165008_VS.120_ru-ru" title="Отладка веб-приложений">Отладка веб-приложений</a>            </div>
+            <div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true" style="padding-left: 17px;">
+<a class="toc_expanded" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="./Отладка клиентского скрипта_files/Отладка клиентского скрипта.html" id="dn548269_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="bb668527-2288-47bd-a6c8-cecbad76dde2_VS.120_ru-ru" mtpsshortid="7seh8d72_VS.120_ru-ru" title="Отладка клиентского скрипта">Отладка клиентского скрипта</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 34px;">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/bb157684.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Ограничения на отладку скриптов">Ограничения на отладку скриптов</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 34px;">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/z959x58c.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer">Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 34px;">
+<a class="toc_collapsed" href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/bb385613.aspx" id="dn548270_VS.120_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Практическое руководство. Присоединение к скрипту">Практическое руководство. Присоединение к скрипту</a>            </div>
+</div>
+        
+
+        
+
+        
+        
+        <div id="toc-resizable-ew" class="toc-resizable-ew"></div>
+        
+
+<a id="NavigationResize" href="javascript:void(0)" style="left: 280px; display: inline-block;">
+    <img class="cl_nav_resize_open" src="./Отладка клиентского скрипта_files/ImageSprite.png" title="Развернуть" alt="Развернуть">
+    <img class="cl_nav_resize_close" src="./Отладка клиентского скрипта_files/ImageSprite.png" title="Свернуть" alt="Свернуть" style="display: none;">
+</a>
+
+
+
+    </div>
+<div id="content" class="content" style="margin-left: 280px; width: auto;">
+
+
+
+<div id="MTPSTranslator" class="MTPSTranslator">
+    <table class="MTPSTranslatorTable" style="width: 100%">
+        <tbody><tr>
+            <td class="TranslationAlertBox">
+                <div>Эта статья переведена вручную. Наведите указатель мыши на предложения статьи, чтобы просмотреть исходный текст. <a href="https://msdn.microsoft.com/translate/hh856053">Дополнительные сведения.</a></div>
+            </td>
+                <td class="TranslationViewSwitcher">
+                    <div>
+                        <input title="Показать перевод" value="0" name="TrnaslatorView" type="radio" class="translatechoice" checked="checked"><span>Перевод</span>
+                    </div>
+                    <div>
+                        <input title="Показать текст на английском языке" value="1" name="TrnaslatorView" type="radio" class="translatechoice"><span>Текст оригинала</span>
+                    </div>
+                </td>
+        </tr>
+    </tbody></table>
+</div>
+    
+    
+    
+     
+
+
+
+
+
+
+        
+
+<div class="topic" xmlns="http://www.w3.org/1999/xhtml">
+  <h1 class="title">Отладка клиентского скрипта</h1>
+  
+  <div class="lw_vs">
+    <div id="curversion">
+      <strong>
+            Visual Studio 2013 
+        </strong>
+    </div>
+    <div id="versionclick">
+      <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+      <div>
+        <div>
+          <a id="vsLink" href="javascript:;">
+                        Другие версии
+                    </a>
+        </div>
+        <div class="cl_vs_arrow clip10x10">
+          <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="./Отладка клиентского скрипта_files/ImageSprite.png">
+        </div>
+      </div>
+      <ul id="vsPanel">
+        <li>
+          <a href="https://msdn.microsoft.com/ru-ru/library/7seh8d72(v=vs.100).aspx">.NET Framework 4</a>
+        </li>
+        <li>
+          <a href="https://msdn.microsoft.com/ru-ru/library/7seh8d72(v=vs.90).aspx">Visual Studio 2008</a>
+        </li>
+        <li>
+          <a href="https://msdn.microsoft.com/ru-ru/library/7seh8d72(v=vs.110).aspx">Visual Studio 2012</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+  
+  <div id="mainSection">
+    <div id="mainBody">
+      <div class="introduction">
+        <p>
+          <span id="mt1" class="sentence" data-guid="06d634a0b84bf83a0138a339e3c91b0f" data-source="The Visual Studio debugger provides a comprehensive debugging environment for finding and correcting errors in client-side scripts in ASP.NET pages. " xml:space="preserve">
+            <sentencetext xmlns="http://www.w3.org/1999/xhtml">Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET. </sentencetext>
+          </span>
+        </p>
+      </div>
+      <div>
+        
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Включение отладки скрипта</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle0">
+            
+          </a>
+          <p>
+            <span id="mt2" class="sentence" data-guid="74a5e7fab4597b792a896bcbedb2e22b" data-source="Before you can begin debugging script with Visual Studio, script debugging must be enabled in Internet Explorer." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">Необходимо включить отладку скриптов в Internet Explorer перед началом отладки скрипта с помощью Visual Studio.</sentencetext>
+            </span>  <span id="mt3" class="sentence" data-guid="27741313e07848780c32b50e440b25a4" data-source="For more information, see &lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;How to: Enable and Start Script Debugging from Internet Explorer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения см. в разделе <span xmlns="http://www.w3.org/1999/xhtml"><a href="https://msdn.microsoft.com/ru-ru/library/z959x58c.aspx">Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer</a></span>.</sentencetext></span>  </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Открытие документов скрипта</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle1">
+            
+          </a>
+          <p>
+            <span id="mt4" class="sentence" data-guid="0558bc4d37c28515b12bbc278f718998" data-source="In Visual Studio 2012, you can view use &lt;span class=&quot;label&quot;&gt;Solution Explorer&lt;/span&gt; to view lists of server-side and client-side script documents." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">В Visual Studio 2012 используйте окно <span class="label" xmlns="http://www.w3.org/1999/xhtml">Обозреватель решений</span>, чтобы просмотреть списки серверных и клиентских документов скрипта.</sentencetext>
+            </span>  <span id="mt5" class="sentence" data-guid="45c6c659ff6e3a79e351fc8890832e4a" data-source="You can open any script document from &lt;span class=&quot;label&quot;&gt;Solution Explorer&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В окне <span class="label" xmlns="http://www.w3.org/1999/xhtml">Обозреватель решений</span> можно открыть любой документ скрипта.</sentencetext></span>  <span id="mt6" class="sentence" data-guid="37201c74cce169f20d05baa296334478" data-source="For more information, see &lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;How to: View Script Documents&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения см. в разделе <span xmlns="http://www.w3.org/1999/xhtml"><a href="https://msdn.microsoft.com/ru-ru/library/bb385621.aspx">Практическое руководство. Просмотр документов скриптов</a></span>.</sentencetext></span>  </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Сопоставление точек останова</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle2">
+            
+          </a>
+          <p>
+            <span id="mt7" class="sentence" data-guid="e71257b447ffd159d3478321eef8e060" data-source="In Visual Studio, you cannot directly debug server-side code, but you can set a breakpoint in a server-side file." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">В Visual Studio невозможно непосредственно отлаживать код на стороне сервера, но можно установить точку останова в файле, находящемся на сервере.</sentencetext>
+            </span>  <span id="mt8" class="sentence" data-guid="bda11e523c90c8fe53552aaeb1ec8d0c" data-source="Visual Studio automatically maps the breakpoint to a corresponding location in the client-side file and creates a mapped breakpoint in the client-side code." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Visual Studio&nbsp;автоматически сопоставляет точку останова с соответствующим расположением в файле на стороне клиента и создает сопоставленную точку останова в коде на стороне клиента.</sentencetext></span>  </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Автоматическое присоединение к скрипту или присоединение к скрипту в ручном режиме</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle3">
+            
+          </a>
+          <p>
+            <span id="mt9" class="sentence" data-guid="052b173737cf36e5e1c7dfea577c6814" data-source="To begin debugging script in Visual Studio, the debugger must attach to the script you want to debug." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">Чтобы начать отладку скрипта в Visual Studio, отладчику необходимо выполнить присоединение к скрипту, для которого необходимо выполнить отладку.</sentencetext>
+            </span>  <span id="mt10" class="sentence" data-guid="b9dbcd4cabb7d949942740528c05beee" data-source="This can happen manually or automatically." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Присоединение может быть выполнено в ручном режиме или автоматически.</sentencetext></span>  </p>
+          <p>
+            <span id="mt11" class="sentence" data-guid="1decf1991eb21b5eff85c70d14a390b2" data-source="You can manually attach by using the Visual Studio debugger interface to choose a running script process you want to attach to." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика Visual Studio, чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение.</sentencetext>
+            </span>  <span id="mt12" class="sentence" data-guid="7fa7d18a2c1d9eecf513c97c4e073296" data-source="For more information, see &lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;How to: Attach to Script&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения см. в разделе <span xmlns="http://www.w3.org/1999/xhtml"><a href="https://msdn.microsoft.com/ru-ru/library/bb385613.aspx">Практическое руководство. Присоединение к скрипту</a></span>.</sentencetext></span>  </p>
+          <p>
+            <span id="mt13" class="sentence" data-guid="91e28815fa14934afbb72d051d6aa075" data-source="The debugger automatically attaches to script when one of the following things occurs:" xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">Отладчик автоматически выполняет присоединение к скрипту при возникновении одного из следующих условий:</sentencetext>
+            </span>
+          </p>
+          <ul>
+            <li>
+              <p>
+                <span id="mt14" class="sentence" data-guid="6c102bcf850ddd402e8dfa6c914593cc" data-source="You hit a breakpoint set in script." xml:space="preserve">
+                  <sentencetext xmlns="http://www.w3.org/1999/xhtml">Достижение точки останова, установленной в скрипте.</sentencetext>
+                </span>  <span id="mt15" class="sentence" data-guid="30c5bbe8062d48f05f85c2e05469da49" data-source="For more information, see &lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;How to: Set Breakpoints in Script&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения см. в разделе <span xmlns="http://www.w3.org/1999/xhtml"><a href="https://msdn.microsoft.com/ru-ru/library/bb385707.aspx">&lt;PAVEOVER&gt; Практическое руководство. Установка точек останова в скрипте</a></span>.</sentencetext></span>  </p>
+            </li>
+            <li>
+              <p>
+                <span id="mt16" class="sentence" data-guid="1dfce291bcd5c1a0628d6e5692945c91" data-source="You hit a VBScript &lt;span class=&quot;code&quot;&gt;Stop&lt;/span&gt; statement or JScript &lt;span class=&quot;code&quot;&gt;debugger&lt;/span&gt; statement in your script code." xml:space="preserve">
+                  <sentencetext xmlns="http://www.w3.org/1999/xhtml">Достижение оператора VBScript <span class="code" xmlns="http://www.w3.org/1999/xhtml">Stop</span> или оператора JScript <span class="code" xmlns="http://www.w3.org/1999/xhtml">debugger</span> в коде скрипта.</sentencetext>
+                </span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span id="mt17" class="sentence" data-guid="79edae17cc1d8dc589c159c4e722781a" data-source="The browser or server encounters a syntax or run time error in your script." xml:space="preserve">
+                  <sentencetext xmlns="http://www.w3.org/1999/xhtml">В браузере или сервере обнаруживается синтаксическая ошибка или ошибка во время выполнения в скрипте.</sentencetext>
+                </span>  <span id="mt18" class="sentence" data-guid="88f3c8b2f8c4bfcee3d65fece8387c3c" data-source="When this occurs, a dialog box appears and have the option to begin debugging." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Когда это происходит, появляется диалоговое окно с возможностью начать отладку.</sentencetext></span>  </p>
+            </li>
+            <li>
+              <p>
+                <span id="mt19" class="sentence" data-guid="ac9a1d0895c065df8fe7a7afc25c3651" data-source="You use the Internet Explorer &lt;span class=&quot;label&quot;&gt;Script Debugger&lt;/span&gt; menu to begin debugging." xml:space="preserve">
+                  <sentencetext xmlns="http://www.w3.org/1999/xhtml">Используйте меню Internet Explorer <span class="label" xmlns="http://www.w3.org/1999/xhtml">Отладчик скриптов</span>, чтобы начать отладку.</sentencetext>
+                </span>  <span id="mt20" class="sentence" data-guid="27741313e07848780c32b50e440b25a4" data-source="For more information, see &lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;How to: Enable and Start Script Debugging from Internet Explorer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения см. в разделе <span xmlns="http://www.w3.org/1999/xhtml"><a href="https://msdn.microsoft.com/ru-ru/library/z959x58c.aspx">Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer</a></span>.</sentencetext></span>  </p>
+            </li>
+          </ul>
+          <p>
+            <span id="mt21" class="sentence" data-guid="e5c145a08be5cbdfac1b531ef02763dd" data-source="When you manually attach to script, the script process continues to run until it is somehow halted." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">При присоединении к скрипту в ручном режиме процесс скрипта продолжает выполняться до завершения по каким-либо причинам.</sentencetext>
+            </span>  <span id="mt22" class="sentence" data-guid="6c9e49b7eb0ec1336be20bc078d92b69" data-source="You can halt it by choosing &lt;span class=&quot;label&quot;&gt;Break&lt;/span&gt; on the &lt;span class=&quot;label&quot;&gt;Debug&lt;/span&gt; menu." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно остановить выполнение этого скрипта с помощью команды <span class="label" xmlns="http://www.w3.org/1999/xhtml">Прервать</span> в меню <span class="label" xmlns="http://www.w3.org/1999/xhtml">Отладка</span>.</sentencetext></span>  </p>
+          <p>
+            <span id="mt23" class="sentence" data-guid="12a327137fbc9c15f9439f70b4ac8e04" data-source="When the debugger attaches automatically, script execution is halted at the line where the breakpoint, &lt;span class=&quot;code&quot;&gt;Stop&lt;/span&gt; statement or &lt;span class=&quot;code&quot;&gt;debugger&lt;/span&gt; statement, or error occurred, or at the point where you chose to start debugging in Internet Explorer. " xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">При автоматическом присоединении отладчика выполнение скрипта завершается на строке с точкой останова оператором <span class="code" xmlns="http://www.w3.org/1999/xhtml">Stop</span> или оператором <span class="code" xmlns="http://www.w3.org/1999/xhtml">debugger</span>, либо на строке, в которой возникает ошибка, либо в точке, в которой выбрано начать отладку в Internet Explorer. </sentencetext>
+            </span>
+          </p>
+          <p>
+            <span id="mt24" class="sentence" data-guid="cb8f32e53f0e4abbec3ee46b4f1d9128" data-source="At that point, you can use the normal debugger facilities to begin debugging." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">В данной точке можно использовать обычные функции отладчика, чтобы начать отладку.</sentencetext>
+            </span>  <span id="mt25" class="sentence" data-guid="ef07103cc77e488af1be97f95c978883" data-source="For example, you can use &lt;span class=&quot;label&quot;&gt;Step&lt;/span&gt; commands to continue to execute your code line by line." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Например, можно использовать команды <span class="label" xmlns="http://www.w3.org/1999/xhtml">Шаг</span>, чтобы продолжить выполнять код построчно.</sentencetext></span>  <span id="mt26" class="sentence" data-guid="3625dd10913238b4389a3e400e512ee1" data-source="You can use the &lt;span class=&quot;label&quot;&gt;Call Stack&lt;/span&gt; window to view and control script flow." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно использовать окно <span class="label" xmlns="http://www.w3.org/1999/xhtml">Стек вызовов</span>, чтобы просматривать и контролировать течение скрипта.</sentencetext></span>  <span id="mt27" class="sentence" data-guid="4f6eb7730a5ddec116e0e45da253dd8c" data-source="You can use the variable windows or &lt;span class=&quot;label&quot;&gt;Immediate&lt;/span&gt; window to view or change variables and properties." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Можно использовать окна переменных или окно <span class="label" xmlns="http://www.w3.org/1999/xhtml">Интерпретация</span>, чтобы просматривать и изменять переменные и свойства.</sentencetext></span>  </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Улучшенные сообщения об ошибках для отладки скриптов</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle4">
+            
+          </a>
+          <p> <span id="mt28" class="sentence" data-guid="57d4c4882c89fd4e076a45a7b82f9a2b" data-source="Visual Studio provides enhanced error messages for common script debugging problems." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">В Visual Studio представлены улучшенные сообщения об ошибках для общих проблем отладки скриптов.</sentencetext></span>  <span id="mt29" class="sentence" data-guid="5bef9fb40b8413fe03bc1cea6e5d1c46" data-source="These messages do not appear unless you attach to Internet Explorer manually." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Эти сообщения не появляются, если не выполнить присоединение к Internet Explorer вручную.</sentencetext></span>  <span id="mt30" class="sentence" data-guid="e838fbc31603e423b5ea5b9864c76ec6" data-source="If you encounter an error condition when Internet Explorer is opened automatically, try manually attaching so that you can see the error messages." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">При возникновении условия, вызывающего ошибку при автоматическом открытии Internet Explorer, попытайтесь выполнить присоединение вручную, чтобы увидеть сообщения об ошибках.</sentencetext></span>  </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">Отладка приложений Ajax-скриптов</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="sectionToggle5">
+            
+          </a>
+          <p>
+            <span id="mt31" class="sentence" data-guid="388ce014f13ff22828eda88704bc117b" data-source="AJAX-enabled Web applications make heavy use of script code and pose special debugging challenges." xml:space="preserve">
+              <sentencetext xmlns="http://www.w3.org/1999/xhtml">Веб-приложения с включенной технологией Ajax делают сложным использование кода скрипта и ставят проблемы специальной отладки.</sentencetext>
+            </span>  <span id="mt32" class="sentence" data-guid="ff9b8f7d653c0afe4b1627ab908965c5" data-source="For information about AJAX debugging techniques, see" xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Дополнительные сведения о методах отладки Ajax см. в разделе</sentencetext></span>  </p>
+          <p> <span id="mt33" class="sentence" data-guid="29d8bce9bba9d2a01fb82f726f379460" data-source="&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Debugging and Tracing AJAX Applications Overview&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <span xmlns="http://www.w3.org/1999/xhtml">
+    <a href="https://msdn.microsoft.com/ru-ru/library/bb398817.aspx">Debugging and Tracing AJAX Applications Overview</a>
+  </span>.</sentencetext></span></p>
+        </div>
+      </div>
+      <div>
+        <h2 class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все." role="button">
+              <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+              <span class="LW_CollapsibleArea_Title">См. также</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </h2>
+        <div class="sectionblock">
+          <a id="seeAlsoToggle">
+            
+          </a>
+          <h4 class="subHeading">Задачи</h4>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/z959x58c.aspx">Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer</a>
+            </span>
+          </div>
+          <h4 class="subHeading">Ссылки</h4>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/bb157684.aspx">Ограничения на отладку скриптов</a>
+            </span>
+          </div>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/f177hahy.aspx">Окно интерпретации</a>
+            </span>
+          </div>
+          <h4 class="subHeading">Другие ресурсы</h4>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/w2faa92k.aspx">Отладка приложений ASP.NET и AJAX</a>
+            </span>
+          </div>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/4dt5w8ta.aspx">Окна переменных</a>
+            </span>
+          </div>
+          <div class="seeAlsoStyle">
+            <span>
+              <a href="https://msdn.microsoft.com/ru-ru/library/bb398817.aspx">Debugging and Tracing AJAX Applications Overview</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+<script id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div class="communityContentContainer">
+    <div id="CommunityContentHeader" class="communityContentHeader">
+        <div class="communityContentHeaderTitleContainer">
+            <h2>Добавления сообщества</h2>
+                <a class="communityContentAddLink" href="https://msdn.microsoft.com/ru-ru/library/community/add/7seh8d72.aspx">
+                    <span class="communityContentAddButton" title="Add («Добавить»)">
+                        ДОБАВИТЬ
+                    </span>
+                </a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div id="CommunityComments" data-url="/ru-ru/library/community/comments/7seh8d72.aspx"></div>
+</div>
+
+
+
+
+<div class="libraryMemberFilter">
+    <div class="filterContainer">
+        <span>Показ:</span>
+        <label>
+            <input type="checkbox" class="libraryFilterInherited" checked="checked" value="Inherit">Унаследовано
+        </label>
+        <label>
+            <input type="checkbox" class="libraryFilterProtected" checked="checked" value="Protected">Защищен
+        </label>
+    </div>
+</div>
+    
+<input type="hidden" id="libraryMemberFilterEmptyWarning" value="Для текущих настроек фильтра нет доступных членов.">
+
+
+ 
+</div>
+
+
+            </div>
+            <div class="clear"></div>
+
+            
+    
+<input name="__RequestVerificationToken" type="hidden" value="US-QPPr6-e7uzGi8-prMtzMqsCce75IqtmXVa4AXf7_2Q_92pvjJAOwQ11nA8sWt9wdwgLqM6iYclH2ZPjgBodJ09aM1">
+<input id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/add/7seh8d72.aspx">
+<input id="isTopicRated" type="hidden" value="false">
+
+
+
+
+    
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+    <div id="ux-footer" class="" style="" dir="ltr">
+            
+            <div id="footerSock" class="librarySock">
+                <div id="footerSockInner">
+                        <a name="feedback"></a>
+
+<div class="rating">
+    <div id="ratingSection1">
+        <div class="title">
+            Была ли эта страница полезной?
+        </div>
+        <div class="description">
+            Ваш отзыв об этом контенте важен для нас.<br>Расскажите нам о том, что вы думаете.
+        </div>
+        <div class="buttons">
+            <button class="button" id="ratingYes">Да</button>
+            <button class="button" id="ratingNo">Нет</button>
+        </div>
+        <input id="ratingValue" type="hidden" value="">
+    </div>
+    <div id="ratingSection2">
+        <div class="title">
+            Дополнительный отзыв?
+        </div>
+        <textarea id="ratingText" rows="6" cols="" maxlength="1500"></textarea>
+        <div class="counter right">
+            <span id="feedbackTextCounter">1500</span> символов осталось
+        </div>
+        <div class="buttons left">
+            <button class="button" id="ratingSubmit">Отправить</button>
+            <button class="button" id="ratingSkipThis">Пропустить</button>
+        </div>
+    </div>
+    <div id="ratingSection3">
+        <div class="title">
+            Спасибо!
+        </div>
+        <div class="description">
+            Благодарим за отзыв. Ваше мнение очень важно для нас.
+        </div>
+    </div>
+    
+    
+    <div id="contentFeedbackQAContainer" style="display: none;"></div>
+</div>
+    
+                                        <div class="clear"></div>
+                </div>
+            </div>
+
+        <footer class="top">
+            <div data-fragmentname="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Центры разработки</div>
+    <ul class="links">
+      <li>
+        <a href="https://dev.windows.com/" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+      </li>
+      <li>
+        <a href="http://dev.office.com/" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/vstudio" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+      </li>
+      <li>
+        <a href="http://developer.nokia.com/" title="Nokia" id="LeftLinks_2148_15" class="nokia" xmlns="http://www.w3.org/1999/xhtml">Nokia</a>
+      </li>
+      <li>
+        <a href="http://azure.microsoft.com/ru-ru/documentation/" target="_blank" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/aa937802" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">Дополнительно...</a>
+      </li>
+    </ul>
+  </div>
+</div>    
+            <div id="rightLinks">
+                <div data-fragmentname="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Обучение</div>
+    <ul class="links">
+      <li>
+        <a href="http://www.microsoftvirtualacademy.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
+      </li>
+      <li>
+        <a href="http://channel9.msdn.com/Browse/Series?lang=ru" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Канал Channel 9</a>
+      </li>
+      <li>
+        <a href="http://www.techdays.ru/" id="CenterLinks1_2151_6" xmlns="http://www.w3.org/1999/xhtml">TechDays</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/magazine/default.aspx" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">Журнал MSDN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Сообщество</div>
+    <ul class="links">
+      <li>
+        <a href="http://blogs.msdn.com/b/rudevnews/" id="CenterLinks2_2151_17" xmlns="http://www.w3.org/1999/xhtml">Новости</a>
+      </li>
+      <li>
+        <a href="https://social.msdn.microsoft.com/forums/ru-ru/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Форумы</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/jj129558" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Блоги</a>
+      </li>
+      <li>
+        <a href="http://www.codeplex.com/" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Свяжитесь с нами</div>
+    <ul class="links">
+      <li>
+        <a href="https://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Самостоятельно</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml" class="nth-child-4n">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Программы</div>
+    <ul class="links">
+      <li>
+        <a href="https://www.microsoft.com/ru/ru/ms-start/default.aspx" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (для стартапов)</a>
+      </li>
+      <li>
+        <a href="https://www.dreamspark.com/" id="CenterLinks4_2151_14" xmlns="http://www.w3.org/1999/xhtml">DreamSpark (для студентов и вузов)</a>
+      </li>
+      <li>
+        <a href="http://www.imaginecup.com/" id="CenterLinks4_2151_17" xmlns="http://www.w3.org/1999/xhtml">Imagine Cup</a>
+      </li>
+    </ul>
+  </div>
+</div>                
+            </div>
+        </footer>
+    
+        <footer class="bottom">
+            <span class="localeContainer">
+                
+    <form class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/ru-ru/selectlocale-dmc">
+        <input type="hidden" name="fromPage" value="https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2f7seh8d72.aspx">
+        <a href="https://msdn.microsoft.com/ru-ru/library/7seh8d72.aspx#" onclick="$(&#39;#selectLocaleForm&#39;).submit();return false;" title="Измените язык">Россия (Pусский)</a>
+    </form>
+
+
+            </span>
+        
+            <div data-fragmentname="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="https://msdn.microsoft.com/newsletter.aspx" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Информационный бюллетень</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/dn529288" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Конфиденциальность и файлы cookie</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Условия использования</a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Товарные знаки</a>
+      </li>
+    </ul>
+  </div>
+</div>    
+            <span class="logoLegal">
+                <span class="logo"></span>
+                <span class="copyright">© 2015 Microsoft</span>
+            </span>
+        </footer>
+    </div>
+    
+
+
+            <div class="footerPrintView">
+                <div class="footerCopyrightPrintView">© 2015 Microsoft</div>
+            </div>
+
+            
+            
+    
+    
+    <input id="tocPaddingPerLevel" type="hidden" value="17">
+
+
+
+            <input id="MtpsDevice" type="hidden" value="Default">
+
+
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+
+            
+            
+            
+            
+            
+
+
+
+
+
+
+<noscript>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" src="https://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" /&gt;&lt;/div&gt;</noscript>
+
+
+
+
+
+
+
+
+
+<noscript>
+  &lt;a href="http://www.omniture.com" title="Web Analytics"&gt;
+    &lt;img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" /&gt;
+  &lt;/a&gt;
+</noscript>
+            
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="vMH4VDtHYiTEtBYYc1DNgIIqpKkMa7EgkfoLX6KgQNxOfen2BB8jfia28mPP-iDgsv1hlrgLLclmd5hnbVDiUjIS4VI1">
+</div>
+
+
+        </div>
+
+        
+        
+        
+        
+    <script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"xap\": \"https://msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/ru-ru/library/7seh8d72(l=ru-ru,v=vs.120).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027ru-ru\u0027;\n  var wtsp = \u0027msdnlib_devtools_lang\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"a01053ca-0187-4a74-b020-86a3e1e8520c\";\n/**/" },
+	{ txt: "//\n\n            window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n            //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,1:Rating,2:Footer,0:Topic,3:webtrendsscript,4:omni_rsid_MSDN,5:WEDCS,0:AppInsightsPerf,6:Toc,1:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Global/Content/Webtrends/resources:3,/Areas/Global/Content/Omniture/resources/MSDN:4,/Areas/Library/Themes/Base/Content:5,/Areas/Library/Content:6\u0026amp;hashKey=22D434C583B5357E494BA7A31948E94D\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=ru-ru\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Поиск в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:PrintExportButton,1:NavigationResize;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1\u0026amp;hashKey=72684789A0F98A77C33C1AC3470E9ECF\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "//\n    MTPS = window.MTPS || {};\n    MTPS.Translation = window.MTPS.Translation || {};\n\n    MTPS.Translation.TranslationType =  0;\n    \n    \n        \n        MTPS.Translation.EditorLink = {\n            includeEditor : 0,\n            editLink: \"https://msdn.microsoft.com/ru-ru/library/translation/edit/7seh8d72.aspx\",\n            editLinkText: \"Предложите более удачный вариант перевода\"\n        };\n        \n    //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery.popup,0:Translator;/Areas/Library/Content:0\u0026amp;hashKey=3B656D983EF24EC5D2C54AB67215CFD7\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Развернуть\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свернуть\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Развернуть все\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свернуть все\u0027;" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:CommunityContent,0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=EB298C838117D9E7008C7CC11E7732E3\u0026amp;v=E027EF93CFE70A966FF3014F84B22CAA" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script>
+<script src="./Отладка клиентского скрипта_files/broker-config.js"></script><div id="popup-loading0" class="popup-loading" style="display: none; z-index: 97; width: auto; height: auto; left: 327px; top: 327px;">loading...</div><div id="popup0" class="MTPopup" style="z-index: 97; width: auto; height: auto; max-width: 709px; left: 327px; top: 327px; display: none;"><div class="popup-main" style="z-index: 97;"><div class="popup-inner">Before you can begin debugging script with Visual Studio, script debugging must be enabled in Internet Explorer.<div class="EditTranslation"><a href="https://msdn.microsoft.com/ru-ru/library/translation/edit/7seh8d72.aspx?sentenceGuid=74a5e7fab4597b792a896bcbedb2e22b">Предложите более удачный вариант перевода</a></div></div></div></div></body></html>

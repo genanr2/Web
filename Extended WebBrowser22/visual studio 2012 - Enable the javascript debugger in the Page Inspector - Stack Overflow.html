@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico?v=6cd6089ee7f6">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=41f6e13ade69">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=ea71a5211a91&amp;a">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Enable the javascript debugger in the Page Inspector">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="Visual Studio 2012 comes with the very nice Page Inspector. I like it! Problem though, I haven&#39;t found how (if?) I can turn on JavaScript debugging. Could someone point me in the right direction?
+">
+    <meta property="og:url" content="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector">
+    <link rel="canonical" href="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow.html">
+
+    
+    
+    <script type="text/javascript" async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/ados"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/quant.js"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/beacon.js"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/analytics.js"></script><script type="text/javascript" async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/ados.js"></script><script src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/all.css">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Enable the javascript debugger in the Page Inspector&#39;" href="http://stackoverflow.com/feeds/question/12197255">
+    <meta name="twitter:app:country" content="US">
+    <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+    <meta name="twitter:app:id:iphone" content="871299723">
+    <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector">
+    <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+    <meta name="twitter:app:id:ipad" content="871299723">
+    <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector">
+    <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+    <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector">
+    <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+    <script>
+        
+        StackExchange.ready(function () {
+                
+                StackExchange.using("snippets", function () {
+                    StackExchange.snippets.initSnippetRenderer();
+                });
+                
+
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:12197255});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '12197255');
+                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+        });
+    </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1428498149,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"nonAsciiTags":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"8617d0b5bd709c27cfbfe1438d6cb9f5","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"41f0e33f16f8","js/moderator.en.js":"75062b042101","js/full-anon.en.js":"96cc6720bdb9","js/full.en.js":"e24e7afddc17","js/wmd.en.js":"736be19de739","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"1cb2a5eeaa36","js/help.en.js":"7a31c9feb96c","js/tageditor.en.js":"064c2f7dfae2","js/tageditornew.en.js":"cbe83d95be9c","js/inline-tag-editing.en.js":"21223186b436","js/revisions.en.js":"6c7265ea9fa1","js/review.en.js":"ccc3718553a1","js/tagsuggestions.en.js":"bb4721d888d2","js/post-validation.en.js":"c69da0075a04","js/explore-qlist.en.js":"4e6f969d97ee","js/events.en.js":"041145f2cc8d","js/keyboard-shortcuts.en.js":"4299556d4574","js/external-editor.en.js":"1eb5c5c11526","js/external-editor.en.js":"1eb5c5c11526","js/snippet-javascript.en.js":"b70d24a386a9","js/snippet-javascript-codemirror.en.js":"4d1069f72396"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+<script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/full-anon.en.js"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/snippet-javascript.en.js"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/post-validation.en.js"></script><script async="" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/external-editor.en.js"></script><script type="text/javascript" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"><link type="text/css" rel="stylesheet" href="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/jobs.min.css"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://stackoverflow.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://blog.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track" href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=multicollider" data-gps-track="site_switcher.click({ item_type:9 })">
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 141 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                <a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector" class="login-link">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector" class="login-link">log in</a>
+
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                            <a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                            <a href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=anon-topbar">stack overflow careers</a>
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=41f6e13ade69">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://stackoverflow.com/tour" id="tell-me-more" class="button">Take the 2-minute tour</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/", expires: 365 });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+			<h1 itemprop="name"><a href="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow.html" class="question-hyperlink">Enable the javascript debugger in the Page Inspector</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="12197255" id="question">
+
+    <script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk1630435770",4).setZone(43) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1630435770"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjoxODY2MjQsImNoIjoxMTc4LCJjciI6Njg0MjgyLCJkaSI6ImI5OGJlYjFhZDhhZjRkYjBhMTc2OWJlYmJkNGIyYzgzIiwiZG0iOjEsImZjIjo3MDg0MzYsImZsIjo0MzE3ODAsImlwIjoiOTQuMTM5LjEwNy4xMzQiLCJrdyI6ImphdmFzY3JpcHQsdmlzdWFsLXN0dWRpby0yMDEyLHZpc3VhbC1zdHVkaW8tZGVidWdnaW5nIiwibnciOjIyLCJwYyI6MCwicHIiOjE2MDQsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5ydS8iLCJzdCI6ODI3NywidWsiOiJ1ZTEtZWZjOTU4OTBlY2IxNDlmNzkzMDMxYmVhNDJlNGRiZmIiLCJ6biI6NDMsInRzIjoxNDI4NDk4MTUwMDk2LCJiZiI6dHJ1ZSwicG4iOiJhZHplcmsxNjMwNDM1NzcwIiwidXIiOiJodHRwOi8vY2FyZWVycy5zdGFja292ZXJmbG93LmNvbS9wcm9kdWN0cz91dG1fc291cmNlPXN0YWNrb3ZlcmZsb3cuY29tJnV0bV9tZWRpdW09YWQmdXRtX2NhbXBhaWduPWVtcGxveWVycy1zdXBlcmhlcm9lcyZ1dG1fY29udGVudD1sYi1zdXBlcmhlcm9lcyJ9&s=oTg_9OkFRMFNAGyFPYnHy7ZiN64" rel="nofollow" target="_blank" title=""><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/7b03b9d327834757b98b657002b37789.png" title="" alt="" border="0" width="728" height="90"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" border="0" style="position:absolute;" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/i.gif"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="12197255">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">30</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>14</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+        <p>Visual Studio 2012 comes with the very nice Page Inspector. I like it! Problem though, I haven't found how (if?) I can turn on JavaScript debugging. Could someone point me in the right direction?</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/javascript" class="post-tag js-gps-track" title="show questions tagged &#39;javascript&#39;" rel="tag">javascript</a> <a href="http://stackoverflow.com/questions/tagged/visual-studio-2012" class="post-tag js-gps-track" title="show questions tagged &#39;visual-studio-2012&#39;" rel="tag">visual-studio-2012</a> <a href="http://stackoverflow.com/questions/tagged/visual-studio-debugging" class="post-tag js-gps-track" title="" rel="tag">visual-studio-debugging</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/12197255" title="short permalink to this question" class="short-link" id="link-post-12197255">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/12197255/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2012-08-30 12:50:17Z" class="relativetime">Aug 30 '12 at 12:50</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/381801/martijn"><div class="gravatar-wrapper-32"><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/64cb01262bf686f65805e70fd99c5b1a" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/381801/martijn">Martijn</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">2,726</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="18 silver badges"><span class="badge2"></span><span class="badgecount">18</span></span><span title="49 bronze badges"><span class="badge3"></span><span class="badgecount">49</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-12197255" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-12197255" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								3 Answers
+                                <span style="display:none;" itemprop="answerCount">3</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="12663769"></a>
+<div id="answer-12663769" class="answer accepted-answer" data-answerid="12663769" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="12663769">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">23</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<ol>
+<li><p>In IE9 (only one time): Tools &gt; Internet Options &gt; Advanced tab &gt; In Browsing category &gt; Clear "Disable script debugging" check boxes (both) &gt; restart IE.</p></li>
+<li><p>In VS 2012: Run the Page Inspector  ( when javascript error box opens, click No ! )</p></li>
+<li><p>Choose from VS menu: DEBUG &gt; Attach to process...</p></li>
+<li><p>Select "WebBrowserServer.exe" and click Attach</p></li>
+<li><p>In Page Inspector window click the Refresh icon.</p></li>
+</ol>
+
+<p>Debugging works pretty well, but it's one condition. Don't insert any breakpoints in your code (or clear them before - DEBUG &gt; Delete All Breakpoints). There can cause a lot of problems - from hanging and frozing to entirely crashing your VS.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/12663769" title="short permalink to this answer" class="short-link" id="link-post-12663769">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/12663769/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-09-30 18:19:53Z" class="relativetime">Sep 30 '12 at 18:19</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1709715/mariusz"><div class="gravatar-wrapper-32"><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/77f7e50af10418f0e04cf1c45830e943" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1709715/mariusz">Mariusz</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">246</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-12663769" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="9" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-17145715" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">7</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Wow seriously this is how complicated it is to do js debugging with page inspector?!!? ::cries::</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/343347/felickz" title="948 reputation" class="comment-user">felickz</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment17145715_12663769"><span title="2012-10-02 23:45:52Z" class="relativetime-clean">Oct 2 '12 at 23:45</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-17149710" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">When you want to debugging directly in VS window, in the page inspector - it figures. Maybe MS don't really like JS developers ;)</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/1709715/mariusz" title="246 reputation" class="comment-user">Mariusz</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment17149710_12663769"><span title="2012-10-03 05:49:24Z" class="relativetime-clean">Oct 3 '12 at 5:49</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-17601808" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I tried this but couldn't figure out how to actually debug the script.  The Page inspector highlights where I am in the HTML but doesn't display any information at all when it hits my scripts.  You said not to have breakpoints in the code, I deleted all of them.  But how does it know where to break for the javascript?</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/1416155/anyeone" title="129 reputation" class="comment-user">anyeone</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment17601808_12663769"><span title="2012-10-19 16:49:27Z" class="relativetime-clean">Oct 19 '12 at 16:49</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-20961619" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Riz the proper answer should probably be "there is no integration. The workaround is the following"</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/381801/martijn" title="2726 reputation" class="comment-user owner">Martijn</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment20961619_12663769"><span title="2013-02-18 13:00:42Z" class="relativetime-clean">Feb 18 '13 at 13:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-24244425" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This method causes my VS instance to lock immediately until I kill the WebBrowserServer.exe process. The annoying thing about this whole thing is that I'm trying to debug a JS issue that ONLY occurs in Page Inspector.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/910291/aejay" title="413 reputation" class="comment-user">Aejay</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment24244425_12663769"><span title="2013-05-29 15:34:20Z" class="relativetime-clean">May 29 '13 at 15:34</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-12663769" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" onclick="">show <b>9</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk1775496447",4).setZone(44) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1775496447"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjoxODY2MjQsImNoIjoxMTc4LCJjciI6NzIyNjg0LCJkaSI6IjQwYmQ3NTNlMTNkNTQxNWViYTg5M2VmODM2M2U1NTk4IiwiZG0iOjEsImZjIjo3NTIyNDMsImZsIjo0NDEzMzQsImlwIjoiOTQuMTM5LjEwNy4xMzQiLCJrdyI6ImphdmFzY3JpcHQsdmlzdWFsLXN0dWRpby0yMDEyLHZpc3VhbC1zdHVkaW8tZGVidWdnaW5nIiwibnciOjIyLCJwYyI6MCwicHIiOjE1NjgsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5ydS8iLCJzdCI6ODI3NywidWsiOiJ1ZTEtZWZjOTU4OTBlY2IxNDlmNzkzMDMxYmVhNDJlNGRiZmIiLCJ6biI6NDQsInRzIjoxNDI4NDk4MTUwMDk4LCJiZiI6dHJ1ZSwicG4iOiJhZHplcmsxNzc1NDk2NDQ3IiwidXIiOiJodHRwOi8vY2FyZWVycy5zdGFja292ZXJmbG93LmNvbS9jdi9nZXQtb25lP3V0bV9zb3VyY2U9c3RhY2tvdmVyZmxvdy5jb20mdXRtX21lZGl1bT1hZCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXRlcy1hZGQtY3YmdXRtX2NvbnRlbnQ9bGItbGF1bmNoLXlvdXJzZWxmLWJ1dHRvbiJ9&s=m6UKBOuDneAVJRN7BTdkL7I9wtg" rel="nofollow" target="_blank" title=""><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/f6830b35dbe94952b9804183cae231b8.png" title="" alt="" border="0" width="728" height="90"></a><div class="adzerk-vote-controls" style="display: none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" border="0" style="position:absolute;" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/i(1).gif"></div>
+  
+<a name="12308301"></a>
+<div id="answer-12308301" class="answer" data-answerid="12308301" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="12308301">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I think this link should get you started
+<a href="http://msdn.microsoft.com/en-us/library/7seh8d72.aspx" rel="nofollow">debugging in Visual studio 2012</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/12308301" title="short permalink to this answer" class="short-link" id="link-post-12308301">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/12308301/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-09-06 20:59:27Z" class="relativetime">Sep 6 '12 at 20:59</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/312329/zeacuss"><div class="gravatar-wrapper-32"><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/e7194d1d718e67da30b0a86bbad1fc72" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/312329/zeacuss">zeacuss</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,242</span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="22 bronze badges"><span class="badge3"></span><span class="badgecount">22</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-12308301" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-16529401" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">That's what I thought too. Yet it doesn't really (with IE debugging enabled a <code>debugger</code> statement starts a new instance of Visual Studio with the generated page to do the debugging.)</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/381801/martijn" title="2726 reputation" class="comment-user owner">Martijn</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment16529401_12308301"><span title="2012-09-07 11:57:37Z" class="relativetime-clean">Sep 7 '12 at 11:57</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-12308301" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="27434777"></a>
+<div id="answer-27434777" class="answer" data-answerid="27434777" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="27434777">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Until this week, I was able to carry debugging of JavaScript in Visual Studio 2012 merely by entering "debugger" in the JavaScript function which acted as a breakpoint, and was able to step through the JavaScript code in the Visual Studio window just the same as the C# code.  I did this for the past 11 months until 1 week ago.  I made no changes to the default installed settings.</p>
+
+<p>This was the solution suggested in the Asp.Net Forums by Rion Williams. <a href="http://forums.asp.net/t/1984115.aspx?Debugging+Javascript+in+MVC" rel="nofollow">http://forums.asp.net/t/1984115.aspx?Debugging+Javascript+in+MVC</a>  And as stated it has allowed me to properly step through my code for the last 11 months.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/27434777" title="short permalink to this answer" class="short-link" id="link-post-27434777">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/27434777/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/27434777/revisions" title="show all edits to this post">edited <span title="2014-12-12 14:48:34Z" class="relativetime">Dec 12 '14 at 14:48</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-12-12 00:08:23Z" class="relativetime">Dec 12 '14 at 0:08</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1161391/user1161391"><div class="gravatar-wrapper-32"><img src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/18d82580be9f4d8db4a25b1903dee36d" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1161391/user1161391">user1161391</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">47</span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-27434777" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-44849807" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">When running your asp.net MVC site in Visual Studio, the "debugger" statement in javascript files will not work if you are bundling your javascript and have BundleTable.EnableOptimizations set to true.  If you use the default bundler (the RegisterBundles method in BundleConfig.cs in the App_Start folder) look for "BundleTable.EnableOptimizations" and set it to "false."</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/303305/tom-regan" title="502 reputation" class="comment-user">Tom Regan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#comment44849807_27434777"><span title="2015-01-30 21:04:35Z" class="relativetime-clean">Jan 30 at 21:04</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-27434777" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/12197255/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="12197255">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="https://www.google.ru/">
+							<h2 class="space">Your Answer</h2>
+
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+            // Have to fire editor after snippets, if snippets enabled
+            if (StackExchange.options.snippets.enabled) {
+                StackExchange.using("snippets", function() {
+                    createEditor();
+                });
+            }
+            else {
+                createEditor();
+            }
+        });
+
+        function createEditor() {
+            prepareEditor({
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                ,immediatelyShowMarkdownHelp:true
+                });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="8617d0b5bd709c27cfbfe1438d6cb9f5">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google" class="use-google" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f12197255%2fenable-the-javascript-debugger-in-the-page-inspector%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" /&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/javascript" class="post-tag" title="show questions tagged &#39;javascript&#39;" rel="tag">javascript</a> <a href="http://stackoverflow.com/questions/tagged/visual-studio-2012" class="post-tag" title="show questions tagged &#39;visual-studio-2012&#39;" rel="tag">visual-studio-2012</a> <a href="http://stackoverflow.com/questions/tagged/visual-studio-debugging" class="post-tag" title="show questions tagged &#39;visual-studio-debugging&#39;" rel="tag">visual-studio-debugging</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2012-08-30 12:50:17Z"><b>2 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>63873 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector?lastactivity" class="lastactivity-link" title="2014-12-12 14:48:34Z">3 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Upcoming Events
+                </div>
+                <hr>
+    <div class="spacer bulletin-item-important">
+        
+    <div class="bulletin-item-type"><a href="http://stackoverflow.com/election?cb=1" class="question-hyperlink"><div class="favicon favicon-stackoverflow" title="Stack Overflow"></div></a></div>
+    <div class="bulletin-item-content">
+        <a href="http://stackoverflow.com/election?cb=1" class="question-hyperlink">2015 Community Moderator Election</a>
+        <div>ends <span title="2015-04-21 20:00:00Z">Apr 21</span></div>
+    </div>
+    <br class="cbt">
+</div>
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://blog.stackoverflow.com/2015/04/stack-overflow-developer-survey-2015-the-results/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://blog.stackoverflow.com/2015/04/stack-overflow-developer-survey-2015-the-results/?cb=1" class="question-hyperlink">Stack Overflow Developer Survey 2015: The Results</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk1830362660",[17,2221]).setZone(45) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1830362660"><div id="careersadsdoublehigh" style="display:none;"></div><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" border="0" style="position:absolute;" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/i(2).gif"></div>  
+        <div id="hireme" class="orange near-you tagged"><a href="http://careers.stackoverflow.com/jobs/location/Lyubertsy?a=2UF8c" target="_blank" data-loc="Lyubertsy" data-la="94CK4tW" data-hf="h" class="top"> <span>Jobs near you</span></a><ul class="jobs"><li><a data-cid="170330" data-la="scfyggrZyI9" href="http://careers.stackoverflow.com/jobs/84079/front-end-developer-russia-lazada" target="_blank" title="Front End Developer (Russia) at Lazada. Click to learn more.">Front End Developer (Russia)<br><div class="company">Lazada</div><div class="location" title="Москва, Россия">Москва, Россия</div><span class="post-tag">javascript</span><span class="post-tag">html</span></a></li><li><a data-cid="170656" data-la="sjjRIHt3AQ2" href="http://careers.stackoverflow.com/jobs/84419/senior-php-developer-russia-lazada" target="_blank" title="Senior PHP Developer (Russia) at Lazada. Click to learn more.">Senior PHP Developer (Russia)<br><div class="company">Lazada</div><div class="location" title="Москва, Россия">Москва, Россия</div><span class="post-tag">php</span><span class="post-tag">mysql</span></a></li><li><a data-cid="169031" data-la="rKiVgUZI9wL" href="http://careers.stackoverflow.com/jobs/82735/web-developer-to-kill-the-password-teddy-id" target="_blank" title="Web developer to Kill the Password at Teddy ID. Click to learn more.">Web developer to Kill the Password<br><div class="company">Teddy ID</div><div class="location" title="Moscow, Russia">Moscow, Russia</div><span class="post-tag">php</span><span class="post-tag">mysql</span></a></li><li><a data-cid="168747" data-la="rEjE3LY4ZHC" href="http://careers.stackoverflow.com/jobs/82447/ios-developer-yandex" target="_blank" title="iOS Developer at Yandex. Click to learn more.">iOS Developer<br><div class="company">Yandex</div><div class="location" title="Москва, Россия">Москва, Россия</div><span class="post-tag">ios</span><span class="post-tag">objective-c</span></a></li><li class="city"><a href="http://careers.stackoverflow.com/jobs/location/Lyubertsy" target="_blank" data-hf="f" data-loc="Lyubertsy" data-la="94CK4tW">More jobs near Lyubertsy…</a></li></ul><img class="impression" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/i" style="display:none;"><img class="impression" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/scfyggrZyI9-sjjRIHt3AQ2-rKiVgUZI9wL-rEjE3LY4ZHC-2UF8c" style="display:none;"></div>
+			<div class="module" id="chat-feature">
+    
+
+    
+<h4><a href="http://chat.stackoverflow.com/" id="h-chat-link" title="153 users active in 75 rooms the last 60 minutes">153 People Chatting</a></h4>
+
+<div class="related" id="ad502-rooms"><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="JavaScript"><a href="http://chat.stackoverflow.com/rooms/17">JavaScript</a></span></h3><span title="2015-04-08 10:23:45Z" class="ad502-last-message">2 hours ago - <a href="http://chat.stackoverflow.com/users/2710454">vs7</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/957731"><img height="23" width="23" title="ivarni: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/tp9dK.jpg"></a><a href="http://chat.stackoverflow.com/users/2615209"><img height="23" width="23" title="Ben Fortune: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/c455958b4e9f556e6c26923e1e6ca8c3"></a><a href="http://chat.stackoverflow.com/users/499214"><img height="23" width="23" title="Jan Dvorak: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/PObJM.png"></a><a href="http://chat.stackoverflow.com/users/586051"><img height="23" width="23" title="Rahul Desai: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/704d9f1f649b20f6189cd8a506fc38cd"></a><a href="http://chat.stackoverflow.com/users/1386166"><img height="23" width="23" title="phenomnomnominal: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/7ea079654bb159fdaa4043834688f57d"></a><a href="http://chat.stackoverflow.com/users/216074"><img height="23" width="23" title="poke: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/609c93bafd659500f83fde04802a9be5"></a><a href="http://chat.stackoverflow.com/users/1348195"><img height="23" width="23" title="Benjamin Gruenbaum: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/f6dca2295546af21e1cde8e68f2d49bd"></a></div></div><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="Lounge&lt;C++&gt;"><a href="http://chat.stackoverflow.com/rooms/10">Lounge&lt;C++&gt;</a></span></h3><span title="2015-04-08 10:23:41Z" class="ad502-last-message">2 hours ago - <a href="http://chat.stackoverflow.com/users/703016">Momotapa Limpopo</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/703016"><img height="23" width="23" title="Momotapa Limpopo: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/qnKQJ.jpg"></a><a href="http://chat.stackoverflow.com/users/932887"><img height="23" width="23" title="Alex M.: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/6KUp0.png"></a><a href="http://chat.stackoverflow.com/users/300797"><img height="23" width="23" title="thecoshman: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/328e4d651b4e1c7a97bd86f3d7c84073"></a><a href="http://chat.stackoverflow.com/users/752976"><img height="23" width="23" title="Bartek Banachewicz: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/c95a3a507154b3dc672f04bb36bdcd1f"></a><a href="http://chat.stackoverflow.com/users/3647361"><img height="23" width="23" title="Columbo: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/gfvdl.jpg"></a><a href="http://chat.stackoverflow.com/users/2931666"><img height="23" width="23" title="abhi: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/5gBzA.jpg"></a><a href="http://chat.stackoverflow.com/users/1619294"><img height="23" width="23" title="Mark Garcia: 2 hours ago" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/fu56P.jpg"></a></div></div></div>
+<script>
+// <!--
+    StackExchange.ready(
+    function () {
+        var options = {
+            chatUrl: 'http://chat.stackoverflow.com',
+            reloadUrl: '/api/recent-chat',
+            preloadData: {"activeUsers":153,"activeRooms":75,"rooms":[{"name":"JavaScript","id":17,"lastPost":1428488625,"posts":2519574,"users":[{"name":"ivarni","id":957731,"emailhash":"!http://i.stack.imgur.com/tp9dK.jpg?s=128\u0026g=1","lastPost":1428488596},{"name":"Ben Fortune","id":2615209,"emailhash":"c455958b4e9f556e6c26923e1e6ca8c3","lastPost":1428488584},{"name":"Jan Dvorak","id":499214,"emailhash":"!http://i.stack.imgur.com/PObJM.png?s=128\u0026g=1","lastPost":1428488576},{"name":"Rahul Desai","id":586051,"emailhash":"704d9f1f649b20f6189cd8a506fc38cd","lastPost":1428488568},{"name":"phenomnomnominal","id":1386166,"emailhash":"7ea079654bb159fdaa4043834688f57d","lastPost":1428488400},{"name":"poke","id":216074,"emailhash":"609c93bafd659500f83fde04802a9be5","lastPost":1428488317},{"name":"Benjamin Gruenbaum","id":1348195,"emailhash":"f6dca2295546af21e1cde8e68f2d49bd","lastPost":1428488029}],"messages":[{"date":1428488625,"user":"vs7","userid":2710454}],"singleImage":false,"tags":["cereal","ecmascript","es17","javascript","peter-programming","we-so-excited"]},{"name":"Lounge\u003cC++\u003e","id":10,"lastPost":1428488621,"posts":3574297,"users":[{"name":"Momotapa Limpopo","id":703016,"emailhash":"!http://i.stack.imgur.com/qnKQJ.jpg?s=128\u0026g=1","lastPost":1428488621},{"name":"Alex M.","id":932887,"emailhash":"!http://i.stack.imgur.com/6KUp0.png?s=128\u0026g=1","lastPost":1428488554},{"name":"thecoshman","id":300797,"emailhash":"328e4d651b4e1c7a97bd86f3d7c84073","lastPost":1428488552},{"name":"Bartek Banachewicz","id":752976,"emailhash":"c95a3a507154b3dc672f04bb36bdcd1f","lastPost":1428488499},{"name":"Columbo","id":3647361,"emailhash":"!http://i.stack.imgur.com/gfvdl.jpg?s=128\u0026g=1","lastPost":1428488373},{"name":"abhi","id":2931666,"emailhash":"!http://i.stack.imgur.com/5gBzA.jpg?s=128\u0026g=1","lastPost":1428488044},{"name":"Mark Garcia","id":1619294,"emailhash":"!http://i.stack.imgur.com/fu56P.jpg?s=128\u0026g=1","lastPost":1428488003}],"messages":[{"date":1428488621,"user":"Momotapa Limpopo","userid":703016}],"singleImage":false,"tags":["c++","c++11","c++14","c++-faq"]}]} 
+        };
+
+        StackExchange.chatAd.init(options);
+    });
+// -->
+</script>
+
+</div>  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/20553715?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/20553715/breakpoints-not-being-hit-in-javascript-function-of-aspx-page-vs2012?lq=1" class="question-hyperlink">Breakpoints not being hit in javascript function of aspx page VS2012</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/18625886?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/18625886/visual-studio-2012-javascript-debugging?lq=1" class="question-hyperlink">Visual Studio 2012 JavaScript Debugging</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/21650383?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/21650383/typescript-debug-ts-files-that-are-in-other-project?lq=1" class="question-hyperlink">Typescript debug ts files that are in other project</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/25175184?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/25175184/visual-studio-2012-javascript-debugger-stopped-working?lq=1" class="question-hyperlink">Visual Studio 2012 javascript debugger stopped working</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15226078?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">4
+    </div>
+</a><a href="http://stackoverflow.com/questions/15226078/visual-studio-debugger-hangs-unable-to-detach-from-w3wp?rq=1" class="question-hyperlink">Visual Studio debugger hangs, unable to detach from w3wp</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15507349?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/15507349/can-not-hit-breakpoint-inside-of-js-file?rq=1" class="question-hyperlink">can not hit breakpoint inside of .js file</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15529979?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/15529979/visual-studio-2012-breaking-on-javascript-exceptions-when-debugging-in-internet?rq=1" class="question-hyperlink">Visual Studio 2012 breaking on JavaScript exceptions when debugging in Internet Explorer 9</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15866713?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/15866713/how-to-get-immediate-visual-studio-2012-javascript-debugging-when-attaching-to-i?rq=1" class="question-hyperlink">How to get immediate Visual Studio 2012 javascript debugging when attaching to IE10?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/17688095?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/17688095/debugger-crashing-in-vs-2012-with-iis-7-5?rq=1" class="question-hyperlink">Debugger crashing in vs 2012 with IIS 7.5</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/18080705?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/18080705/vs2012-debugger-hangs-while-i-want-to-expand-some-collection-variable?rq=1" class="question-hyperlink">vs2012 debugger hangs while i want to expand some collection variable</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/19100153?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">5
+    </div>
+</a><a href="http://stackoverflow.com/questions/19100153/vs2012-javascript-debugger-does-not-get-my-changes?rq=1" class="question-hyperlink">VS2012 JavaScript debugger does not get my changes</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/19826361?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">6
+    </div>
+</a><a href="http://stackoverflow.com/questions/19826361/windows-user-mode-debugger-transport-for-visual-studio-2012?rq=1" class="question-hyperlink">Windows User Mode Debugger Transport for Visual Studio 2012</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/22313641?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/22313641/how-to-debug-stand-alone-javascript-in-visual-studio?rq=1" class="question-hyperlink">How to debug stand-alone javascript in Visual Studio?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/27775894?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/27775894/getting-the-debugger-to-break-at-the-next-click-event?rq=1" class="question-hyperlink">getting the debugger to break at the next click event</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-cstheory" title="Theoretical Computer Science Stack Exchange"></div><a href="http://cstheory.stackexchange.com/questions/31054/is-it-a-rule-that-discrete-problems-are-np-and-continuous-problems-are-not" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:114 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it a rule that discrete problems are NP and continuous problems are not?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/54360/he-said-with-a-resigned-air" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    he said with a resigned air
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/174862/what-should-be-the-intuitive-explanation-of-wave-equation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What should be the intuitive explanation of wave equation?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-history" title="History Stack Exchange"></div><a href="http://history.stackexchange.com/questions/21217/why-are-the-usa-and-canadas-states-border-so-straight" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:324 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are the USA and Canada's states border so straight?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-outdoors" title="The Great Outdoors Stack Exchange"></div><a href="http://outdoors.stackexchange.com/questions/8106/how-far-would-you-need-to-fall-for-it-to-be-fatal" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:395 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How far would you need to fall for it to be fatal?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/43154/do-i-need-to-request-permission-to-cite-a-personal-communication-in-a-publicat" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do I need to request permission to cite a "personal communication" in a publication?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-programmers" title="Programmers Stack Exchange"></div><a href="http://programmers.stackexchange.com/questions/278476/how-much-work-should-i-place-inside-a-lock-statement" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How much work should I place inside a lock statement?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-gamedev" title="Game Development Stack Exchange"></div><a href="http://gamedev.stackexchange.com/questions/98025/why-do-some-networked-games-use-interpolation-and-some-use-pathfinding-for-remot" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:53 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do some networked games use interpolation and some use pathfinding for remote movement?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1225359/sum-of-coefficients-in-an-multinomial-expression" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Sum of coefficients in an multinomial expression.
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/85786/do-we-already-know-how-the-doctor-gets-his-bodies-or-faces" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do we already know how the Doctor gets his bodies or faces?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-parenting" title="Parenting Stack Exchange"></div><a href="http://parenting.stackexchange.com/questions/19336/how-should-i-handle-a-little-boy-who-likes-girls-toys" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:228 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How should I handle a little boy who likes girls' toys?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/48589/generate-mathjax-for-the-golden-ratio-continued-fraction" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Generate MathJax for the Golden Ratio Continued Fraction
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-lifehacks" title="Lifehacks Stack Exchange"></div><a href="http://lifehacks.stackexchange.com/questions/6506/how-to-open-a-beverage-can-that-has-a-broken-tab" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:593 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to open a beverage can that has a broken tab?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/237425/how-to-draw-a-cyclic-sequence-in-latex" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to draw a cyclic sequence in latex
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/29506655/haskell-quickcheck-minimal-counter-example" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Haskell QuickCheck minimal counter example
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="http://codereview.stackexchange.com/questions/86192/remove-blank-entries-from-row" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Remove blank entries from row
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-parenting" title="Parenting Stack Exchange"></div><a href="http://parenting.stackexchange.com/questions/19310/how-to-nurture-my-child-to-be-fearless" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:228 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to nurture my child to be fearless
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/43147/when-is-it-appropriate-to-close-your-office-door-when-meeting-with-a-student" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When is it appropriate to close your office door when meeting with a student?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1223244/are-there-any-irrational-numbers-that-have-a-difference-of-a-rational-number" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there any irrational numbers that have a difference of a rational number?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gis" title="Geographic Information Systems Stack Exchange"></div><a href="http://gis.stackexchange.com/questions/141790/postgis-st-equals-false-when-st-intersection-100-of-geometry" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:79 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    PostGIS: ST_Equals false when ST_Intersection=100% of geometry?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/238012/pull-my-forelock" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Pull my forelock
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/43164/why-do-reviews-of-articles-often-start-with-a-summary-of-the-article" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do reviews of articles often start with a summary of the article?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-gis" title="Geographic Information Systems Stack Exchange"></div><a href="http://gis.stackexchange.com/questions/141800/how-to-use-part-of-the-name-as-a-label-in-maplex" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:79 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to use part of the name as a label in Maplex?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/43733/employer-has-changed-offer-after-i-already-accepted" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Employer has changed offer after I already accepted
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="http://stackoverflow.com/questions/12197255/enable-the-javascript-debugger-in-the-page-inspector#" class="show-more js-show-more js-gps-track" data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/12197255" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/12197255/ivc/2d19');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/12197255/ivc/2d19" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (14)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (10)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2015 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.4.8.2455
+            </div>
+            
+        </div>
+    <iframe id="global-auth-frame" style="display:none" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/read.html"></iframe></div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('javascript,visual-studio-2012,visual-studio-debugging');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');        
+        
+        ga('set', 'dimension2', '|javascript|visual-studio-2012|visual-studio-debugging|');         
+        ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>                
+    
+<script type="text/javascript" src="./visual studio 2012 - Enable the javascript debugger in the Page Inspector - Stack Overflow_files/p"></script></body></html>

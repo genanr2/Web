@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<AXLRES version="1.0">
+<LANGS>
+<RUSSIAN REF="R"/>
+</LANGS>
+<LLR>
+<M_BSSAXLIB>
+	<AXDATEIN>
+		<BTNCHOSEDATE_HINT R="Выбрать дату в календаре..."/>
+		<BTNCLEARDATE_HINT R="Очистить поле ввода"/>
+		<ERR_LOADFROMREGISTRY R="Ошибка чтения конфигурации из реестра"/>
+		<ERR_SAVETOREGISTRY R="Ошибка записи конфигурации в реестр"/>
+		<MSG_SAVECONFIRM R="Сохранить изменения?"/>
+	</AXDATEIN>
+	<AXFILTER_DIALOG_CAPTION R="Диалог установки фильтра"/>
+	<AXNAVPNL_ERRORIMAGE_HINT R="Просмотр ошибок..."/>
+	<AXRECIMP>
+		<ERR>
+			<FILESIZE R="Размер файла должен быть меньше %25d байт."/>
+		</ERR>
+		<MSG>
+			<EXECSFILE R="Файл %25s является исполняемым, вы уверены что хотите сохранить его на диске?"/>
+			<FILEEXISTS R="Файл %25s уже существует, перезаписать?"/>
+			<LIBRARYFILE R="Файл %25s является библиотекой, вы уверены что хотите сохранить его на диске?"/>
+			<LOADFILE R="Для выполнения операции необходимо считать содержимое файла %25s, продолжить?"/>
+			<SAVEFILE R="Для выполнения операции необходимо сохранить данные на диск в файл %25s, продолжить?"/>
+		</MSG>
+	</AXRECIMP>
+	<AXTOOLS>
+		<MSG_CHANGEDOC R="Документ был изменен, сохранить?"/>
+		<InputDialogButtonYes_Caption R="Ок"/>
+		<InputDialogButtonNo_Caption R="Отмена"/>
+	</AXTOOLS>
+	<CRYPT>
+		<ERR>
+			<AUTH R="Ошибка аутентификации"/>
+			<DECODE R="Ошибка дешифрации"/>
+			<ENCODE R="Ошибка шифрации"/>
+			<ENGINENOTINITIALIZED R="Неизвестный тип криптобиблиотеки"/>
+			<ENGINETYPE R="Неизвестный тип криптобиблиотеки"/>
+			<PARAMINIT R="Ошибка инициализации криптопараметров"/>
+			<SIGN R="Ошибка подписи"/>
+			<UIDCONVERT R="Ошибка получения идентификатора пользователя"/>
+		</ERR>
+	</CRYPT>
+	<LOADER_ERR_CANCELUSER R="Отменено пользователем"/>
+	<MAIN>
+		<ERR>
+			<ERRORDIALOGCAPTION R="Ошибка"/>
+			<FILENOTEXISTS R="Файл %25s не существует."/>
+		</ERR>
+		<MSG>
+			<ATTENTIONCAPTION R="Внимание!"/>
+			<BUTTONCANCEL R="Отмена"/>
+			<BUTTONCLOSE R="Закрыть"/>
+			<BUTTONNO R="Нет"/>
+			<BUTTONYES R="Да"/>
+			<INFORMATION R="Предупреждение"/>
+		</MSG>
+	</MAIN>
+	<SIGN>
+		<ERR>
+			<ERRORXMLCONFIG R="%25s"/>
+			<ERRORABSENTBITMASK R="Не передана битовая маска полей для подписи"/>
+			<ERRORABSENTLOCATION R="Отсутствуют параметры подписи для данного соединения"/>
+			<ERRORINCORRECTBITMASK R="Некорректная битовая маска полей для подписи"/>
+			<ERRORREADINGREGISTRY R="Ошибка чтения параметров подписи"/>
+			<ERRORSETCRYPTOPARAMS R="Ошибка инициализации системы криптозащиты"/>
+			<NOCONFFOR1SIGNLOC R="Первая подпись не установлена."/>
+			<NOCONFFOR2SIGNLOC R="Вторая подпись не установлена."/>
+			<NOCONFFOR3SIGNLOC R="Третья подпись не установлена."/>
+			<DOCUMENTUIDCHECKFAILED R="UID %25d подписи документа несовпадает с UID подписи клиента."/>
+			<DOCUMENTSUIDCHECKFAILED R="Несовпадение одного или более UIDов %25d подписи документа с UID подписи клиента."/>
+			<NONUNIQSIGN R="Подписи '%25s' (№%25d) и '%25s' ( №%25d) не уникальны (одинаковы ProfileID: %25s и UID: %25s). Перед тем как подписать абонентом '%25s' (№%25d) необходимо снять подпись у абонента '%25s' (№%25d)')"/>
+			<UIDCHECKFAILED R="Неправильный UID %25d подписи. Возможно, вставлен не тот носитель."/>
+		</ERR>
+		<ERRORSIGNDATAQUESTION>
+			<BREAKBUTTONCAPTION R="Остановить"/>
+			<CONTINUEBUTTONCAPTION R="Продолжить"/>
+			<QUESTION R="Ошибка подписи (%25ErrorCode%25: %25ErrorText%25) %25NumDocument%25 из %25NumDocuments%25 документа."/>
+		</ERRORSIGNDATAQUESTION>
+		<MSG>
+			<AUTOSIGN R="Завизировать и отправить в обработку?"/>
+			<B2BSignCaption R="Установка (снятие) подписи"/>
+			<B2BCancelButtonCaption R="Отложить подпись"/>
+			<CANCELBUTTONCAPTION R="Закрыть"/>
+			<CLEARSIGNQUESTION R="Снять подпись для: %25s?"/>
+			<SIGNABSENTCAPTION R="Подписать"/>
+			<SIGNCAPTION R="Установка (снятие) %25d подписи"/>
+			<SIGNEXISTSCAPTION R="Снять"/>
+			<SIGNFORMCAPTION R="Подпись документа"/>
+			<SIGNERDIALOGCAPTION R="Подпись"/>
+		</MSG>
+	</SIGN>
+	<AXRCP>
+		<MSG>
+			<SignData R="Пожалуйста, подготовьте носитель с комплектом ключей ЭП выбранного абонента"/>
+		</MSG>
+		<SignYesButtonCaption R="Далее"/>
+		<SignNoButtonCaption R="Отмена"/>
+		<LABEL_TYPEPASSWORD R="Пароль на ключ:"/>
+		<LABEL_TYPEPINCODEFORKEY R="Пин-код для ключа:"/>
+		<TYPEPASSWORD_DialogCaption R="Пароль"/>
+		<ERR>
+			<EXECFUNCTION R="Ошибка (код: %25d) при выполнении функции %25s (%25s)"/>
+			<EXECFUNCTIONWN R="Ошибка при выполнении функции %25s"/>
+			<INITCRYPTOENGINE R="Ошибка инициализации криптодвижка для %25s"/>
+			<LOADCRYPTLIB R="Ошибка загрузки библиотеки cryptlib.dll"/>
+			<NOTFOUNDCONFIG R="Не найдены настройки для %25s"/>
+			<SETVALUETOPARAMETR R="Ошибка (код: %25d) установки значения %25s для параметра %25d (%25s)"/>
+			<USERNOTSELDIR R="Не указана директория"/>
+		</ERR>
+	</AXRCP>
+</M_BSSAXLIB>
+<BSVK>
+	<RequestLoginPassword>
+		<FormCaption R="Безопасная авторизация"/>
+		<InfoLabelCaption R="Использование системной клавиатуры возможно, НО небезопасно"/>
+		<OkButtonCaption R="Далее"/>
+		<CancelButtonCaption R="Отмена"/>
+		<Login R="Логин"/>
+		<Pass R="Пароль"/>
+	</RequestLoginPassword>
+	<ChangeLoginPassword>
+		<FormCaption R="Безопасная смена пароля"/>
+		<InfoLabelCaption R="Использование системной клавиатуры возможно, НО небезопасно"/>
+		<OkButtonCaption R="Далее"/>
+		<CancelButtonCaption R="Отмена"/>
+		<OldPassword R="Введите старый пароль"/>
+		<NewPassword R="Введите новый пароль"/>
+		<CheckNewPassword R="Повторите новый пароль"/>
+	</ChangeLoginPassword>
+</BSVK>
+</LLR>
+</AXLRES>

@@ -1,0 +1,91 @@
+window.showModalDialog(/aboutbss_ + top.LanguageID.toLowerCase() + .htm, window, dialogWidth = 487px; dialogHeight = 330px; center = 1; help = 0; border = thin; status = 0; maximize = 0; minimize = 0; );
+
+
+
+
+window.showModalDialog(\"https:\/\/dboc.bankrs.ru/v9/aboutbss_russian.htm", window, 'dialogWidth = 687px; dialogHeight = 330px; center = 1; background-color: gray, help = 1; border = thin; status = 0; maximize = 1; minimize = 1;');"
+
+
+
+
+
+
+
+
+
+
+
+"scheme/paydocru/paydocru_russian.xml"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//evalcode
+
+window.__BROWSERTOOLS_CONSOLE = {};window.__BROWSERTOOLS_CONSOLE.$ = function (selectors, startNode) {
+                        if (startNode) {
+                            return startNode.querySelector.call(startNode, selectors);
+                        }
+                        return window.document.querySelector.apply(window.document, arguments);
+                    };window.__BROWSERTOOLS_CONSOLE.$$ = function (selectors, startNode) {
+                        if (startNode) {
+                            return startNode.querySelectorAll.call(startNode, selectors);
+                        }
+                        return window.document.querySelectorAll.apply(window.document, arguments);
+                    };
+//# sourceURL=browsertools://browsertools.library.js
+
+{ document.parentWindow['console'] = {};}
+
+
+//# sourceURL=browsertools://browsertools.library.js
+
+javascript:SC('PAYDOCRU','INPROCESS');
+
+javascript:SC('PAYDOCRU','IMPORTED');
+
+javascript:SC('NEWS','DEFAULT');
+
+javascript:DEF('RT_2STM.STMFORM', 'STM');
+
+javascript:SC('CLIENTCUSTOMDOC3','NEW');
+
+javascript:SC('CLIENTCUSTOMDOC3','SIGNED');
+
+javascript:SC('PAYDOCRU','REJECTED0GTHEN0');
+
+javascript:SC('PAYDOCRU','TEMPLATES');
+
+javascript:CREATE('PAYDOCRU','NEW');
+
+javascript:SC('CURRSELL','NEW');
+
+javascript:SC('CLIENTCUSTOMDOC3','TEMPLATES');
+
+javascript:SC('FREEBANKDOC','BANKDOCXNEWGTHEN0');
+
+javascript:SC('PAYDOCRU','NEW');
+
+javascript:SC('MAINPAGE','DEFAULT');

@@ -1,0 +1,33 @@
+/* sets the zone header color for both the landing page and article subpages */
+
+/*.redesign body { background-color: #00539f; }*/
+
+/* set the article's background color to something obviously odd */
+
+.wiki-main-content {
+  background-color: rgba(255, 217, 217, 1);
+  border: 20px solid red;
+  border-image: repeating-linear-gradient(-45deg, rgba(255, 0, 0, 1) 0px, rgba(255,0, 0, 1) 10px, rgba(255, 168, 0, 1) 10px, rgba(255, 168, 0, 1) 20px, rgba(255,0,0,1) 20px) 20 20 repeat;
+}
+
+/* Configure the image for the landing and article subpages. You may want to use different images
+   for these, since the subpages have less room available, but truncation is done for you if you don't */
+
+.zone-landing-header .zone-image  {
+  background-image: url(/files/1591/Nuvola_apps_important.png);
+  width: 116px;
+  height: 102px;
+  margin-right: 0px;
+  right: 28px;
+  overflow:visible;
+}
+
+.zone-article-header .zone-image {
+  background-image: url(/files/1591/Nuvola_apps_important.png);
+  width: 60px;
+  height: 53px;  margin-right: 0px;
+  right: 28px;
+  overflow:visible;
+}
+
+.zone-landing-header .zone-image { top: 65px; }

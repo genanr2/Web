@@ -1,0 +1,360 @@
+<!--[if gt IE 7]>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<![endif]-->
+<HTML><HEAD>
+<meta http-equiv="X-UA-Compatible" content="IE=5" >
+<META HTTP-EQUIV="Content-Language" CONTENT="ru-RU">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<TITLE>ДБО BS-Client </TITLE>
+<XML ID="oSchSt"><DSP><SCH2ST SCH="PAYDOCRU" ST="common" R="2"/>
+<SCH2ST SCH="PAYDOCRUVISA" ST="common" R="2"/>
+<SCH2ST SCH="PAYDOCCUR" ST="common" R="3"/>
+<SCH2ST SCH="CURRSELL" ST="common" R="3"/>
+<SCH2ST SCH="CURRBUY" ST="common" R="3"/>
+<SCH2ST SCH="MANDATORYCURRSELL" ST="common" R="3"/>
+<SCH2ST SCH="STATEMENTQUERY" ST="common" R="2"/>
+<SCH2ST SCH="FREECLIENTDOC" ST="common" R="3"/>
+<SCH2ST SCH="FREEBANKDOC" ST="freebankdocstatuses" R="0"/>
+<SCH2ST SCH="CHARGEANSWER" ST="freebankdocstatuses" R="0"/>
+<SCH2ST SCH="RETPAYDOCRU" ST="common" R="2"/>
+<SCH2ST SCH="CANCELLATIONREQUEST" ST="common" R="2"/>
+<SCH2ST SCH="REGENREQ" ST="cryptostatuses" R="0"/>
+<SCH2ST SCH="CRYPTO" ST="cryptostatuses" R="1"/>
+<SCH2ST SCH="CRYPTO" ST="cryptostatuses" R="0"/>
+<SCH2ST SCH="CURRCONVERSION" ST="common" R="3"/>
+<SCH2ST SCH="RURDEALINQUIRY" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="CURRDEALINQUIRY" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="CURRDEALINQUIRY138I" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="DEALPASSRENEW" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="CLIENTCUSTOMDOC" ST="common" R="2"/>
+<SCH2ST SCH="CONFDOCINQUIRY" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="CONFDOCINQUIRY138I" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="DEALPASSCON" ST="common" R="3"/>
+<SCH2ST SCH="DEALPASSCRED" ST="common" R="3"/>
+<SCH2ST SCH="DEALPASSCON138I" ST="common" R="3"/>
+<SCH2ST SCH="DEALPASSCRED138I" ST="common" R="3"/>
+<SCH2ST SCH="DEALPASSCLOSE" ST="dealinquiry" R="3"/>
+<SCH2ST SCH="TRANSITACCPAYDOC" ST="common" R="3"/>
+<SCH2ST SCH="NEWS" ST="news" R="-1"/>
+<SCH2ST SCH="PAYROLLDOC" ST="common" R="3"/>
+<SCH2ST SCH="B2BRELREQOUT" ST="b2brrout" R="3"/>
+<SCH2ST SCH="B2BRELREQIN" ST="b2brrin" R="2"/>
+<SCH2ST SCH="CUSTOMFREEDOCOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMFREEDOCIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="CUSTOMACTOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMACTIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="CUSTOMBILLOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMBILLIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="CUSTOMDEALOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMDEALIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="CUSTOMINVOICEOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICEIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="B2BREQUEST" ST="b2brrout" R="3"/>
+<SCH2ST SCH="INVOICEACK" ST="common" R="3"/>
+<SCH2ST SCH="INVOICEACKOUT" ST="common" R="3"/>
+<SCH2ST SCH="INVOICEACKIN" ST="freebankdocstatuses" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICEACKOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICEACKIN" ST="b2bin" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICESPECOUT" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICESPECIN" ST="b2bin" R="2"/>
+<SCH2ST SCH="CUSTOMINVOICESPACK" ST="b2bcommon" R="3"/>
+<SCH2ST SCH="CUSTOMINVOICESPACKIN" ST="b2bin" R="3"/>
+<SCH2ST SCH="NEWSACK" ST="common" R="3"/>
+<SCH2ST SCH="TRANSITACCNOTICE" ST="freebankdocstatuses" R="0"/>
+<SCH2ST SCH="CHARGEREQUEST" ST="common" R="2"/>
+</DSP>
+</XML>
+<XML ID="oStData"><DSP><SCH N="common"><S I="800" A="" R="1" N="foo"/>
+<S I="20" A="VIEW_TPL,DEL,EDIT_TPL,ADD" R="1" N="шаблон"/>
+<S I="50" A="" R="1" N="доставлен"/>
+<S I="51" A="ADD,PRNALL,VIEW,DEL,EDIT,INFO,PRN,TPL,RTF,CHK" R="1" N="импортирован"/>
+<S I="0" A="ADD,PRNALL,PRN,VIEW,DEL,EDIT,SIG,SIGGO,IMP,KILL,TPL,INFO,RTF,CHK" R="1" N="новый"/>
+<S I="1" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан I"/>
+<S I="2" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан II"/>
+<S I="7" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,GOPROC,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан"/>
+<S I="10" A="" R="1" N="подписан (в обработку)"/>
+<S I="251" A="" R="1" N="проверка подписи"/>
+<S I="301" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ошибка реквизитов"/>
+<S I="347" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП неправомочна"/>
+<S I="357" A="ADD,VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП не верна"/>
+<S I="341" A="ADD,VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП I неправомочна"/>
+<S I="351" A="ADD,VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП I не верна"/>
+<S I="342" A="ADD,VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП II неправомочна"/>
+<S I="352" A="ADD,VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП II не верна"/>
+<S I="330" A="ADD,VIEW,INFO,CHECK,TPL,PRN,RTF,CHK" R="1" N="ошибка выгрузки"/>
+<S I="371" A="PRNALL,PRN,VIEW,ADD,INFO,CHECK,MOV,TPL,RTF,CHK" R="1" N="не принят"/>
+<S I="373" A="ADD,PRN,VIEW,INFO,CHECK,MOV,TPL,RTF,CHK" R="1" N="не принят АБС"/>
+<S I="375" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK" R="1" N="отказан АБС"/>
+<S I="400" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят"/>
+<S I="401" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят"/>
+<S I="410" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят ВК"/>
+<S I="420" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="отказан ВК"/>
+<S I="430" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="закрыт"/>
+<S I="402" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="в обработке"/>
+<S I="501" A="ADD,BACK,TPL,INFO,CHECK,VIEW,PRN,RTF,CHK" R="1" N="отложен"/>
+<S I="6001" A="PRNALL,PRN,VIEW,ADD,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="обработан"/>
+<S I="601" A="PRNALL,PRN,VIEW,ADD,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="исполнен"/>
+<S I="701" A="ADD,PRN,VIEW,INFO,CHECK,TPL,RTF,CHK" R="1" N="отозван"/>
+<S I="1371" A="ADD,VIEW,TPL,MOV,CHK" R="1" N="отказан ИК"/>
+<S I="801" A="PRNALL,PRN,VIEW,ADD,SIGGO,RVISA,TPL,INFO,CHECK,RTF,CHK" R="1" N="ожидает визирования"/>
+<S I="17253" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="отказан"/>
+<S I="32221" A="ADD,PRNALL,PRN,VIEW,SIG,DOCACK,TPL,INFO,CHECK,RTF,CHK" R="1" N="требует подтверждения"/>
+<S I="13201" A="" R="1" N="подтверждается БК"/>
+<S I="13251" A="" R="1" N="не подтвержден БК"/>
+</SCH>
+<SCH N="dealinquiry"><S I="800" A="" R="1" N="foo"/>
+<S I="20" A="DEL,VIEW_TPL,EDIT_TPL,ADD" R="1" N="шаблон"/>
+<S I="50" A="" R="1" N="доставлен"/>
+<S I="51" A="ADD,DEL,EDIT,IMP,RTF,CHK" R="1" N="импортирован"/>
+<S I="0" A="ADD,DEL,EDIT,SIG,SIGGO,IMP,VIEW,PRN,TPL,RTF,CHK" R="1" N="новый"/>
+<S I="1" A="ADD,SIG,SIGGO,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="подписан I"/>
+<S I="2" A="ADD,SIG,SIGGO,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="подписан II"/>
+<S I="7" A="ADD,SIG,SIGGO,GOPROC,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="подписан"/>
+<S I="10" A="" R="1" N="подписан (в обработку)"/>
+<S I="251" A="" R="1" N="проверка подписи"/>
+<S I="301" A="ADD,VIEW,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ошибка реквизитов"/>
+<S I="347" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП неправомочна"/>
+<S I="357" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП не верна"/>
+<S I="341" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП I неправомочна"/>
+<S I="351" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП I не верна"/>
+<S I="342" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП II неправомочна"/>
+<S I="352" A="ADD,VIEW,INFO,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="ЭП II не верна"/>
+<S I="330" A="ADD,VIEW,INFO,CHECK,TPL,PRN,RTF,CHK" R="1" N="ошибка выгрузки"/>
+<S I="371" A="ADD,VIEW,CHECK,MOV,PRN,RTF,CHK" R="1" N="не принят"/>
+<S I="373" A="ADD,VIEW,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="не принят АБС"/>
+<S I="375" A="ADD,VIEW,CHECK,MOV,PRN,TPL,RTF,CHK" R="1" N="отказан АБС"/>
+<S I="400" A="ADD,BACK,GETKVIT,CHECKKVIT,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="принят"/>
+<S I="401" A="ADD,BACK,GETKVIT,CHECKKVIT,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="принят"/>
+<S I="410" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят ВК"/>
+<S I="420" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="отказан ВК"/>
+<S I="402" A="ADD,BACK,GETKVIT,CHECKKVIT,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="в обработке"/>
+<S I="501" A="ADD,BACK,CHECK,TPL,VIEW,PRN,RTF,CHK" R="1" N="отложен"/>
+<S I="6001" A="ADD,GETKVIT,CHECKKVIT,VIEW,PRN,CHECK,TPL,RTF,CHK" R="1" N="обработан"/>
+<S I="601" A="PRNALL,PRN,VIEW,ADD,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="исполнен"/>
+<S I="701" A="ADD,PRN,VIEW,CHECK,TPL,RTF,CHK" R="1" N="отозван"/>
+<S I="1371" A="ADD,VIEW,TPL,MOV,CHK" R="1" N="отказан ИК"/>
+<S I="17253" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="отказан"/>
+<S I="32221" A="ADD,PRNALL,PRN,VIEW,SIG,DOCACK,TPL,INFO,CHECK,RTF,CHK" R="1" N="требует подтверждения"/>
+<S I="13201" A="" R="1" N="подтверждается БК"/>
+<S I="13251" A="" R="1" N="не подтвержден БК"/>
+</SCH>
+<SCH N="freebankdocstatuses"><S I="800" A="" R="1" N="foo"/>
+<S I="1000" A="PRNALL,PRN,VIEW,SEE,FAV,BDARH,GETKVIT,RTF,CRPDR" R="1" N="новый"/>
+<S I="1602" A="PRNALL,PRN,VIEW,SEE,FAV,BDARH,GETKVIT,RTF,CRPDR" R="1" N="обработан"/>
+<S I="1901" A="PRNALL,PRN,VIEW,SEE,GETKVIT,RTF,CRPDR" R="1" N="завершен"/>
+<S I="401" A="PRNALL,PRN,VIEW,SEE,FAV,BDARH,GETKVIT,RTF,CRPDR" R="1" N="принят"/>
+</SCH>
+<SCH N="cryptostatuses"><S I="800" A="" R="1" N="foo"/>
+<S I="50" A="VIEW" R="1" N="доставлен"/>
+<S I="1" A="VIEW,SIG,SIGGO,ACT,CHECK" R="1" N="подписан I"/>
+<S I="2" A="VIEW,SIG,SIGGO,ACT,CHECK" R="1" N="подписан II"/>
+<S I="7" A="VIEW,SIG,SIGGO,ACT,CHECK" R="1" N="подписан"/>
+<S I="251" A="VIEW,GETKVIT,CHECK" R="1" N="проверка подписи"/>
+<S I="301" A="VIEW" R="1" N="ошибка реквизитов"/>
+<S I="347" A="VIEW" R="1" N="ЭП неправомочна"/>
+<S I="357" A="VIEW" R="1" N="ЭП не верна"/>
+<S I="341" A="VIEW" R="1" N="ЭП I неправомочна"/>
+<S I="351" A="VIEW" R="1" N="ЭП I не верна"/>
+<S I="342" A="VIEW" R="1" N="ЭП II неправомочна"/>
+<S I="352" A="VIEW" R="1" N="ЭП II не верна"/>
+<S I="330" A="VIEW,INFO,CHECK,TPL,PRN,RTF,CHK" R="1" N="ошибка выгрузки"/>
+<S I="371" A="VIEW" R="1" N="не принят"/>
+<S I="401" A="VIEW,GETKVIT,CHECK,ACT" R="1" N="принят"/>
+<S I="400" A="VIEW,GETKVIT,CHECK,ACT" R="1" N="принят"/>
+<S I="2403" A="VIEW,GETKVIT,CHECK" R="1" N=""/>
+<S I="2405" A="VIEW,GETCERT,CHECK,GETKVIT,ACT" R="1" N="зарегистрирован+"/>
+<S I="2601" A="VIEW,SEE,GETKVIT,CHECK" R="1" N="завершен"/>
+<S I="2602" A="VIEW,SEE,BDARH" R="1" N=""/>
+<S I="2605" A="VIEW" R="1" N=""/>
+<S I="2375" A="VIEW,CHECK,MOV" R="1" N="отказ регистрации"/>
+<S I="2376" A="VIEW,CHECK,MOV" R="1" N="отказ регистрации"/>
+<S I="2603" A="VIEW" R="1" N=""/>
+<S I="0" A="VIEW,DEL,EDIT,SIG,SIGGO,KILL,ACT" R="1" N="новый"/>
+<S I="2604" A="VIEW" R="1" N=""/>
+<S I="1371" A="VIEW,MOV" R="1" N="отказан ИК"/>
+</SCH>
+<SCH N="news"><S I="000" A="ARH" R="1" N=""/>
+<S I="001" A="MOV" R="1" N=""/>
+</SCH>
+<SCH N="b2bcommon"><S I="800" A="" R="1" N="foo"/>
+<S I="20" A="VIEW_TPL,DEL,EDIT_TPL,ADD" R="1" N="шаблон"/>
+<S I="9001" A="PRNALL,PRN,VIEW,RTF" R="1" N="отправляется"/>
+<S I="50" A="" R="1" N="доставлен"/>
+<S I="51" A="PRNALL,VIEW,DEL,EDIT,INFO,PRN,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="импортирован"/>
+<S I="0" A="ADD,PRNALL,PRN,VIEW,DEL,EDIT,SIG,SIGGO,IMP,KILL,TPL,INFO,RTF,CHK,SCADJUST,DOCXML" R="1" N="новый"/>
+<S I="1" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="подписан I"/>
+<S I="2" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="подписан II"/>
+<S I="7" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,GOPROC,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="подписан"/>
+<S I="10" A="" R="1" N="подписан (в обработку)"/>
+<S I="251" A="VIEW,TPL,PRN,RTF,CHECK,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="проверка подписи"/>
+<S I="301" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ошибка реквизитов"/>
+<S I="347" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП неправомочна"/>
+<S I="357" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП не верна"/>
+<S I="341" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП I неправомочна"/>
+<S I="351" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП I не верна"/>
+<S I="342" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП II неправомочна"/>
+<S I="352" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП II не верна"/>
+<S I="321" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ЭП не подтверждена"/>
+<S I="330" A="VIEW,INFO,CHECK,TPL,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="ошибка выгрузки"/>
+<S I="371" A="PRNALL,PRN,VIEW,ADD,INFO,CHECK,MOV,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="не принят"/>
+<S I="373" A="PRN,VIEW,INFO,CHECK,MOV,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="не принят АБС"/>
+<S I="375" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="отказан АБС"/>
+<S I="400" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="принят"/>
+<S I="401" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="принят"/>
+<S I="410" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="принят ВК"/>
+<S I="420" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="отказан ВК"/>
+<S I="430" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="закрыт"/>
+<S I="402" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="в обработке"/>
+<S I="501" A="BACK,TPL,INFO,CHECK,VIEW,PRN,RTF,CHK,SCADJUST,DOCXML" R="1" N="отложен"/>
+<S I="6001" A="PRNALL,PRN,VIEW,ADD,GETKVIT,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="обработан"/>
+<S I="601" A="PRNALL,PRN,VIEW,ADD,GETKVIT,TPL,INFO,CHECK,RTF,CHK,SCADJUST,DOCXML" R="1" N="исполнен"/>
+<S I="701" A="PRN,VIEW,INFO,CHECK,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="отозван"/>
+<S I="1371" A="VIEW,TPL,MOV,CHK,SCADJUST,DOCXML" R="1" N="отказан ИК"/>
+<S I="15111" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="принят контрагентом"/>
+<S I="15121" A="PRNALL,PRN,VIEW,ADD,BACK,TPL,INFO,CHECK,RTF,CHK,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="не принят контрагентом"/>
+<S I="27441" A="PRNALL,PRN,VIEW,TPL,RTF,CHECK,GETKVIT,CDOCCONF,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="акцептован"/>
+<S I="27451" A="PRNALL,PRN,VIEW,TPL,MOV,RTF,CHECK,GETKVIT,CDOCCONF,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="не акцептован"/>
+<S I="18031" A="PRNALL,PRN,VIEW,TPL,CHECK,GETKVIT,RTF,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="завершён"/>
+<S I="18041" A="PRNALL,PRN,VIEW,TPL,CHECK,GETKVIT,RTF,ACKNOW1,SCADJUST,ACKADJUST,DOCXML" R="1" N="не завершён"/>
+</SCH>
+<SCH N="b2bin"><S I="800" A="" R="1" N="foo"/>
+<S I="1000" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,CHK,DOCXML" R="1" N="новый"/>
+<S I="401" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="принят"/>
+<S I="251" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="проверка подписи"/>
+<S I="371" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="не принят"/>
+<S I="357" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="ЭП не верна"/>
+<S I="27441" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="акцептован"/>
+<S I="27451" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="не акцептован"/>
+</SCH>
+<SCH N="b2brrout"><S I="800" A="" R="1" N="foo"/>
+<S I="0" A="ADD,PRNALL,PRN,VIEW,DEL,EDIT,SIG,SIGGO,IMP,KILL,TPL,INFO,RTF,CHK" R="1" N="новый"/>
+<S I="7" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,GOPROC,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан"/>
+<S I="1" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан I"/>
+<S I="2" A="ADD,PRNALL,PRN,VIEW,SIG,SIGGO,TPL,INFO,CHECK,RTF,CHK" R="1" N="подписан II"/>
+<S I="20" A="VIEW_TPL,DEL,EDIT_TPL,ADD" R="1" N="шаблон"/>
+<S I="402" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="в обработке"/>
+<S I="50" A="" R="1" N="доставлен"/>
+<S I="51" A="PRNALL,VIEW,DEL,EDIT,INFO,PRN,TPL,RTF,CHK" R="1" N="импортирован"/>
+<S I="10" A="" R="1" N="подписан (в обработку)"/>
+<S I="251" A="" R="1" N="проверка подписи"/>
+<S I="301" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ошибка реквизитов"/>
+<S I="347" A="VIEW,ADD,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП неправомочна"/>
+<S I="357" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП не верна"/>
+<S I="341" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП I неправомочна"/>
+<S I="351" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП I не верна"/>
+<S I="342" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП II неправомочна"/>
+<S I="352" A="VIEW,INFO,CHECK,TPL,MOV,PRN,RTF,CHK" R="1" N="ЭП II не верна"/>
+<S I="330" A="VIEW,INFO,CHECK,TPL,PRN,RTF,CHK" R="1" N="ошибка выгрузки"/>
+<S I="371" A="PRNALL,PRN,VIEW,ADD,INFO,CHECK,MOV,TPL,RTF,CHK" R="1" N="не принят"/>
+<S I="373" A="PRN,VIEW,INFO,CHECK,MOV,TPL,RTF,CHK" R="1" N="не принят АБС"/>
+<S I="375" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK" R="1" N="отказан АБС"/>
+<S I="400" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят"/>
+<S I="401" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят"/>
+<S I="410" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="принят ВК"/>
+<S I="420" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="отказан ВК"/>
+<S I="430" A="PRNALL,PRN,VIEW,ADD,BACK,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="закрыт"/>
+<S I="17253" A="MOV,VIEW,ADD,PRN,INFO,CHECK,TPL,RTF,CHK,SCADJUST,DOCXML" R="1" N="отказан"/>
+<S I="501" A="BACK,TPL,INFO,CHECK,VIEW,PRN,RTF,CHK" R="1" N="отложен"/>
+<S I="6001" A="PRNALL,PRN,VIEW,ADD,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="обработан"/>
+<S I="601" A="PRNALL,PRN,VIEW,ADD,GETKVIT,CHECKKVIT,TPL,INFO,CHECK,RTF,CHK" R="1" N="исполнен"/>
+<S I="701" A="PRN,VIEW,INFO,CHECK,TPL,RTF,CHK" R="1" N="отозван"/>
+<S I="1371" A="VIEW,TPL,MOV,CHK" R="1" N="отказан ИК"/>
+<S I="801" A="PRNALL,PRN,VIEW,ADD,SIGGO,RVISA,TPL,INFO,CHECK,RTF,CHK" R="1" N="ожидает визирования"/>
+</SCH>
+<SCH N="b2brrin"><S I="800" A="" R="1" N="foo"/>
+<S I="1000" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,CHK,DOCXML" R="1" N="новый"/>
+<S I="252" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="ЭП верна"/>
+<S I="357" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="ЭП не верна"/>
+<S I="401" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,CDOCACC,CDOCREJ,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="принят"/>
+<S I="501" A="BACK,CHECK,TPL,VIEW,PRN,RTF,CHK" R="1" N="отложен"/>
+<S I="601" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="исполнен"/>
+<S I="602" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="не исполнен"/>
+<S I="27071" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="исполнен"/>
+<S I="27081" A="PRNALL,PRN,VIEW,CHECK,GETKVIT,RTF,ACKNOW2,NOTICE,ACKNOW3,ADJUST,SCADJUST,ACKADJUST,DOCXML" R="1" N="не исполнен"/>
+</SCH>
+</DSP>
+</XML>
+<XML id="obj"><?xml version="1.0"?><R L1="Проверка ActiveX" L2="Внимание:" L3=" в случае отказа от новой версии возможна некорректная работа системы!"><O c="34E60EF0-8825-4AD8-ABED-ADC2F358F2C9" i="MO" f="1" r="3" cb="https://dboc.bankrs.ru/CODE/3.17.9.2290/bsssl.cab" v="3,17,9,2290"/></R></XML>
+<XML id="lg">
+<?xml version="1.0"?>
+<TABLE BORDER="0" CELLSPACING="0" width="440" CELLPADDING="0" ID="mtbl">
+<TR><TD colspan="2">
+	<DIV CLASS="AlertMess">ВНИМАНИЕ! Для Вашей безопасности рекомендуется использование функционала БЕЗОПАСНОЙ АВТОРИЗАЦИИ</DIV>
+	<INPUT TYPE="checkbox" ID="fUnsafe" class="ldWrk" STYLE="border: 0px;" onclick="Top.changeSafe(this)"/><LABEL for="fUnsafe">Отключить безопасную авторизацию</LABEL>
+</TD></TR>
+<TR ID="LgPdLb" height="34"><TD colspan="2">Введите Ваши логин и пароль:</TD></TR>
+<TR ID="CrLg"><TD colspan="2"><SPAN STYLE="width: 185px;">Логин </SPAN><INPUT class="ldInp" onkeypress="top.a_k(window,event)" TYPE="text" ID="L" VALUE="" MAXLENGTH="10" DISABLED="false"/></TD></TR>
+	<TR ID="CrPd"><TD COLSPAN="2">
+		<SPAN ID="CrPdLb" STYLE="width: 185px;">Пароль </SPAN><SPAN ID="OdPdLb" STYLE="width: 185px; display: none;">Старый пароль </SPAN>
+		<INPUT class="ldInp" onkeypress="top.a_k(window,event)" TYPE="Password" ID="P" VALUE="" MAXLENGTH="10" DISABLED="false"/><INPUT TYPE="hidden" ID="SP"/><INPUT TYPE="hidden" ID="SW" VALUE="FYjRcysjE/akRZaG0WGsKYHi2UF+qzIk3vq8rEnx+p55MQ4Kd2Mg93iD8f9ETM+tlyk="/>
+		</TD>
+	</TR>
+	<TR ID="ChPd" STYLE="display: none;"><TD COLSPAN="2" STYLE="padding-top: 2px;">
+		<SPAN STYLE="width: 185px;">Новый пароль </SPAN>
+		<INPUT class="ldInp" onkeypress="top.a_k(window,event)" TYPE="Password" ID="NWD" VALUE="" SIZE="20" MAXLENGTH="10" DISABLED="1"/><INPUT TYPE="hidden" ID="SNWD"/>
+	<BR/>
+		<SPAN STYLE="width: 185px;">Подтверждение нового пароля </SPAN>
+		<INPUT class="ldInp" onkeypress="top.a_k(window,event)" TYPE="Password" ID="CND" VALUE="" SIZE="20" MAXLENGTH="10" DISABLED="1"/><INPUT TYPE="hidden" ID="SCND"/></TD>
+	</TR>
+
+	<TR height="140">
+		<TD colspan="2" ALIGN='Right' valign="bottom">
+			<BUTTON ID="SB" CLASS="stdBtn" STYLE="display: none;" onclick="Top.SF(window,top.chsc);">Далее</BUTTON>
+			<BUTTON ID="SfB" style="width1: 220px; margin-left1: 125px; margin-top1: 10px;" onclick="Top.doSafe();">Безопасная авторизация</BUTTON>
+		</TD>
+	</TR>
+</TABLE>
+
+
+
+
+</XML>
+<SCRIPT LANGUAGE="JavaScript">
+w=window;w.d=document;w.Top=w.top;w.WID='TOP',w.rso=w.rcnt=w.Rc=w.Oc=top.step=0;
+var sRTSID="HH5OY";
+</SCRIPT>
+<SCRIPT SRC="../js/loader.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+SGTXTID="EjkA",sDemo='0',sDemoL='',EntryBll='RT_1Loader',OpnTsk='Load',bSSL='1',bEmptyPass='',IsDEBUG='',NVGTAdd='',sgID='',CrMd="1",SID='',ccSITE='RT_IC',MainBllName='RT_2IC',LoaderBll='RT_1Loader',DllName='bsi.dll',version=['3.17.9.2290','2014.12.19','2014.12.19','3.17.9.2290','3.17.9.2290'],sJSP='../js/',sMsg='Произошел сбой в работе системы. Попробуйте повторить операцию еще раз. В случае неудачи,  пожалуйста, обратитесь в службу поддержки Вашего банка (Ошибка выполнения. Ошибка инициализации объекта ActiveX).',sMsg3='Произошел сбой в работе системы. Убедитесь, что настройки Вашего браузера позволяют Вам работать с объектами ActiveX. Попробуйте повторить операцию еще раз. В случае неудачи,  пожалуйста, обратитесь в службу поддержки Вашего банка (Ошибка загрузки ActiveX).',chsc='1',LanguageID='RUSSIAN',im=new Image();im.src='../img/ico/ok.gif';im.style.marginRight='5px';im.id="im";im.style.width=im.style.height='10',sAAdds={},csName='csGrass',bAX=0,bPKI=0,bAuthX=0,bAuthXNotPassed=false,iAuthType='1',iPassMinL='6',lngs={'ENGLISH':'English'},iProgressInt='5000',ATO='5';
+bDemo=(sDemo=='1');
+w.moveTo(0,0);w.resizeTo(screen.availWidth,screen.availHeight);
+w.st=new Array('Внимание, идет обработка запроса...','ООО «БСС»','Ошибка','support@bankrs.ru','+7 (495) 600 40 81 ','1003n','','Загрузка компонентов ядра системы','Добро пожаловать в систему ДБО BS-Client v.3!','Вход в систему','Выбор организации','Выбор подразделения банка','Дополнительная авторизация','Регистрация сертификатов','Техническая поддержка','Телефон','Все права защищены','http://www.bankrs.ru','О системе','Как стать клиентом Банка?','Тарифы','Безопасность','','Генерация ключей');
+</SCRIPT>
+</HEAD>
+<FRAMESET ID="FT" ROWS="0,0,*" FRAMEBORDER=0 BORDER=0 FRAMESPACING=0 onHelp="Top.Help(''); return false;" SCROLLING="No">
+  <FRAME SRC="../null.htm" ID="FB" NAME="RT_IC_TOOLBAR" FRAMEBORDER="No" SCROLLING="No" MARGINWIDTH="0" MARGINHEIGHT="0" NORESIZE>
+  <FRAMESET ID="FG" COLS="0,*" FRAMEBORDER=yes BORDER="1" FRAMESPACING="1">
+    <FRAME SRC="../null.htm" ID="FN" NAME="RT_IC_NVGT" MARGINWIDTH="0" MARGINHEIGHT="0" FRAMEBORDER="No" SCROLLING="no" NORESIZE>
+    <FRAME SRC="../null.htm" ID="MW" NAME="RT_IC_MAINW" MARGINWIDTH="0" MARGINHEIGHT="0" FRAMEBORDER="No">
+  </FRAMESET>
+  <FRAME SRC="../wlc.htm"  ID="FS" NAME="RT_IC_HLP" FRAMESPACING=0 NORESIZE SCROLLING="No">
+</FRAMESET>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
