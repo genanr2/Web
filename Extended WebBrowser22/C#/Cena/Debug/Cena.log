@@ -1,8 +1,0 @@
-﻿Сборка начата 16.09.2015 11:48:43.
-     1>Проект "C:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\Cena\Cena.vcxproj" в узле 2 (целевые объекты Rebuild).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(376,5): error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.
-     1>Сборка проекта "C:\Kruzhka\VStudio\Samples\Visual Studio 2012\Extended WebBrowser22\C#\Cena\Cena.vcxproj" завершена (целевые объекты Rebuild) с ошибкой.
-
-Ошибка сборки.
-
-Затраченное время: 00:00:00.89
