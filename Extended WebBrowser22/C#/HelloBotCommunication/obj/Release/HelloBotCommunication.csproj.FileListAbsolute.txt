@@ -1,5 +1,0 @@
-C:\Kruzhka\VStudio\Samples\Visual Studio 2012\1111111111\29.09.2015\Extended WebBrowser22\C#\HelloBotCommunication\bin\Release\HelloBotCommunication.dll
-C:\Kruzhka\VStudio\Samples\Visual Studio 2012\1111111111\29.09.2015\Extended WebBrowser22\C#\HelloBotCommunication\bin\Release\HelloBotCommunication.pdb
-C:\Kruzhka\VStudio\Samples\Visual Studio 2012\1111111111\29.09.2015\Extended WebBrowser22\C#\HelloBotCommunication\obj\Release\HelloBotCommunication.csproj.CoreCompileInputs.cache
-C:\Kruzhka\VStudio\Samples\Visual Studio 2012\1111111111\29.09.2015\Extended WebBrowser22\C#\HelloBotCommunication\obj\Release\HelloBotCommunication.dll
-C:\Kruzhka\VStudio\Samples\Visual Studio 2012\1111111111\29.09.2015\Extended WebBrowser22\C#\HelloBotCommunication\obj\Release\HelloBotCommunication.pdb
